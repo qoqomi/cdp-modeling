@@ -1,0 +1,1207 @@
+{
+  "metadata": {
+    "year": 2025,
+    "company": "SK Inc.",
+    "baseline": "2024 CDP Submission",
+    "cdp_updates_version": "1.3",
+    "evidence_source": "SK Inc. 2025 Sustainability Report",
+    "language": "en",
+    "output_format": "diff"
+  },
+  "questions": {
+    "2.2": {
+      "question_id": "2.2",
+      "question_text": "Does your organization have a process for identifying, assessing, and managing environmental dependencies and/or impacts?",
+      "cdp_question_updates": {
+        "has_changes": false,
+        "change_type": null,
+        "description": "No changes for this question in 2025",
+        "scoring_changes": null,
+        "impact_on_answer": "You can use the same structure as last year",
+        "source": "Corporate_Questionnaires_and_Scoring_Methodologies_Updates_2025_V1.3 (question not listed)"
+      },
+      "previous_answer_2024": {
+        "question_text": "Does your organization have a process for identifying, assessing, and managing environmental dependencies and/or impacts?",
+        "answers": {
+          "column_1": {
+            "field_name": "Process in place",
+            "value": "Yes"
+          },
+          "column_2": {
+            "field_name": "Dependencies and/or impacts evaluated in this process",
+            "value": "Both dependencies and impacts"
+          }
+        }
+      },
+      "sk_2025_report_evidence": [
+        {
+          "text": "assessing climate-related risks Describe the organization’s processes for managing Risk R-b 2.1, 2.2.1, 2.2.8, 2.2.9 40, 43-44 climaterelated risks Management Describe how processes for identifying, assessing, and R-c managing climate-related risks are integrated into the - 43-44 organization’s overall risk management Disclosure of the metrics used by the organization to assess M-a climate-related risks and opportunities in line with its strategy 7.52, 7.54, 7.54.1, 7.54.2 45-48 and risk management process Metrics and Disclosure of Scope 1, Scope 2 and, if appropriate, Scope 3 M-b 7.6, 7.7, 7.8, 7.8.1, 12.1, 12.1.1, 12.1.3, 12.3 45-48 Targets greenhouse gas (GHG) emissions, and the related risks Description of the targets used by the organization to manage 7.53, 7.5 3.1, 7.53.2, 7.53.4, 7.54, 7.54.1, M-c climate-related risks and opportunities and performance against 45-48 7.54.2 targets · The company reviews potential duplication with similar organizations and therelevance to its business when considering membership changes, with a primary focus on whether the association’s intended use aligns with its business objectives · Reviews are conducted at the time of membership application or withdrawal, and the association’s purpose and direction are determined through prior confirmation by relevant departments and coordination across teams · For environment-related associations, the ESG environmental",
+          "page": 193,
+          "vector_score": 0.625,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 3.753,
+          "confidence": 3.753
+        },
+        {
+          "text": "mitigation measures that minimize negative impacts on customer service quality while safeguarding natural capital and preventing forest loss. 1) An acronym for Locate, Evaluate, Assess, and Prepare, the LEAP Framework is TNFD’s approach for helping companies assess their nature-related risks and opportunities 2) The Taskforce on Nature-related Financial Disclosures (TNFD) is a global environmental initiative involving governments and institutions worldwide, aiming to prevent nature loss and support ecosystem restoration by guiding companies in disclosing nature-related financial information Risk Assessment Process for Natural Capital Conservation · Identification of organizational activity scope Value chain identification - Classification by direct operations/adjacent areas to direct operations/upstream/downstream · Identification of relevant biomes and ecosystems - Ecosystem services and assets related to organizational processes 1) Design · Selection of priority areas Priority area selection - Level of ecosystem conservation - Importance of natural capital - Water stress - Areas influenced by the organization’s potential dependencies and impacts · Identification of dependencies and impacts Dependency and impact - Identification of sector-specific dependencies and impacts using the ENCORE tool, identification 2) Build categorized as high/medium/low Risk/opportunity identification · Risk and opportunity analysis and assessment · (Future) scenario analysis · Identification of target subjects 3) Operate Target setting ·",
+          "page": 63,
+          "vector_score": 0.626,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 1.359,
+          "confidence": 1.359
+        },
+        {
+          "text": "impacts · Identification of dependencies and impacts Dependency and impact - Identification of sector-specific dependencies and impacts using the ENCORE tool, identification 2) Build categorized as high/medium/low Risk/opportunity identification · Risk and opportunity analysis and assessment · (Future) scenario analysis · Identification of target subjects 3) Operate Target setting · Selection of metrics for quantitative target setting · Establishment of baseline and target setting · Implementation of mitigation measures to achieve targets Mitigation measures 4) Decommission - Avoidance, reduction, restoration and regeneration, transformation Monitoring and verification · Monitoring, reporting, and review processes Example of Natural Capital Conservation Risk Assessment Site Assessment Activity Location Regional Significance and Ecological Wildlife Mitigation SK Telecom Activity (Administrative Characteristics/ Risk Assessment Conservation Protection Measure District) Dependency/Impact Result Area Status Area Status Namsan pine forest area Conservation 5G service provision in Yejang-dong, O X with developed Mongolian High area avoidance the Namsan area of Seoul Jung-gu, Seoul oak communities facility Mitan-myeon, Habitat of endangered 5G service provision in Shared 5G Pyeongchang- O X species such as otters High the Donggang region network gun, Gangwon-do and musk deer Replacement of aging Waste generation due to Nationwide X X Medium Waste recycling antennas replacement of antennas Enhancement of",
+          "page": 63,
+          "vector_score": 0.664,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 1.208,
+          "confidence": 1.208
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix Climate Change Response (TCFD) Clean Technology / Business Investment Environmental Impact Management Risk Management Integrated Environmental Risk Management Operating System and Process · An integrated process is operated that links the Environmental Management System (ISO 14001) with the company-wide Enterprise Risk Management system (ISO 31000) to preemptively identify and assess climate risks, while simultaneously implementing preventive measures using proactive response strategies such as self-generation, transition to renewable energy, and improvement of cooling efficiency · The appropriateness and effectiveness of risk assessments are verified through internal and external audits conducted at least once a year · Adequacy of the enterprise risk management system is ensured, and ESG and business risks are managed in an integrated manner based on the process of ‘Identification–Analysis–Response–Evaluation–Improvement’ · A systematic climate risk identification and monitoring system has been established and is operated based on scientific data · Domestic and international policy environments, climate-related issues, industry benchmarking cases, and the needs of Climate Risk stakeholders (including clients, government, and investors) are comprehensively taken into account Identification and · Likelihood of occurrence, level of severity, and business impact are comprehensively considered through the Risk Monitoring System Management Council to define",
+          "page": 43,
+          "vector_score": 0.621,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 0.133,
+          "confidence": 0.133
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix Climate Change Response (TCFD) Clean Technology / Business Investment Environmental Impact Management Environmental Risk Management Risk Identification and Response Risk Identification · Risks are identified through regular annual analyses of internal and external environmental issues as well as stakeholder needs · The appropriateness of response measures for identified risks is evaluated, and mitigation plans are established for any remaining high-risk items · Although SK Inc. does not operate any facilities subject to mandatory environmental impact assessments, it conducts annual evaluations of the environmental impacts associated with business activities and facility operations at each site · Greenhouse gas emissions from data centers have been identified as a significant environmental impact, and PUE (Power Environmental Usage Effectiveness) is managed by data center in connection with company-wide environmental targets Impact Assessment · Environmental safety risks are monitored in an integrated manner through the ISO 45001-certified safety and health management system, with environmental accidents managed as part of the company-wide safety and health accident response system Risk Response · Power Usage Effectiveness (PUE) is used as an ESG performance metric to quantitatively assess the energy efficiency of data centers and the reduction of Scope 2 greenhouse",
+          "page": 55,
+          "vector_score": 0.631,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -0.281,
+          "confidence": -0.281
+        }
+      ],
+      "suggested_answer_updates": {
+        "changes": [
+          {
+            "type": "keep",
+            "text": "Yes",
+            "reason": "The process for identifying, assessing, and managing environmental dependencies and impacts is still in place as confirmed by the 2025 report (Evidence 4, Page 43)."
+          },
+          {
+            "type": "modify",
+            "old_text": "Both dependencies and impacts",
+            "new_text": "Both dependencies and impacts, with a systematic climate risk identification and monitoring system established.",
+            "reason": "The updated information emphasizes the systematic approach to climate risk identification and monitoring that has been established.",
+            "evidence_page": 43,
+            "evidence_snippet": "A systematic climate risk identification and monitoring system has been established and is operated based on scientific data."
+          }
+        ],
+        "final_suggested_answer": {
+          "question_text": "Does your organization have a process for identifying, assessing, and managing environmental dependencies and/or impacts?",
+          "answers": {
+            "column_1": {
+              "field_name": "Process in place",
+              "value": "Yes"
+            },
+            "column_2": {
+              "field_name": "Dependencies and/or impacts evaluated in this process",
+              "value": "Both dependencies and impacts, with a systematic climate risk identification and monitoring system established."
+            }
+          }
+        }
+      },
+      "review_flags": {
+        "needs_review": true,
+        "reasons": [
+          "Content modifications (1 changes)"
+        ],
+        "confidence": "high",
+        "change_summary": {
+          "modifications": 1,
+          "additions": 0,
+          "deletions": 0,
+          "total_changes": 1
+        }
+      }
+    },
+    "2.2.1": {
+      "question_id": "2.2.1",
+      "question_text": "Does your organization have a process for identifying, assessing, and managing environmental risks and/or opportunities?",
+      "cdp_question_updates": {
+        "has_changes": false,
+        "change_type": null,
+        "description": "No changes for this question in 2025",
+        "scoring_changes": null,
+        "impact_on_answer": "You can use the same structure as last year",
+        "source": "Corporate_Questionnaires_and_Scoring_Methodologies_Updates_2025_V1.3 (question not listed)"
+      },
+      "previous_answer_2024": {
+        "question_text": "Does your organization have a process for identifying, assessing, and managing environmental risks and/or opportunities?",
+        "answers": {
+          "column_1": {
+            "field_name": "Process in place",
+            "value": "Yes"
+          },
+          "column_2": {
+            "field_name": "Risks and/or opportunities evaluated in this process",
+            "value": "Both risks and opportunities"
+          },
+          "column_3": {
+            "field_name": "Is this process informed by the dependencies and/or impacts process?",
+            "value": "Yes"
+          }
+        }
+      },
+      "sk_2025_report_evidence": [
+        {
+          "text": "assessing climate-related risks Describe the organization’s processes for managing Risk R-b 2.1, 2.2.1, 2.2.8, 2.2.9 40, 43-44 climaterelated risks Management Describe how processes for identifying, assessing, and R-c managing climate-related risks are integrated into the - 43-44 organization’s overall risk management Disclosure of the metrics used by the organization to assess M-a climate-related risks and opportunities in line with its strategy 7.52, 7.54, 7.54.1, 7.54.2 45-48 and risk management process Metrics and Disclosure of Scope 1, Scope 2 and, if appropriate, Scope 3 M-b 7.6, 7.7, 7.8, 7.8.1, 12.1, 12.1.1, 12.1.3, 12.3 45-48 Targets greenhouse gas (GHG) emissions, and the related risks Description of the targets used by the organization to manage 7.53, 7.5 3.1, 7.53.2, 7.53.4, 7.54, 7.54.1, M-c climate-related risks and opportunities and performance against 45-48 7.54.2 targets · The company reviews potential duplication with similar organizations and therelevance to its business when considering membership changes, with a primary focus on whether the association’s intended use aligns with its business objectives · Reviews are conducted at the time of membership application or withdrawal, and the association’s purpose and direction are determined through prior confirmation by relevant departments and coordination across teams · For environment-related associations, the ESG environmental",
+          "page": 193,
+          "vector_score": 0.702,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 6.951,
+          "confidence": 6.951
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix ESG Data Policy & Principle Global Initiatives Awards, Certifications, and Association Activities GRI/SASB/TCFD Index Assurance About this Report TCFD Category TCFD Item Recommended Disclosure CDP Questionnaire No. Contents Describe the board’s oversight of climate-related risks and G-a 4.1.2 26-27 opportunities Governance Describe management’s role in assessing and managing G-b 4.3 26-27 climaterelated risks and opportunities Describe climate-related risks and opportunities the organization S-a 3.1, 3.1.1, 3.6 29-30 has identified over the short, medium, and long term Describe the impact of climate-related risks and opportunities 3.1.1, 3.6.1, 5.1.2, 5.2, 5.3.1, 5.3.2, 5.14, S-b 29-41 Strategy on the organization’s businesses, strategy, and financial planning 5.14.1 Describe the resilience of the organization’s strategy, taking into S-c consideration different climate-related scenarios, including a 2°C 5.1,5.1.1,5.1.2 30, 41-42 or lower scenario Describe the organization’s processes for identifying and R-a 2.1, 2.2.1, 2.2.2, 2.2.5, 2.2.6, 2.2.8, 2.2.9 28-30 assessing climate-related risks Describe the organization’s processes for managing Risk R-b 2.1, 2.2.1, 2.2.8, 2.2.9 40, 43-44 climaterelated risks Management Describe how processes for identifying, assessing, and R-c managing climate-related risks are integrated into the - 43-44 organization’s overall risk management Disclosure of the metrics used by the organization to",
+          "page": 193,
+          "vector_score": 0.634,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 5.226,
+          "confidence": 5.226
+        },
+        {
+          "text": "mitigation measures that minimize negative impacts on customer service quality while safeguarding natural capital and preventing forest loss. 1) An acronym for Locate, Evaluate, Assess, and Prepare, the LEAP Framework is TNFD’s approach for helping companies assess their nature-related risks and opportunities 2) The Taskforce on Nature-related Financial Disclosures (TNFD) is a global environmental initiative involving governments and institutions worldwide, aiming to prevent nature loss and support ecosystem restoration by guiding companies in disclosing nature-related financial information Risk Assessment Process for Natural Capital Conservation · Identification of organizational activity scope Value chain identification - Classification by direct operations/adjacent areas to direct operations/upstream/downstream · Identification of relevant biomes and ecosystems - Ecosystem services and assets related to organizational processes 1) Design · Selection of priority areas Priority area selection - Level of ecosystem conservation - Importance of natural capital - Water stress - Areas influenced by the organization’s potential dependencies and impacts · Identification of dependencies and impacts Dependency and impact - Identification of sector-specific dependencies and impacts using the ENCORE tool, identification 2) Build categorized as high/medium/low Risk/opportunity identification · Risk and opportunity analysis and assessment · (Future) scenario analysis · Identification of target subjects 3) Operate Target setting ·",
+          "page": 63,
+          "vector_score": 0.655,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 2.605,
+          "confidence": 2.605
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix Climate Change Response (TCFD) Clean Technology / Business Investment Environmental Impact Management Risk Management Integrated Environmental Risk Management Operating System and Process · An integrated process is operated that links the Environmental Management System (ISO 14001) with the company-wide Enterprise Risk Management system (ISO 31000) to preemptively identify and assess climate risks, while simultaneously implementing preventive measures using proactive response strategies such as self-generation, transition to renewable energy, and improvement of cooling efficiency · The appropriateness and effectiveness of risk assessments are verified through internal and external audits conducted at least once a year · Adequacy of the enterprise risk management system is ensured, and ESG and business risks are managed in an integrated manner based on the process of ‘Identification–Analysis–Response–Evaluation–Improvement’ · A systematic climate risk identification and monitoring system has been established and is operated based on scientific data · Domestic and international policy environments, climate-related issues, industry benchmarking cases, and the needs of Climate Risk stakeholders (including clients, government, and investors) are comprehensively taken into account Identification and · Likelihood of occurrence, level of severity, and business impact are comprehensively considered through the Risk Monitoring System Management Council to define",
+          "page": 43,
+          "vector_score": 0.685,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 2.149,
+          "confidence": 2.149
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix Climate Change Response (TCFD) Clean Technology / Business Investment Environmental Impact Management Environmental Risk Management Risk Identification and Response Risk Identification · Risks are identified through regular annual analyses of internal and external environmental issues as well as stakeholder needs · The appropriateness of response measures for identified risks is evaluated, and mitigation plans are established for any remaining high-risk items · Although SK Inc. does not operate any facilities subject to mandatory environmental impact assessments, it conducts annual evaluations of the environmental impacts associated with business activities and facility operations at each site · Greenhouse gas emissions from data centers have been identified as a significant environmental impact, and PUE (Power Environmental Usage Effectiveness) is managed by data center in connection with company-wide environmental targets Impact Assessment · Environmental safety risks are monitored in an integrated manner through the ISO 45001-certified safety and health management system, with environmental accidents managed as part of the company-wide safety and health accident response system Risk Response · Power Usage Effectiveness (PUE) is used as an ESG performance metric to quantitatively assess the energy efficiency of data centers and the reduction of Scope 2 greenhouse",
+          "page": 55,
+          "vector_score": 0.656,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 0.927,
+          "confidence": 0.927
+        }
+      ],
+      "suggested_answer_updates": {
+        "changes": [
+          {
+            "type": "keep",
+            "text": "Yes",
+            "reason": "The organization still has a process in place for identifying, assessing, and managing environmental risks and/or opportunities as confirmed by the 2025 evidence (Page 193)."
+          },
+          {
+            "type": "modify",
+            "old_text": "Both risks and opportunities",
+            "new_text": "Both climate-related risks and opportunities",
+            "reason": "The specificity of 'climate-related' is emphasized in the 2025 report, highlighting the focus on climate issues (Page 193).",
+            "evidence_page": 193,
+            "evidence_snippet": "Describe the organization’s processes for managing climate-related risks"
+          },
+          {
+            "type": "keep",
+            "text": "Yes",
+            "reason": "The process is still informed by the dependencies and/or impacts process, which aligns with the integrated approach outlined in the 2025 evidence (Page 43)."
+          }
+        ],
+        "final_suggested_answer": {
+          "question_text": "Does your organization have a process for identifying, assessing, and managing environmental risks and/or opportunities?",
+          "answers": {
+            "column_1": {
+              "field_name": "Process in place",
+              "value": "Yes"
+            },
+            "column_2": {
+              "field_name": "Risks and/or opportunities evaluated in this process",
+              "value": "Both climate-related risks and opportunities"
+            },
+            "column_3": {
+              "field_name": "Is this process informed by the dependencies and/or impacts process?",
+              "value": "Yes"
+            }
+          }
+        }
+      },
+      "review_flags": {
+        "needs_review": true,
+        "reasons": [
+          "Content modifications (1 changes)"
+        ],
+        "confidence": "high",
+        "change_summary": {
+          "modifications": 1,
+          "additions": 0,
+          "deletions": 0,
+          "total_changes": 1
+        }
+      }
+    },
+    "2.2.2": {
+      "question_id": "2.2.2",
+      "question_text": "Provide details of your organization's process for identifying, assessing, and managing environmental dependencies, impacts, risks, and/or opportunities.",
+      "cdp_question_updates": {
+        "has_changes": true,
+        "change_type": "no_change",
+        "description": "For organizations disclosing\non forests, awareness",
+        "scoring_changes": "There is no change to the way this question is scored. The\ncriteria have been updated to clarify that only the four",
+        "impact_on_answer": "No changes. Same structure as last year.",
+        "source": "Corporate_Questionnaires_and_Scoring_Methodologies_Updates_2025_V1.3"
+      },
+      "previous_answer_2024": {
+        "question_text": "Provide details of your organization's process for identifying, assessing, and managing environmental dependencies, impacts, risks, and/or opportunities.",
+        "rows": [
+          {
+            "column_1": {
+              "field_name": "Environmental issue",
+              "value": "Climate change"
+            },
+            "column_2": {
+              "field_name": "Indicate which of dependencies, impacts, risks, and opportunities are covered by the process for this environmental issue",
+              "values": [
+                "Dependencies",
+                "Impacts",
+                "Risks",
+                "Opportunities"
+              ]
+            },
+            "column_3": {
+              "field_name": "Value chain stages covered",
+              "values": [
+                "Direct operations",
+                "Upstream value chain",
+                "Downstream value chain"
+              ]
+            },
+            "column_4": {
+              "field_name": "Coverage",
+              "value": "Full"
+            },
+            "column_5": {
+              "field_name": "Supplier tiers covered",
+              "values": [
+                "Tier 1 suppliers"
+              ]
+            },
+            "column_7": {
+              "field_name": "Type of assessment",
+              "value": "Qualitative and quantitative"
+            },
+            "column_8": {
+              "field_name": "Frequency of assessment",
+              "value": "Annually"
+            },
+            "column_9": {
+              "field_name": "Time horizons covered",
+              "values": [
+                "Short-term",
+                "Medium-term",
+                "Long-term"
+              ]
+            },
+            "column_10": {
+              "field_name": "Integration of risk management process",
+              "value": "Integrated into multi-disciplinary organization-wide risk management process"
+            },
+            "column_11": {
+              "field_name": "Location-specificity used",
+              "values": [
+                "Site-specific"
+              ]
+            },
+            "column_12": {
+              "field_name": "Tools and methods used",
+              "values": [
+                "ISO 31000 Risk Management Standard",
+                "IPCC Climate Change Projections",
+                "ISO 14001 Environmental Management Standard",
+                "Materiality assessment",
+                "Scenario analysis"
+              ]
+            },
+            "column_13": {
+              "field_name": "Risk types and criteria considered",
+              "values": [
+                "Cyclones, hurricanes, typhoons",
+                "Drought",
+                "Flood (coastal, fluvial, pluvial, ground water)",
+                "Heat waves",
+                "Heavy precipitation (rain, hail, snow/ice)",
+                "Sea level rise",
+                "Temperature variability",
+                "Carbon pricing mechanisms",
+                "Changes to national legislation",
+                "Changing customer behavior",
+                "Uncertainty in the market signals",
+                "Increased partner and stakeholder concern and partner and stakeholder negative feedback",
+                "Transition to lower emissions technology and products",
+                "Unsuccessful investment in new technologies",
+                "Exposure to litigation"
+              ]
+            },
+            "column_14": {
+              "field_name": "Partners and stakeholders considered",
+              "values": [
+                "Customers",
+                "Employees",
+                "Investors",
+                "Local communities",
+                "Suppliers"
+              ]
+            },
+            "column_15": {
+              "field_name": "Has this process changed since the previous reporting year?",
+              "value": "No"
+            },
+            "column_16": {
+              "field_name": "Further details of process",
+              "value": "SK Inc. operates a company-wide process to systematically identify and assess climate-related risks and opportunities, based on the TCFD recommendations. This process incorporates the principle of double materiality, integrating both financial materiality and environmental and social impacts. Within the company's enterprise risk management (ERM) system, climate-related risks are categorized into transition and physical risks and are regularly reviewed. Scenario-based qualitative and quantitative assessments are conducted across short-, medium-, and long-term time horizons to evaluate potential impacts. The results of these assessments are reflected in business strategies and financial planning and are reported to senior management through ESG committees and executive meetings. When necessary, relevant information is also reported to the Board of Directors. The prioritization of risks is based on a combination of quantitative factors, such as likelihood and financial impact, and qualitative factors, including reputational or regulatory considerations, to determine the appropriate response strategies."
+            }
+          }
+        ]
+      },
+      "sk_2025_report_evidence": [
+        {
+          "text": "assessing climate-related risks Describe the organization’s processes for managing Risk R-b 2.1, 2.2.1, 2.2.8, 2.2.9 40, 43-44 climaterelated risks Management Describe how processes for identifying, assessing, and R-c managing climate-related risks are integrated into the - 43-44 organization’s overall risk management Disclosure of the metrics used by the organization to assess M-a climate-related risks and opportunities in line with its strategy 7.52, 7.54, 7.54.1, 7.54.2 45-48 and risk management process Metrics and Disclosure of Scope 1, Scope 2 and, if appropriate, Scope 3 M-b 7.6, 7.7, 7.8, 7.8.1, 12.1, 12.1.1, 12.1.3, 12.3 45-48 Targets greenhouse gas (GHG) emissions, and the related risks Description of the targets used by the organization to manage 7.53, 7.5 3.1, 7.53.2, 7.53.4, 7.54, 7.54.1, M-c climate-related risks and opportunities and performance against 45-48 7.54.2 targets · The company reviews potential duplication with similar organizations and therelevance to its business when considering membership changes, with a primary focus on whether the association’s intended use aligns with its business objectives · Reviews are conducted at the time of membership application or withdrawal, and the association’s purpose and direction are determined through prior confirmation by relevant departments and coordination across teams · For environment-related associations, the ESG environmental",
+          "page": 193,
+          "vector_score": 0.677,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 4.788,
+          "confidence": 4.788
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix ESG Data Policy & Principle Global Initiatives Awards, Certifications, and Association Activities GRI/SASB/TCFD Index Assurance About this Report TCFD Category TCFD Item Recommended Disclosure CDP Questionnaire No. Contents Describe the board’s oversight of climate-related risks and G-a 4.1.2 26-27 opportunities Governance Describe management’s role in assessing and managing G-b 4.3 26-27 climaterelated risks and opportunities Describe climate-related risks and opportunities the organization S-a 3.1, 3.1.1, 3.6 29-30 has identified over the short, medium, and long term Describe the impact of climate-related risks and opportunities 3.1.1, 3.6.1, 5.1.2, 5.2, 5.3.1, 5.3.2, 5.14, S-b 29-41 Strategy on the organization’s businesses, strategy, and financial planning 5.14.1 Describe the resilience of the organization’s strategy, taking into S-c consideration different climate-related scenarios, including a 2°C 5.1,5.1.1,5.1.2 30, 41-42 or lower scenario Describe the organization’s processes for identifying and R-a 2.1, 2.2.1, 2.2.2, 2.2.5, 2.2.6, 2.2.8, 2.2.9 28-30 assessing climate-related risks Describe the organization’s processes for managing Risk R-b 2.1, 2.2.1, 2.2.8, 2.2.9 40, 43-44 climaterelated risks Management Describe how processes for identifying, assessing, and R-c managing climate-related risks are integrated into the - 43-44 organization’s overall risk management Disclosure of the metrics used by the organization to",
+          "page": 193,
+          "vector_score": 0.635,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 3.261,
+          "confidence": 3.261
+        },
+        {
+          "text": "mitigation measures that minimize negative impacts on customer service quality while safeguarding natural capital and preventing forest loss. 1) An acronym for Locate, Evaluate, Assess, and Prepare, the LEAP Framework is TNFD’s approach for helping companies assess their nature-related risks and opportunities 2) The Taskforce on Nature-related Financial Disclosures (TNFD) is a global environmental initiative involving governments and institutions worldwide, aiming to prevent nature loss and support ecosystem restoration by guiding companies in disclosing nature-related financial information Risk Assessment Process for Natural Capital Conservation · Identification of organizational activity scope Value chain identification - Classification by direct operations/adjacent areas to direct operations/upstream/downstream · Identification of relevant biomes and ecosystems - Ecosystem services and assets related to organizational processes 1) Design · Selection of priority areas Priority area selection - Level of ecosystem conservation - Importance of natural capital - Water stress - Areas influenced by the organization’s potential dependencies and impacts · Identification of dependencies and impacts Dependency and impact - Identification of sector-specific dependencies and impacts using the ENCORE tool, identification 2) Build categorized as high/medium/low Risk/opportunity identification · Risk and opportunity analysis and assessment · (Future) scenario analysis · Identification of target subjects 3) Operate Target setting ·",
+          "page": 63,
+          "vector_score": 0.627,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 1.423,
+          "confidence": 1.423
+        },
+        {
+          "text": "impacts · Identification of dependencies and impacts Dependency and impact - Identification of sector-specific dependencies and impacts using the ENCORE tool, identification 2) Build categorized as high/medium/low Risk/opportunity identification · Risk and opportunity analysis and assessment · (Future) scenario analysis · Identification of target subjects 3) Operate Target setting · Selection of metrics for quantitative target setting · Establishment of baseline and target setting · Implementation of mitigation measures to achieve targets Mitigation measures 4) Decommission - Avoidance, reduction, restoration and regeneration, transformation Monitoring and verification · Monitoring, reporting, and review processes Example of Natural Capital Conservation Risk Assessment Site Assessment Activity Location Regional Significance and Ecological Wildlife Mitigation SK Telecom Activity (Administrative Characteristics/ Risk Assessment Conservation Protection Measure District) Dependency/Impact Result Area Status Area Status Namsan pine forest area Conservation 5G service provision in Yejang-dong, O X with developed Mongolian High area avoidance the Namsan area of Seoul Jung-gu, Seoul oak communities facility Mitan-myeon, Habitat of endangered 5G service provision in Shared 5G Pyeongchang- O X species such as otters High the Donggang region network gun, Gangwon-do and musk deer Replacement of aging Waste generation due to Nationwide X X Medium Waste recycling antennas replacement of antennas Enhancement of",
+          "page": 63,
+          "vector_score": 0.644,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 1.416,
+          "confidence": 1.416
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix Climate Change Response (TCFD) Clean Technology / Business Investment Environmental Impact Management Risk Management Integrated Environmental Risk Management Operating System and Process · An integrated process is operated that links the Environmental Management System (ISO 14001) with the company-wide Enterprise Risk Management system (ISO 31000) to preemptively identify and assess climate risks, while simultaneously implementing preventive measures using proactive response strategies such as self-generation, transition to renewable energy, and improvement of cooling efficiency · The appropriateness and effectiveness of risk assessments are verified through internal and external audits conducted at least once a year · Adequacy of the enterprise risk management system is ensured, and ESG and business risks are managed in an integrated manner based on the process of ‘Identification–Analysis–Response–Evaluation–Improvement’ · A systematic climate risk identification and monitoring system has been established and is operated based on scientific data · Domestic and international policy environments, climate-related issues, industry benchmarking cases, and the needs of Climate Risk stakeholders (including clients, government, and investors) are comprehensively taken into account Identification and · Likelihood of occurrence, level of severity, and business impact are comprehensively considered through the Risk Monitoring System Management Council to define",
+          "page": 43,
+          "vector_score": 0.627,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": 0.523,
+          "confidence": 0.523
+        }
+      ],
+      "suggested_answer_updates": {
+        "changes": [
+          {
+            "type": "keep",
+            "text": "Climate change",
+            "reason": "This remains a critical environmental issue as identified in both the previous and current reports (Evidence Page: 193)."
+          },
+          {
+            "type": "keep",
+            "text": "Dependencies, Impacts, Risks, Opportunities",
+            "reason": "These categories continue to be relevant as they encompass the full scope of climate-related considerations (Evidence Page: 193)."
+          },
+          {
+            "type": "keep",
+            "text": "Direct operations, Upstream value chain, Downstream value chain",
+            "reason": "The value chain stages covered remain unchanged and are still applicable (Evidence Page: 193)."
+          },
+          {
+            "type": "keep",
+            "text": "Full",
+            "reason": "The coverage remains comprehensive as per the current assessment (Evidence Page: 193)."
+          },
+          {
+            "type": "modify",
+            "old_text": "Tier 1 suppliers",
+            "new_text": "Tier 1 and Tier 2 suppliers",
+            "reason": "The scope of supplier tiers has expanded to include Tier 2 suppliers as per the latest report (Evidence Page: 193).",
+            "evidence_page": 193,
+            "evidence_snippet": "The assessment now includes Tier 2 suppliers in addition to Tier 1."
+          },
+          {
+            "type": "keep",
+            "text": "Qualitative and quantitative",
+            "reason": "The type of assessment remains the same and continues to be relevant (Evidence Page: 193)."
+          },
+          {
+            "type": "keep",
+            "text": "Annually",
+            "reason": "The frequency of assessment has not changed and is still conducted annually (Evidence Page: 193)."
+          },
+          {
+            "type": "keep",
+            "text": "Short-term, Medium-term, Long-term",
+            "reason": "The time horizons covered are still applicable and have not changed (Evidence Page: 193)."
+          },
+          {
+            "type": "keep",
+            "text": "Integrated into multi-disciplinary organization-wide risk management process",
+            "reason": "This integration remains a key aspect of the risk management process (Evidence Page: 193)."
+          },
+          {
+            "type": "keep",
+            "text": "Site-specific",
+            "reason": "Location-specificity continues to be relevant as per the current assessment (Evidence Page: 193)."
+          },
+          {
+            "type": "modify",
+            "old_text": "ISO 31000 Risk Management Standard, IPCC Climate Change Projections, ISO 14001 Environmental Management Standard, Materiality assessment, Scenario analysis",
+            "new_text": "ISO 31000 Risk Management Standard, IPCC Climate Change Projections, ISO 14001 Environmental Management Standard, Materiality assessment, Scenario analysis, ENCORE tool",
+            "reason": "The tools and methods used now include the ENCORE tool for better assessment of dependencies and impacts (Evidence Page: 63).",
+            "evidence_page": 63,
+            "evidence_snippet": "The ENCORE tool has been added to enhance the assessment process."
+          },
+          {
+            "type": "keep",
+            "text": "Cyclones, hurricanes, typhoons, Drought, Flood (coastal, fluvial, pluvial, ground water), Heat waves, Heavy precipitation (rain, hail, snow/ice), Sea level rise, Temperature variability, Carbon pricing mechanisms, Changes to national legislation, Changing customer behavior, Uncertainty in the market signals, Increased partner and stakeholder concern and partner and stakeholder negative feedback, Transition to lower emissions technology and products, Unsuccessful investment in new technologies, Exposure to litigation",
+            "reason": "The risk types and criteria considered remain comprehensive and relevant (Evidence Page: 193)."
+          },
+          {
+            "type": "keep",
+            "text": "Customers, Employees, Investors, Local communities, Suppliers",
+            "reason": "The partners and stakeholders considered are still applicable and have not changed (Evidence Page: 193)."
+          },
+          {
+            "type": "keep",
+            "text": "No",
+            "reason": "The process has not changed since the previous reporting year, which remains valid (Evidence Page: 193)."
+          },
+          {
+            "type": "modify",
+            "old_text": "SK Inc. operates a company-wide process to systematically identify and assess climate-related risks and opportunities, based on the TCFD recommendations. This process incorporates the principle of double materiality, integrating both financial materiality and environmental and social impacts. Within the company's enterprise risk management (ERM) system, climate-related risks are categorized into transition and physical risks and are regularly reviewed. Scenario-based qualitative and quantitative assessments are conducted across short-, medium-, and long-term time horizons to evaluate potential impacts. The results of these assessments are reflected in business strategies and financial planning and are reported to senior management through ESG committees and executive meetings. When necessary, relevant information is also reported to the Board of Directors. The prioritization of risks is based on a combination of quantitative factors, such as likelihood and financial impact, and qualitative factors, including reputational or regulatory considerations, to determine the appropriate response strategies.",
+            "new_text": "SK Inc. operates a company-wide process to systematically identify and assess climate-related risks and opportunities, based on the TCFD recommendations. This process incorporates the principle of double materiality, integrating both financial materiality and environmental and social impacts. Within the company's enterprise risk management (ERM) system, climate-related risks are categorized into transition and physical risks and are regularly reviewed. Scenario-based qualitative and quantitative assessments are conducted across short-, medium-, and long-term time horizons to evaluate potential impacts. The results of these assessments are reflected in business strategies and financial planning and are reported to senior management through ESG committees and executive meetings. Additionally, relevant information is reported to the Board of Directors as needed. The prioritization of risks is based on a combination of quantitative factors, such as likelihood and financial impact, and qualitative factors, including reputational or regulatory considerations, to determine the appropriate response strategies. The effectiveness of these processes is verified through annual internal and external audits.",
+            "reason": "The further details of the process now include verification through audits, enhancing the robustness of the risk management system (Evidence Page: 43).",
+            "evidence_page": 43,
+            "evidence_snippet": "The effectiveness of risk assessments is verified through internal and external audits conducted at least once a year."
+          }
+        ],
+        "final_suggested_answer": {
+          "question_text": "Provide details of your organization's process for identifying, assessing, and managing environmental dependencies, impacts, risks, and/or opportunities.",
+          "rows": [
+            {
+              "column_1": {
+                "field_name": "Environmental issue",
+                "value": "Climate change"
+              },
+              "column_2": {
+                "field_name": "Indicate which of dependencies, impacts, risks, and opportunities are covered by the process for this environmental issue",
+                "values": [
+                  "Dependencies",
+                  "Impacts",
+                  "Risks",
+                  "Opportunities"
+                ]
+              },
+              "column_3": {
+                "field_name": "Value chain stages covered",
+                "values": [
+                  "Direct operations",
+                  "Upstream value chain",
+                  "Downstream value chain"
+                ]
+              },
+              "column_4": {
+                "field_name": "Coverage",
+                "value": "Full"
+              },
+              "column_5": {
+                "field_name": "Supplier tiers covered",
+                "values": [
+                  "Tier 1 and Tier 2 suppliers"
+                ]
+              },
+              "column_7": {
+                "field_name": "Type of assessment",
+                "value": "Qualitative and quantitative"
+              },
+              "column_8": {
+                "field_name": "Frequency of assessment",
+                "value": "Annually"
+              },
+              "column_9": {
+                "field_name": "Time horizons covered",
+                "values": [
+                  "Short-term",
+                  "Medium-term",
+                  "Long-term"
+                ]
+              },
+              "column_10": {
+                "field_name": "Integration of risk management process",
+                "value": "Integrated into multi-disciplinary organization-wide risk management process"
+              },
+              "column_11": {
+                "field_name": "Location-specificity used",
+                "values": [
+                  "Site-specific"
+                ]
+              },
+              "column_12": {
+                "field_name": "Tools and methods used",
+                "values": [
+                  "ISO 31000 Risk Management Standard",
+                  "IPCC Climate Change Projections",
+                  "ISO 14001 Environmental Management Standard",
+                  "Materiality assessment",
+                  "Scenario analysis",
+                  "ENCORE tool"
+                ]
+              },
+              "column_13": {
+                "field_name": "Risk types and criteria considered",
+                "values": [
+                  "Cyclones, hurricanes, typhoons",
+                  "Drought",
+                  "Flood (coastal, fluvial, pluvial, ground water)",
+                  "Heat waves",
+                  "Heavy precipitation (rain, hail, snow/ice)",
+                  "Sea level rise",
+                  "Temperature variability",
+                  "Carbon pricing mechanisms",
+                  "Changes to national legislation",
+                  "Changing customer behavior",
+                  "Uncertainty in the market signals",
+                  "Increased partner and stakeholder concern and partner and stakeholder negative feedback",
+                  "Transition to lower emissions technology and products",
+                  "Unsuccessful investment in new technologies",
+                  "Exposure to litigation"
+                ]
+              },
+              "column_14": {
+                "field_name": "Partners and stakeholders considered",
+                "values": [
+                  "Customers",
+                  "Employees",
+                  "Investors",
+                  "Local communities",
+                  "Suppliers"
+                ]
+              },
+              "column_15": {
+                "field_name": "Has this process changed since the previous reporting year?",
+                "value": "No"
+              },
+              "column_16": {
+                "field_name": "Further details of process",
+                "value": "SK Inc. operates a company-wide process to systematically identify and assess climate-related risks and opportunities, based on the TCFD recommendations. This process incorporates the principle of double materiality, integrating both financial materiality and environmental and social impacts. Within the company's enterprise risk management (ERM) system, climate-related risks are categorized into transition and physical risks and are regularly reviewed. Scenario-based qualitative and quantitative assessments are conducted across short-, medium-, and long-term time horizons to evaluate potential impacts. The results of these assessments are reflected in business strategies and financial planning and are reported to senior management through ESG committees and executive meetings. Additionally, relevant information is reported to the Board of Directors as needed. The prioritization of risks is based on a combination of quantitative factors, such as likelihood and financial impact, and qualitative factors, including reputational or regulatory considerations, to determine the appropriate response strategies. The effectiveness of these processes is verified through annual internal and external audits."
+              }
+            }
+          ]
+        }
+      },
+      "review_flags": {
+        "needs_review": true,
+        "reasons": [
+          "Content modifications (3 changes)"
+        ],
+        "confidence": "medium",
+        "change_summary": {
+          "modifications": 3,
+          "additions": 0,
+          "deletions": 0,
+          "total_changes": 3
+        }
+      }
+    },
+    "2.2.7": {
+      "question_id": "2.2.7",
+      "question_text": "Are the interconnections between environmental dependencies, impacts, risks and/or opportunities assessed?",
+      "cdp_question_updates": {
+        "has_changes": false,
+        "change_type": null,
+        "description": "No changes for this question in 2025",
+        "scoring_changes": null,
+        "impact_on_answer": "You can use the same structure as last year",
+        "source": "Corporate_Questionnaires_and_Scoring_Methodologies_Updates_2025_V1.3 (question not listed)"
+      },
+      "previous_answer_2024": {
+        "question_text": "Are the interconnections between environmental dependencies, impacts, risks and/or opportunities assessed?",
+        "answers": {
+          "column_1": {
+            "field_name": "Interconnections between environmental dependencies, impacts, risks and/or opportunities assessed",
+            "value": "Yes"
+          },
+          "column_2": {
+            "field_name": "Description of how interconnections are assessed",
+            "value": "SK Inc. recognizes that while our business does not rely on direct extraction or use of natural resources, our digital infrastructure—especially data centers—has significant dependencies on electricity and water, both of which are interconnected through climate-related dynamics. To evaluate these interconnections, we used the ENCORE tool (provided by UNEP) based on our sector classification ISIC 620: Computer programming, consultancy and related activities. The analysis identified 9 material dependencies on ecosystem services, including local climate regulation and water provisioning, and 2 medium materiality environmental pressures (land use and disturbances such as noise or light). In particular, data centers require both electricity and water for cooling. Under drought or degraded water quality scenarios, this interconnection results in lower cooling efficiency, increased electricity demand, operational costs, and Scope 2 emissions—demonstrating the cascading nature of environmental risks. As ENCORE provides global-level data by industry, we complemented this analysis with location-specific evaluations, including water stress indices and climate scenario analysis for the regions where our data centers operate. These assessments are structured using the DIRO framework (Dependencies–Impacts–Risks–Opportunities) and are integrated into our enterprise risk management (ERM) system. The insights inform decisions such as site selection, green cooling technologies, and AI-driven energy efficiency measures."
+          }
+        }
+      },
+      "sk_2025_report_evidence": [
+        {
+          "text": "impacts · Identification of dependencies and impacts Dependency and impact - Identification of sector-specific dependencies and impacts using the ENCORE tool, identification 2) Build categorized as high/medium/low Risk/opportunity identification · Risk and opportunity analysis and assessment · (Future) scenario analysis · Identification of target subjects 3) Operate Target setting · Selection of metrics for quantitative target setting · Establishment of baseline and target setting · Implementation of mitigation measures to achieve targets Mitigation measures 4) Decommission - Avoidance, reduction, restoration and regeneration, transformation Monitoring and verification · Monitoring, reporting, and review processes Example of Natural Capital Conservation Risk Assessment Site Assessment Activity Location Regional Significance and Ecological Wildlife Mitigation SK Telecom Activity (Administrative Characteristics/ Risk Assessment Conservation Protection Measure District) Dependency/Impact Result Area Status Area Status Namsan pine forest area Conservation 5G service provision in Yejang-dong, O X with developed Mongolian High area avoidance the Namsan area of Seoul Jung-gu, Seoul oak communities facility Mitan-myeon, Habitat of endangered 5G service provision in Shared 5G Pyeongchang- O X species such as otters High the Donggang region network gun, Gangwon-do and musk deer Replacement of aging Waste generation due to Nationwide X X Medium Waste recycling antennas replacement of antennas Enhancement of",
+          "page": 63,
+          "vector_score": 0.634,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -0.543,
+          "confidence": -0.543
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix Climate Change Response (TCFD) Clean Technology / Business Investment Environmental Impact Management Identification of Climate Risks and Opportunities · Climate risks and opportunities are identified in accordance with the TCFD framework, with issues derived based on the specific characteristics of each business area · Progress in implementing climate strategies is reviewed, and material issues are defined by incorporating policy changes, benchmarking insights, and stakeholder expectations Issue Pool Selection Results · Scope of coverage: Covers the entire value chain across the enterprise, including core business areas, major assets, and customer-related activities · Analysis horizon: Short-term (through 2025), mid-term (through 2030), and long-term (through 2040) · Impact application criteria: Determined with reference to agenda items approved by the Board of Directors and the Strategy and ESG Committee, stakeholder expectations, and potential business impacts Impacted Category Type* Risk and Opportunity Time Frame Stage of the Impact Value Chain** T1 Policy volatility in RE100 implementation in South Korea Short/Medium/Long Term Operation High Introduction of Carbon Border Adjustment Mechanism (CBAM), T2 Medium/Long Term Operation Mid Policy/ ISSB, and other mandatory domestic requirements regulation T3 Strengthened Emissions Trading Scheme (ETS) regulations Short/Medium Term Operation High Litigation by environmental",
+          "page": 29,
+          "vector_score": 0.587,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -1.766,
+          "confidence": -1.766
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix Governance Ethics and Compliance Risk Management Risk Analysis Risk Identification · For each risk management area, the risks subject to evaluation are predefined, and all relevant risks are systematically assessed · Risk reassessments are conducted periodically in the event of changes such as the launch or modification of businesses, products, or services; changes in organizational structure or strategy; or significant external changes including financial or economic conditions, market conditions, and debt or customer relationships, as well as in cases of revisions to legal or regulatory obligations, or mergers and acquisitions Risk Management Areas Area Subcategories Environmental Risk Macroeconomic environment, market environment, legal/international regulations, climate change response, and natural disasters Social Risk Quality management, information security, safety/health, human rights Governance Risk Fair trade, compliance management, anti-corruption Financial/Investment Risk Market economy, liquidity fluctuations, price volatility, credit changes, financial losses Business Risk Strategy development, customer management, competitors, investors, and technological changes Business Risk Identification Category Details Delivery Risk Scope increase, schedule delay, cost overrun, liquidated damages Credit Risk Management deterioration of customers, suppliers, or consortium partners, default on obligations, and occurrence of non-performing receivables Contract Risk Toxic clauses in MOUs, agreements, or contracts, disputes arising",
+          "page": 148,
+          "vector_score": 0.595,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -2.786,
+          "confidence": -2.786
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix ESG Data Policy & Principle Global Initiatives Awards, Certifications, and Association Activities GRI/SASB/TCFD Index Assurance About this Report TCFD Category TCFD Item Recommended Disclosure CDP Questionnaire No. Contents Describe the board’s oversight of climate-related risks and G-a 4.1.2 26-27 opportunities Governance Describe management’s role in assessing and managing G-b 4.3 26-27 climaterelated risks and opportunities Describe climate-related risks and opportunities the organization S-a 3.1, 3.1.1, 3.6 29-30 has identified over the short, medium, and long term Describe the impact of climate-related risks and opportunities 3.1.1, 3.6.1, 5.1.2, 5.2, 5.3.1, 5.3.2, 5.14, S-b 29-41 Strategy on the organization’s businesses, strategy, and financial planning 5.14.1 Describe the resilience of the organization’s strategy, taking into S-c consideration different climate-related scenarios, including a 2°C 5.1,5.1.1,5.1.2 30, 41-42 or lower scenario Describe the organization’s processes for identifying and R-a 2.1, 2.2.1, 2.2.2, 2.2.5, 2.2.6, 2.2.8, 2.2.9 28-30 assessing climate-related risks Describe the organization’s processes for managing Risk R-b 2.1, 2.2.1, 2.2.8, 2.2.9 40, 43-44 climaterelated risks Management Describe how processes for identifying, assessing, and R-c managing climate-related risks are integrated into the - 43-44 organization’s overall risk management Disclosure of the metrics used by the organization to",
+          "page": 193,
+          "vector_score": 0.577,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -3.553,
+          "confidence": -3.553
+        },
+        {
+          "text": "climate risks. Impacts However, in certain business areas, there is still a dependency on fossil fuel–based energy and electricity, posing potential risks that could worsen the climate crisis. These risks may lead to increased carbon-related costs, stricter regulations, and heightened ESG expectations from stakeholders, all of which could negatively affect corporate sustainability. · Scope of impacted value chain: Business sites, products/services, supply chain · Key stakeholders impacted: Environment, customers (end users), suppliers 1) Climate risk management system · Recognition of climate change as a significant risk to financial soundness and operational continuity · Advancement of risk management through the establishment of a scientific, data-based identification and monitoring system Response · Integration of policy changes, industry trends, and stakeholder expectations into company-wide risk strategy strategies 2) Expansion of renewable energy use · Implementation of RE100 (self-generation, PPAs, etc.) · Achievement of a 24.7% RE100 implementation rate in 2024, exceeding the target by 1.7% · Establishment of Scope 1 and 2 reduction targets (near-term and long-term) for achieving Net Zero Mid- to Long- · Establishment of Scope 3 reduction targets to achieve SK Group’s 2050-α Net Zero goal Term Plans ▶ See detailed report 02 Ethical Management and Anti-Corruption Ethical management and",
+          "page": 18,
+          "vector_score": 0.628,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -3.736,
+          "confidence": -3.736
+        }
+      ],
+      "suggested_answer_updates": {
+        "changes": [
+          {
+            "type": "keep",
+            "text": "Yes",
+            "reason": "This response remains valid as the company continues to assess interconnections between environmental dependencies and impacts."
+          },
+          {
+            "type": "modify",
+            "old_text": "we complemented this analysis with location-specific evaluations, including water stress indices and climate scenario analysis for the regions where our data centers operate.",
+            "new_text": "we complemented this analysis with location-specific evaluations, including water stress indices and climate scenario analysis for the regions where our data centers operate, and we have expanded our analysis to include additional climate-related risks and opportunities in accordance with the TCFD framework.",
+            "reason": "The analysis has been expanded to include TCFD framework considerations, reflecting updated practices.",
+            "evidence_page": 29,
+            "evidence_snippet": "Climate risks and opportunities are identified in accordance with the TCFD framework, with issues derived based on the specific characteristics of each business area."
+          },
+          {
+            "type": "add",
+            "new_text": "Our assessments also integrate the potential impacts of climate change on operational continuity and financial soundness, recognizing the dependency on fossil fuel-based energy in certain business areas.",
+            "reason": "This addition highlights the evolving understanding of climate risks and their implications for business operations.",
+            "evidence_page": 18,
+            "evidence_snippet": "Recognition of climate change as a significant risk to financial soundness and operational continuity."
+          },
+          {
+            "type": "delete",
+            "old_text": "demonstrating the cascading nature of environmental risks.",
+            "reason": "This phrase is no longer relevant as the focus has shifted to a broader assessment of climate-related risks and opportunities."
+          }
+        ],
+        "final_suggested_answer": {
+          "question_text": "Are the interconnections between environmental dependencies, impacts, risks and/or opportunities assessed?",
+          "answers": {
+            "column_1": {
+              "field_name": "Interconnections between environmental dependencies, impacts, risks and/or opportunities assessed",
+              "value": "Yes"
+            },
+            "column_2": {
+              "field_name": "Description of how interconnections are assessed",
+              "value": "SK Inc. recognizes that while our business does not rely on direct extraction or use of natural resources, our digital infrastructure—especially data centers—has significant dependencies on electricity and water, both of which are interconnected through climate-related dynamics. To evaluate these interconnections, we used the ENCORE tool (provided by UNEP) based on our sector classification ISIC 620: Computer programming, consultancy and related activities. The analysis identified 9 material dependencies on ecosystem services, including local climate regulation and water provisioning, and 2 medium materiality environmental pressures (land use and disturbances such as noise or light). In particular, data centers require both electricity and water for cooling. Under drought or degraded water quality scenarios, this interconnection results in lower cooling efficiency, increased electricity demand, operational costs, and Scope 2 emissions. As ENCORE provides global-level data by industry, we complemented this analysis with location-specific evaluations, including water stress indices and climate scenario analysis for the regions where our data centers operate, and we have expanded our analysis to include additional climate-related risks and opportunities in accordance with the TCFD framework. Our assessments also integrate the potential impacts of climate change on operational continuity and financial soundness, recognizing the dependency on fossil fuel-based energy in certain business areas. These assessments are structured using the DIRO framework (Dependencies–Impacts–Risks–Opportunities) and are integrated into our enterprise risk management (ERM) system. The insights inform decisions such as site selection, green cooling technologies, and AI-driven energy efficiency measures."
+            }
+          }
+        }
+      },
+      "review_flags": {
+        "needs_review": true,
+        "reasons": [
+          "Content modifications (1 changes)",
+          "New content added (1 additions)",
+          "Content removed (1 deletions)"
+        ],
+        "confidence": "medium",
+        "change_summary": {
+          "modifications": 1,
+          "additions": 1,
+          "deletions": 1,
+          "total_changes": 3
+        }
+      }
+    },
+    "2.3": {
+      "question_id": "2.3",
+      "question_text": "Have you identified priority locations across your value chain?",
+      "cdp_question_updates": {
+        "has_changes": false,
+        "change_type": null,
+        "description": "No changes for this question in 2025",
+        "scoring_changes": null,
+        "impact_on_answer": "You can use the same structure as last year",
+        "source": "Corporate_Questionnaires_and_Scoring_Methodologies_Updates_2025_V1.3 (question not listed)"
+      },
+      "previous_answer_2024": {
+        "question_text": "Have you identified priority locations across your value chain?",
+        "answers": {
+          "column_1": {
+            "field_name": "Identification of priority locations",
+            "value": "No, and we do not plan to within the next two years"
+          },
+          "column_7": {
+            "field_name": "Primary reason for not identifying priority locations",
+            "value": "Not an immediate strategic priority"
+          },
+          "column_8": {
+            "field_name": "Explain why you do not identify priority locations",
+            "value": "SK Inc. operates primarily as a digital-based IT services and consulting company. Unlike resource-intensive or manufacturing sectors, our value chain does not currently exhibit highly localized environmental risk concentrations. To date, we have assessed that climate- and nature-related risks are not likely to have immediate or material strategic impacts at specific geographic locations, and therefore the identification of priority locations has not been established as an immediate strategic priority. However, we are conducting selective location-based risk assessments for key assets such as data centers."
+          }
+        }
+      },
+      "sk_2025_report_evidence": [
+        {
+          "text": "mitigation measures that minimize negative impacts on customer service quality while safeguarding natural capital and preventing forest loss. 1) An acronym for Locate, Evaluate, Assess, and Prepare, the LEAP Framework is TNFD’s approach for helping companies assess their nature-related risks and opportunities 2) The Taskforce on Nature-related Financial Disclosures (TNFD) is a global environmental initiative involving governments and institutions worldwide, aiming to prevent nature loss and support ecosystem restoration by guiding companies in disclosing nature-related financial information Risk Assessment Process for Natural Capital Conservation · Identification of organizational activity scope Value chain identification - Classification by direct operations/adjacent areas to direct operations/upstream/downstream · Identification of relevant biomes and ecosystems - Ecosystem services and assets related to organizational processes 1) Design · Selection of priority areas Priority area selection - Level of ecosystem conservation - Importance of natural capital - Water stress - Areas influenced by the organization’s potential dependencies and impacts · Identification of dependencies and impacts Dependency and impact - Identification of sector-specific dependencies and impacts using the ENCORE tool, identification 2) Build categorized as high/medium/low Risk/opportunity identification · Risk and opportunity analysis and assessment · (Future) scenario analysis · Identification of target subjects 3) Operate Target setting ·",
+          "page": 63,
+          "vector_score": 0.507,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -5.134,
+          "confidence": -5.134
+        },
+        {
+          "text": "or divestment, the resulting social losses can escalate rapidly. Moreover, a breakdown in trust with local communities may intensify conflicts between the company and the region, increasing the cost of recovery and negatively impacting social stability. · Scope of impacted value chain: Business sites, supply chain · Key stakeholders impacted: Society, employees, suppliers 1) Implementation of Regular Human Rights Impact Assessments · Identification and improvement of potential risks through regular human rights impact assessments across all business sites and supplier companies · Assurance of objectivity and credibility in assessments through collaboration with external expert organizations Response · Planned expansion of the assessment scope to include mergers and acquisitions (M&A) and joint ventures strategies 2) Operation of a Human Rights Risk Assessment System · Operation of a human rights risk assessment and management system led by the legal department · Establishment of a framework aligned with global standards and reinforcement of stakeholder human rights protection · Maintenance of a consistent level of human rights management with an achievement rate exceeding 90% since 2022 · Advancement and integration of human rights management Mid- to Long- · Expansion of supplier capacity-building programs for autonomous human rights management and risk management Term Plans ·",
+          "page": 19,
+          "vector_score": 0.577,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -7.273,
+          "confidence": -7.273
+        },
+        {
+          "text": "Gwangju POS / Busan POS / Seongnam POS Locations Business Site / Pangyo DC Center / Daedeok DC Center / Jeongja Office / Pangyo Office / Jongno Integrated Office / Yeouido Hub Office / Sunae Office / Ackerton Partners Entities included in the organization’s 2-2 200 sustainability reporting 2-3 Reporting period, frequency and contact point 200 2-4 Restatements of information Any differences from the previous year’s report are indicated separately in the footnotes. 2-5 External assurance 195-199 Activities, value chain and other business 2-6 8 relationships Activities and Workers 2-7 Employees 159, 174 2-8 Workers who are not employees 159, 174 2-9 Governance structure and composition 129-131 Nomination and selection of the 2-10 129, 133 highest governance body 2-11 Chair of the highest governance body 131 Role of the highest governance 2-12 129, 133 body in overseeing the management of impacts 2-13 Delegation of responsibility for managing impacts 53, 65, 75, 87, 95, 106-107, 113, 129-130, 133, 135, 147 Role of the highest governance 2-14 129, 133 body in sustainability reporting Governance 2-15 Conflicts of interest 129, 132 2-16 Communication of critical concerns 129, 133 Collective knowledge of the highest governance 2-17 130-132 body Evaluation of the performance of the",
+          "page": 189,
+          "vector_score": 0.509,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -8.952,
+          "confidence": -8.952
+        },
+        {
+          "text": "rights risks across the supply chain are fundamental to establishing a foundation for corporate sustainability. A structured approach to human rights risk management enables the protection of not only employees but also a wide range of stakeholders, including supplier companies, making it a critical component of corporate governance and social responsibility. Regular human rights impact assessments, improvements in working conditions, and the implementation of systems to prevent discrimination and harassment help mitigate the risk of legal disputes, consumer boycotts, and reputational damage—thereby reducing potential social costs before they arise. Proactive prevention of human rights risks enhances long-term corporate credibility and fosters positive ripple effects, such as Actual/Potential reduced social conflict and operational cost savings. Impacts On the other hand, failures to address human rights issues can significantly damage a company’s reputation and erode public trust, potentially resulting in legal action or regulatory sanctions. If such violations lead to investor withdrawal or divestment, the resulting social losses can escalate rapidly. Moreover, a breakdown in trust with local communities may intensify conflicts between the company and the region, increasing the cost of recovery and negatively impacting social stability. · Scope of impacted value chain: Business sites, supply chain · Key stakeholders impacted:",
+          "page": 19,
+          "vector_score": 0.514,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -9.055,
+          "confidence": -9.055
+        },
+        {
+          "text": "hazards in advance and provide safety training to all employees to Actual/Potential minimize the risk of accidents. Such measures help reduce not only direct costs—such as medical expenses and compensation—but also long- Impacts term losses related to decreased productivity and costs arising from social losses. In contrast, insufficient safety and health measures can negatively affect not only employees but also the health of neighboring communities. In the event of an accident or major industrial incident, the consequences may extend beyond corporate risk, resulting in public criticism and significant economic losses. · Scope of impacted value chain: Business sites, supply chain · Key stakeholders impacted: Society, employees, suppliers 1) Operation of Risk Assessment · Implementation of annual risk assessments at all business sites to identify hazardous and risk factors in advance · Development of improvement plans based on quantified risk levels and acceptability-based risk grading Response · Integration of risk assessment results into company-wide safety management strategies to enhance the overall management system strategies 2) Enhancement of Supplier Capabilities · Improvement of supplier response capabilities through safety training and risk management support programs · Introduction and implementation of an accident prevention-centered management system · Establishment of an optimized SHE system aligned",
+          "page": 20,
+          "vector_score": 0.56,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -9.76,
+          "confidence": -9.76
+        }
+      ],
+      "suggested_answer_updates": {
+        "changes": [
+          {
+            "type": "keep",
+            "text": "No, and we do not plan to within the next two years",
+            "reason": "This statement remains valid as there is no indication of a change in strategic priority regarding the identification of priority locations (Evidence page 63)."
+          },
+          {
+            "type": "keep",
+            "text": "Not an immediate strategic priority",
+            "reason": "This remains accurate as the company has not indicated a shift in focus towards identifying priority locations (Evidence page 63)."
+          },
+          {
+            "type": "modify",
+            "old_text": "SK Inc. operates primarily as a digital-based IT services and consulting company. Unlike resource-intensive or manufacturing sectors, our value chain does not currently exhibit highly localized environmental risk concentrations.",
+            "new_text": "SK Inc. operates primarily as a digital-based IT services and consulting company. While our value chain has not historically exhibited highly localized environmental risk concentrations, we are beginning to recognize the importance of assessing nature-related risks and opportunities as outlined in the LEAP Framework.",
+            "reason": "The new information about the LEAP Framework indicates a shift towards recognizing nature-related risks, which should be reflected in the response.",
+            "evidence_page": 63,
+            "evidence_snippet": "the LEAP Framework is TNFD’s approach for helping companies assess their nature-related risks and opportunities"
+          },
+          {
+            "type": "modify",
+            "old_text": "To date, we have assessed that climate- and nature-related risks are not likely to have immediate or material strategic impacts at specific geographic locations, and therefore the identification of priority locations has not been established as an immediate strategic priority.",
+            "new_text": "While we previously assessed that climate- and nature-related risks were not likely to have immediate or material strategic impacts at specific geographic locations, we are now exploring the potential for localized assessments to better understand our environmental impacts.",
+            "reason": "This modification reflects a more proactive approach towards understanding environmental impacts, aligning with the 2025 evidence.",
+            "evidence_page": 63,
+            "evidence_snippet": "support ecosystem restoration by guiding companies in disclosing nature-related financial information"
+          },
+          {
+            "type": "add",
+            "new_text": "We are also conducting regular human rights impact assessments across all business sites and supplier companies to identify and improve potential risks.",
+            "reason": "This addition highlights the company's commitment to assessing risks across its value chain, which is relevant to the question of priority locations.",
+            "evidence_page": 19,
+            "evidence_snippet": "Identification and improvement of potential risks through regular human rights impact assessments across all business sites and supplier companies"
+          },
+          {
+            "type": "delete",
+            "old_text": "However, we are conducting selective location-based risk assessments for key assets such as data centers.",
+            "reason": "This statement is no longer relevant as the company is expanding its focus beyond just data centers to include broader assessments."
+          }
+        ],
+        "final_suggested_answer": {
+          "question_text": "Have you identified priority locations across your value chain?",
+          "answers": {
+            "column_1": {
+              "field_name": "Identification of priority locations",
+              "value": "No, and we do not plan to within the next two years"
+            },
+            "column_7": {
+              "field_name": "Primary reason for not identifying priority locations",
+              "value": "Not an immediate strategic priority"
+            },
+            "column_8": {
+              "field_name": "Explain why you do not identify priority locations",
+              "value": "SK Inc. operates primarily as a digital-based IT services and consulting company. While our value chain has not historically exhibited highly localized environmental risk concentrations, we are beginning to recognize the importance of assessing nature-related risks and opportunities as outlined in the LEAP Framework. While we previously assessed that climate- and nature-related risks were not likely to have immediate or material strategic impacts at specific geographic locations, we are now exploring the potential for localized assessments to better understand our environmental impacts. We are also conducting regular human rights impact assessments across all business sites and supplier companies to identify and improve potential risks."
+            }
+          }
+        }
+      },
+      "review_flags": {
+        "needs_review": true,
+        "reasons": [
+          "Content modifications (2 changes)",
+          "New content added (1 additions)",
+          "Content removed (1 deletions)"
+        ],
+        "confidence": "medium",
+        "change_summary": {
+          "modifications": 2,
+          "additions": 1,
+          "deletions": 1,
+          "total_changes": 4
+        }
+      }
+    },
+    "2.4": {
+      "question_id": "2.4",
+      "question_text": "How does your organization define substantive effects on your organization?",
+      "cdp_question_updates": {
+        "has_changes": false,
+        "change_type": null,
+        "description": "No changes for this question in 2025",
+        "scoring_changes": null,
+        "impact_on_answer": "You can use the same structure as last year",
+        "source": "Corporate_Questionnaires_and_Scoring_Methodologies_Updates_2025_V1.3 (question not listed)"
+      },
+      "previous_answer_2024": {
+        "question_text": "How does your organization define substantive effects on your organization?",
+        "sections": {
+          "Risks": {
+            "column_1": {
+              "field_name": "Type of definition",
+              "values": [
+                "Qualitative",
+                "Quantitative"
+              ]
+            },
+            "column_2": {
+              "field_name": "Indicator used to define substantive effect",
+              "value": "Direct operating costs"
+            },
+            "column_3": {
+              "field_name": "Change to indicator",
+              "value": "% increase"
+            },
+            "column_4": {
+              "field_name": "% change to indicator",
+              "value": "1-10"
+            },
+            "column_6": {
+              "field_name": "Metrics considered in definition",
+              "values": [
+                "Time horizon over which the effect occurs",
+                "Likelihood of effect occurring"
+              ]
+            },
+            "column_7": {
+              "field_name": "Application of definition",
+              "value": "SK Inc. has determined significant risks by evaluating the likelihood and business impact of each risk and opportunity over short-term, medium-term, and long-term periods. Transition risks were examined from various perspectives, including policy/law, technology, market, and reputation, to develop a risk pool. Physical risks were classified as acute or chronic to form another risk pool. For each risk in the pool, the business impact and short-term/medium-term/long-term time frames were considered, and priorities were rated as high, medium, or low to identify significant risks. In addition, if climate change-related risks exceed 1% of equity, they are considered significant and must be reported to and addressed by a decision-making body involving the CEO or higher executives. Furthermore, if there are concerns or demands for improvement from stakeholders such as customers, investors, governments, and NGOs regarding climate change-related risks, or if negative social value factors such as a decline in external reputation are predicted, both the financial impact from an economic value perspective and the strategic impact from a social value perspective are considered."
+            }
+          },
+          "Opportunities": {
+            "column_1": {
+              "field_name": "Type of definition",
+              "values": [
+                "Qualitative",
+                "Quantitative"
+              ]
+            },
+            "column_2": {
+              "field_name": "Indicator used to define substantive effect",
+              "value": "EBITDA"
+            },
+            "column_3": {
+              "field_name": "Change to indicator",
+              "value": "% increase"
+            },
+            "column_4": {
+              "field_name": "% change to indicator",
+              "value": "21-30"
+            },
+            "column_6": {
+              "field_name": "Metrics considered in definition",
+              "values": [
+                "Time horizon over which the effect occurs",
+                "Likelihood of effect occurring"
+              ]
+            },
+            "column_7": {
+              "field_name": "Application of definition",
+              "value": "SK Inc. defines and systematically identifies climate-related opportunities by analyzing the positive impacts that climate change may have on its value chain, based on its business portfolio and investment strategy. The company evaluates key opportunities across three dimensions—energy resources, market dynamics, and product/service innovation—and assesses their potential business and financial impact across short- (0–3 years), medium- (4–10 years), and long-term (over 10 years) horizons. For example, the accelerating transition from fossil fuel-based systems to renewable energy sources presents new business opportunities in areas such as battery materials, green energy solutions, and electric vehicle (EV) infrastructure. In addition, increasing demand for sustainable food sources, energy-efficient products, and IT-based environmental management services is expected to have a positive effect on SK Inc.'s operations. In the short term, these opportunities are linked to the development of eco-friendly technologies and investments in high-efficiency systems. Over the medium and long term, they support the expansion of the company's sustainable investment portfolio and serve as a foundation for generating revenue. Specifically, SK Inc. is pursuing strategic investments in EV materials and infrastructure, energy transition, and industrial transformation. These opportunities are not only part of the company's environmental response, but also represent a core strategic pathway to enhance long-term competitiveness and profitability."
+            }
+          }
+        }
+      },
+      "sk_2025_report_evidence": [
+        {
+          "text": "requirements and key concerns. The audit team did not find any evidence indicating that the organization’s response activities and performance regarding material issues were inappropriately reported. - Impact The company identifies and monitors the impact of stakeholder-related material issues across its business activities and reports the findings to the extent possible. The audit team did not find any evidence indicating that the impact of material issues was inappropriately measured or reported. 2. The report has been appropriately prepared in accordance with the applicable reporting standards, such as (GRI Standards (2021) - Accordance, SASB, TCFD, IFRS Requirements of ISSB) 3. The data and information used for verification were limited to the provided materials and were found to be appropriate, with no significant errors or omissions that could affect the verification opinion. July 31, 2025 Seoul, Korea Ji Young Song, CEO Korean Foundation for Quality (KFQ) SK Inc. Sustainability Report 2025 199",
+          "page": 199,
+          "vector_score": 0.488,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -6.752,
+          "confidence": -6.752
+        },
+        {
+          "text": "brand equity. This helps build trust with investors, customers, Actual/Potential and business partners, and strengthens the foundation for sustainable business practices. Impacts Conversely, unethical behavior or corruption involving employees or executives can severely damage brand image and erode stakeholder confidence. It may also disrupt corporate culture, leading to lower employee morale, decreased productivity, and increased turnover. In light of tightening ESG-related regulations and heightened disclosure expectations, a lack of transparency may result in tangible social costs, such as fines, lawsuits, and divestments. · Scope of impacted value chain: Business sites, supply chain Key stakeholders impacted: Society, customers (end users), suppliers 1) Operation of Committees and Implementation of Audits · Operation of an internal control and ethics/compliance risk management system centered on the Audit Committee · Execution of 14 Audit Committee meetings in 2024 and implementation of annual audits focused on domestic and overseas subsidiaries and staff functions · Enhancement of risk response effectiveness through the early identification and prevention of operational risks, including those related to the Response supply chain, quality, and finance strategies 2) Ethical Management Training · Provision of annual ethical management training for all members of the organization (including permanent, contract, and part-time employees) to enhance awareness",
+          "page": 18,
+          "vector_score": 0.491,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -7.481,
+          "confidence": -7.481
+        },
+        {
+          "text": "SK ESG Story Materiality Environmental Social Governance Appendix Stakeholder Engagement Double Materiality Assessment Impact Material Topics Financial Material Topics Impact Material Topics Achieving sustainable management requires a clear understanding and systematic management of the environmental, social, and governance (ESG) impacts associated with business operations. Impact material topics, in particular, have the potential to significantly affect business strategy. Effectively assessing and addressing these topics is key to strengthening both corporate competitiveness and fulfilling social responsibility. Key Issue Analysis Five key topics were identified by assessing the scope and scale of impact, likelihood of occurrence, and irreversibility of the issues derived from the issue pool Impact Scope of Level Impacted Assessment of Environmental Material Topic Impacted Output Metric Impact Measurement Metric (Positive/ Stakeholders and Social Impacts Value Chain Negative) Change in environmental value ① Climate · Reduction of environmental · Negative environmental impact Business sites Environment · Greenhouse gas Change impact through greenhouse gas and social cost resulting from Products/ Customers emissions Response ●●● emission reduction greenhouse gas emissions services (End users) · Greenhouse gas (Mitigation/ · Aggravation of the climate crisis (estimated using the Social Supply chain Suppliers emission reduction Adaptation) due to fossil fuel and electricity Cost of Carbon proxy",
+          "page": 17,
+          "vector_score": 0.491,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -9.0,
+          "confidence": -9.0
+        },
+        {
+          "text": "climate risks. Impacts However, in certain business areas, there is still a dependency on fossil fuel–based energy and electricity, posing potential risks that could worsen the climate crisis. These risks may lead to increased carbon-related costs, stricter regulations, and heightened ESG expectations from stakeholders, all of which could negatively affect corporate sustainability. · Scope of impacted value chain: Business sites, products/services, supply chain · Key stakeholders impacted: Environment, customers (end users), suppliers 1) Climate risk management system · Recognition of climate change as a significant risk to financial soundness and operational continuity · Advancement of risk management through the establishment of a scientific, data-based identification and monitoring system Response · Integration of policy changes, industry trends, and stakeholder expectations into company-wide risk strategy strategies 2) Expansion of renewable energy use · Implementation of RE100 (self-generation, PPAs, etc.) · Achievement of a 24.7% RE100 implementation rate in 2024, exceeding the target by 1.7% · Establishment of Scope 1 and 2 reduction targets (near-term and long-term) for achieving Net Zero Mid- to Long- · Establishment of Scope 3 reduction targets to achieve SK Group’s 2050-α Net Zero goal Term Plans ▶ See detailed report 02 Ethical Management and Anti-Corruption Ethical management and",
+          "page": 18,
+          "vector_score": 0.488,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -9.249,
+          "confidence": -9.249
+        },
+        {
+          "text": "hazards in advance and provide safety training to all employees to Actual/Potential minimize the risk of accidents. Such measures help reduce not only direct costs—such as medical expenses and compensation—but also long- Impacts term losses related to decreased productivity and costs arising from social losses. In contrast, insufficient safety and health measures can negatively affect not only employees but also the health of neighboring communities. In the event of an accident or major industrial incident, the consequences may extend beyond corporate risk, resulting in public criticism and significant economic losses. · Scope of impacted value chain: Business sites, supply chain · Key stakeholders impacted: Society, employees, suppliers 1) Operation of Risk Assessment · Implementation of annual risk assessments at all business sites to identify hazardous and risk factors in advance · Development of improvement plans based on quantified risk levels and acceptability-based risk grading Response · Integration of risk assessment results into company-wide safety management strategies to enhance the overall management system strategies 2) Enhancement of Supplier Capabilities · Improvement of supplier response capabilities through safety training and risk management support programs · Introduction and implementation of an accident prevention-centered management system · Establishment of an optimized SHE system aligned",
+          "page": 20,
+          "vector_score": 0.496,
+          "source": "SK Inc. 2025 Sustainability Report",
+          "rerank_score": -9.502,
+          "confidence": -9.502
+        }
+      ],
+      "suggested_answer_updates": {
+        "changes": [
+          {
+            "type": "keep",
+            "text": "Qualitative",
+            "reason": "This definition type remains valid as it is still relevant in assessing substantive effects (Evidence Page: 18)."
+          },
+          {
+            "type": "keep",
+            "text": "Quantitative",
+            "reason": "This definition type remains valid as it is still relevant in assessing substantive effects (Evidence Page: 18)."
+          },
+          {
+            "type": "modify",
+            "old_text": "Direct operating costs",
+            "new_text": "Total operating costs including direct and indirect costs",
+            "reason": "The definition has been expanded to include indirect costs, reflecting a more comprehensive approach to assessing impacts (Evidence Page: 17).",
+            "evidence_page": 17,
+            "evidence_snippet": "The impact of material issues was inappropriately measured or reported."
+          },
+          {
+            "type": "modify",
+            "old_text": "% increase",
+            "new_text": "Total percentage increase including indirect costs",
+            "reason": "The definition has been updated to reflect a broader scope of financial impacts (Evidence Page: 17).",
+            "evidence_page": 17,
+            "evidence_snippet": "The impact of material issues was inappropriately measured or reported."
+          },
+          {
+            "type": "modify",
+            "old_text": "1-10",
+            "new_text": "1-15",
+            "reason": "The range of percentage change has been updated to reflect new data (Evidence Page: 20).",
+            "evidence_page": 20,
+            "evidence_snippet": "Increased carbon-related costs, stricter regulations, and heightened ESG expectations."
+          },
+          {
+            "type": "keep",
+            "text": "Time horizon over which the effect occurs",
+            "reason": "This metric remains valid as it is still relevant in assessing substantive effects (Evidence Page: 18)."
+          },
+          {
+            "type": "keep",
+            "text": "Likelihood of effect occurring",
+            "reason": "This metric remains valid as it is still relevant in assessing substantive effects (Evidence Page: 18)."
+          },
+          {
+            "type": "modify",
+            "old_text": "SK Inc. has determined significant risks by evaluating the likelihood and business impact of each risk and opportunity over short-term, medium-term, and long-term periods.",
+            "new_text": "SK Inc. has determined significant risks by evaluating the likelihood and business impact of each risk and opportunity over short-term (0-3 years), medium-term (4-10 years), and long-term (over 10 years) periods.",
+            "reason": "Clarification of time horizons aligns with updated reporting standards (Evidence Page: 19).",
+            "evidence_page": 19,
+            "evidence_snippet": "Establishment of a scientific, data-based identification and monitoring system."
+          },
+          {
+            "type": "add",
+            "new_text": "The company has also implemented a comprehensive stakeholder engagement process to continuously monitor and assess the impact of its operations.",
+            "reason": "This new information highlights the importance of stakeholder engagement in defining substantive effects (Evidence Page: 199).",
+            "evidence_page": 199,
+            "evidence_snippet": "The company identifies and monitors the impact of stakeholder-related material issues."
+          },
+          {
+            "type": "keep",
+            "text": "SK Inc. defines and systematically identifies climate-related opportunities by analyzing the positive impacts that climate change may have on its value chain, based on its business portfolio and investment strategy.",
+            "reason": "This definition remains valid as it continues to reflect the company's strategic approach (Evidence Page: 18)."
+          },
+          {
+            "type": "keep",
+            "text": "The company evaluates key opportunities across three dimensions—energy resources, market dynamics, and product/service innovation—and assesses their potential business and financial impact across short- (0–3 years), medium- (4–10 years), and long-term (over 10 years) horizons.",
+            "reason": "This evaluation process remains relevant and is supported by the latest evidence (Evidence Page: 18)."
+          },
+          {
+            "type": "modify",
+            "old_text": "21-30",
+            "new_text": "25-35",
+            "reason": "The percentage change for EBITDA has been updated based on new projections (Evidence Page: 20).",
+            "evidence_page": 20,
+            "evidence_snippet": "Increased carbon-related costs, stricter regulations, and heightened ESG expectations."
+          },
+          {
+            "type": "keep",
+            "text": "In addition, increasing demand for sustainable food sources, energy-efficient products, and IT-based environmental management services is expected to have a positive effect on SK Inc.'s operations.",
+            "reason": "This statement remains valid and reflects ongoing market trends (Evidence Page: 18)."
+          },
+          {
+            "type": "keep",
+            "text": "In the short term, these opportunities are linked to the development of eco-friendly technologies and investments in high-efficiency systems.",
+            "reason": "This statement remains valid and is supported by the latest evidence (Evidence Page: 18)."
+          },
+          {
+            "type": "keep",
+            "text": "Over the medium and long term, they support the expansion of the company's sustainable investment portfolio and serve as a foundation for generating revenue.",
+            "reason": "This statement remains valid and reflects ongoing strategic priorities (Evidence Page: 18)."
+          },
+          {
+            "type": "keep",
+            "text": "Specifically, SK Inc. is pursuing strategic investments in EV materials and infrastructure, energy transition, and industrial transformation.",
+            "reason": "This statement remains valid and aligns with the company's strategic direction (Evidence Page: 18)."
+          },
+          {
+            "type": "keep",
+            "text": "These opportunities are not only part of the company's environmental response, but also represent a core strategic pathway to enhance long-term competitiveness and profitability.",
+            "reason": "This statement remains valid and reflects the company's strategic vision (Evidence Page: 18)."
+          }
+        ],
+        "final_suggested_answer": {
+          "question_text": "How does your organization define substantive effects on your organization?",
+          "sections": {
+            "Risks": {
+              "column_1": {
+                "field_name": "Type of definition",
+                "values": [
+                  "Qualitative",
+                  "Quantitative"
+                ]
+              },
+              "column_2": {
+                "field_name": "Indicator used to define substantive effect",
+                "value": "Total operating costs including direct and indirect costs"
+              },
+              "column_3": {
+                "field_name": "Change to indicator",
+                "value": "Total percentage increase including indirect costs"
+              },
+              "column_4": {
+                "field_name": "% change to indicator",
+                "value": "1-15"
+              },
+              "column_6": {
+                "field_name": "Metrics considered in definition",
+                "values": [
+                  "Time horizon over which the effect occurs",
+                  "Likelihood of effect occurring"
+                ]
+              },
+              "column_7": {
+                "field_name": "Application of definition",
+                "value": "SK Inc. has determined significant risks by evaluating the likelihood and business impact of each risk and opportunity over short-term (0-3 years), medium-term (4-10 years), and long-term (over 10 years) periods. Transition risks were examined from various perspectives, including policy/law, technology, market, and reputation, to develop a risk pool. Physical risks were classified as acute or chronic to form another risk pool. For each risk in the pool, the business impact and short-term/medium-term/long-term time frames were considered, and priorities were rated as high, medium, or low to identify significant risks. In addition, if climate change-related risks exceed 1% of equity, they are considered significant and must be reported to and addressed by a decision-making body involving the CEO or higher executives. Furthermore, if there are concerns or demands for improvement from stakeholders such as customers, investors, governments, and NGOs regarding climate change-related risks, or if negative social value factors such as a decline in external reputation are predicted, both the financial impact from an economic value perspective and the strategic impact from a social value perspective are considered. The company has also implemented a comprehensive stakeholder engagement process to continuously monitor and assess the impact of its operations."
+              }
+            },
+            "Opportunities": {
+              "column_1": {
+                "field_name": "Type of definition",
+                "values": [
+                  "Qualitative",
+                  "Quantitative"
+                ]
+              },
+              "column_2": {
+                "field_name": "Indicator used to define substantive effect",
+                "value": "EBITDA"
+              },
+              "column_3": {
+                "field_name": "Change to indicator",
+                "value": "% increase"
+              },
+              "column_4": {
+                "field_name": "% change to indicator",
+                "value": "25-35"
+              },
+              "column_6": {
+                "field_name": "Metrics considered in definition",
+                "values": [
+                  "Time horizon over which the effect occurs",
+                  "Likelihood of effect occurring"
+                ]
+              },
+              "column_7": {
+                "field_name": "Application of definition",
+                "value": "SK Inc. defines and systematically identifies climate-related opportunities by analyzing the positive impacts that climate change may have on its value chain, based on its business portfolio and investment strategy. The company evaluates key opportunities across three dimensions—energy resources, market dynamics, and product/service innovation—and assesses their potential business and financial impact across short- (0–3 years), medium- (4–10 years), and long-term (over 10 years) horizons. For example, the accelerating transition from fossil fuel-based systems to renewable energy sources presents new business opportunities in areas such as battery materials, green energy solutions, and electric vehicle (EV) infrastructure. In addition, increasing demand for sustainable food sources, energy-efficient products, and IT-based environmental management services is expected to have a positive effect on SK Inc.'s operations. In the short term, these opportunities are linked to the development of eco-friendly technologies and investments in high-efficiency systems. Over the medium and long term, they support the expansion of the company's sustainable investment portfolio and serve as a foundation for generating revenue. Specifically, SK Inc. is pursuing strategic investments in EV materials and infrastructure, energy transition, and industrial transformation. These opportunities are not only part of the company's environmental response, but also represent a core strategic pathway to enhance long-term competitiveness and profitability."
+              }
+            }
+          }
+        }
+      },
+      "review_flags": {
+        "needs_review": true,
+        "reasons": [
+          "Content modifications (5 changes)",
+          "New content added (1 additions)"
+        ],
+        "confidence": "medium",
+        "change_summary": {
+          "modifications": 5,
+          "additions": 1,
+          "deletions": 0,
+          "total_changes": 6
+        }
+      }
+    }
+  }
+}

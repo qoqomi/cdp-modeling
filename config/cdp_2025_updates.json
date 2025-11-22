@@ -1,0 +1,252 @@
+{
+  "document": "CDP Corporate Questionnaires and Scoring Methodologies Updates 2025",
+  "version": "1.3",
+  "release_date": "2025-09-16",
+  "updates": {
+    "1.17": {
+      "description": "For metals and mining\norganizations disclosing on\nwater security, the point\nallocation for the non-\ndisclosure route at\nmanagement level has been\ncorrected.",
+      "changes_to_scoring": "Updated from:\nNON-DISCLOSURE ROUTE)\nOption NOT selected - 0/14 points\nA maximum of 0/14 points is available for this route.\nUpdated to:\nNON-DISCLOSURE ROUTE)\nOption NOT selected - 0/4 points\nA maximum of 0/4 points is available for this route.\nPlease note, this is correct in the PDF version of the ‘CDP\nFull Corporate Scoring Methodology 2025 Water security’.\nThe error is only present in the guidance section of the\ndisclosure platform.",
+      "change_type": "correction",
+      "updated_from": "NON-DISCLOSURE ROUTE)\nOption NOT selected - 0/14 points\nA maximum of 0/14 points is available for this route.",
+      "updated_to": "NON-DISCLOSURE ROUTE)\nOption NOT selected - 0/4 points\nA maximum of 0/4 points is available for this route.\nPlease note, this is correct in the PDF version of the ‘CDP\nFull Corporate Scoring Methodology 2025 Water security’.\nThe error is only present in the guidance section of the\ndisclosure platform."
+    },
+    "2.2.2": {
+      "description": "For organizations disclosing\non forests, awareness",
+      "changes_to_scoring": "There is no change to the way this question is scored. The\ncriteria have been updated to clarify that only the four",
+      "change_type": "no_change",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "3.1": {
+      "description": "For organizations disclosing\non forests, awareness and\nmanagement scoring for all",
+      "changes_to_scoring": "There is no change to the way this question is scored. The\ncriteria have been updated to clarify that only the four\nscored commodity rows of timber products, palm oil, cattle",
+      "change_type": "no_change",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "4.7.2": {
+      "description": "For financial services\norganizations disclosing on\nclimate change,\nmanagement criteria have\nbeen updated to correct the",
+      "changes_to_scoring": "Column reference updated from column 'Complete\nphaseout by' to column 'Year of complete phaseout' to align\nwith column name in questionnaire and figure check\nclarified.",
+      "change_type": "clarification",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "4.11.1": {
+      "description": "For organizations disclosing\nto climate change, forests or\nwater security, disclosure,\nawareness and management\nscoring have been corrected\nto account for companies\nwhose engagement in\nactivities that could directly\ninfluence policy, law, or\nregulation differs between\nenvironmental issues.",
+      "changes_to_scoring": "Disclosure, awareness and management scoring has been\nupdated to remove scoring specific to the environmental\nissue. The scoring of 4.11.1 will now be integrated for\nclimate change, forests and water.\nClimate change/ Forests/ Water Disclosure scoring:\nUpdated from:\nROUTE A)\nFor rows where 'Climate change'/’Water’/’Forests is\nselected in column 'Environmental issues the policy, law, or\nregulation relates to':\nPoints will be awarded per completed cell in proportion to\nthe number of rows disclosed. Partially completed rows will\nnot receive full points.\nA maximum of 8/8 points is available for this route.\nOR\nNOT APPLICABLE ROUTE)\n'Climate change'/’Water’/’Forest’ NOT selected in column\n'Environmental issues the policy, law, or regulation relates\nto’ in any row – 0/0 points",
+      "change_type": "correction",
+      "updated_from": "ROUTE A)\nFor rows where 'Climate change'/’Water’/’Forests is\nselected in column 'Environmental issues the policy, law, or\nregulation relates to':\nPoints will be awarded per completed cell in proportion to\nthe number of rows disclosed. Partially completed rows will\nnot receive full points.\nA maximum of 8/8 points is available for this route.\nOR\nNOT APPLICABLE ROUTE)\n'Climate change'/’Water’/’Forest’ NOT selected in column\n'Environmental issues the policy, law, or regulation relates\nto’ in any row – 0/0 points",
+      "updated_to": ""
+    },
+    "4.11.2": {
+      "description": "For organizations disclosing\nto climate change, forests or\nwater, disclosure, awareness\nand management scoring\nhave been corrected to\naccount for companies\nwhose engagement in\nactivities that could directly\ninfluence policy, law, or\nregulation differs between\nenvironmental issues.",
+      "changes_to_scoring": "Disclosure, awareness and management scoring criteria\nhave been updated to remove scoring specific to the\nenvironmental issue. The scoring of 4.11.2 will now be\nintegrated for climate change, forests and water.\nClimate change/ Forests/ Water Disclosure scoring:\nUpdated from:\nROUTE A)\nFor rows where ‘Climate change’/‘Forest’/'Water' is selected\nin column 'Environmental issues relevant to the policies,\nlaws, or regulations on which the organization or individual\nhas taken a position':\nPoints will be awarded per completed cell in proportion to\nthe number of rows disclosed. Partially completed rows will\nnot receive full points.\nA maximum of 10/10 points is available for this route.\nOR",
+      "change_type": "correction",
+      "updated_from": "ROUTE A)\nFor rows where ‘Climate change’/‘Forest’/'Water' is selected\nin column 'Environmental issues relevant to the policies,\nlaws, or regulations on which the organization or individual\nhas taken a position':\nPoints will be awarded per completed cell in proportion to\nthe number of rows disclosed. Partially completed rows will\nnot receive full points.\nA maximum of 10/10 points is available for this route.\nOR",
+      "updated_to": ""
+    },
+    "5.1.1": {
+      "description": "For organizations disclosing\non climate change, the point\nallocations for leadership\nlevel criteria i) and ii) have\nbeen corrected for all\nsectors excluding financial\nservices organizations.",
+      "changes_to_scoring": "Point allocations at leadership level for route A corrected\nfrom 1 point to 1.5 points for both criteria i) and ii).\nOverall, the total points available for this route remains 4\npoints.\nThis change has been made for all sectors excluding\nfinancial services, in the climate change scoring\nmethodology.",
+      "change_type": "correction",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "5.4.1": {
+      "description": "Guidance around the\nappearance of column 4\n“Indicate whether you are\nreporting eligibility\ninformation for the selected\nobjective”",
+      "changes_to_scoring": "N/A",
+      "change_type": "other",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "5.11": {
+      "description": "For organizations disclosing\non forests, awareness\nscoring for all sectors\nexcluding financial services\nhas been corrected.",
+      "changes_to_scoring": "Criteria updated to only cross check the four scored\ncommodity rows of timber products, palm oil, cattle\nproducts and soy (as applicable) in question 1.22.\nUpdated from:\nROUTE A)\n'Produced' NOT selected in column 'Produced and/or\nsourced' in all rows in question 1.22. (Please note: This\nroute applies if 'Sourced' OR 'Produced and sourced' is\nselected for any commodity, or if column 'Produced and/or\nsourced' is not completed for any commodity.)\n....\nROUTE B)\n'Produced' selected in column 'Produced and/or sourced' in\nall rows in question 1.22.",
+      "change_type": "correction",
+      "updated_from": "ROUTE A)\n'Produced' NOT selected in column 'Produced and/or\nsourced' in all rows in question 1.22. (Please note: This\nroute applies if 'Sourced' OR 'Produced and sourced' is\nselected for any commodity, or if column 'Produced and/or\nsourced' is not completed for any commodity.)\n....\nROUTE B)\n'Produced' selected in column 'Produced and/or sourced' in\nall rows in question 1.22.",
+      "updated_to": ""
+    },
+    "5.11.4": {
+      "description": "For financial services\norganizations disclosing on\nclimate change, a correction\nhas been made to a row\nreference for the awareness\nlevel Route A criteria.",
+      "changes_to_scoring": "Row ‘Investing (asset manager)’ corrected to row ‘Investing\n(asset owner) in Route A after the ‘OR’ clause.\nUpdated from:\n…\nOR\nAll of the following met - 1 point\nAny option selected excluding 'Other, please specify' in\ncolumn 'Type and details of engagement' AND\n'Yes' selected in column 'Activity undertaken' in row\n'Investing (Asset manager)' in question 1.10 AND",
+      "change_type": "correction",
+      "updated_from": "…\nOR\nAll of the following met - 1 point\nAny option selected excluding 'Other, please specify' in\ncolumn 'Type and details of engagement' AND\n'Yes' selected in column 'Activity undertaken' in row\n'Investing (Asset manager)' in question 1.10 AND",
+      "updated_to": ""
+    },
+    "5.11.6": {
+      "description": "For organizations disclosing\non climate change, water\nsecurity or forests,\nawareness level criteria iii)\nhas been corrected for all\nsectors excluding financial\nservices.",
+      "changes_to_scoring": "Awareness level criteria iii) has been corrected to also credit\norganizations if ‘100%’ is selected in column '% tier 1\nsuppliers by procurement spend in compliance with this\nenvironmental requirement.'\nClimate change/ Forests/ Water security Awareness\nscoring:\nUpdated from:\nROUTE A)\n…",
+      "change_type": "correction",
+      "updated_from": "ROUTE A)\n…",
+      "updated_to": ""
+    },
+    "5.11.7": {
+      "description": "Guidance around “no\nsupplier engagement” option\nin column 2 “Action driven by\nsupplier engagement” and\nthe appearance of column 9\n“Describe the engagement\nand explain the effect of your\nengagement on the selected\nenvironmental action”",
+      "changes_to_scoring": "N/A",
+      "change_type": "other",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "7.14": {
+      "description": "For organisations disclosing\non climate change,\nmanagement level scoring\nhas been updated for the",
+      "changes_to_scoring": "Updated from:",
+      "change_type": "update",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "7.30.1": {
+      "description": "For organizations in the\ncement sector disclosing on\nclimate change, the\nmanagement and leadership\ncriteria has been clarified.",
+      "changes_to_scoring": "Correction to the tagging of the cement sector in the\nscoring criteria. 7.30.1 is scored at Management and\nLeadership level for the cement sector.\nClimate change Management and Leadership scoring for\nthe cement sector:\nUpdated to:\nManagement level\nFull Awareness points must be awarded to be eligible for\nManagement points.\nROUTE A)\nFigure provided in column 'MWh from renewable sources'\naccounts for 25% or more of figure provided in column",
+      "change_type": "correction",
+      "updated_from": "",
+      "updated_to": "Management level\nFull Awareness points must be awarded to be eligible for\nManagement points.\nROUTE A)\nFigure provided in column 'MWh from renewable sources'\naccounts for 25% or more of figure provided in column"
+    },
+    "7.30.2": {
+      "description": "For organizations disclosing\non climate change, question\n7.30.2 is no longer scored at\nmanagement or leadership\nlevel for the cement sector.",
+      "changes_to_scoring": "Management and leadership level scoring in 7.30.2 has\nbeen removed for the cement sector.",
+      "change_type": "other",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "7.30.14": {
+      "description": "For organizations disclosing\non climate change for all\nsectors excluding chemicals\nand steel, awareness level",
+      "changes_to_scoring": "In awareness level route B the ‘OR’ between the two criteria\nstatements has been changed to ‘AND’ for all sectors\nexcluding chemicals and steel.",
+      "change_type": "other",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "7.49": {
+      "description": "For steel sector\norganizations disclosing on\nclimate change, the figure in\nroute A has been corrected\nat the leadership level.",
+      "changes_to_scoring": "Figure requirement for column 'Emissions intensity figure,\nmetric tons CO2e per metric ton of crude steel production’\nupdated from ‘less than 1’ to ‘less than 1.328’ at the\nLeadership level for steel sector.",
+      "change_type": "correction",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "7.26": {
+      "description": "Clarification in the guidance\nfor the appearance of\ndropdown options in column\n3 “Scope 3 Category(ies)”",
+      "changes_to_scoring": "N/A",
+      "change_type": "clarification",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "7.53.1": {
+      "description": "For electric utilities\norganizations, the CDP\nscoring route at",
+      "changes_to_scoring": "Clarification for electric utilities organizations that criteria ii)\nand criteria v) in the CDP scoring route assesses only",
+      "change_type": "clarification",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "7.53.2": {
+      "description": "For organizations\nresponding to climate\nchange, column ‘Target\ncoverage’ has been excluded\nfrom disclosure level scoring\nfor all sectors. The inability\nto add text to the ‘Other,\nplease specify’ drop-down\noption in this column will not\nbe penalised.",
+      "changes_to_scoring": "Updated from:\nPoints will be awarded per completed cell in proportion to\nthe number of rows disclosed excluding the following\ncolumns:\n- 'Intensity figure in base year for total Scope 3'\n- 'Intensity figure in base year for all selected Scopes'\n- Intensity figure in reporting year for total Scope 3'\n- Intensity figure in reporting year for all selected Scopes'\n- 'Intensity figure at end date of target for all selected\nScopes'\n- '% of target achieved relative to base year'\nPartially completed rows will not receive full points.\nA maximum of 14/14 points is available for this question.\nUpdated to:\nPoints will be awarded per completed cell in proportion to\nthe number of rows disclosed excluding the following\ncolumns:\n- 'Intensity figure in base year for total Scope 3'",
+      "change_type": "update",
+      "updated_from": "Points will be awarded per completed cell in proportion to\nthe number of rows disclosed excluding the following\ncolumns:\n- 'Intensity figure in base year for total Scope 3'\n- 'Intensity figure in base year for all selected Scopes'\n- Intensity figure in reporting year for total Scope 3'\n- Intensity figure in reporting year for all selected Scopes'\n- 'Intensity figure at end date of target for all selected\nScopes'\n- '% of target achieved relative to base year'\nPartially completed rows will not receive full points.\nA maximum of 14/14 points is available for this question.",
+      "updated_to": "Points will be awarded per completed cell in proportion to\nthe number of rows disclosed excluding the following\ncolumns:\n- 'Intensity figure in base year for total Scope 3'"
+    },
+    "7.53.4": {
+      "description": "For financial services\norganizations disclosing on\nclimate change, criteria iii) at\nawareness level has been\nupdated to clarify that\norganizations achieving\n100% of their targets receive\nfull credit.",
+      "changes_to_scoring": "Updated from:\niii) Figure greater than 0 provided in column '% of target\nachieved relative to base year' OR 'New' selected in column\n'Target status in reporting year' AND date provided in\ncolumn 'Date target was set' is the same as date provided\nin column 'End date' in question 1.4 - 2 points\nUpdated to:\niii) Figure greater than 0 provided in column '% of target\nachieved relative to base year' OR 'New' selected in column\n'Target status in reporting year' AND date provided in\ncolumn 'Date target was set' is the same as date provided\nin column 'End date' in question 1.4",
+      "change_type": "update",
+      "updated_from": "iii) Figure greater than 0 provided in column '% of target\nachieved relative to base year' OR 'New' selected in column\n'Target status in reporting year' AND date provided in\ncolumn 'Date target was set' is the same as date provided\nin column 'End date' in question 1.4 - 2 points",
+      "updated_to": "iii) Figure greater than 0 provided in column '% of target\nachieved relative to base year' OR 'New' selected in column\n'Target status in reporting year' AND date provided in\ncolumn 'Date target was set' is the same as date provided\nin column 'End date' in question 1.4"
+    },
+    "7.54.1": {
+      "description": "For organizations\nresponding to climate\nchange, column ‘Target\ncoverage’ has been excluded\nfrom disclosure and\nawareness level scoring for\nall sectors. The inability to\nadd text to the ‘Other, please\nspecify’ drop-down option in\nthis column will not be\npenalised.\nIn addition, awareness\ncriteria and management\nlevel criteria ii have been\nupdated to clarify that\norganizations achieving\n100% of their targets receive\nfull credit.",
+      "changes_to_scoring": "Disclosure level",
+      "change_type": "addition",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "7.54.2": {
+      "description": "For organizations\nresponding to climate",
+      "changes_to_scoring": "Disclosure level",
+      "change_type": "other",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "7.55.1": {
+      "description": "For all sectors disclosing on\nclimate change, criteria i at\ndisclosure level has been\nclarified.",
+      "changes_to_scoring": "Criteria i updated to clarify that column 'Number of",
+      "change_type": "clarification",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "7.66.1": {
+      "description": "For oil and gas organizations\ndisclosing to climate change,\nthe awareness criteria has\nbeen clarified. In the\nguidance section of the\ndiscloser portal the\ndisclosure criteria is\nincorrectly duplicated.\nPlease note, the criteria is\ncorrectly denoted in the PDF\nversion of the CDP Full",
+      "changes_to_scoring": "Updated from:\nPoints will be awarded per completed cell in proportion to\nthe number of cells displayed.\nA maximum of 4/4 points is available for this question.\nUpdated to:",
+      "change_type": "clarification",
+      "updated_from": "Points will be awarded per completed cell in proportion to\nthe number of cells displayed.\nA maximum of 4/4 points is available for this question.",
+      "updated_to": ""
+    },
+    "8.1": {
+      "description": "For all organizations\ndisclosing to forests. The\nChinese translation of the\n“No” option in column\n“Exclusion from disclosure”\nwas incorrect. This issue\nwas fixed on 17 July 2025,\nand affected Chinese\ntranslations only.",
+      "changes_to_scoring": "N/A",
+      "change_type": "other",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "8.7.2": {
+      "description": "For all organizations\ndisclosing to forests,\nclarification to management\nand leadership criteria to\nclarify that organizations\nachieving 100% of their\ntargets receive full credit.",
+      "changes_to_scoring": "Management criteria:\nUpdated from:\nAll of the following met - 1 point\nAny of the following selected in column 'Target status in\nreporting year'\n- 'New'\n- 'Underway'\n- 'Achieved'\n- 'Revised'\nAND\nDate provided in column ‘End date of target’ is before or the\nsame as 31st December 2025",
+      "change_type": "clarification",
+      "updated_from": "All of the following met - 1 point\nAny of the following selected in column 'Target status in\nreporting year'\n- 'New'\n- 'Underway'\n- 'Achieved'\n- 'Revised'\nAND\nDate provided in column ‘End date of target’ is before or the\nsame as 31st December 2025",
+      "updated_to": ""
+    },
+    "9.2": {
+      "description": "For all organizations\ndisclosing on water security,\nexcluding financial services\norganizations, the point\nallocation at leadership level\nfor route A has been\nclarified.",
+      "changes_to_scoring": "Point allocation updated\nUpdated from:\n...\nRoute A)\nFor each row where '100%' selected in column '% of\nsites/facilities/operations' AND 0.5/0.5 Management points\nawarded in row – 0.1 points\nA maximum of 0.1/0.1 points is available for this route.\n...\nTo:\n...\nROUTE A)\nFor each row where '100%' selected in column '% of\nsites/facilities/operations' AND\n0.5/0.5 Management points awarded in row – 0.1 points\nA maximum of 1.2/1.2 points is available for this route.\n...",
+      "change_type": "clarification",
+      "updated_from": "...\nRoute A)\nFor each row where '100%' selected in column '% of\nsites/facilities/operations' AND 0.5/0.5 Management points\nawarded in row – 0.1 points\nA maximum of 0.1/0.1 points is available for this route.\n...\nTo:\n...\nROUTE A)\nFor each row where '100%' selected in column '% of\nsites/facilities/operations' AND\n0.5/0.5 Management points awarded in row – 0.1 points\nA maximum of 1.2/1.2 points is available for this route.\n...",
+      "updated_to": ""
+    },
+    "9.2.6": {
+      "description": "For organizations disclosing\non water security in the food,\nbeverage & tobacco and\nagricultural commodities\nsectors (FB and AC), a new\nroute has been added for the",
+      "changes_to_scoring": "Disclosure scoring:\nUpdated from:\nPoints will be awarded per completed cell in proportion to\nthe number of cells displayed.",
+      "change_type": "addition",
+      "updated_from": "Points will be awarded per completed cell in proportion to\nthe number of cells displayed.",
+      "updated_to": ""
+    },
+    "9.8": {
+      "description": "For organisations disclosing\non water security in the food,\nbeverage & tobacco and\nagricultural commodities\nsectors (FB and AC), column\n‘Water intensity value\n(m3/denominator)’ is no\nlonger assessed at any level.",
+      "changes_to_scoring": "Column ‘Water intensity value (m3/denominator)’\nincorrectly displays for all organisations responding to\nquestion 9.8 for row ‘Cattle’.\nCDP have removed scoring for this column at all levels.\nDisclosure scoring for Water:\nUpdated from:\nPoints will be awarded per completed cell in proportion to\nthe number of cells displayed.\nA maximum of 6/6 points is available for this question.\nUpdated to:\nPoints will be awarded per completed cell in proportion to\nthe number of cells displayed (excluding column ‘Water\nintensity value (m3/denominator)’).\nA maximum of 6/6 points is available for this question.\nAwareness scoring for Water:\nUpdated from:",
+      "change_type": "update",
+      "updated_from": "Points will be awarded per completed cell in proportion to\nthe number of cells displayed.\nA maximum of 6/6 points is available for this question.",
+      "updated_to": "Points will be awarded per completed cell in proportion to\nthe number of cells displayed (excluding column ‘Water\nintensity value (m3/denominator)’).\nA maximum of 6/6 points is available for this question.\nAwareness scoring for Water:"
+    },
+    "9.9": {
+      "description": "For organizations disclosing\non water security in the food,\nbeverage & tobacco and\nagricultural commodities\nsectors (FB and AC), a new\nroute has been added for the\nsoy row in all scoring levels.\nWhere soy is not indicated to\nbe significant in question\n1.22, disclosers will not be\npenalised for leaving the\nunlocked soy row blank.",
+      "changes_to_scoring": "Disclosure scoring:\nUpdated from:\nPoints will be awarded per completed cell in proportion to\nthe number of rows disclosed.\nPartially completed rows will not receive full points.\nA maximum of 6/6 points is available for this question.\nUpdated to:\nROUTE A)\nPoints will be awarded per completed cell in proportion to\nthe number of rows disclosed.\nPartially completed rows will not receive full points.\nA maximum of 6/6 points is available for this question.\nROUTE B)\nFor row 'Soy' where 'Yes' is NOT selected in column 'Is this\ncommodity considered significant...' in row 'Soy' in question\n1.22 - 0/0 points\nAwareness scoring:\nUpdated from:",
+      "change_type": "addition",
+      "updated_from": "Points will be awarded per completed cell in proportion to\nthe number of rows disclosed.\nPartially completed rows will not receive full points.\nA maximum of 6/6 points is available for this question.",
+      "updated_to": "ROUTE A)\nPoints will be awarded per completed cell in proportion to\nthe number of rows disclosed.\nPartially completed rows will not receive full points.\nA maximum of 6/6 points is available for this question.\nROUTE B)\nFor row 'Soy' where 'Yes' is NOT selected in column 'Is this\ncommodity considered significant...' in row 'Soy' in question\n1.22 - 0/0 points\nAwareness scoring:"
+    },
+    "9.15.2": {
+      "description": "For organizations disclosing\non water security, awareness",
+      "changes_to_scoring": "Proportional scoring wording clarified from ‘per complete\nrow’ to ‘per row’.",
+      "change_type": "clarification",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "10.5.1": {
+      "description": "In the guidance, the link to\nthe Ellen MacArthur\nFoundation’s Global\nRecyclability Assessment\nTool does not work.",
+      "changes_to_scoring": "None",
+      "change_type": "other",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "10.6": {
+      "description": "Guidance for 10.6 does not\nindicate that row “Usage of\nplastics” is shown when\n“Yes” is selected in row\n“Production/commercializati\non of goods/products\npackaging in plastics” in\nquestion 10.2.",
+      "changes_to_scoring": "N/A",
+      "change_type": "other",
+      "updated_from": "",
+      "updated_to": ""
+    },
+    "12.6.1": {
+      "description": "For financial services\norganizations disclosing on\nclimate change, row\n‘Investing (Asset owner) has\nbeen excluded from scoring\nat management level",
+      "changes_to_scoring": "Climate change Management criteria for financial services:\nUpdated from:\nAt least one row disclosed where a corresponding option is\nselected in column 'Portfolio' for each row where 'Yes'\nselected in column 'Activity undertaken' in question 1.10\nAND\nAny option selected excluding 'Internally classified' in\ncolumn 'Taxonomy or methodology used to identify product\ncharacteristics' (excluding rows where 'Insurance\nunderwriting (Insurance company)' is selected in column\n'Portfolio') - 2 points\nUpdated to:\nAt least one row disclosed where a corresponding option is\nselected in column 'Portfolio' for each row where 'Yes'\nselected in column 'Activity undertaken' in question 1.10\nAND\nAny option selected excluding 'Internally classified' in\ncolumn 'Taxonomy or methodology used to identify product\ncharacteristics' (excluding rows where 'Insurance\nunderwriting (Insurance company)' or 'Investing (Asset\nowner)' is selected in column 'Portfolio') - 2 points",
+      "change_type": "update",
+      "updated_from": "At least one row disclosed where a corresponding option is\nselected in column 'Portfolio' for each row where 'Yes'\nselected in column 'Activity undertaken' in question 1.10\nAND\nAny option selected excluding 'Internally classified' in\ncolumn 'Taxonomy or methodology used to identify product\ncharacteristics' (excluding rows where 'Insurance\nunderwriting (Insurance company)' is selected in column\n'Portfolio') - 2 points",
+      "updated_to": "At least one row disclosed where a corresponding option is\nselected in column 'Portfolio' for each row where 'Yes'\nselected in column 'Activity undertaken' in question 1.10\nAND\nAny option selected excluding 'Internally classified' in\ncolumn 'Taxonomy or methodology used to identify product\ncharacteristics' (excluding rows where 'Insurance\nunderwriting (Insurance company)' or 'Investing (Asset\nowner)' is selected in column 'Portfolio') - 2 points"
+    }
+  }
+}

@@ -48,35 +48,43 @@ cdp-modeling/
 ## 🔄 데이터 처리 파이프라인
 
 ### STEP 1: PDF 파싱
+
 ```bash
 python 1_parse_pdf.py
 ```
+
 - **Input**: `data/2025_SK-Inc_Sustainability Report_ENG.pdf`
 - **Output**: `data/extracted_text.json`
 - **설정**: 200 words/chunk, 50 words overlap
 - **결과**: 554개 chunk 생성
 
 ### STEP 2: Vector DB 생성
+
 ```bash
 python 2_create_vectordb.py
 ```
+
 - **Input**: `data/extracted_text.json`
 - **Model**: BAAI/bge-m3 (1024-dim embeddings)
 - **Output**: `data/qdrant_db/`
 - **설정**: Collection "company_docs", COSINE similarity
 
 ### STEP 3: CDP 업데이트 파싱
+
 ```bash
 python 7_parse_cdp_updates.py
 ```
+
 - **Input**: `data/Corporate_Questionnaires_*.pdf`
 - **Output**: `config/cdp_2025_updates.json`
 - **결과**: 35개 질문의 변경사항 추출
 
 ### STEP 4: 답변 생성 (Diff 방식)
+
 ```bash
 python 8_generate_answers.py
 ```
+
 - **Input**:
   - `config/previous_cdp_answers.json` (2024년 답변)
   - `config/cdp_2025_updates.json` (CDP 질문 변경)
@@ -97,18 +105,21 @@ Query → [Stage 1: Vector Search] → 20 candidates
 ```
 
 #### Stage 1: Dense Retrieval (Vector Search)
+
 - **Model**: BAAI/bge-m3
 - **Dimension**: 1024
 - **Similarity**: COSINE
 - **Limit**: 20 candidates
 
 #### Stage 2: Cross-Encoder Reranking
+
 - **Model**: cross-encoder/ms-marco-MiniLM-L-6-v2
 - **Input**: Query-Document pairs
 - **Output**: Relevance scores (-10 ~ +10)
 - **Final**: Top 5 results
 
 ### 성능 개선 결과
+
 - ✅ **Score 구분도**: 500% 향상 (0.6 range → 1.2~6.9 range)
 - ✅ **검색 속도**: 21% 향상
 - ✅ **정확도**: 3.6% 향상
@@ -120,16 +131,17 @@ Query → [Stage 1: Vector Search] → 20 candidates
 
 ### 사용된 Prompt Engineering 기법
 
-| 기법 | 설명 | 적용 위치 |
-|------|------|-----------|
-| **Zero-shot** | 예제 없이 구조만 제시 | Previous answer 구조 |
-| **Few-shot** | 여러 예제 암묵적 제시 | Change types (keep/modify/add/delete) |
-| **Chain-of-Thought** | 단계별 사고 유도 | "For each sentence... 1. If... 2. If..." |
-| **Structured Output** | JSON 형식 강제 | "Return ONLY valid JSON" |
-| **In-Context Learning** | 이전 답변 구조 학습 | previous_data JSON |
-| **RAG (Retrieval-Augmented)** | 외부 증거 주입 | SK Report evidence |
+| 기법                          | 설명                  | 적용 위치                                |
+| ----------------------------- | --------------------- | ---------------------------------------- |
+| **Zero-shot**                 | 예제 없이 구조만 제시 | Previous answer 구조                     |
+| **Few-shot**                  | 여러 예제 암묵적 제시 | Change types (keep/modify/add/delete)    |
+| **Chain-of-Thought**          | 단계별 사고 유도      | "For each sentence... 1. If... 2. If..." |
+| **Structured Output**         | JSON 형식 강제        | "Return ONLY valid JSON"                 |
+| **In-Context Learning**       | 이전 답변 구조 학습   | previous_data JSON                       |
+| **RAG (Retrieval-Augmented)** | 외부 증거 주입        | SK Report evidence                       |
 
 ### LLM 설정
+
 - **Model**: gpt-4o-mini (OpenAI)
 - **Temperature**: 0.3
 - **Max Tokens**: 4000
@@ -156,7 +168,9 @@ Query → [Stage 1: Vector Search] → 20 candidates
         "description": "No changes for this question in 2025",
         "source": "Corporate_Questionnaires_Updates_2025_V1.3"
       },
-      "previous_answer_2024": { /* 2024년 답변 구조 */ },
+      "previous_answer_2024": {
+        /* 2024년 답변 구조 */
+      },
       "sk_2025_report_evidence": [
         {
           "text": "assessing climate-related risks...",
@@ -176,7 +190,9 @@ Query → [Stage 1: Vector Search] → 20 candidates
             "evidence_snippet": "A systematic climate risk identification..."
           }
         ],
-        "final_suggested_answer": { /* 최종 제안 답변 */ }
+        "final_suggested_answer": {
+          /* 최종 제안 답변 */
+        }
       },
       "review_flags": {
         "needs_review": true,
@@ -252,6 +268,7 @@ EOF
 ## 📌 주요 설정 파일
 
 ### .env
+
 ```bash
 OPENAI_API_KEY=your_openai_api_key_here
 OPENAI_MODEL=gpt-4o-mini
@@ -274,50 +291,22 @@ temperature = 0.3   # 창의성 (낮을수록 일관성 높음)
 max_tokens = 4000   # 최대 응답 길이
 ```
 
----
-
-## 🔍 문제 해결
-
-### 1. Vector DB 오류
-```bash
-# Qdrant DB 재생성
-rm -rf data/qdrant_db
-python 2_create_vectordb.py
-```
-
-### 2. OpenAI API 오류
-```bash
-# API 키 확인
-cat .env | grep OPENAI_API_KEY
-
-# 또는 새 키 발급
-# https://platform.openai.com/api-keys
-```
-
-### 3. Embedding 모델 다운로드 오류
-```python
-# 수동 다운로드
-from sentence_transformers import SentenceTransformer
-model = SentenceTransformer('BAAI/bge-m3')
-```
-
----
-
 ## 📈 성능 지표
 
-| 항목 | 값 |
-|------|-----|
-| **처리 질문 수** | 6개 |
-| **생성 변경사항** | 47개 |
-| **평균 증거 개수** | 5개/질문 |
-| **평균 Confidence** | 2.5~6.9 (high) |
-| **처리 시간** | ~2분 (6개 질문) |
+| 항목                | 값              |
+| ------------------- | --------------- |
+| **처리 질문 수**    | 6개             |
+| **생성 변경사항**   | 47개            |
+| **평균 증거 개수**  | 5개/질문        |
+| **평균 Confidence** | 2.5~6.9 (high)  |
+| **처리 시간**       | ~2분 (6개 질문) |
 
 ---
 
 ## 🛣️ 다음 단계
 
 ### Backend API (계획)
+
 ```python
 # FastAPI 또는 Flask로 REST API 제공
 GET /api/cdp/questions/{question_id}
@@ -325,12 +314,14 @@ POST /api/translate/ko-to-en
 ```
 
 ### Frontend Integration (계획)
+
 - React/Vue에서 영문 데이터 받기
 - 실시간 한글 번역 (i18n)
 - 사용자 수정 → RDB 저장
 - 제출 시점에 한→영 번역
 
 ### RDB Schema (계획)
+
 ```sql
 CREATE TABLE users_cdp_answers (
     id SERIAL PRIMARY KEY,
@@ -344,20 +335,3 @@ CREATE TABLE users_cdp_answers (
 ```
 
 ---
-
-## 📝 라이선스
-
-This project is for SK Inc. internal use only.
-
----
-
-## 👥 Contributors
-
-- **Developer**: Claude (Anthropic)
-- **Product Owner**: SK Inc. ESG Team
-
----
-
-## 📞 문의
-
-시스템 관련 문의: [담당자 이메일]

@@ -1,0 +1,122 @@
+{
+  "version": "2025",
+  "description": "CDP 2025 그룹화된 옵션 (Grouped Select용)",
+
+  "risk_types": {
+    "Acute physical": [
+      "Avalanche",
+      "Cold wave/frost",
+      "Cyclone, hurricane, typhoon",
+      "Drought",
+      "Flood (coastal, fluvial, pluvial, ground water)",
+      "Heat wave",
+      "Heavy precipitation (rain, hail, snow/ice)",
+      "Landslide",
+      "Storm (including blizzards, dust, and sandstorms)",
+      "Tornado",
+      "Wildfire",
+      "Other acute physical, please specify"
+    ],
+    "Chronic physical": [
+      "Changing precipitation patterns and types",
+      "Changing temperature (air, freshwater, marine water)",
+      "Coastal erosion",
+      "Heat stress",
+      "Ocean acidification",
+      "Permafrost thawing",
+      "Sea level rise",
+      "Soil degradation",
+      "Soil erosion",
+      "Water scarcity",
+      "Water stress",
+      "Other chronic physical, please specify"
+    ],
+    "Policy": [
+      "Carbon pricing mechanisms",
+      "Enhanced emissions-reporting obligations",
+      "Mandates on and regulation of existing products and services",
+      "Other policy, please specify"
+    ],
+    "Technology": [
+      "Substitution of existing products and services with lower emissions options",
+      "Unsuccessful investment in new technologies",
+      "Other technology, please specify"
+    ],
+    "Market": [
+      "Changing customer behavior",
+      "Increased cost of raw materials",
+      "Uncertainty in market signals",
+      "Other market, please specify"
+    ],
+    "Reputation": [
+      "Increased stakeholder concern or negative stakeholder feedback",
+      "Stigmatization of sector",
+      "Other reputation, please specify"
+    ],
+    "Liability": [
+      "Exposure to litigation",
+      "Non-compliance with regulations",
+      "Other liability, please specify"
+    ]
+  },
+
+  "opportunity_types": {
+    "Resource efficiency": [
+      "Use of more efficient production and distribution processes",
+      "Use of recycling",
+      "Move to more efficient buildings",
+      "Reduced water usage and consumption",
+      "Other resource efficiency, please specify"
+    ],
+    "Energy source": [
+      "Use of lower-emission sources of energy",
+      "Use of supportive policy incentives",
+      "Use of new technologies",
+      "Participation in carbon market",
+      "Other energy source, please specify"
+    ],
+    "Products and services": [
+      "Development and/or expansion of low emission goods and services",
+      "Development of climate adaptation solutions",
+      "Shift in consumer preferences",
+      "Other products and services, please specify"
+    ],
+    "Markets": [
+      "Access to new markets",
+      "Use of public-sector incentives",
+      "Other markets, please specify"
+    ],
+    "Resilience": [
+      "Resource substitutes/diversification",
+      "Other resilience, please specify"
+    ]
+  },
+
+  "tools_and_methods": {
+    "Enterprise Risk Management": [
+      "COSO Enterprise Risk Management Framework",
+      "ISO 31000 Risk Management Standard",
+      "Other enterprise risk management, please specify"
+    ],
+    "International methodologies": [
+      "Environmental Impact Assessment",
+      "IPCC Climate Change Projections",
+      "ISO 14001 Environmental Management Standard",
+      "Life Cycle Assessment",
+      "Science Based Targets Initiative (SBTi)",
+      "TCFD recommendations",
+      "TNFD recommendations",
+      "Other international methodology, please specify"
+    ],
+    "Sector-specific tools": [
+      "SASB standards",
+      "Other sector-specific, please specify"
+    ],
+    "Other tools": [
+      "Internal company methods",
+      "External consultants",
+      "Scenario analysis",
+      "Other, please specify"
+    ]
+  }
+}

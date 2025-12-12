@@ -1,0 +1,148 @@
+{
+  "version": "2025",
+  "description": "CDP 2025 공통 옵션 정의",
+
+  "yes_no": ["Yes", "No"],
+
+  "yes_no_plan": [
+    "Yes",
+    "No, but we plan to within the next two years",
+    "No, and we do not plan to within the next two years"
+  ],
+
+  "process_in_place": [
+    "Yes",
+    "No – this is our first year of disclosure",
+    "No – we have previously disclosed but have not had a process",
+    "No – we do not have a process"
+  ],
+
+  "dependencies_impacts": [
+    "Both dependencies and impacts",
+    "Dependencies only",
+    "Impacts only"
+  ],
+
+  "risks_opportunities": [
+    "Both risks and opportunities",
+    "Risks only",
+    "Opportunities only"
+  ],
+
+  "environmental_issues": [
+    "Climate change",
+    "Forests",
+    "Water",
+    "Plastics",
+    "Biodiversity"
+  ],
+
+  "diro_covered": [
+    "Dependencies",
+    "Impacts",
+    "Risks",
+    "Opportunities"
+  ],
+
+  "value_chain_stages": [
+    "Direct operations",
+    "Upstream value chain",
+    "Downstream value chain"
+  ],
+
+  "coverage": ["Full", "Partial"],
+
+  "supplier_tiers": [
+    "Tier 1 suppliers",
+    "Tier 2 suppliers",
+    "Tier 3 suppliers",
+    "Tier 4+ suppliers"
+  ],
+
+  "assessment_type": [
+    "Qualitative only",
+    "Quantitative only",
+    "Qualitative and quantitative"
+  ],
+
+  "frequency": [
+    "More than once a year",
+    "Annually",
+    "Every two years",
+    "Every three years or more",
+    "As important matters arise",
+    "Not defined"
+  ],
+
+  "time_horizons": [
+    "Short-term",
+    "Medium-term",
+    "Long-term"
+  ],
+
+  "location_specificity": [
+    "Site-specific",
+    "Local",
+    "Sub-national",
+    "National",
+    "Not location specific"
+  ],
+
+  "integration": [
+    "Integrated into multi-disciplinary organization-wide risk management process",
+    "A specific environmental risk management process"
+  ],
+
+  "primary_reasons_no_process": [
+    "Lack of internal resources, capabilities, or expertise",
+    "No standardized procedure",
+    "Not an immediate strategic priority",
+    "Judged to be unimportant or not relevant",
+    "Other, please specify"
+  ],
+
+  "likelihood": [
+    "Virtually certain",
+    "Very likely",
+    "Likely",
+    "More likely than not",
+    "About as likely as not",
+    "Unlikely",
+    "Very unlikely",
+    "Exceptionally unlikely"
+  ],
+
+  "magnitude": [
+    "High",
+    "Medium-high",
+    "Medium",
+    "Medium-low",
+    "Low"
+  ],
+
+  "scenario_types": [
+    "Physical scenarios",
+    "Transition scenarios",
+    "Both physical and transition"
+  ],
+
+  "scenario_sources": [
+    "IEA NZE 2050",
+    "IEA STEPS",
+    "IEA APS",
+    "IPCC RCP 2.6",
+    "IPCC RCP 4.5",
+    "IPCC RCP 8.5",
+    "NGFS scenarios",
+    "Internally developed",
+    "Other, please specify"
+  ],
+
+  "temperature_alignment": [
+    "1.5°C",
+    "Below 2°C",
+    "2°C",
+    "Above 2°C",
+    "N/A"
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "report_generated_at": "2025-12-12T21:37:14.080728",
+  "data_source": "cdp_generated_answers.json",
+  "overall_grade": "C",
+  "overall_score": 61.11,
+  "retrieval_metrics": {
+    "avg_similarity_score": 0.5218,
+    "min_similarity_score": 0.393,
+    "max_similarity_score": 0.648,
+    "std_similarity_score": 0.0578,
+    "high_confidence_count": 10,
+    "medium_confidence_count": 96,
+    "low_confidence_count": 4,
+    "section_distribution": {
+      "governance": 103,
+      "unknown": 7
+    },
+    "unique_pages_referenced": 18,
+    "avg_pages_per_question": 5
+  },
+  "generation_metrics": {
+    "total_questions": 22,
+    "avg_confidence": 0.625,
+    "high_confidence_answers": 2,
+    "medium_confidence_answers": 19,
+    "low_confidence_answers": 1,
+    "avg_answer_length": 3019.0,
+    "min_answer_length": 2194,
+    "max_answer_length": 4522
+  },
+  "ingestion_metrics": {
+    "total_chunks_referenced": 110,
+    "unique_chunks_used": 18,
+    "avg_chunk_length": 203,
+    "source_diversity_score": 0.1636
+  },
+  "question_analyses": [
+    {
+      "question_id": "2.1",
+      "question_title": "How does your organization define short-, medium-,...",
+      "confidence": 0.51,
+      "avg_retrieval_score": 0.4234,
+      "num_sources": 5,
+      "source_pages": [
+        193,
+        61,
+        28,
+        63,
+        62
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 2820,
+      "quality_grade": "C"
+    },
+    {
+      "question_id": "2.2",
+      "question_title": "Does your organization have a process for identify...",
+      "confidence": 0.64,
+      "avg_retrieval_score": 0.5308,
+      "num_sources": 5,
+      "source_pages": [
+        62,
+        28,
+        44,
+        61,
+        43
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 2361,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.1",
+      "question_title": "Does your organization have a process for identify...",
+      "confidence": 0.65,
+      "avg_retrieval_score": 0.538,
+      "num_sources": 5,
+      "source_pages": [
+        43,
+        193,
+        28,
+        44,
+        62
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 2701,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.2",
+      "question_title": "Provide details of your organization’s process for...",
+      "confidence": 0.67,
+      "avg_retrieval_score": 0.5624,
+      "num_sources": 5,
+      "source_pages": [
+        43,
+        193,
+        61,
+        62,
+        28
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 4241,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.3",
+      "question_title": "Provide mining-specific details of your organizati...",
+      "confidence": 0.54,
+      "avg_retrieval_score": 0.453,
+      "num_sources": 5,
+      "source_pages": [
+        61,
+        62,
+        63,
+        53,
+        191
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 2600,
+      "quality_grade": "C"
+    },
+    {
+      "question_id": "2.2.4",
+      "question_title": "Does your organization have a process for identify...",
+      "confidence": 0.66,
+      "avg_retrieval_score": 0.5526,
+      "num_sources": 5,
+      "source_pages": [
+        28,
+        62,
+        44,
+        193,
+        12
+      ],
+      "source_sections": [
+        "unknown",
+        "governance"
+      ],
+      "answer_length": 2714,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.5",
+      "question_title": "Does your organization have a process for identify...",
+      "confidence": 0.68,
+      "avg_retrieval_score": 0.5668,
+      "num_sources": 5,
+      "source_pages": [
+        193,
+        43,
+        28,
+        40,
+        44
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 2483,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.6",
+      "question_title": "Provide details of your organization’s process for...",
+      "confidence": 0.65,
+      "avg_retrieval_score": 0.5426,
+      "num_sources": 5,
+      "source_pages": [
+        40,
+        39,
+        41,
+        193,
+        43
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 4522,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.7",
+      "question_title": "Are the interconnections between environmental dep...",
+      "confidence": 0.74,
+      "avg_retrieval_score": 0.6182,
+      "num_sources": 5,
+      "source_pages": [
+        193,
+        41,
+        63,
+        28,
+        44
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 3557,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.8",
+      "question_title": "Does your organization consider environmental info...",
+      "confidence": 0.58,
+      "avg_retrieval_score": 0.4834,
+      "num_sources": 5,
+      "source_pages": [
+        41,
+        28,
+        44,
+        12,
+        193
+      ],
+      "source_sections": [
+        "unknown",
+        "governance"
+      ],
+      "answer_length": 2194,
+      "quality_grade": "C"
+    },
+    {
+      "question_id": "2.2.9",
+      "question_title": "Indicate the environmental information your organi...",
+      "confidence": 0.59,
+      "avg_retrieval_score": 0.4956,
+      "num_sources": 5,
+      "source_pages": [
+        41,
+        40,
+        193,
+        12,
+        28
+      ],
+      "source_sections": [
+        "unknown",
+        "governance"
+      ],
+      "answer_length": 2663,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.1",
+      "question_title": "Does your organization have a process for identify...",
+      "confidence": 0.65,
+      "avg_retrieval_score": 0.538,
+      "num_sources": 5,
+      "source_pages": [
+        43,
+        193,
+        28,
+        44,
+        62
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 2391,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.2",
+      "question_title": "Provide details of your organization’s process for...",
+      "confidence": 0.67,
+      "avg_retrieval_score": 0.5624,
+      "num_sources": 5,
+      "source_pages": [
+        43,
+        193,
+        61,
+        62,
+        28
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 3846,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.3",
+      "question_title": "Provide mining-specific details of your organizati...",
+      "confidence": 0.54,
+      "avg_retrieval_score": 0.453,
+      "num_sources": 5,
+      "source_pages": [
+        61,
+        62,
+        63,
+        53,
+        191
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 2982,
+      "quality_grade": "C"
+    },
+    {
+      "question_id": "2.2.4",
+      "question_title": "Does your organization have a process for identify...",
+      "confidence": 0.66,
+      "avg_retrieval_score": 0.5526,
+      "num_sources": 5,
+      "source_pages": [
+        28,
+        62,
+        44,
+        193,
+        12
+      ],
+      "source_sections": [
+        "unknown",
+        "governance"
+      ],
+      "answer_length": 2651,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.5",
+      "question_title": "Does your organization have a process for identify...",
+      "confidence": 0.68,
+      "avg_retrieval_score": 0.5668,
+      "num_sources": 5,
+      "source_pages": [
+        193,
+        43,
+        28,
+        40,
+        44
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 2840,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.6",
+      "question_title": "Provide details of your organization’s process for...",
+      "confidence": 0.65,
+      "avg_retrieval_score": 0.5426,
+      "num_sources": 5,
+      "source_pages": [
+        40,
+        39,
+        41,
+        193,
+        43
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 3741,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.7",
+      "question_title": "Are the interconnections between environmental dep...",
+      "confidence": 0.74,
+      "avg_retrieval_score": 0.6182,
+      "num_sources": 5,
+      "source_pages": [
+        193,
+        41,
+        63,
+        28,
+        44
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 3282,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.2.8",
+      "question_title": "Does your organization consider environmental info...",
+      "confidence": 0.58,
+      "avg_retrieval_score": 0.4834,
+      "num_sources": 5,
+      "source_pages": [
+        41,
+        28,
+        44,
+        12,
+        193
+      ],
+      "source_sections": [
+        "unknown",
+        "governance"
+      ],
+      "answer_length": 2237,
+      "quality_grade": "C"
+    },
+    {
+      "question_id": "2.2.9",
+      "question_title": "Indicate the environmental information your organi...",
+      "confidence": 0.59,
+      "avg_retrieval_score": 0.4956,
+      "num_sources": 5,
+      "source_pages": [
+        41,
+        40,
+        193,
+        12,
+        28
+      ],
+      "source_sections": [
+        "unknown",
+        "governance"
+      ],
+      "answer_length": 2543,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.3",
+      "question_title": "Have you identified priority locations across your...",
+      "confidence": 0.6,
+      "avg_retrieval_score": 0.4986,
+      "num_sources": 5,
+      "source_pages": [
+        61,
+        62,
+        63,
+        193,
+        12
+      ],
+      "source_sections": [
+        "unknown",
+        "governance"
+      ],
+      "answer_length": 3337,
+      "quality_grade": "B"
+    },
+    {
+      "question_id": "2.4",
+      "question_title": "How does your organization define substantive effe...",
+      "confidence": 0.48,
+      "avg_retrieval_score": 0.4022,
+      "num_sources": 5,
+      "source_pages": [
+        168,
+        192,
+        170,
+        17,
+        144
+      ],
+      "source_sections": [
+        "governance"
+      ],
+      "answer_length": 3720,
+      "quality_grade": "C"
+    }
+  ],
+  "key_findings": [
+    "[보통] 평균 신뢰도 62.5%로 중간 수준의 답변 품질",
+    "[검색] 평균 유사도 0.522으로 관련 문서를 적절히 검색",
+    "[소스] 18개의 고유 청크 활용, 다양성 점수: 16.36%",
+    "[커버리지] 총 18개 페이지 참조, 질문당 평균 5개 페이지",
+    "[등급분포] A: 0, B: 16, C: 6, D: 0",
+    "[섹션] 주요 참조 섹션 - governance: 103회, unknown: 7회",
+    "[주의] 낮은 신뢰도 질문 (1개): 2.4"
+  ],
+  "improvement_recommendations": [
+    "[Embedding Model] 현재 all-MiniLM-L6-v2 모델 대신 더 큰 모델 (예: e5-large, bge-large) 사용을 고려하세요. 또는 CDP/ESG 도메인에 fine-tuned된 임베딩 모델 사용을 권장합니다.",
+    "[Chunking] 동일한 청크가 반복적으로 사용되고 있습니다. 청크 크기 조정(현재 1000자) 또는 semantic chunking 적용을 고려하세요.",
+    "[Generation] 1개 질문의 신뢰도가 낮습니다. 해당 질문들에 대해 top_k 값을 늘리거나, 프롬프트 튜닝을 권장합니다.",
+    "[평가체계] 현재 confidence는 cosine similarity 기반입니다. 정확한 RAG 평가를 위해 Ground Truth 데이터셋 구축 또는 RAGAS, LLM-as-Judge 방식의 평가 도입을 권장합니다."
+  ]
+}

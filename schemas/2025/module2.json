@@ -1,0 +1,619 @@
+{
+  "version": "2025",
+  "module": "2",
+  "title": "Dependencies, Impacts, Risks, and Opportunities",
+  "description": "CDP 2025 Module 2 질문별 응답 스키마",
+
+  "questions": {
+    "2.1": {
+      "title": "Time horizons definition",
+      "title_ko": "시간 범위 정의",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "row_labels": ["Short-term", "Medium-term", "Long-term"],
+      "columns": [
+        {
+          "id": "time_horizon",
+          "header": "Time horizon",
+          "header_ko": "시간 범위",
+          "type": "select",
+          "options_ref": "time_horizons",
+          "required": true
+        },
+        {
+          "id": "from_years",
+          "header": "From (years)",
+          "header_ko": "시작 (년)",
+          "type": "number",
+          "min_value": 0,
+          "max_value": 100,
+          "required": true
+        },
+        {
+          "id": "to_years",
+          "header": "To (years)",
+          "header_ko": "종료 (년)",
+          "type": "number",
+          "min_value": 0,
+          "max_value": 100,
+          "required": true
+        },
+        {
+          "id": "rationale",
+          "header": "How this time horizon is linked to strategic and/or financial planning",
+          "header_ko": "전략/재무 계획과의 연관성",
+          "type": "textarea",
+          "max_length": 1500,
+          "required": false
+        }
+      ]
+    },
+
+    "2.2": {
+      "title": "Environmental dependencies and impacts management process",
+      "title_ko": "환경 의존성 및 영향 관리 프로세스",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "process_in_place",
+          "header": "Process in place",
+          "header_ko": "프로세스 보유 여부",
+          "type": "select",
+          "options_ref": "process_in_place",
+          "required": true
+        },
+        {
+          "id": "deps_impacts_evaluated",
+          "header": "Dependencies and/or impacts evaluated in this process",
+          "header_ko": "평가 대상",
+          "type": "select",
+          "options_ref": "dependencies_impacts",
+          "condition": {"field": "process_in_place", "value": "Yes"}
+        },
+        {
+          "id": "primary_reason_no",
+          "header": "Primary reason for not evaluating",
+          "header_ko": "미평가 주요 사유",
+          "type": "select",
+          "options_ref": "primary_reasons_no_process",
+          "condition": {"field": "process_in_place", "value_not": "Yes"}
+        },
+        {
+          "id": "explain_no_process",
+          "header": "Explain why you do not evaluate and describe any plans",
+          "header_ko": "미평가 사유 및 향후 계획",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {"field": "process_in_place", "value_not": "Yes"}
+        }
+      ]
+    },
+
+    "2.2.1": {
+      "title": "Environmental risks and opportunities management process",
+      "title_ko": "환경 리스크 및 기회 관리 프로세스",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "process_in_place",
+          "header": "Process in place",
+          "type": "select",
+          "options_ref": "process_in_place",
+          "required": true
+        },
+        {
+          "id": "risks_opps_evaluated",
+          "header": "Risks and/or opportunities evaluated in this process",
+          "type": "select",
+          "options_ref": "risks_opportunities",
+          "condition": {"field": "process_in_place", "value": "Yes"}
+        },
+        {
+          "id": "informed_by_deps_impacts",
+          "header": "Is this process informed by the dependencies and/or impacts process?",
+          "type": "select",
+          "options_ref": "yes_no",
+          "condition": {"field": "process_in_place", "value": "Yes"}
+        }
+      ]
+    },
+
+    "2.2.2": {
+      "title": "Details of identification, assessment, and management process",
+      "title_ko": "식별, 평가 및 관리 프로세스 세부사항",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "environmental_issue",
+          "header": "Environmental issue",
+          "type": "multiselect",
+          "options_ref": "environmental_issues",
+          "required": true
+        },
+        {
+          "id": "diro_covered",
+          "header": "Indicate which of dependencies, impacts, risks, and opportunities are covered",
+          "type": "multiselect",
+          "options_ref": "diro_covered",
+          "required": true
+        },
+        {
+          "id": "value_chain_stages",
+          "header": "Value chain stages covered",
+          "type": "multiselect",
+          "options_ref": "value_chain_stages",
+          "required": true
+        },
+        {
+          "id": "coverage",
+          "header": "Coverage",
+          "type": "select",
+          "options_ref": "coverage",
+          "required": true
+        },
+        {
+          "id": "supplier_tiers",
+          "header": "Supplier tiers covered",
+          "type": "multiselect",
+          "options_ref": "supplier_tiers",
+          "condition": {"field": "value_chain_stages", "contains": "Upstream value chain"}
+        },
+        {
+          "id": "assessment_type",
+          "header": "Type of assessment",
+          "type": "select",
+          "options_ref": "assessment_type",
+          "required": true
+        },
+        {
+          "id": "frequency",
+          "header": "Frequency of assessment",
+          "type": "select",
+          "options_ref": "frequency",
+          "required": true
+        },
+        {
+          "id": "time_horizons",
+          "header": "Time horizons covered",
+          "type": "multiselect",
+          "options_ref": "time_horizons",
+          "required": true
+        },
+        {
+          "id": "integration",
+          "header": "Integration of risk management process",
+          "type": "select",
+          "options_ref": "integration",
+          "condition": {"field": "diro_covered", "contains": "Risks"}
+        },
+        {
+          "id": "location_specificity",
+          "header": "Location-specificity used",
+          "type": "multiselect",
+          "options_ref": "location_specificity"
+        },
+        {
+          "id": "tools_used",
+          "header": "Tools and/or methods used",
+          "type": "grouped_select",
+          "grouped_options_ref": "tools_and_methods"
+        },
+        {
+          "id": "risk_types_considered",
+          "header": "Risk types considered",
+          "type": "grouped_select",
+          "grouped_options_ref": "risk_types",
+          "condition": {"field": "diro_covered", "contains": "Risks"}
+        },
+        {
+          "id": "opportunity_types_considered",
+          "header": "Opportunity types considered",
+          "type": "grouped_select",
+          "grouped_options_ref": "opportunity_types",
+          "condition": {"field": "diro_covered", "contains": "Opportunities"}
+        },
+        {
+          "id": "further_details",
+          "header": "Further details of process",
+          "type": "textarea",
+          "max_length": 3500
+        }
+      ]
+    },
+
+    "2.2.3": {
+      "title": "Identified environmental dependencies and impacts",
+      "title_ko": "식별된 환경 의존성 및 영향",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "environmental_issue",
+          "header": "Environmental issue",
+          "type": "select",
+          "options_ref": "environmental_issues",
+          "required": true
+        },
+        {
+          "id": "dependency_or_impact",
+          "header": "Dependency or impact",
+          "type": "select",
+          "options": ["Dependency", "Impact"],
+          "required": true
+        },
+        {
+          "id": "type_of_dependency_impact",
+          "header": "Type of dependency/impact",
+          "type": "textarea",
+          "max_length": 500,
+          "required": true
+        },
+        {
+          "id": "description",
+          "header": "Description",
+          "type": "textarea",
+          "max_length": 2500
+        },
+        {
+          "id": "value_chain_stage",
+          "header": "Value chain stage",
+          "type": "multiselect",
+          "options_ref": "value_chain_stages"
+        }
+      ]
+    },
+
+    "2.2.4": {
+      "title": "Portfolio environmental dependencies and impacts (Financial Services)",
+      "title_ko": "포트폴리오 환경 의존성 및 영향 (금융)",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "sector_specific": "Financial Services",
+      "columns": [
+        {
+          "id": "process_in_place",
+          "header": "Process in place",
+          "type": "select",
+          "options_ref": "yes_no_plan",
+          "required": true
+        },
+        {
+          "id": "portfolio_coverage",
+          "header": "Portfolio coverage (%)",
+          "type": "percentage",
+          "min_value": 0,
+          "max_value": 100
+        },
+        {
+          "id": "methodology",
+          "header": "Methodology used",
+          "type": "textarea",
+          "max_length": 2500
+        }
+      ]
+    },
+
+    "2.2.5": {
+      "title": "Portfolio environmental risks and opportunities (Financial Services)",
+      "title_ko": "포트폴리오 환경 리스크 및 기회 (금융)",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "sector_specific": "Financial Services",
+      "columns": [
+        {
+          "id": "process_in_place",
+          "header": "Process in place",
+          "type": "select",
+          "options_ref": "yes_no_plan",
+          "required": true
+        },
+        {
+          "id": "portfolio_coverage",
+          "header": "Portfolio coverage (%)",
+          "type": "percentage",
+          "min_value": 0,
+          "max_value": 100
+        },
+        {
+          "id": "risk_types",
+          "header": "Risk types assessed",
+          "type": "grouped_select",
+          "grouped_options_ref": "risk_types"
+        },
+        {
+          "id": "methodology",
+          "header": "Methodology used",
+          "type": "textarea",
+          "max_length": 2500
+        }
+      ]
+    },
+
+    "2.2.6": {
+      "title": "Scenario analysis usage",
+      "title_ko": "시나리오 분석 사용 여부",
+      "response_type": "table",
+      "allow_multiple_rows": false,
+      "columns": [
+        {
+          "id": "uses_scenario_analysis",
+          "header": "Does your organization use scenario analysis?",
+          "type": "select",
+          "options_ref": "yes_no_plan",
+          "required": true
+        },
+        {
+          "id": "explanation_no",
+          "header": "Explain why not and any future plans",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {"field": "uses_scenario_analysis", "value_not": "Yes"}
+        }
+      ]
+    },
+
+    "2.2.7": {
+      "title": "Scenario analysis details",
+      "title_ko": "시나리오 분석 세부사항",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "environmental_issue",
+          "header": "Environmental issue",
+          "type": "multiselect",
+          "options_ref": "environmental_issues",
+          "required": true
+        },
+        {
+          "id": "scenario_type",
+          "header": "Type of scenario",
+          "type": "select",
+          "options_ref": "scenario_types",
+          "required": true
+        },
+        {
+          "id": "scenario_source",
+          "header": "Scenario source",
+          "type": "select",
+          "options_ref": "scenario_sources"
+        },
+        {
+          "id": "time_horizon",
+          "header": "Time horizon covered",
+          "type": "multiselect",
+          "options_ref": "time_horizons"
+        },
+        {
+          "id": "temperature_alignment",
+          "header": "Temperature alignment",
+          "type": "select",
+          "options_ref": "temperature_alignment"
+        },
+        {
+          "id": "description",
+          "header": "Description of scenario and results",
+          "type": "textarea",
+          "max_length": 3500
+        }
+      ]
+    },
+
+    "2.2.8": {
+      "title": "Business strategy impact from scenario analysis",
+      "title_ko": "시나리오 분석의 사업 전략 영향",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "strategy_impacted",
+          "header": "Has scenario analysis impacted your business strategy?",
+          "type": "select",
+          "options_ref": "yes_no",
+          "required": true
+        },
+        {
+          "id": "description",
+          "header": "Description of impact on business strategy",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {"field": "strategy_impacted", "value": "Yes"}
+        }
+      ]
+    },
+
+    "2.2.9": {
+      "title": "Financial planning impact from scenario analysis",
+      "title_ko": "시나리오 분석의 재무 계획 영향",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "financial_planning_impacted",
+          "header": "Has scenario analysis impacted your financial planning?",
+          "type": "select",
+          "options_ref": "yes_no",
+          "required": true
+        },
+        {
+          "id": "description",
+          "header": "Description of impact on financial planning",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {"field": "financial_planning_impacted", "value": "Yes"}
+        }
+      ]
+    },
+
+    "2.3": {
+      "title": "Identified environmental risks with substantive financial or strategic impact",
+      "title_ko": "재무/전략적 영향이 큰 환경 리스크",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "environmental_issue",
+          "header": "Environmental issue",
+          "type": "select",
+          "options_ref": "environmental_issues",
+          "required": true
+        },
+        {
+          "id": "risk_type",
+          "header": "Risk type",
+          "type": "grouped_select",
+          "grouped_options_ref": "risk_types",
+          "required": true
+        },
+        {
+          "id": "primary_risk_driver",
+          "header": "Primary risk driver",
+          "type": "textarea",
+          "max_length": 500
+        },
+        {
+          "id": "description",
+          "header": "Description of risk",
+          "type": "textarea",
+          "max_length": 2500,
+          "required": true
+        },
+        {
+          "id": "value_chain_stage",
+          "header": "Primary value chain stage affected",
+          "type": "select",
+          "options_ref": "value_chain_stages"
+        },
+        {
+          "id": "time_horizon",
+          "header": "Time horizon",
+          "type": "select",
+          "options_ref": "time_horizons"
+        },
+        {
+          "id": "likelihood",
+          "header": "Likelihood",
+          "type": "select",
+          "options_ref": "likelihood"
+        },
+        {
+          "id": "magnitude",
+          "header": "Magnitude of impact",
+          "type": "select",
+          "options_ref": "magnitude"
+        },
+        {
+          "id": "financial_impact",
+          "header": "Potential financial impact",
+          "type": "number",
+          "min_value": 0
+        },
+        {
+          "id": "financial_impact_explanation",
+          "header": "Explanation of financial impact",
+          "type": "textarea",
+          "max_length": 2500
+        },
+        {
+          "id": "management_method",
+          "header": "Management method",
+          "type": "textarea",
+          "max_length": 2500
+        },
+        {
+          "id": "cost_of_management",
+          "header": "Cost of management",
+          "type": "number",
+          "min_value": 0
+        }
+      ]
+    },
+
+    "2.4": {
+      "title": "Identified environmental opportunities with substantive financial or strategic impact",
+      "title_ko": "재무/전략적 영향이 큰 환경 기회",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "environmental_issue",
+          "header": "Environmental issue",
+          "type": "select",
+          "options_ref": "environmental_issues",
+          "required": true
+        },
+        {
+          "id": "opportunity_type",
+          "header": "Opportunity type",
+          "type": "grouped_select",
+          "grouped_options_ref": "opportunity_types",
+          "required": true
+        },
+        {
+          "id": "primary_opportunity_driver",
+          "header": "Primary opportunity driver",
+          "type": "textarea",
+          "max_length": 500
+        },
+        {
+          "id": "description",
+          "header": "Description of opportunity",
+          "type": "textarea",
+          "max_length": 2500,
+          "required": true
+        },
+        {
+          "id": "value_chain_stage",
+          "header": "Primary value chain stage affected",
+          "type": "select",
+          "options_ref": "value_chain_stages"
+        },
+        {
+          "id": "time_horizon",
+          "header": "Time horizon",
+          "type": "select",
+          "options_ref": "time_horizons"
+        },
+        {
+          "id": "likelihood",
+          "header": "Likelihood",
+          "type": "select",
+          "options_ref": "likelihood"
+        },
+        {
+          "id": "magnitude",
+          "header": "Magnitude of impact",
+          "type": "select",
+          "options_ref": "magnitude"
+        },
+        {
+          "id": "financial_impact",
+          "header": "Potential financial impact",
+          "type": "number",
+          "min_value": 0
+        },
+        {
+          "id": "financial_impact_explanation",
+          "header": "Explanation of financial impact",
+          "type": "textarea",
+          "max_length": 2500
+        },
+        {
+          "id": "strategy_to_realize",
+          "header": "Strategy to realize opportunity",
+          "type": "textarea",
+          "max_length": 2500
+        },
+        {
+          "id": "cost_to_realize",
+          "header": "Cost to realize opportunity",
+          "type": "number",
+          "min_value": 0
+        }
+      ]
+    }
+  }
+}

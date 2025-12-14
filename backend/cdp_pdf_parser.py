@@ -10,8 +10,8 @@ Note: 이 파일은 backward compatibility를 위한 래퍼입니다.
       실제 로직은 model/questionnaire.py에 있습니다.
 """
 
-from model import QuestionnaireParser
-from model.questionnaire import (
+from model import CDPQuestionnaireSectionParser
+from backend.model.parsers.cdp_questionnaire_parser import (
     FieldType,
     ResponseColumn,
     Tag,
@@ -19,12 +19,12 @@ from model.questionnaire import (
 )
 
 
-class CDPPDFParser(QuestionnaireParser):
+class CDPPDFParser(CDPQuestionnaireSectionParser):
     """
     CDP PDF Parser (Backward Compatible Wrapper)
 
     기존 코드와의 호환성을 위해 유지됩니다.
-    새 코드에서는 model.QuestionnaireParser를 직접 사용하세요.
+    새 코드에서는 model.CDPQuestionnaireSectionParser를 직접 사용하세요.
     """
 
     def parse_all(self):
@@ -91,7 +91,13 @@ def main():
 
     parser = argparse.ArgumentParser(description="CDP PDF to JSON Parser")
     parser.add_argument("--input", "-i", required=True, help="Input PDF path")
-    parser.add_argument("--output", "-o", required=True, help="Output JSON path")
+    parser.add_argument(
+        "--output",
+        "-o",
+        required=False,
+        default=None,
+        help="Output JSON filename/path (saved under backend/output)",
+    )
 
     args = parser.parse_args()
 

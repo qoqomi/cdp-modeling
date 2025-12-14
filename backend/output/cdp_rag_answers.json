@@ -1,0 +1,203 @@
+{
+  "pipeline_config": {
+    "embedding_model": "SentenceTransformer(\n  (0): Transformer({'max_seq_length': 8192, 'do_lower_case': False}) with Transformer model: XLMRobertaModel \n  (1): Pooling({'word_embedding_dimension': 1024, 'pooling_mode_cls_token': True, 'pooling_mode_mean_tokens': False, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False, 'pooling_mode_weightedmean_tokens': False, 'pooling_mode_lasttoken': False, 'include_prompt': True})\n  (2): Normalize()\n)",
+    "use_bm25": true,
+    "use_reranker": true
+  },
+  "total_questions": 3,
+  "average_confidence": 0.5,
+  "answers": [
+    {
+      "question_id": "2.1",
+      "question_title": "Time horizons definition",
+      "answer": "**CDP Question ID: 2.1**  \n**Question: Time horizons definition**  \n\n**Response:**\n\nThe SK Inc. Sustainability Report 2025 does not explicitly define the time horizons used for assessing risks and opportunities related to climate change. However, it does mention the establishment of near-term and long-term reduction targets for Scope 1, 2, and 3 emissions as part of its climate risk management system aimed at achieving Net Zero by 2050 (Source: Page 18). \n\nTo provide a comprehensive response regarding time horizons, the following additional data would be beneficial:\n1. Specific definitions or categorizations of short-term, medium-term, and long-term time horizons as applied by SK Inc.\n2. Details on the time frames associated with the near-term and long-term reduction targets mentioned.\n3. Any frameworks or methodologies used to determine these time horizons in relation to climate risks and opportunities.\n\nWithout this information, a precise definition of time horizons as utilized by SK Inc. cannot be fully articulated.",
+      "confidence": 0.41,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_96",
+          "page_num": 28,
+          "section": "risk_management",
+          "score": 0.663,
+          "rerank_score": 0.18,
+          "preview": "Strategy\nImpact Analysis Scope and Process\n\nSK ESG Story      Materiality       Environmental       Social      Governance      Appendix\n\nSK Inc. Sustainability Report 2025 \n028\n\n*  Transition risks: ..."
+        },
+        {
+          "chunk_id": "report_chunk_2",
+          "page_num": 4,
+          "section": "governance",
+          "score": 0.949,
+          "rerank_score": 0.118,
+          "preview": "Thank you. ESG Letter\n\nSK ESG Story       Materiality      Environmental      Social      Governance      Appendix\n\nSK Inc. Sustainability Report 2025 \n00\n\nESG Letter       SK Double Bottom Line     ..."
+        },
+        {
+          "chunk_id": "report_chunk_494",
+          "page_num": 144,
+          "section": "governance",
+          "score": 0.857,
+          "rerank_score": 0.081,
+          "preview": "Scope of Reporting\ninformation leakage, etc. Report Investigation Process\n\nSK ESG Story      Materiality      Environmental      Social       Governance       Appendix\n\nSK Inc."
+        },
+        {
+          "chunk_id": "table_16_41",
+          "page_num": 16,
+          "section": "metrics",
+          "score": 0.666,
+          "rerank_score": 0.068,
+          "preview": "Internal and External Environmental Analysis\nInternal  \nAnalysis\nExternal  \nAnalysis\npriority topics\nMateriality Assessment Results\n\n[Table Headers: Category | Subject of Analysis | Detailed Descripti..."
+        },
+        {
+          "chunk_id": "report_chunk_665",
+          "page_num": 186,
+          "section": null,
+          "score": 0.891,
+          "rerank_score": 0.067,
+          "preview": "|  GDC\n|  HRMS\nDownload  →\nDownload  →\nGDC \nHRMS\n\nSK ESG Story      Materiality      Environmental      Social      Governance       Appendix\n\nSK Inc. Sustainability Report 2025 \n186\n\nESG Data      Po..."
+        },
+        {
+          "chunk_id": "report_chunk_528",
+          "page_num": 153,
+          "section": null,
+          "score": 0.906,
+          "rerank_score": 0.061,
+          "preview": "ESG Data\nPolicy & Principle\nGlobal Initiatives\nGRI/SASB/TCFD Index\nAssurance\nAbout this Report\nAppendix\n\nSK ESG Story      Materiality      Environmental      Social      Governance       Appendix\n\nSK..."
+        },
+        {
+          "chunk_id": "report_chunk_52",
+          "page_num": 18,
+          "section": "targets",
+          "score": 0.695,
+          "rerank_score": 0.057,
+          "preview": "However, in certain business areas, there is still a dependency on fossil fuel–based energy and electricity, posing potential risks that could  \nworsen the climate crisis. These risks may lead to incr..."
+        }
+      ]
+    },
+    {
+      "question_id": "2.2",
+      "question_title": "Environmental dependencies and impacts management process",
+      "answer": "**CDP Question ID: 2.2 - Environmental Dependencies and Impacts Management Process**\n\n**Management Process Overview:**\nSK Inc. recognizes the significance of environmental dependencies and impacts in its operations. The company has established a comprehensive management process that includes both internal and external analyses to assess its environmental footprint and sustainability strategies.\n\n1. **Internal Analysis:**\n   - The company conducts an analysis of its business activities, including products and services, to evaluate their environmental and social impacts. This includes assessing the geographic locations of operations and the associated environmental risks.\n   - The evaluation of business relationships with stakeholders, including the supply chain and customers, is performed to understand their impact on corporate sustainability.\n   - Previous year's sustainability issues and performance are reviewed to inform current strategies.\n\n2. **External Analysis:**\n   - SK Inc. aligns its management policies with external ESG standards and guidelines, such as GRI and SASB, to ensure compliance and best practices.\n   - Benchmarking against leading domestic and global companies is conducted to enhance competitiveness and incorporate industry trends into sustainability initiatives.\n\n**Climate Risk Management:**\nSK Inc. acknowledges climate change as a critical risk to its financial and operational stability. The company has implemented a climate risk management system that includes:\n- A scientific, data-driven approach for identifying and monitoring climate-related risks.\n- Integration of policy changes, industry trends, and stakeholder expectations into the company-wide risk strategy.\n\n**Renewable Energy Initiatives:**\nTo mitigate environmental impacts, SK Inc. is expanding its use of renewable energy:\n- The company has implemented the RE100 initiative, achieving a 24.7% implementation rate in 2024, which exceeds its target by 1.7%.\n- SK Inc. has established reduction targets for Scope 1 and 2 emissions to support its Net Zero goals, alongside Scope 3 reduction targets aligned with SK Group’s 2050-α Net Zero objective.\n\n**Stakeholder Engagement:**\nThe company identifies key stakeholders affected by its environmental impacts, including the environment itself, customers (end users), and suppliers. This engagement is crucial for understanding the broader implications of its operations and for fostering collaborative sustainability efforts.\n\n**Additional Data Needed:**\n- Specific metrics on the environmental impacts of business activities and products/services.\n- Detailed information on the outcomes of the benchmarking process against industry peers.\n- Quantitative targets and progress updates for Scope 3 emissions reductions.\n\n**References:**\n- SK Inc. Sustainability Report 2025, Page 16, Page 18.",
+      "confidence": 0.59,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_665",
+          "page_num": 186,
+          "section": null,
+          "score": 0.896,
+          "rerank_score": 0.49,
+          "preview": "|  GDC\n|  HRMS\nDownload  →\nDownload  →\nGDC \nHRMS\n\nSK ESG Story      Materiality      Environmental      Social      Governance       Appendix\n\nSK Inc. Sustainability Report 2025 \n186\n\nESG Data      Po..."
+        },
+        {
+          "chunk_id": "report_chunk_2",
+          "page_num": 4,
+          "section": "governance",
+          "score": 0.948,
+          "rerank_score": 0.385,
+          "preview": "Thank you. ESG Letter\n\nSK ESG Story       Materiality      Environmental      Social      Governance      Appendix\n\nSK Inc. Sustainability Report 2025 \n00\n\nESG Letter       SK Double Bottom Line     ..."
+        },
+        {
+          "chunk_id": "report_chunk_528",
+          "page_num": 153,
+          "section": null,
+          "score": 0.924,
+          "rerank_score": 0.367,
+          "preview": "ESG Data\nPolicy & Principle\nGlobal Initiatives\nGRI/SASB/TCFD Index\nAssurance\nAbout this Report\nAppendix\n\nSK ESG Story      Materiality      Environmental      Social      Governance       Appendix\n\nSK..."
+        },
+        {
+          "chunk_id": "report_chunk_641",
+          "page_num": 179,
+          "section": "governance",
+          "score": 0.7,
+          "rerank_score": 0.354,
+          "preview": "Sustainability Report 2025 \n179\n\n|  Environmental Management Principle and Policy\n\n|  Human Rights Management Principle and Policy\n\n|  Safety and Health Management Principle and Policy\n\n|  Supply Chai..."
+        },
+        {
+          "chunk_id": "report_chunk_494",
+          "page_num": 144,
+          "section": "governance",
+          "score": 0.879,
+          "rerank_score": 0.311,
+          "preview": "Scope of Reporting\ninformation leakage, etc. Report Investigation Process\n\nSK ESG Story      Materiality      Environmental      Social       Governance       Appendix\n\nSK Inc."
+        },
+        {
+          "chunk_id": "table_16_41",
+          "page_num": 16,
+          "section": "metrics",
+          "score": 0.682,
+          "rerank_score": 0.277,
+          "preview": "Internal and External Environmental Analysis\nInternal  \nAnalysis\nExternal  \nAnalysis\npriority topics\nMateriality Assessment Results\n\n[Table Headers: Category | Subject of Analysis | Detailed Descripti..."
+        },
+        {
+          "chunk_id": "report_chunk_52",
+          "page_num": 18,
+          "section": "targets",
+          "score": 0.675,
+          "rerank_score": 0.224,
+          "preview": "However, in certain business areas, there is still a dependency on fossil fuel–based energy and electricity, posing potential risks that could  \nworsen the climate crisis. These risks may lead to incr..."
+        }
+      ]
+    },
+    {
+      "question_id": "2.2.1",
+      "question_title": "Environmental risks and opportunities management process",
+      "answer": "**CDP Question ID: 2.2.1**  \n**Question: Environmental risks and opportunities management process**  \n\n**Response:**\n\nSK Inc. has established a comprehensive environmental risk and opportunity management process as part of its sustainability strategy. This process is integrated into the company's overall governance framework and is designed to address the increasing challenges posed by environmental factors, particularly in the context of geopolitical conflicts and trade protectionism, which have heightened uncertainty in the global economy (Source: Page 4).\n\nThe company employs a structured approach to assess and manage environmental risks and opportunities, utilizing key performance indicators (KPIs) that are regularly monitored through the Social Value Management System (SVMS). This system allows for the periodic assessment of ESG performance and the identification of company-specific key issues, which informs the development of phased action plans aimed at achieving top-tier global standards in sustainability (Source: Page 10).\n\nFurthermore, SK Inc. has implemented various environmental management principles and policies, including those focused on pollution prevention, greenhouse gas emissions reduction, and renewable energy consumption. These policies are part of a broader commitment to continuous improvement in ESG management and are aligned with global initiatives and reporting standards (Source: Page 179, Page 200).\n\n**Additional Data Needed:**\n- Specific metrics or quantitative data on identified environmental risks and opportunities.\n- Details on the frequency and methodology of risk assessments conducted.\n- Information on stakeholder engagement processes related to environmental risk management.\n- Examples of specific action plans developed in response to identified risks and opportunities.",
+      "confidence": 0.5,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_665",
+          "page_num": 186,
+          "section": null,
+          "score": 0.888,
+          "rerank_score": 0.298,
+          "preview": "|  GDC\n|  HRMS\nDownload  →\nDownload  →\nGDC \nHRMS\n\nSK ESG Story      Materiality      Environmental      Social      Governance       Appendix\n\nSK Inc. Sustainability Report 2025 \n186\n\nESG Data      Po..."
+        },
+        {
+          "chunk_id": "report_chunk_2",
+          "page_num": 4,
+          "section": "governance",
+          "score": 0.929,
+          "rerank_score": 0.257,
+          "preview": "Thank you. ESG Letter\n\nSK ESG Story       Materiality      Environmental      Social      Governance      Appendix\n\nSK Inc. Sustainability Report 2025 \n00\n\nESG Letter       SK Double Bottom Line     ..."
+        },
+        {
+          "chunk_id": "table_200_731",
+          "page_num": 200,
+          "section": "metrics",
+          "score": 0.841,
+          "rerank_score": 0.241,
+          "preview": "About this Report\nReporting Period\nReporting Boundary\nStakeholder Engagement\nReporting Standards and External Assurance\nand corresponding footnotes.\ncontinuously advancing its ESG management.\nContact ..."
+        },
+        {
+          "chunk_id": "report_chunk_641",
+          "page_num": 179,
+          "section": "governance",
+          "score": 0.7,
+          "rerank_score": 0.182,
+          "preview": "Sustainability Report 2025 \n179\n\n|  Environmental Management Principle and Policy\n\n|  Human Rights Management Principle and Policy\n\n|  Safety and Health Management Principle and Policy\n\n|  Supply Chai..."
+        },
+        {
+          "chunk_id": "report_chunk_528",
+          "page_num": 153,
+          "section": null,
+          "score": 0.917,
+          "rerank_score": 0.172,
+          "preview": "ESG Data\nPolicy & Principle\nGlobal Initiatives\nGRI/SASB/TCFD Index\nAssurance\nAbout this Report\nAppendix\n\nSK ESG Story      Materiality      Environmental      Social      Governance       Appendix\n\nSK..."
+        },
+        {
+          "chunk_id": "table_10_23",
+          "page_num": 10,
+          "section": "energy",
+          "score": 0.656,
+          "rerank_score": 0.164,
+          "preview": "Environmental\nESG Key Metrics\nKey ESG Performance Metrics\nRenewable Energy Consumption\nGreenhouse Gas Emissions\nEnvironmental Pollution Prevention\n·  Related policies/strategies/performance\nAir Pollut..."
+        },
+        {
+          "chunk_id": "report_chunk_26",
+          "page_num": 10,
+          "section": "energy",
+          "score": 0.875,
+          "rerank_score": 0.101,
+          "preview": "All member companies  \nuse these metrics to periodically assess their ESG performance, identify company-specific key issues, and develop phased action plans  \naimed at achieving a global top-tier leve..."
+        }
+      ]
+    }
+  ]
+}

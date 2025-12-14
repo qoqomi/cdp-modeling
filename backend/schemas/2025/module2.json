@@ -116,6 +116,35 @@
           "type": "select",
           "options_ref": "yes_no",
           "condition": {"field": "process_in_place", "value": "Yes"}
+        },
+        {
+          "id": "primary_reason_no_process",
+          "header": "Primary reason for not evaluating risks and/or opportunities",
+          "header_ko": "리스크/기회 평가 미수행 주요 사유",
+          "type": "select",
+          "options_ref": "primary_reasons_no_process",
+          "condition": {"field": "process_in_place", "value_not": "Yes"}
+        },
+        {
+          "id": "explain_no_process",
+          "header": "Explain why you do not evaluate and describe any plans",
+          "header_ko": "미평가 사유 및 향후 계획",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {"field": "process_in_place", "value_not": "Yes"}
+        },
+        {
+          "id": "explain_gaps_or_not_informed",
+          "header": "Explain gaps in evaluating both risks and opportunities and/or why this process is not informed by dependencies and/or impacts",
+          "header_ko": "리스크/기회 동시 평가 미수행 또는 의존성/영향 미반영 사유",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {
+            "any": [
+              {"field": "risks_opps_evaluated", "value_not": "Both risks and opportunities"},
+              {"field": "informed_by_deps_impacts", "value": "No"}
+            ]
+          }
         }
       ]
     },

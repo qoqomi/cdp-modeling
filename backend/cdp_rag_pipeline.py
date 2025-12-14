@@ -5,6 +5,9 @@ SK Inc 지속가능성 보고서를 활용한 CDP 질문 자동 답변 생성
 
 사용 방법:
     python cdp_rag_pipeline.py --report data/2025_SK-Inc_Sustainability_Report_ENG.pdf --questions data/cdp_questions_parsed.json
+
+Note: SustainabilityReportParser는 backward compatibility를 위한 래퍼입니다.
+      실제 로직은 model/report.py에 있습니다.
 """
 
 import json
@@ -14,9 +17,6 @@ from pathlib import Path
 from dataclasses import dataclass, field, asdict
 from typing import List, Dict, Optional, Any, Tuple
 from enum import Enum
-
-# PDF 처리
-import fitz  # PyMuPDF
 
 # 벡터 임베딩
 from sentence_transformers import SentenceTransformer
@@ -32,17 +32,11 @@ from dotenv import load_dotenv
 # 진행률 표시
 from tqdm import tqdm
 
+# Report Parser (model 모듈에서 가져옴)
+from model import ReportParser
+from model.report import ReportChunk
+
 load_dotenv()
-
-
-@dataclass
-class ReportChunk:
-    """지속가능성 보고서 청크"""
-    id: str
-    content: str
-    page_num: int
-    section: Optional[str] = None
-    metadata: Dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass
@@ -67,133 +61,17 @@ class GeneratedAnswer:
     ambition_reference: Optional[List[str]] = None
 
 
-class SustainabilityReportParser:
-    """지속가능성 보고서 파서"""
+class SustainabilityReportParser(ReportParser):
+    """
+    지속가능성 보고서 파서 (Backward Compatible Wrapper)
 
-    # 주요 섹션 키워드
-    SECTION_KEYWORDS = {
-        'governance': ['governance', 'board', 'committee', 'management', 'oversight'],
-        'strategy': ['strategy', 'strategic', 'roadmap', 'vision', 'target'],
-        'risk_management': ['risk', 'opportunity', 'assessment', 'identification', 'mitigation'],
-        'emissions': ['emissions', 'ghg', 'scope 1', 'scope 2', 'scope 3', 'carbon'],
-        'energy': ['energy', 'renewable', 'consumption', 'efficiency'],
-        'water': ['water', 'withdrawal', 'discharge', 'stress'],
-        'biodiversity': ['biodiversity', 'ecosystem', 'habitat', 'species'],
-        'waste': ['waste', 'recycling', 'circular', 'disposal'],
-        'supply_chain': ['supplier', 'supply chain', 'procurement', 'vendor'],
-        'targets': ['target', 'goal', 'commitment', 'net zero', 'reduction'],
-    }
-
-    def __init__(self, pdf_path: str, chunk_size: int = 1000, chunk_overlap: int = 200):
-        self.pdf_path = pdf_path
-        self.chunk_size = chunk_size
-        self.chunk_overlap = chunk_overlap
-        self.doc = fitz.open(pdf_path)
-        self.chunks: List[ReportChunk] = []
-
-    def extract_text_with_structure(self) -> List[Dict[str, Any]]:
-        """페이지별 텍스트 추출"""
-        pages = []
-
-        for page_num, page in enumerate(self.doc):
-            text = page.get_text("text")
-
-            # 섹션 감지
-            section = self._detect_section(text)
-
-            pages.append({
-                "page_num": page_num + 1,
-                "text": text,
-                "section": section
-            })
-
-        return pages
-
-    def _detect_section(self, text: str) -> Optional[str]:
-        """텍스트에서 섹션 감지"""
-        text_lower = text.lower()
-
-        for section, keywords in self.SECTION_KEYWORDS.items():
-            matches = sum(1 for kw in keywords if kw in text_lower)
-            if matches >= 2:  # 최소 2개 키워드 매칭
-                return section
-
-        return None
+    기존 코드와의 호환성을 위해 유지됩니다.
+    새 코드에서는 model.ReportParser를 직접 사용하세요.
+    """
 
     def create_chunks(self) -> List[ReportChunk]:
-        """텍스트를 청크로 분할"""
-        pages = self.extract_text_with_structure()
-
-        chunk_id = 0
-        for page_data in pages:
-            text = page_data["text"]
-            page_num = page_data["page_num"]
-            section = page_data["section"]
-
-            # 문단 단위로 먼저 분할
-            paragraphs = self._split_into_paragraphs(text)
-
-            current_chunk = ""
-            for para in paragraphs:
-                if len(current_chunk) + len(para) <= self.chunk_size:
-                    current_chunk += para + "\n\n"
-                else:
-                    if current_chunk.strip():
-                        self.chunks.append(ReportChunk(
-                            id=f"report_chunk_{chunk_id}",
-                            content=current_chunk.strip(),
-                            page_num=page_num,
-                            section=section,
-                            metadata={
-                                "source": os.path.basename(self.pdf_path),
-                                "page": page_num
-                            }
-                        ))
-                        chunk_id += 1
-
-                    # 오버랩 처리
-                    if self.chunk_overlap > 0 and current_chunk:
-                        overlap_text = current_chunk[-self.chunk_overlap:]
-                        current_chunk = overlap_text + para + "\n\n"
-                    else:
-                        current_chunk = para + "\n\n"
-
-            # 마지막 청크
-            if current_chunk.strip():
-                self.chunks.append(ReportChunk(
-                    id=f"report_chunk_{chunk_id}",
-                    content=current_chunk.strip(),
-                    page_num=page_num,
-                    section=section,
-                    metadata={
-                        "source": os.path.basename(self.pdf_path),
-                        "page": page_num
-                    }
-                ))
-                chunk_id += 1
-
-        return self.chunks
-
-    def _split_into_paragraphs(self, text: str) -> List[str]:
-        """텍스트를 문단으로 분할"""
-        # 연속된 줄바꿈으로 분할
-        paragraphs = re.split(r'\n\s*\n', text)
-        # 빈 문단 제거 및 정리
-        return [p.strip() for p in paragraphs if p.strip()]
-
-    def to_json(self, output_path: str):
-        """JSON으로 저장"""
-        data = {
-            "source": os.path.basename(self.pdf_path),
-            "total_pages": len(self.doc),
-            "total_chunks": len(self.chunks),
-            "chunks": [asdict(chunk) for chunk in self.chunks]
-        }
-
-        with open(output_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-
-        print(f"Saved {len(self.chunks)} chunks to {output_path}")
+        """기존 메서드명 유지 (parse()로 위임)"""
+        return self.parse()
 
 
 class CDPRAGPipeline:
@@ -468,7 +346,7 @@ def main():
     parser = argparse.ArgumentParser(description="CDP RAG Pipeline")
     parser.add_argument("--report", "-r", required=True, help="Sustainability report PDF path")
     parser.add_argument("--questions", "-q", required=True, help="CDP questions JSON path")
-    parser.add_argument("--output", "-o", default="data/cdp_generated_answers.json", help="Output path")
+    parser.add_argument("--output", "-o", default="output/cdp_generated_answers.json", help="Output path")
     parser.add_argument("--chunk-size", type=int, default=1000, help="Chunk size")
     parser.add_argument("--top-k", type=int, default=5, help="Number of similar chunks to retrieve")
     parser.add_argument("--recreate-index", action="store_true", help="Recreate vector index")

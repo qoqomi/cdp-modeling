@@ -1,0 +1,1307 @@
+{
+  "summary": {
+    "total_questions": 22,
+    "valid_responses": 22,
+    "invalid_responses": 0,
+    "validation_rate": 100.0,
+    "average_confidence": 0.62
+  },
+  "answers": [
+    {
+      "question_id": "2.1",
+      "question_title": "How does your organization define short-, medium-, and long-term time horizons in relation to the",
+      "response": {
+        "time_horizon": "Long-term",
+        "from_years": 10,
+        "to_years": 30,
+        "rationale": "The long-term time horizon is defined as spanning from 10 to 30 years, which aligns with our strategic goal of achieving a No-Deforestation Policy by 2050. This timeframe allows us to assess and manage environmental risks and opportunities effectively, considering the long-term impacts of climate change and biodiversity conservation. By focusing on this extended period, we can integrate sustainability into our business strategy and financial planning, ensuring that our operations do not contribute to biodiversity loss and that we enhance our ecological footprint."
+      },
+      "confidence": 0.51,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.456,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_60",
+          "page_num": 61,
+          "score": 0.436,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n061\nBiodiversity\nBiodiversity Management\nBiodiversity Risk Assessment\n·  B..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.428,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_62",
+          "page_num": 63,
+          "score": 0.399,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n063\nForest Protection and Deforestation Prevention Policy\n· SK Inc. integr..."
+        },
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.398,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"time_horizon\": \"Long-term\",\n  \"from_years\": 10,\n  \"to_years\": 30,\n  \"rationale\": \"The long-term time horizon is defined as spanning from 10 to 30 years, which aligns with our strategic goal of achieving a No-Deforestation Policy by 2050. This timeframe allows us to assess and manage environmental risks and opportunities effectively, considering the long-term impacts of climate change and biodiversity conservation. By focusing on this extended period, we can integrate sustainability into our business strategy and financial planning, ensuring that our operations do not contribute to biodiversity loss and that we enhance our ecological footprint.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2",
+      "question_title": "Does your organization have a process for identifying, assessing, and managing environmental",
+      "response": {
+        "process_in_place": "Yes",
+        "deps_impacts_evaluated": "Both dependencies and impacts",
+        "primary_reason_no": null,
+        "explain_no_process": null
+      },
+      "confidence": 0.64,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.551,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.541,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.526,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        },
+        {
+          "chunk_id": "report_chunk_60",
+          "page_num": 61,
+          "score": 0.518,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n061\nBiodiversity\nBiodiversity Management\nBiodiversity Risk Assessment\n·  B..."
+        },
+        {
+          "chunk_id": "report_chunk_42",
+          "page_num": 43,
+          "score": 0.518,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n03\n·  An integrated process is operated that links the Environmental Mana..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"process_in_place\": \"Yes\",\n  \"deps_impacts_evaluated\": \"Both dependencies and impacts\",\n  \"primary_reason_no\": null,\n  \"explain_no_process\": null\n}\n```"
+    },
+    {
+      "question_id": "2.2.1",
+      "question_title": "Does your organization have a process for identifying, assessing, and managing environmental risks",
+      "response": {
+        "process_in_place": "Yes",
+        "risks_opps_evaluated": "Both risks and opportunities",
+        "informed_by_deps_impacts": "Yes"
+      },
+      "confidence": 0.65,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_42",
+          "page_num": 43,
+          "score": 0.562,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n03\n·  An integrated process is operated that links the Environmental Mana..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.547,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.539,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.526,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        },
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.516,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"process_in_place\": \"Yes\",\n  \"risks_opps_evaluated\": \"Both risks and opportunities\",\n  \"informed_by_deps_impacts\": \"Yes\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.2",
+      "question_title": "Provide details of your organization’s process for identifying, assessing, and managing environmental",
+      "response": {
+        "environmental_issue": [
+          "Climate change",
+          "Biodiversity"
+        ],
+        "diro_covered": [
+          "Dependencies",
+          "Impacts",
+          "Risks",
+          "Opportunities"
+        ],
+        "value_chain_stages": [
+          "Direct operations",
+          "Upstream value chain",
+          "Downstream value chain"
+        ],
+        "coverage": "Full",
+        "supplier_tiers": [
+          "Tier 1 suppliers",
+          "Tier 2 suppliers"
+        ],
+        "assessment_type": "Qualitative and quantitative",
+        "frequency": "Annually",
+        "time_horizons": [
+          "Short-term",
+          "Medium-term",
+          "Long-term"
+        ],
+        "integration": "Integrated into multi-disciplinary organization-wide risk management process",
+        "location_specificity": [
+          "Site-specific",
+          "Local",
+          "Sub-national"
+        ],
+        "tools_used": {
+          "Enterprise Risk Management": "ISO 31000 Risk Management Standard",
+          "International methodologies": "ISO 14001 Environmental Management Standard",
+          "Other tools": "Scenario analysis"
+        },
+        "risk_types_considered": {
+          "Acute physical": [
+            "Cyclone, hurricane, typhoon"
+          ],
+          "Chronic physical": [
+            "Changing temperature (air, freshwater, marine water)"
+          ],
+          "Policy": [
+            "Carbon pricing mechanisms"
+          ],
+          "Technology": [
+            "Substitution of existing products and services with lower emissions options"
+          ],
+          "Market": [
+            "Changing customer behavior"
+          ],
+          "Reputation": [
+            "Increased stakeholder concern or negative stakeholder feedback"
+          ],
+          "Liability": [
+            "Non-compliance with regulations"
+          ]
+        },
+        "opportunity_types_considered": {
+          "Resource efficiency": [
+            "Use of more efficient production and distribution processes"
+          ],
+          "Energy source": [
+            "Use of lower-emission sources of energy"
+          ],
+          "Products and services": [
+            "Development and/or expansion of low emission goods and services"
+          ],
+          "Markets": [
+            "Access to new markets"
+          ],
+          "Resilience": [
+            "Resource substitutes/diversification"
+          ]
+        },
+        "further_details": "An integrated process is operated that links the Environmental Management System (ISO 14001) with the company-wide Enterprise Risk Management system (ISO 31000) to preemptively identify and assess climate risks. The likelihood of occurrence, level of severity, and business impact are comprehensively considered through the Risk Management Council to define risk appetite and establish response strategies. Material environmental and climate risks are reported to the CEO and the Board of Directors to ensure a company-wide response and integration into key decision-making."
+      },
+      "confidence": 0.67,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_42",
+          "page_num": 43,
+          "score": 0.576,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n03\n·  An integrated process is operated that links the Environmental Mana..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.57,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_60",
+          "page_num": 61,
+          "score": 0.561,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n061\nBiodiversity\nBiodiversity Management\nBiodiversity Risk Assessment\n·  B..."
+        },
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.556,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.549,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"environmental_issue\": [\n    \"Climate change\",\n    \"Biodiversity\"\n  ],\n  \"diro_covered\": [\n    \"Dependencies\",\n    \"Impacts\",\n    \"Risks\",\n    \"Opportunities\"\n  ],\n  \"value_chain_stages\": [\n    \"Direct operations\",\n    \"Upstream value chain\",\n    \"Downstream value chain\"\n  ],\n  \"coverage\": \"Full\",\n  \"supplier_tiers\": [\n    \"Tier 1 suppliers\",\n    \"Tier 2 suppliers\"\n  ],\n  \"assessment_type\": \"Qualitative and quantitative\",\n  \"frequency\": \"Annually\",\n  \"time_horizons\": [\n    \"Short-term\",\n    \"Medium-term\",\n    \"Long-term\"\n  ],\n  \"integration\": \"Integrated into multi-disciplinary organization-wide risk management process\",\n  \"location_specificity\": [\n    \"Site-specific\",\n    \"Local\",\n    \"Sub-national\"\n  ],\n  \"tools_used\": {\n    \"Enterprise Risk Management\": \"ISO 31000 Risk Management Standard\",\n    \"International methodologies\": \"ISO 14001 Environmental Management Standard\",\n    \"Other tools\": \"Scenario analysis\"\n  },\n  \"risk_types_considered\": {\n    \"Acute physical\": [\n      \"Cyclone, hurricane, typhoon\"\n    ],\n    \"Chronic physical\": [\n      \"Changing temperature (air, freshwater, marine water)\"\n    ],\n    \"Policy\": [\n      \"Carbon pricing mechanisms\"\n    ],\n    \"Technology\": [\n      \"Substitution of existing products and services with lower emissions options\"\n    ],\n    \"Market\": [\n      \"Changing customer behavior\"\n    ],\n    \"Reputation\": [\n      \"Increased stakeholder concern or negative stakeholder feedback\"\n    ],\n    \"Liability\": [\n      \"Non-compliance with regulations\"\n    ]\n  },\n  \"opportunity_types_considered\": {\n    \"Resource efficiency\": [\n      \"Use of more efficient production and distribution processes\"\n    ],\n    \"Energy source\": [\n      \"Use of lower-emission sources of energy\"\n    ],\n    \"Products and services\": [\n      \"Development and/or expansion of low emission goods and services\"\n    ],\n    \"Markets\": [\n      \"Access to new markets\"\n    ],\n    \"Resilience\": [\n      \"Resource substitutes/diversification\"\n    ]\n  },\n  \"further_details\": \"An integrated process is operated that links the Environmental Management System (ISO 14001) with the company-wide Enterprise Risk Management system (ISO 31000) to preemptively identify and assess climate risks. The likelihood of occurrence, level of severity, and business impact are comprehensively considered through the Risk Management Council to define risk appetite and establish response strategies. Material environmental and climate risks are reported to the CEO and the Board of Directors to ensure a company-wide response and integration into key decision-making.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.3",
+      "question_title": "Provide mining-specific details of your organization’s process for identifying, assessing, and",
+      "response": {
+        "environmental_issue": "Biodiversity",
+        "dependency_or_impact": "Dependency",
+        "type_of_dependency_impact": "Our organization recognizes the dependency on biodiversity for maintaining ecosystem services that support our operations. We assess biodiversity risks and potential impacts surrounding our business sites to ensure sustainable practices.",
+        "description": "Biodiversity risks are integrated into our company-wide risk management system. We utilize tools like IBAT and BRF to identify biodiversity risks and natural capital around our sites. Our assessments consider ecological characteristics and biodiversity risk levels, ensuring that we operate without causing degradation or loss of biodiversity. We have established mid- to long-term goals for biodiversity conservation, aiming for No Net Loss by 2050 and promoting initiatives for a Net Positive Impact.",
+        "value_chain_stage": [
+          "Direct operations",
+          "Upstream value chain"
+        ]
+      },
+      "confidence": 0.54,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_60",
+          "page_num": 61,
+          "score": 0.488,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n061\nBiodiversity\nBiodiversity Management\nBiodiversity Risk Assessment\n·  B..."
+        },
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.47,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        },
+        {
+          "chunk_id": "report_chunk_62",
+          "page_num": 63,
+          "score": 0.456,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n063\nForest Protection and Deforestation Prevention Policy\n· SK Inc. integr..."
+        },
+        {
+          "chunk_id": "report_chunk_52",
+          "page_num": 53,
+          "score": 0.427,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n053\nEnvironmental Management System\nIn response to climate change and incr..."
+        },
+        {
+          "chunk_id": "report_chunk_191",
+          "page_num": 191,
+          "score": 0.424,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n191\nGRI 300\nGRI 400\nCategory\nGRI Number\nDisclosure Title\nContents\nEnergy\n3..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"environmental_issue\": \"Biodiversity\",\n  \"dependency_or_impact\": \"Dependency\",\n  \"type_of_dependency_impact\": \"Our organization recognizes the dependency on biodiversity for maintaining ecosystem services that support our operations. We assess biodiversity risks and potential impacts surrounding our business sites to ensure sustainable practices.\",\n  \"description\": \"Biodiversity risks are integrated into our company-wide risk management system. We utilize tools like IBAT and BRF to identify biodiversity risks and natural capital around our sites. Our assessments consider ecological characteristics and biodiversity risk levels, ensuring that we operate without causing degradation or loss of biodiversity. We have established mid- to long-term goals for biodiversity conservation, aiming for No Net Loss by 2050 and promoting initiatives for a Net Positive Impact.\",\n  \"value_chain_stage\": [\n    \"Direct operations\",\n    \"Upstream value chain\"\n  ]\n}\n```"
+    },
+    {
+      "question_id": "2.2.4",
+      "question_title": "Does your organization have a process for identifying, assessing, and managing environmental",
+      "response": {
+        "process_in_place": "Yes",
+        "portfolio_coverage": 100,
+        "methodology": "Our organization has established a comprehensive process for identifying, assessing, and managing environmental dependencies and impacts related to our portfolio activities. This includes conducting biodiversity risk assessments at key business sites, such as the Pangyo and Daedeok data centers, which have been identified as having high energy consumption and greenhouse gas emissions. We focus on both transition and physical risks, ensuring that we minimize potential environmental impacts through operational efficiency improvements and the adoption of high-efficiency equipment. Our approach is integrated across multiple environmental issues, allowing us to effectively manage risks and opportunities associated with our portfolio."
+      },
+      "confidence": 0.66,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.565,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.564,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.546,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.545,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_11",
+          "page_num": 12,
+          "score": 0.543,
+          "section": null,
+          "preview": "Stakeholder Engagement\nDouble Materiality Assessment\nImpact Material Topics\nFinancial Material Topics\nMateriality\nSK ESG Story      Materiality      Environmental      Social      Governance      Appe..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"process_in_place\": \"Yes\",\n  \"portfolio_coverage\": 100,\n  \"methodology\": \"Our organization has established a comprehensive process for identifying, assessing, and managing environmental dependencies and impacts related to our portfolio activities. This includes conducting biodiversity risk assessments at key business sites, such as the Pangyo and Daedeok data centers, which have been identified as having high energy consumption and greenhouse gas emissions. We focus on both transition and physical risks, ensuring that we minimize potential environmental impacts through operational efficiency improvements and the adoption of high-efficiency equipment. Our approach is integrated across multiple environmental issues, allowing us to effectively manage risks and opportunities associated with our portfolio.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.5",
+      "question_title": "Does your organization have a process for identifying, assessing, and managing environmental risks",
+      "response": {
+        "process_in_place": "Yes",
+        "portfolio_coverage": 100,
+        "risk_types": {
+          "group": "Acute physical",
+          "value": [
+            "Cyclone, hurricane, typhoon",
+            "Cold wave/frost"
+          ]
+        },
+        "methodology": "An integrated process is operated that links the Environmental Management System (ISO 14001) with the company-wide Enterprise Risk Management system (ISO 31000) to preemptively identify and assess climate risks. This includes a systematic climate risk identification and monitoring system based on scientific data, considering domestic and international policy environments, climate-related issues, and stakeholder needs. The likelihood of occurrence, level of severity, and business impact are comprehensively evaluated through the Risk Management Council."
+      },
+      "confidence": 0.68,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.588,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_42",
+          "page_num": 43,
+          "score": 0.567,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n03\n·  An integrated process is operated that links the Environmental Mana..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.566,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_39",
+          "page_num": 40,
+          "score": 0.563,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n00\n2. Impact Analysis and Response Measures\n1) Transition Risks in the In..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.55,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"process_in_place\": \"Yes\",\n  \"portfolio_coverage\": 100,\n  \"risk_types\": {\n    \"group\": \"Acute physical\",\n    \"value\": [\"Cyclone, hurricane, typhoon\", \"Cold wave/frost\"]\n  },\n  \"methodology\": \"An integrated process is operated that links the Environmental Management System (ISO 14001) with the company-wide Enterprise Risk Management system (ISO 31000) to preemptively identify and assess climate risks. This includes a systematic climate risk identification and monitoring system based on scientific data, considering domestic and international policy environments, climate-related issues, and stakeholder needs. The likelihood of occurrence, level of severity, and business impact are comprehensively evaluated through the Risk Management Council.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.6",
+      "question_title": "Provide details of your organization’s process for identifying, assessing, and managing environmental",
+      "response": {
+        "uses_scenario_analysis": "Yes",
+        "explanation_no": ""
+      },
+      "confidence": 0.65,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_39",
+          "page_num": 40,
+          "score": 0.558,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n00\n2. Impact Analysis and Response Measures\n1) Transition Risks in the In..."
+        },
+        {
+          "chunk_id": "report_chunk_38",
+          "page_num": 39,
+          "score": 0.556,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n039\n·  RCP scenarios are used to quantify the physical and financial impac..."
+        },
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 41,
+          "score": 0.546,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n01\n2) Physical Risks in the Investment Portfolio\n3) Climate Transition Op..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.533,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_42",
+          "page_num": 43,
+          "score": 0.52,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n03\n·  An integrated process is operated that links the Environmental Mana..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"uses_scenario_analysis\": \"Yes\",\n  \"explanation_no\": \"\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.7",
+      "question_title": "Are the interconnections between environmental dependencies, impacts, risks and/or opportunities",
+      "response": {
+        "environmental_issue": [
+          "Climate change",
+          "Forests",
+          "Water"
+        ],
+        "scenario_type": "Both physical and transition",
+        "scenario_source": "IEA NZE 2050",
+        "time_horizon": [
+          "Short-term",
+          "Medium-term",
+          "Long-term"
+        ],
+        "temperature_alignment": "1.5°C",
+        "description": "SK Inc. integrates environmental dependencies, impacts, risks, and opportunities through a comprehensive assessment process. This includes the use of the LEAP Framework to identify dependencies and impacts across its operations, focusing on natural capital conservation and deforestation prevention. The organization evaluates risks and opportunities in the context of climate change and ecosystem services, ensuring that these interconnections are considered in decision-making processes. For example, when planning new investments, the company conducts preliminary analyses of climate risk exposure and integrates findings into its investment decision-making framework."
+      },
+      "confidence": 0.74,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.648,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 41,
+          "score": 0.615,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n01\n2) Physical Risks in the Investment Portfolio\n3) Climate Transition Op..."
+        },
+        {
+          "chunk_id": "report_chunk_62",
+          "page_num": 63,
+          "score": 0.613,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n063\nForest Protection and Deforestation Prevention Policy\n· SK Inc. integr..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.61,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.605,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"environmental_issue\": [\n    \"Climate change\",\n    \"Forests\",\n    \"Water\"\n  ],\n  \"scenario_type\": \"Both physical and transition\",\n  \"scenario_source\": \"IEA NZE 2050\",\n  \"time_horizon\": [\n    \"Short-term\",\n    \"Medium-term\",\n    \"Long-term\"\n  ],\n  \"temperature_alignment\": \"1.5°C\",\n  \"description\": \"SK Inc. integrates environmental dependencies, impacts, risks, and opportunities through a comprehensive assessment process. This includes the use of the LEAP Framework to identify dependencies and impacts across its operations, focusing on natural capital conservation and deforestation prevention. The organization evaluates risks and opportunities in the context of climate change and ecosystem services, ensuring that these interconnections are considered in decision-making processes. For example, when planning new investments, the company conducts preliminary analyses of climate risk exposure and integrates findings into its investment decision-making framework.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.8",
+      "question_title": "Does your organization consider environmental information about your clients/investees as part of",
+      "response": {
+        "strategy_impacted": "Yes",
+        "description": "We incorporate environmental information about our clients and investees as part of our due diligence and assessment processes. This includes evaluating borrowers and deals for credit risk, as well as assessing investees' environmental impact and risks during fund allocation. Our investment decision-making framework reflects physical risks, ensuring that climate risk exposure is considered when planning new investments or business expansions. We regularly review the physical risk management systems of our investee companies to ensure effective response mechanisms are in place."
+      },
+      "confidence": 0.58,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 41,
+          "score": 0.495,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n01\n2) Physical Risks in the Investment Portfolio\n3) Climate Transition Op..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.486,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.484,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        },
+        {
+          "chunk_id": "report_chunk_11",
+          "page_num": 12,
+          "score": 0.477,
+          "section": null,
+          "preview": "Stakeholder Engagement\nDouble Materiality Assessment\nImpact Material Topics\nFinancial Material Topics\nMateriality\nSK ESG Story      Materiality      Environmental      Social      Governance      Appe..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.475,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"strategy_impacted\": \"Yes\",\n  \"description\": \"We incorporate environmental information about our clients and investees as part of our due diligence and assessment processes. This includes evaluating borrowers and deals for credit risk, as well as assessing investees' environmental impact and risks during fund allocation. Our investment decision-making framework reflects physical risks, ensuring that climate risk exposure is considered when planning new investments or business expansions. We regularly review the physical risk management systems of our investee companies to ensure effective response mechanisms are in place.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.9",
+      "question_title": "Indicate the environmental information your organization considers about clients/investees as part of",
+      "response": {
+        "financial_planning_impacted": "Yes",
+        "description": "As part of our investment decision-making process, we consider various environmental information about our investee companies. This includes assessing physical risks related to climate change, utilizing reliable external climate data sources to evaluate potential financial impacts, and reviewing the physical risk management systems of each investee. We also conduct preliminary analyses of climate risk exposure when planning new investments, ensuring that the availability of infrastructure to mitigate identified risks is a critical factor in our decisions."
+      },
+      "confidence": 0.59,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 41,
+          "score": 0.516,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n01\n2) Physical Risks in the Investment Portfolio\n3) Climate Transition Op..."
+        },
+        {
+          "chunk_id": "report_chunk_39",
+          "page_num": 40,
+          "score": 0.51,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n00\n2. Impact Analysis and Response Measures\n1) Transition Risks in the In..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.487,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_11",
+          "page_num": 12,
+          "score": 0.485,
+          "section": null,
+          "preview": "Stakeholder Engagement\nDouble Materiality Assessment\nImpact Material Topics\nFinancial Material Topics\nMateriality\nSK ESG Story      Materiality      Environmental      Social      Governance      Appe..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.48,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"financial_planning_impacted\": \"Yes\",\n  \"description\": \"As part of our investment decision-making process, we consider various environmental information about our investee companies. This includes assessing physical risks related to climate change, utilizing reliable external climate data sources to evaluate potential financial impacts, and reviewing the physical risk management systems of each investee. We also conduct preliminary analyses of climate risk exposure when planning new investments, ensuring that the availability of infrastructure to mitigate identified risks is a critical factor in our decisions.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.1",
+      "question_title": "Does your organization have a process for identifying, assessing, and managing environmental risks",
+      "response": {
+        "process_in_place": "Yes",
+        "risks_opps_evaluated": "Both risks and opportunities",
+        "informed_by_deps_impacts": "Yes"
+      },
+      "confidence": 0.65,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_42",
+          "page_num": 43,
+          "score": 0.562,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n03\n·  An integrated process is operated that links the Environmental Mana..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.547,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.539,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.526,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        },
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.516,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"process_in_place\": \"Yes\",\n  \"risks_opps_evaluated\": \"Both risks and opportunities\",\n  \"informed_by_deps_impacts\": \"Yes\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.2",
+      "question_title": "Provide details of your organization’s process for identifying, assessing, and managing environmental",
+      "response": {
+        "environmental_issue": [
+          "Climate change",
+          "Biodiversity"
+        ],
+        "diro_covered": [
+          "Dependencies",
+          "Impacts",
+          "Risks",
+          "Opportunities"
+        ],
+        "value_chain_stages": [
+          "Direct operations",
+          "Upstream value chain"
+        ],
+        "coverage": "Full",
+        "supplier_tiers": [
+          "Tier 1 suppliers",
+          "Tier 2 suppliers"
+        ],
+        "assessment_type": "Qualitative and quantitative",
+        "frequency": "Annually",
+        "time_horizons": [
+          "Short-term",
+          "Medium-term",
+          "Long-term"
+        ],
+        "integration": "Integrated into multi-disciplinary organization-wide risk management process",
+        "location_specificity": [
+          "Site-specific",
+          "Local",
+          "Sub-national"
+        ],
+        "tools_used": {
+          "Enterprise Risk Management": "ISO 31000 Risk Management Standard",
+          "International methodologies": "ISO 14001 Environmental Management Standard",
+          "Other tools": "Scenario analysis"
+        },
+        "risk_types_considered": {
+          "Acute physical": [
+            "Cyclone, hurricane, typhoon"
+          ],
+          "Chronic physical": [
+            "Changing temperature (air, freshwater, marine water)"
+          ],
+          "Policy": [
+            "Carbon pricing mechanisms"
+          ],
+          "Technology": [
+            "Substitution of existing products and services with lower emissions options"
+          ],
+          "Market": [
+            "Changing customer behavior"
+          ],
+          "Reputation": [
+            "Increased stakeholder concern or negative stakeholder feedback"
+          ],
+          "Liability": [
+            "Non-compliance with regulations"
+          ]
+        },
+        "opportunity_types_considered": {
+          "Resource efficiency": [
+            "Use of recycling"
+          ],
+          "Energy source": [
+            "Use of lower-emission sources of energy"
+          ],
+          "Products and services": [
+            "Development and/or expansion of low emission goods and services"
+          ],
+          "Markets": [
+            "Access to new markets"
+          ],
+          "Resilience": [
+            "Resource substitutes/diversification"
+          ]
+        },
+        "further_details": "The organization employs an integrated process linking the Environmental Management System (ISO 14001) with the Enterprise Risk Management system (ISO 31000) to identify and assess climate risks. This includes a systematic climate risk identification and monitoring system based on scientific data, considering domestic and international policies, and stakeholder needs. The likelihood and severity of risks are evaluated through the Risk Management Council, and material risks are reported to the CEO and Board for strategic decision-making."
+      },
+      "confidence": 0.67,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_42",
+          "page_num": 43,
+          "score": 0.576,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n03\n·  An integrated process is operated that links the Environmental Mana..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.57,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_60",
+          "page_num": 61,
+          "score": 0.561,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n061\nBiodiversity\nBiodiversity Management\nBiodiversity Risk Assessment\n·  B..."
+        },
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.556,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.549,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"environmental_issue\": [\n    \"Climate change\",\n    \"Biodiversity\"\n  ],\n  \"diro_covered\": [\n    \"Dependencies\",\n    \"Impacts\",\n    \"Risks\",\n    \"Opportunities\"\n  ],\n  \"value_chain_stages\": [\n    \"Direct operations\",\n    \"Upstream value chain\"\n  ],\n  \"coverage\": \"Full\",\n  \"supplier_tiers\": [\n    \"Tier 1 suppliers\",\n    \"Tier 2 suppliers\"\n  ],\n  \"assessment_type\": \"Qualitative and quantitative\",\n  \"frequency\": \"Annually\",\n  \"time_horizons\": [\n    \"Short-term\",\n    \"Medium-term\",\n    \"Long-term\"\n  ],\n  \"integration\": \"Integrated into multi-disciplinary organization-wide risk management process\",\n  \"location_specificity\": [\n    \"Site-specific\",\n    \"Local\",\n    \"Sub-national\"\n  ],\n  \"tools_used\": {\n    \"Enterprise Risk Management\": \"ISO 31000 Risk Management Standard\",\n    \"International methodologies\": \"ISO 14001 Environmental Management Standard\",\n    \"Other tools\": \"Scenario analysis\"\n  },\n  \"risk_types_considered\": {\n    \"Acute physical\": [\n      \"Cyclone, hurricane, typhoon\"\n    ],\n    \"Chronic physical\": [\n      \"Changing temperature (air, freshwater, marine water)\"\n    ],\n    \"Policy\": [\n      \"Carbon pricing mechanisms\"\n    ],\n    \"Technology\": [\n      \"Substitution of existing products and services with lower emissions options\"\n    ],\n    \"Market\": [\n      \"Changing customer behavior\"\n    ],\n    \"Reputation\": [\n      \"Increased stakeholder concern or negative stakeholder feedback\"\n    ],\n    \"Liability\": [\n      \"Non-compliance with regulations\"\n    ]\n  },\n  \"opportunity_types_considered\": {\n    \"Resource efficiency\": [\n      \"Use of recycling\"\n    ],\n    \"Energy source\": [\n      \"Use of lower-emission sources of energy\"\n    ],\n    \"Products and services\": [\n      \"Development and/or expansion of low emission goods and services\"\n    ],\n    \"Markets\": [\n      \"Access to new markets\"\n    ],\n    \"Resilience\": [\n      \"Resource substitutes/diversification\"\n    ]\n  },\n  \"further_details\": \"The organization employs an integrated process linking the Environmental Management System (ISO 14001) with the Enterprise Risk Management system (ISO 31000) to identify and assess climate risks. This includes a systematic climate risk identification and monitoring system based on scientific data, considering domestic and international policies, and stakeholder needs. The likelihood and severity of risks are evaluated through the Risk Management Council, and material risks are reported to the CEO and Board for strategic decision-making.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.3",
+      "question_title": "Provide mining-specific details of your organization’s process for identifying, assessing, and",
+      "response": {
+        "environmental_issue": "Biodiversity",
+        "dependency_or_impact": "Dependency",
+        "type_of_dependency_impact": "SK Inc. recognizes its dependency on biodiversity for various ecosystem services that support its operations, particularly in areas surrounding its business sites. The company aims to minimize its impact on these ecosystems while ensuring sustainable business practices.",
+        "description": "The organization conducts comprehensive biodiversity risk assessments, particularly focusing on high-impact sites such as the Pangyo and Daedeok Data Centers. These assessments utilize tools like IBAT and BRF to identify potential habitats of endangered species and evaluate the ecological characteristics of surrounding areas. The results inform operational decisions to mitigate biodiversity impacts and enhance conservation efforts.",
+        "value_chain_stage": [
+          "Direct operations",
+          "Upstream value chain"
+        ]
+      },
+      "confidence": 0.54,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_60",
+          "page_num": 61,
+          "score": 0.488,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n061\nBiodiversity\nBiodiversity Management\nBiodiversity Risk Assessment\n·  B..."
+        },
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.47,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        },
+        {
+          "chunk_id": "report_chunk_62",
+          "page_num": 63,
+          "score": 0.456,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n063\nForest Protection and Deforestation Prevention Policy\n· SK Inc. integr..."
+        },
+        {
+          "chunk_id": "report_chunk_52",
+          "page_num": 53,
+          "score": 0.427,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n053\nEnvironmental Management System\nIn response to climate change and incr..."
+        },
+        {
+          "chunk_id": "report_chunk_191",
+          "page_num": 191,
+          "score": 0.424,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n191\nGRI 300\nGRI 400\nCategory\nGRI Number\nDisclosure Title\nContents\nEnergy\n3..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"environmental_issue\": \"Biodiversity\",\n  \"dependency_or_impact\": \"Dependency\",\n  \"type_of_dependency_impact\": \"SK Inc. recognizes its dependency on biodiversity for various ecosystem services that support its operations, particularly in areas surrounding its business sites. The company aims to minimize its impact on these ecosystems while ensuring sustainable business practices.\",\n  \"description\": \"The organization conducts comprehensive biodiversity risk assessments, particularly focusing on high-impact sites such as the Pangyo and Daedeok Data Centers. These assessments utilize tools like IBAT and BRF to identify potential habitats of endangered species and evaluate the ecological characteristics of surrounding areas. The results inform operational decisions to mitigate biodiversity impacts and enhance conservation efforts.\",\n  \"value_chain_stage\": [\n    \"Direct operations\",\n    \"Upstream value chain\"\n  ]\n}\n```"
+    },
+    {
+      "question_id": "2.2.4",
+      "question_title": "Does your organization have a process for identifying, assessing, and managing environmental",
+      "response": {
+        "process_in_place": "Yes",
+        "portfolio_coverage": 100,
+        "methodology": "Our organization has established a comprehensive process for identifying, assessing, and managing environmental dependencies and impacts related to our portfolio activities. This includes conducting biodiversity risk assessments at key business sites, such as the Pangyo and Daedeok data centers, which are monitored for their energy consumption and greenhouse gas emissions. We also focus on minimizing potential indirect environmental impacts through operational efficiency improvements and the adoption of high-efficiency equipment. Our climate risk management framework integrates both transition and physical risk factors, ensuring that we effectively manage our environmental footprint across our lending, investing, and insurance activities."
+      },
+      "confidence": 0.66,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.565,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.564,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.546,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.545,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_11",
+          "page_num": 12,
+          "score": 0.543,
+          "section": null,
+          "preview": "Stakeholder Engagement\nDouble Materiality Assessment\nImpact Material Topics\nFinancial Material Topics\nMateriality\nSK ESG Story      Materiality      Environmental      Social      Governance      Appe..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"process_in_place\": \"Yes\",\n  \"portfolio_coverage\": 100,\n  \"methodology\": \"Our organization has established a comprehensive process for identifying, assessing, and managing environmental dependencies and impacts related to our portfolio activities. This includes conducting biodiversity risk assessments at key business sites, such as the Pangyo and Daedeok data centers, which are monitored for their energy consumption and greenhouse gas emissions. We also focus on minimizing potential indirect environmental impacts through operational efficiency improvements and the adoption of high-efficiency equipment. Our climate risk management framework integrates both transition and physical risk factors, ensuring that we effectively manage our environmental footprint across our lending, investing, and insurance activities.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.5",
+      "question_title": "Does your organization have a process for identifying, assessing, and managing environmental risks",
+      "response": {
+        "process_in_place": "Yes",
+        "portfolio_coverage": 100,
+        "risk_types": {
+          "group": "Acute physical",
+          "value": [
+            "Cyclone, hurricane, typhoon",
+            "Cold wave/frost"
+          ]
+        },
+        "methodology": "An integrated process is operated that links the Environmental Management System (ISO 14001) with the company-wide Enterprise Risk Management system (ISO 31000) to preemptively identify and assess climate risks. This includes a systematic climate risk identification and monitoring system based on scientific data, considering domestic and international policy environments, climate-related issues, and stakeholder needs. The likelihood of occurrence, level of severity, and business impact are evaluated through the Risk Management Council, ensuring material environmental and climate risks are reported to the CEO and the Board of Directors."
+      },
+      "confidence": 0.68,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.588,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_42",
+          "page_num": 43,
+          "score": 0.567,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n03\n·  An integrated process is operated that links the Environmental Mana..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.566,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_39",
+          "page_num": 40,
+          "score": 0.563,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n00\n2. Impact Analysis and Response Measures\n1) Transition Risks in the In..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.55,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"process_in_place\": \"Yes\",\n  \"portfolio_coverage\": 100,\n  \"risk_types\": {\n    \"group\": \"Acute physical\",\n    \"value\": [\"Cyclone, hurricane, typhoon\", \"Cold wave/frost\"]\n  },\n  \"methodology\": \"An integrated process is operated that links the Environmental Management System (ISO 14001) with the company-wide Enterprise Risk Management system (ISO 31000) to preemptively identify and assess climate risks. This includes a systematic climate risk identification and monitoring system based on scientific data, considering domestic and international policy environments, climate-related issues, and stakeholder needs. The likelihood of occurrence, level of severity, and business impact are evaluated through the Risk Management Council, ensuring material environmental and climate risks are reported to the CEO and the Board of Directors.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.6",
+      "question_title": "Provide details of your organization’s process for identifying, assessing, and managing environmental",
+      "response": {
+        "uses_scenario_analysis": "Yes",
+        "explanation_no": ""
+      },
+      "confidence": 0.65,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_39",
+          "page_num": 40,
+          "score": 0.558,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n00\n2. Impact Analysis and Response Measures\n1) Transition Risks in the In..."
+        },
+        {
+          "chunk_id": "report_chunk_38",
+          "page_num": 39,
+          "score": 0.556,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n039\n·  RCP scenarios are used to quantify the physical and financial impac..."
+        },
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 41,
+          "score": 0.546,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n01\n2) Physical Risks in the Investment Portfolio\n3) Climate Transition Op..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.533,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_42",
+          "page_num": 43,
+          "score": 0.52,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n03\n·  An integrated process is operated that links the Environmental Mana..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"uses_scenario_analysis\": \"Yes\",\n  \"explanation_no\": \"\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.7",
+      "question_title": "Are the interconnections between environmental dependencies, impacts, risks and/or opportunities",
+      "response": {
+        "environmental_issue": [
+          "Climate change",
+          "Forests",
+          "Water",
+          "Biodiversity"
+        ],
+        "scenario_type": "Both physical and transition",
+        "scenario_source": "IEA NZE 2050",
+        "time_horizon": [
+          "Short-term",
+          "Medium-term",
+          "Long-term"
+        ],
+        "temperature_alignment": "1.5°C",
+        "description": "SK Inc. assesses interconnections between environmental dependencies, impacts, risks, and opportunities through a structured risk assessment process. This includes utilizing the LEAP Framework developed by the TNFD, which helps identify dependencies and impacts across various ecosystems. The assessment process integrates climate-related risks with natural capital conservation efforts, ensuring that decisions consider both physical and transition risks. For example, when planning new investments, the company evaluates climate risk exposure and its potential impacts on biodiversity and water resources, ensuring a holistic approach to sustainability."
+      },
+      "confidence": 0.74,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.648,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 41,
+          "score": 0.615,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n01\n2) Physical Risks in the Investment Portfolio\n3) Climate Transition Op..."
+        },
+        {
+          "chunk_id": "report_chunk_62",
+          "page_num": 63,
+          "score": 0.613,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n063\nForest Protection and Deforestation Prevention Policy\n· SK Inc. integr..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.61,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.605,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"environmental_issue\": [\n    \"Climate change\",\n    \"Forests\",\n    \"Water\",\n    \"Biodiversity\"\n  ],\n  \"scenario_type\": \"Both physical and transition\",\n  \"scenario_source\": \"IEA NZE 2050\",\n  \"time_horizon\": [\n    \"Short-term\",\n    \"Medium-term\",\n    \"Long-term\"\n  ],\n  \"temperature_alignment\": \"1.5°C\",\n  \"description\": \"SK Inc. assesses interconnections between environmental dependencies, impacts, risks, and opportunities through a structured risk assessment process. This includes utilizing the LEAP Framework developed by the TNFD, which helps identify dependencies and impacts across various ecosystems. The assessment process integrates climate-related risks with natural capital conservation efforts, ensuring that decisions consider both physical and transition risks. For example, when planning new investments, the company evaluates climate risk exposure and its potential impacts on biodiversity and water resources, ensuring a holistic approach to sustainability.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.8",
+      "question_title": "Does your organization consider environmental information about your clients/investees as part of",
+      "response": {
+        "strategy_impacted": "Yes",
+        "description": "We incorporate environmental information about our investees in fund allocation and investment dependencies, impact, risk, and opportunities assessment processes. This includes utilizing reliable external climate data sources to pre-assess expected financial impacts and regularly reviewing investee companies' physical risk management systems. We conduct preliminary analyses to determine climate risk exposure when planning new investments, ensuring that these factors are key inputs in our decision-making process."
+      },
+      "confidence": 0.58,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 41,
+          "score": 0.495,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n01\n2) Physical Risks in the Investment Portfolio\n3) Climate Transition Op..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.486,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        },
+        {
+          "chunk_id": "report_chunk_43",
+          "page_num": 44,
+          "score": 0.484,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n0\nClimate Risk Management Across the Value Chain\n·  Strengthen climate r..."
+        },
+        {
+          "chunk_id": "report_chunk_11",
+          "page_num": 12,
+          "score": 0.477,
+          "section": null,
+          "preview": "Stakeholder Engagement\nDouble Materiality Assessment\nImpact Material Topics\nFinancial Material Topics\nMateriality\nSK ESG Story      Materiality      Environmental      Social      Governance      Appe..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.475,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"strategy_impacted\": \"Yes\",\n  \"description\": \"We incorporate environmental information about our investees in fund allocation and investment dependencies, impact, risk, and opportunities assessment processes. This includes utilizing reliable external climate data sources to pre-assess expected financial impacts and regularly reviewing investee companies' physical risk management systems. We conduct preliminary analyses to determine climate risk exposure when planning new investments, ensuring that these factors are key inputs in our decision-making process.\"\n}\n```"
+    },
+    {
+      "question_id": "2.2.9",
+      "question_title": "Indicate the environmental information your organization considers about clients/investees as part of",
+      "response": {
+        "financial_planning_impacted": "Yes",
+        "description": "As part of our investment decision-making framework, we consider various types of environmental information regarding our investee companies. This includes assessing physical risks associated with climate change, utilizing reliable external climate data sources like MSCI Climate VaR to evaluate potential financial impacts. We also review the physical risk management systems of our investees regularly, especially for those in high-risk areas, ensuring that appropriate response mechanisms are in place. Additionally, we conduct preliminary analyses of climate risk exposure when planning new investments or expansions, which significantly influences our decision-making process."
+      },
+      "confidence": 0.59,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 41,
+          "score": 0.516,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n01\n2) Physical Risks in the Investment Portfolio\n3) Climate Transition Op..."
+        },
+        {
+          "chunk_id": "report_chunk_39",
+          "page_num": 40,
+          "score": 0.51,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n00\n2. Impact Analysis and Response Measures\n1) Transition Risks in the In..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.487,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_11",
+          "page_num": 12,
+          "score": 0.485,
+          "section": null,
+          "preview": "Stakeholder Engagement\nDouble Materiality Assessment\nImpact Material Topics\nFinancial Material Topics\nMateriality\nSK ESG Story      Materiality      Environmental      Social      Governance      Appe..."
+        },
+        {
+          "chunk_id": "report_chunk_27",
+          "page_num": 28,
+          "score": 0.48,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n028\nStrategy\nImpact Analysis Scope and Process\n*  Transition risks: Risks ..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"financial_planning_impacted\": \"Yes\",\n  \"description\": \"As part of our investment decision-making framework, we consider various types of environmental information regarding our investee companies. This includes assessing physical risks associated with climate change, utilizing reliable external climate data sources like MSCI Climate VaR to evaluate potential financial impacts. We also review the physical risk management systems of our investees regularly, especially for those in high-risk areas, ensuring that appropriate response mechanisms are in place. Additionally, we conduct preliminary analyses of climate risk exposure when planning new investments or expansions, which significantly influences our decision-making process.\"\n}\n```"
+    },
+    {
+      "question_id": "2.3",
+      "question_title": "Have you identified priority locations across your value chain?",
+      "response": {
+        "environmental_issue": "Biodiversity",
+        "risk_type": {
+          "group": "Chronic physical",
+          "value": "Changing precipitation patterns and types"
+        },
+        "primary_risk_driver": "The primary risk driver is the potential for indirect environmental impacts due to high energy consumption and greenhouse gas emissions from our data centers, which may affect surrounding ecosystems.",
+        "description": "To identify priority locations, we utilize tools such as the Integrated Biodiversity Assessment Tool (IBAT) and the Biodiversity Risk Filter (BRF) developed by IUCN and WWF. Our process involves assessing biodiversity risks and potential impacts in areas surrounding our business sites, focusing on ecological characteristics and biodiversity risk levels. We categorize locations based on their significance to biodiversity and the potential for our operations to affect them. For instance, we have identified areas around our Pangyo and Daedeok Data Centers, where we conduct focused biodiversity risk assessments due to their high energy consumption. We also integrate these assessments into our company-wide risk management system, ensuring that significant biodiversity-related risks are escalated to our Strategy and ESG Committee for decision-making.",
+        "value_chain_stage": "Direct operations",
+        "time_horizon": "Medium-term",
+        "likelihood": "Likely",
+        "magnitude": "Medium-high",
+        "financial_impact": 0,
+        "financial_impact_explanation": "Currently, there are no direct financial impacts identified from biodiversity risks, but potential future impacts are being monitored.",
+        "management_method": "We implement mitigation measures to minimize negative impacts on biodiversity, including operational efficiency improvements and habitat protection initiatives. Our biodiversity protection policy is reviewed regularly at the board level, and we monitor the progress of our conservation activities.",
+        "cost_of_management": 0
+      },
+      "confidence": 0.6,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_60",
+          "page_num": 61,
+          "score": 0.532,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n061\nBiodiversity\nBiodiversity Management\nBiodiversity Risk Assessment\n·  B..."
+        },
+        {
+          "chunk_id": "report_chunk_61",
+          "page_num": 62,
+          "score": 0.52,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n062\n·  Biodiversity risk assessments were conducted focusing on the Pangyo..."
+        },
+        {
+          "chunk_id": "report_chunk_62",
+          "page_num": 63,
+          "score": 0.492,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n063\nForest Protection and Deforestation Prevention Policy\n· SK Inc. integr..."
+        },
+        {
+          "chunk_id": "report_chunk_193",
+          "page_num": 193,
+          "score": 0.487,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n193\nCategory\nTCFD Item\nRecommended Disclosure\nCDP Questionnaire No. \nConte..."
+        },
+        {
+          "chunk_id": "report_chunk_11",
+          "page_num": 12,
+          "score": 0.462,
+          "section": null,
+          "preview": "Stakeholder Engagement\nDouble Materiality Assessment\nImpact Material Topics\nFinancial Material Topics\nMateriality\nSK ESG Story      Materiality      Environmental      Social      Governance      Appe..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"environmental_issue\": \"Biodiversity\",\n  \"risk_type\": {\n    \"group\": \"Chronic physical\",\n    \"value\": \"Changing precipitation patterns and types\"\n  },\n  \"primary_risk_driver\": \"The primary risk driver is the potential for indirect environmental impacts due to high energy consumption and greenhouse gas emissions from our data centers, which may affect surrounding ecosystems.\",\n  \"description\": \"To identify priority locations, we utilize tools such as the Integrated Biodiversity Assessment Tool (IBAT) and the Biodiversity Risk Filter (BRF) developed by IUCN and WWF. Our process involves assessing biodiversity risks and potential impacts in areas surrounding our business sites, focusing on ecological characteristics and biodiversity risk levels. We categorize locations based on their significance to biodiversity and the potential for our operations to affect them. For instance, we have identified areas around our Pangyo and Daedeok Data Centers, where we conduct focused biodiversity risk assessments due to their high energy consumption. We also integrate these assessments into our company-wide risk management system, ensuring that significant biodiversity-related risks are escalated to our Strategy and ESG Committee for decision-making.\",\n  \"value_chain_stage\": \"Direct operations\",\n  \"time_horizon\": \"Medium-term\",\n  \"likelihood\": \"Likely\",\n  \"magnitude\": \"Medium-high\",\n  \"financial_impact\": 0,\n  \"financial_impact_explanation\": \"Currently, there are no direct financial impacts identified from biodiversity risks, but potential future impacts are being monitored.\",\n  \"management_method\": \"We implement mitigation measures to minimize negative impacts on biodiversity, including operational efficiency improvements and habitat protection initiatives. Our biodiversity protection policy is reviewed regularly at the board level, and we monitor the progress of our conservation activities.\",\n  \"cost_of_management\": 0\n}\n```"
+    },
+    {
+      "question_id": "2.4",
+      "question_title": "How does your organization define substantive effects on your organization?",
+      "response": {
+        "environmental_issue": "Climate change",
+        "opportunity_type": {
+          "group": "Resource efficiency",
+          "value": "Use of more efficient production and distribution processes"
+        },
+        "primary_opportunity_driver": "The organization defines substantive effects based on the potential impact on operational efficiency and cost savings from improved resource management.",
+        "description": "A substantive effect on our organization is defined as any impact that significantly alters our operational capabilities, financial performance, or strategic direction. This includes changes in resource efficiency, energy consumption, and overall environmental impact. For instance, a 10% increase in energy efficiency could be considered substantive due to its potential to reduce operational costs and enhance competitiveness in the market.",
+        "value_chain_stage": "Direct operations",
+        "time_horizon": "Medium-term",
+        "likelihood": "Very likely",
+        "magnitude": "High",
+        "financial_impact": 1000000,
+        "financial_impact_explanation": "The financial impact is estimated based on projected savings from energy efficiency improvements and reduced operational costs over the next five years.",
+        "strategy_to_realize": "To realize these opportunities, we will implement advanced energy management systems, invest in renewable energy sources, and continuously monitor and optimize our resource usage.",
+        "cost_to_realize": 500000
+      },
+      "confidence": 0.48,
+      "sources": [
+        {
+          "chunk_id": "report_chunk_167",
+          "page_num": 168,
+          "score": 0.415,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n168\nCategory\nItem\n2021\n2022\n2023\n2024\nStatus of Ethical Management Reports..."
+        },
+        {
+          "chunk_id": "report_chunk_192",
+          "page_num": 192,
+          "score": 0.405,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n192\nTC-SI. Software & IT Services\nTopic\nSASB Code\nDisclosure Title\nContent..."
+        },
+        {
+          "chunk_id": "report_chunk_169",
+          "page_num": 170,
+          "score": 0.402,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n170\n1. The reporting scope of consolidated data includes six listed subsid..."
+        },
+        {
+          "chunk_id": "report_chunk_16",
+          "page_num": 17,
+          "score": 0.396,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n017\nFive key topics were identified by assessing the scope and scale of im..."
+        },
+        {
+          "chunk_id": "report_chunk_143",
+          "page_num": 144,
+          "score": 0.393,
+          "section": "governance",
+          "preview": "SK ESG Story      Materiality      Environmental      Social      Governance      Appendix\nSK Inc. Sustainability Report 2025\n1\nGovernance      Ethics and Compliance      Risk Management\nScope of Re..."
+        }
+      ],
+      "validation_errors": [],
+      "raw_llm_response": "```json\n{\n  \"environmental_issue\": \"Climate change\",\n  \"opportunity_type\": {\n    \"group\": \"Resource efficiency\",\n    \"value\": \"Use of more efficient production and distribution processes\"\n  },\n  \"primary_opportunity_driver\": \"The organization defines substantive effects based on the potential impact on operational efficiency and cost savings from improved resource management.\",\n  \"description\": \"A substantive effect on our organization is defined as any impact that significantly alters our operational capabilities, financial performance, or strategic direction. This includes changes in resource efficiency, energy consumption, and overall environmental impact. For instance, a 10% increase in energy efficiency could be considered substantive due to its potential to reduce operational costs and enhance competitiveness in the market.\",\n  \"value_chain_stage\": \"Direct operations\",\n  \"time_horizon\": \"Medium-term\",\n  \"likelihood\": \"Very likely\",\n  \"magnitude\": \"High\",\n  \"financial_impact\": 1000000,\n  \"financial_impact_explanation\": \"The financial impact is estimated based on projected savings from energy efficiency improvements and reduced operational costs over the next five years.\",\n  \"strategy_to_realize\": \"To realize these opportunities, we will implement advanced energy management systems, invest in renewable energy sources, and continuously monitor and optimize our resource usage.\",\n  \"cost_to_realize\": 500000\n}\n```"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ RAG System Accuracy Evaluation Report Generator
 CDP RAG 파이프라인 결과를 분석하고 평가 보고서를 생성합니다.
 
 사용 방법:
-    python reports/rag_evaluation_report.py --answers data/cdp_generated_answers.json
+    python reports/rag_evaluation_report.py --answers output/cdp_generated_answers.json
 """
 
 import json
@@ -603,7 +603,7 @@ def main():
 
     parser = argparse.ArgumentParser(description="RAG Evaluation Report Generator")
     parser.add_argument("--answers", "-a", required=True, help="Generated answers JSON path")
-    parser.add_argument("--output-dir", "-o", default="data/reports/", help="Output directory")
+    parser.add_argument("--output-dir", "-o", default="output/reports/", help="Output directory")
     parser.add_argument("--format", "-f", choices=['md', 'json', 'both'], default='both',
                        help="Output format")
 

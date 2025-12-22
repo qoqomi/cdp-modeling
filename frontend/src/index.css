@@ -1,0 +1,248 @@
+@import "tailwindcss";
+
+/* Base Styles - 3D Background */
+html,
+body {
+  background-color: #fafbfc; /* Light mode: 아주 연한 회색 (거의 흰색) */
+}
+
+/* Dark mode body background */
+.text-slate-100 {
+  background-color: #0a0a0a !important; /* Dark mode: 거의 검정 */
+}
+
+/* 3D 효과를 위한 배경 그라데이션 */
+.bg-3d-surface {
+  background: linear-gradient(180deg, #fafbfc 0%, #f5f7fa 100%);
+}
+
+.dark .bg-3d-surface {
+  background: linear-gradient(180deg, #0a0a0a 0%, #111111 100%);
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.3);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.5s ease-out;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.5s ease-out;
+}
+
+/* ========================================
+   3D Design System - Common Styles
+   ======================================== */
+
+/* 애니메이션 잘림 방지를 위한 컨테이너 */
+.animation-safe-container {
+  padding: 4px;
+  margin: -4px;
+}
+
+/* 스크롤 영역에서 호버 애니메이션 잘림 방지 */
+.scroll-animation-safe {
+  padding: 8px;
+  margin: -8px;
+}
+
+/* 3D Panel/Card Base - 모든 3D 카드에 필수 적용 */
+.card-3d {
+  border-radius: 1rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.card-3d:hover {
+  transform: translateY(-2px);
+  z-index: 2;
+}
+
+/* 3D Card Effect */
+.elevation-card {
+  border-radius: 1rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+}
+
+.elevation-card:hover {
+  transform: translateY(-2px);
+  z-index: 2;
+}
+
+/* 3D Button Effect */
+.elevation-btn {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.elevation-btn:hover:not(:disabled) {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.elevation-btn:active:not(:disabled) {
+  transform: translateY(0) scale(0.98);
+}
+
+/* 3D Input Effect */
+.elevation-input {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.elevation-input:focus {
+  outline: none;
+}
+
+/* 3D Icon Effect */
+.elevation-icon {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.elevation-icon:hover {
+  transform: scale(1.08) translateY(-2px);
+}
+
+/* Light Mode 3D Shadows */
+:root {
+  --elevation-card: 0 20px 60px rgba(0, 0, 0, 0.08),
+    0 8px 25px rgba(0, 0, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  --elevation-card-hover: 0 25px 70px rgba(0, 0, 0, 0.12),
+    0 12px 30px rgba(0, 0, 0, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --elevation-button: 0 4px 12px rgba(16, 185, 129, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  --elevation-button-hover: 0 6px 16px rgba(16, 185, 129, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  --elevation-input: inset 0 1px 2px rgba(0, 0, 0, 0.04),
+    0 1px 0 rgba(255, 255, 255, 0.5);
+  --elevation-input-focus: 0 0 0 3px rgba(16, 185, 129, 0.15),
+    inset 0 1px 2px rgba(0, 0, 0, 0.04);
+  --elevation-icon: 0 4px 12px rgba(16, 185, 129, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  --border-3d-light: rgba(255, 255, 255, 0.8);
+  --border-3d-dark: rgba(0, 0, 0, 0.06);
+  --transition-default: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark Mode 3D Shadows */
+.dark {
+  --elevation-card: 0 20px 60px rgba(0, 0, 0, 0.5),
+    0 8px 25px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  --elevation-card-hover: 0 25px 70px rgba(0, 0, 0, 0.6),
+    0 12px 30px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --elevation-button: 0 4px 12px rgba(16, 185, 129, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  --elevation-button-hover: 0 6px 16px rgba(16, 185, 129, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  --elevation-input: inset 0 1px 2px rgba(0, 0, 0, 0.2),
+    0 1px 0 rgba(255, 255, 255, 0.05);
+  --elevation-input-focus: 0 0 0 3px rgba(16, 185, 129, 0.25),
+    inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  --elevation-icon: 0 4px 12px rgba(16, 185, 129, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  --border-3d-light: rgba(255, 255, 255, 0.1);
+  --border-3d-dark: rgba(0, 0, 0, 0.3);
+}
+
+/* Utility Classes for 3D Effects */
+.shadow-elevation-card {
+  box-shadow: var(--elevation-card);
+}
+
+.shadow-elevation-card:hover {
+  box-shadow: var(--elevation-card-hover);
+}
+
+.shadow-elevation-btn {
+  box-shadow: var(--elevation-button);
+}
+
+.shadow-elevation-btn:hover {
+  box-shadow: var(--elevation-button-hover);
+}
+
+.shadow-elevation-input {
+  box-shadow: var(--elevation-input);
+}
+
+.shadow-elevation-input:focus {
+  box-shadow: var(--elevation-input-focus);
+}
+
+.shadow-elevation-icon {
+  box-shadow: var(--elevation-icon);
+}
+
+/* Recharts */
+.recharts-wrapper {
+  font-family: inherit;
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #10b98126;
+  stroke-width: 0.5px;
+}
+
+.recharts-text {
+  fill: #10b981b3;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 10px;
+  font-weight: 600;
+}

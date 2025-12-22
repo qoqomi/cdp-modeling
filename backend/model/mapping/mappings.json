@@ -1,0 +1,57 @@
+{
+  "version": "2025",
+  "description": "CDP 2025 질문과 과거 연도 질문 간의 매핑 테이블",
+  "notes": "이 파일은 Rule 기반 매핑입니다. 유사도 검색만으로 문항 매칭 금지!",
+  "mappings": {
+    "2.1": {
+      "current_question": "2.1 (2025)",
+      "module": "Dependencies, Impacts, Risks, and Opportunities",
+      "mapped_historical": [
+        {"year": 2024, "code": "2.1"},
+        {"year": 2023, "code": "2.1"}
+      ],
+      "mapping_confidence": "high",
+      "notes": "Time horizons definition - 질문 내용 동일"
+    },
+    "2.2": {
+      "current_question": "2.2 (2025)",
+      "module": "Dependencies, Impacts, Risks, and Opportunities",
+      "mapped_historical": [
+        {"year": 2024, "code": "2.2"},
+        {"year": 2023, "code": "2.2"}
+      ],
+      "mapping_confidence": "high",
+      "notes": "Environmental dependencies and impacts management process"
+    },
+    "2.2.1": {
+      "current_question": "2.2.1 (2025)",
+      "module": "Dependencies, Impacts, Risks, and Opportunities",
+      "mapped_historical": [
+        {"year": 2024, "code": "2.2.1"},
+        {"year": 2023, "code": "2.2.1"}
+      ],
+      "mapping_confidence": "high",
+      "notes": "Sub-question of 2.2"
+    },
+    "2.3": {
+      "current_question": "2.3 (2025)",
+      "module": "Dependencies, Impacts, Risks, and Opportunities",
+      "mapped_historical": [
+        {"year": 2024, "code": "2.3"},
+        {"year": 2023, "code": "2.3"}
+      ],
+      "mapping_confidence": "high",
+      "notes": "Risk management"
+    },
+    "2.4": {
+      "current_question": "2.4 (2025)",
+      "module": "Dependencies, Impacts, Risks, and Opportunities",
+      "mapped_historical": [
+        {"year": 2024, "code": "2.4"},
+        {"year": 2023, "code": "2.4"}
+      ],
+      "mapping_confidence": "high",
+      "notes": "Opportunities"
+    }
+  }
+}

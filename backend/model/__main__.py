@@ -140,6 +140,7 @@ def run_sustainability_pipeline(sample: int = None, evaluate: bool = False, recr
         use_bm25=True,
         use_reranker=True,
     )
+    print(f"  임베딩/리랭킹 서비스: {rag.embedding_client.base_url}")
     rag.create_collection(recreate=recreate)
     rag.index_chunks(chunks)
 
@@ -230,6 +231,7 @@ def run_structured_pipeline(sample: int = None, recreate: bool = True):
         use_bm25=True,
         use_reranker=True,
     )
+    print(f"  임베딩/리랭킹 서비스: {rag.embedding_client.base_url}")
     rag.create_collection(recreate=recreate)
     rag.index_chunks(chunks)
 

@@ -4,9 +4,9 @@ Sustainability Report RAG Pipeline (Enhanced)
 고정확도 RAG 파이프라인
 
 개선 사항:
-- BGE-M3 임베딩 모델 (다국어, 고정확도)
+- 외부 BGE Embedding 서비스 사용 (경량화)
 - 하이브리드 검색 (벡터 + BM25)
-- Cross-encoder 리랭킹
+- Cross-encoder 리랭킹 (외부 서비스)
 - 쿼리 확장/재작성
 - 메타데이터 필터링 강화
 
@@ -26,9 +26,6 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 from collections import Counter
 import math
-
-# 벡터 임베딩
-from sentence_transformers import SentenceTransformer, CrossEncoder
 
 # Qdrant 벡터 DB
 from qdrant_client import QdrantClient
@@ -50,6 +47,7 @@ from dotenv import load_dotenv
 from tqdm import tqdm
 
 from .chunker import ReportChunk
+from ..rag.embedding_client import get_embedding_client, EmbeddingClient
 
 load_dotenv()
 
@@ -148,53 +146,36 @@ class BM25Index:
 
 
 class EnhancedRAGPipeline:
-    """고정확도 RAG 파이프라인"""
-
-    # 임베딩 모델 옵션
-    EMBEDDING_MODELS = {
-        "bge-m3": "BAAI/bge-m3",
-        "bge-large": "BAAI/bge-large-en-v1.5",
-        "e5-large": "intfloat/multilingual-e5-large",
-        "minilm": "sentence-transformers/all-MiniLM-L6-v2",
-    }
-
-    # 리랭커 모델 옵션
-    RERANKER_MODELS = {
-        "bge-reranker": "BAAI/bge-reranker-v2-m3",
-        "ms-marco": "cross-encoder/ms-marco-MiniLM-L-6-v2",
-    }
+    """고정확도 RAG 파이프라인 (외부 Embedding 서비스 사용)"""
 
     def __init__(
         self,
-        embedding_model: str = "bge-m3",
-        reranker_model: str = "bge-reranker",
         collection_name: str = "sustainability_report_v2",
         qdrant_path: Optional[str] = None,
+        embedding_model: Optional[str] = None,
         use_bm25: bool = True,
         use_reranker: bool = True,
+        embedding_client: Optional[EmbeddingClient] = None,
     ):
         """
         Args:
-            embedding_model: 임베딩 모델 키 또는 전체 경로
-            reranker_model: 리랭커 모델 키 또는 전체 경로
             collection_name: Qdrant 컬렉션 이름
             qdrant_path: Qdrant DB 경로
+            embedding_model: (레거시/호환성) 임베딩 모델 이름. 현재 구현은 외부 임베딩 서비스(`BGE_EMBEDDING_URL`)를 사용하므로
+                이 값은 서비스의 실제 모델 선택에 영향을 주지 않을 수 있습니다.
             use_bm25: BM25 하이브리드 검색 사용 여부
             use_reranker: 리랭커 사용 여부
+            embedding_client: 외부 임베딩 클라이언트 (기본: 싱글톤)
         """
-        # 임베딩 모델 초기화 (MPS 메모리 부족 방지를 위해 CPU 사용)
-        model_name = self.EMBEDDING_MODELS.get(embedding_model, embedding_model)
-        print(f"Loading embedding model: {model_name} (device: cpu)")
-        self.embedding_model = SentenceTransformer(model_name, device="cpu")
-        self.embedding_dim = self.embedding_model.get_sentence_embedding_dimension()
+        self.embedding_model = embedding_model or os.getenv("EMBEDDING_MODEL")
 
-        # 리랭커 초기화
+        # 외부 임베딩 클라이언트 사용
+        self.embedding_client = embedding_client or get_embedding_client()
+        print(f"Using external embedding service: {self.embedding_client.base_url}")
+        self.embedding_dim = self.embedding_client.dimension
+
+        # 리랭커 설정 (외부 서비스 사용)
         self.use_reranker = use_reranker
-        self.reranker = None
-        if use_reranker:
-            reranker_name = self.RERANKER_MODELS.get(reranker_model, reranker_model)
-            print(f"Loading reranker model: {reranker_name} (device: cpu)")
-            self.reranker = CrossEncoder(reranker_name, device="cpu")
 
         # BM25 인덱스
         self.use_bm25 = use_bm25
@@ -260,19 +241,15 @@ class EnhancedRAGPipeline:
         for i in tqdm(range(0, len(chunks), batch_size)):
             batch = chunks[i:i+batch_size]
 
-            # 임베딩 생성
+            # 임베딩 생성 (외부 서비스 호출)
             texts = [chunk.content for chunk in batch]
-            embeddings = self.embedding_model.encode(
-                texts,
-                show_progress_bar=False,
-                normalize_embeddings=True  # BGE 모델은 정규화 필요
-            )
+            embeddings = self.embedding_client.embed_batch(texts)
 
-            # Qdrant에 저장
+            # Qdrant에 저장 (embedding은 이미 list)
             points = [
                 PointStruct(
                     id=i + idx,
-                    vector=embedding.tolist(),
+                    vector=embedding if isinstance(embedding, list) else embedding.tolist(),
                     payload={
                         "chunk_id": chunk.id,
                         "content": chunk.content,
@@ -297,11 +274,8 @@ class EnhancedRAGPipeline:
         top_k: int = 20,
         section_filter: Optional[str] = None
     ) -> List[Dict[str, Any]]:
-        """벡터 유사도 검색"""
-        query_embedding = self.embedding_model.encode(
-            query,
-            normalize_embeddings=True
-        ).tolist()
+        """벡터 유사도 검색 (외부 서비스 호출)"""
+        query_embedding = self.embedding_client.embed(query)
 
         filter_conditions = None
         if section_filter:
@@ -406,27 +380,35 @@ class EnhancedRAGPipeline:
         results: List[Dict[str, Any]],
         top_k: int = 10
     ) -> List[Dict[str, Any]]:
-        """Cross-encoder로 리랭킹"""
-        if not self.reranker or not results:
+        """외부 서비스로 리랭킹"""
+        if not self.use_reranker or not results:
             return results[:top_k]
 
-        # 쿼리-문서 쌍 생성
-        pairs = [(query, r["content"]) for r in results]
+        try:
+            # 문서 텍스트 추출
+            doc_texts = [r["content"] for r in results]
 
-        # 리랭킹 점수 계산
-        scores = self.reranker.predict(pairs)
+            # 외부 서비스로 리랭킹
+            rerank_results = self.embedding_client.rerank(query, doc_texts, top_k=top_k)
 
-        # 점수 추가 및 정렬
-        for i, result in enumerate(results):
-            result["rerank_score"] = float(scores[i])
+            # 결과 매핑 (원본 인덱스 → 점수)
+            score_map = {idx: score for idx, score, _ in rerank_results}
 
-        sorted_results = sorted(
-            results,
-            key=lambda x: x["rerank_score"],
-            reverse=True
-        )
+            # 점수 추가
+            for i, result in enumerate(results):
+                result["rerank_score"] = score_map.get(i, 0.0)
 
-        return sorted_results[:top_k]
+            sorted_results = sorted(
+                results,
+                key=lambda x: x["rerank_score"],
+                reverse=True
+            )
+
+            return sorted_results[:top_k]
+
+        except Exception as e:
+            print(f"Warning: Reranking failed, using original order: {e}")
+            return results[:top_k]
 
     def expand_query(self, query: str, question_context: Optional[Dict] = None) -> str:
         """LLM으로 쿼리 확장"""
@@ -646,7 +628,7 @@ Generate a comprehensive CDP response. If certain information is not available, 
         """결과 저장"""
         report = {
             "pipeline_config": {
-                "embedding_model": str(self.embedding_model),
+                "embedding_service": self.embedding_client.base_url,
                 "use_bm25": self.use_bm25,
                 "use_reranker": self.use_reranker,
             },
@@ -696,8 +678,6 @@ def run_rag_pipeline(
     # 2. RAG 초기화 및 인덱싱
     print("Step 2: Initializing Enhanced RAG Pipeline...")
     rag = EnhancedRAGPipeline(
-        embedding_model="bge-m3",
-        reranker_model="bge-reranker",
         use_bm25=True,
         use_reranker=use_rerank,
     )

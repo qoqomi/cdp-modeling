@@ -67,7 +67,6 @@ def step2_indexing(chunks, recreate: bool = True, use_bm25: bool = True, use_rer
 
     from .rag import EnhancedRAGPipeline
 
-    print(f"  임베딩 모델: BAAI/bge-m3")
     print(f"  BM25: {'ON' if use_bm25 else 'OFF'}")
     print(f"  리랭커: {'ON' if use_reranker else 'OFF'}")
 
@@ -76,6 +75,7 @@ def step2_indexing(chunks, recreate: bool = True, use_bm25: bool = True, use_rer
         use_bm25=use_bm25,
         use_reranker=use_reranker,
     )
+    print(f"  임베딩/리랭킹 서비스: {rag.embedding_client.base_url}")
 
     rag.create_collection(recreate=recreate)
     rag.index_chunks(chunks)

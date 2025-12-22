@@ -13,12 +13,14 @@ CDP 질문지 PDF를 구조화된 JSON으로 변환하는 파서
 4. 구조화된 JSON 출력
 """
 
+from __future__ import annotations
+
 import json
 import re
 import os
 from pathlib import Path
 from dataclasses import dataclass, field, asdict
-from typing import List, Dict, Optional, Any, Tuple
+from typing import List, Dict, Optional, Any, Tuple, TYPE_CHECKING
 from enum import Enum
 
 # PDF 처리
@@ -33,6 +35,9 @@ try:
     HAS_TABLE_DETECTION = True
 except ImportError:
     HAS_TABLE_DETECTION = False
+
+if TYPE_CHECKING:
+    from PIL import Image
 
 # 스키마 로더 (같은 폴더)
 from .schema_loader import CDPSchemaLoader

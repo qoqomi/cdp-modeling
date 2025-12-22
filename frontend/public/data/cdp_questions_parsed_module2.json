@@ -1,0 +1,1233 @@
+{
+  "version": "2025",
+  "module": "2",
+  "title": "Dependencies, Impacts, Risks, and Opportunities",
+  "questions": [
+    {
+      "question_id": "2.1",
+      "title_en": "How does your organization define short-, medium-, and long-term time horizons in relation to the identification, assessment, and management of your environmental dependencies, impacts, risks, and opportunities?",
+      "change_from_last_year": "No change",
+      "tags": {
+        "authority_type": "All requesters",
+        "environmental_issue": "All",
+        "sector": "All",
+        "question_level": "All"
+      },
+      "rationale": "Understanding organizations’ definitions of time horizons allows data users to contextualize the \ndifferent timescales at which organizations consider environmental issues in the identification, \nassessment, and management of dependencies, impacts, risks, and opportunities, and how this \ninforms their business strategy and financial planning.",
+      "requested_content": [
+        "To define your short-, medium- and long-term time horizons, provide details of the length of time in the “From” and “To” years columns (e.g., from 5 to 10 years, or from 12 to 25 years).",
+        "Provide the reasons for the choice of time horizon and explain how the use of this time horizon supports your strategic and/or financial planning.",
+        "If you undertake strategic and/or financial planning under a different timeframe, explain why the time horizon chosen for the identification, assessment, and management of environmental issues is different to that used in these other processes.",
+        "Because the timing of effects on organizations will vary, specifying set timeframes across sectors could hinder organizations’ consideration of the environmental risks and opportunities specific to their businesses.",
+        "TCFD and TNFD do not define timeframes and encourage respondents to decide how to define their own timeframes considering the useful life of their assets or infrastructure, the profile of the environmental risks they face, the sectors and geographies in which they operate, and that environmental risks and opportunities can manifest themselves over the medium and long term.",
+        "-- Page 2 ---",
+        "In assessing environmental issues, organizations should be sensitive to the timeframe used to conduct their assessments. While many organizations conduct operational and financial planning over a 1–2-year timeframe, and strategic and capital planning over a 2-5-year timeframe, environmental risks and opportunities may have implications over a longer period. It is therefore important for organizations to consider the appropriate timeframes when assessing environmental dependencies, impacts, risks, and opportunities."
+      ],
+      "additional_information": "TCFD and TNFD position on time horizons:  \n• Because the timing of effects on organizations will vary, specifying set timeframes across \nsectors could hinder organizations’ consideration of the environmental risks and opportunities \nspecific to their businesses.  \n• TCFD and TNFD do not define timeframes and encourage respondents to decide how to define \ntheir own timeframes considering the useful life of their assets or infrastructure, the profile of \nthe environmental risks they face, the sectors and geographies in which they operate, and that \nenvironmental risks and opportunities can manifest themselves over the medium and long \nterm. \n\n\n--- Page 2 ---\n \n \n \n \n69 \n• In assessing environmental issues, organizations should be sensitive to the timeframe used to \nconduct their assessments. While many organizations conduct operational and financial \nplanning over a 1–2-year timeframe, and strategic and capital planning over a 2-5-year \ntimeframe, environmental risks and opportunities may have implications over a longer period. It \nis therefore important for organizations to consider the appropriate timeframes when \nassessing environmental dependencies, impacts, risks, and opportunities.",
+      "response_format": {
+        "type": "table",
+        "columns": [
+          {
+            "id": "2.1.col0",
+            "field": "Time horizon",
+            "type": "select",
+            "options": [
+              "Short-term",
+              "Medium-term",
+              "Long-term"
+            ]
+          },
+          {
+            "id": "2.1.col1",
+            "field": "From (years)",
+            "type": "number",
+            "min_value": 0.0,
+            "max_value": 100.0
+          },
+          {
+            "id": "2.1.col2",
+            "field": "Is your long-term time horizon open ended?",
+            "type": "select",
+            "options": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "id": "2.1.col3",
+            "field": "To (years)",
+            "type": "number",
+            "min_value": 0.0,
+            "max_value": 100.0
+          },
+          {
+            "id": "2.1.col4",
+            "field": "How this time horizon is linked to strategic and/or financial planning",
+            "type": "textarea",
+            "max_length": 1500
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "2.2",
+      "title_en": "Does your organization have a process for identifying, assessing, and managing environmental dependencies and/or impacts?",
+      "change_from_last_year": "No change",
+      "tags": {
+        "authority_type": "All requesters",
+        "environmental_issue": "All",
+        "sector": "All (+ M-B)",
+        "question_level": "All"
+      },
+      "rationale": "Dependencies and impacts on the environment can result in changes to the capacity of nature to \nprovide social and economic functions. Additionally, it is essential to identify, assess, and \nmanage dependencies and impacts on the environment in order to assess effectively the risks \nand opportunities of an organization. This question allows data users to gauge the organization’s \nawareness of its own environmental dependencies and impacts.",
+      "ambition": [
+        "The organization has a robust process to identify, assess, and manage environmental",
+        "dependencies, impacts, risks, and opportunities across its direct operations, value chain,",
+        "financed activities, and assets."
+      ],
+      "requested_content": [
+        "Note that this question asks if you have a process to identify, assess and manage dependencies and/or impacts. You will be asked about risks and opportunities in the following question.",
+        "Select “Yes” if your organization has any process in place for identifying, assessing, and managing dependencies and/or impacts. Select “Yes” regardless of whether both dependencies and impacts are assessed, and regardless of whether the process is integrated (i.e. across multiple environmental issues, and any other issues) or separated. You will have the opportunity to provide further details on your assessment process in 2.2.2.",
+        "Only select “No…” if you do not have any form of process for identifying, assessing, and managing dependencies and/or impacts.",
+        "This column only appears if you select any “No” option in column 1 “Process in place” OR if you select any option except “Both dependencies and impacts” in column 2 “Dependencies and/or impacts evaluated in this process”.",
+        "Describe the primary reason selected in column 4 “Primary reason for not evaluating dependencies and/or impacts”.",
+        "Describe any plans to evaluate environmental dependencies and/or impacts in the future, such as initial measures taken to put an evaluation process in place.",
+        "If you selected “Judged to be unimportant or not relevant” in column 4 “Primary reason for not evaluating dependencies and/or impacts”, explain the criteria used to decide that evaluating dependencies and/or impacts is not important or relevant to your organization.",
+        "Manage: the approach adopted by an organization to address and respond, which includes but is not limited to prioritizing and monitoring.",
+        "Dependencies (on the environment): aspects of environmental assets and ecosystem services that an organization relies on to function (TNFD, 2023).",
+        "Impacts (on the environment): changes in the condition of nature (quality or quantity), which may result in changes to the capacity of nature to provide social and economic functions (adapted from TNFD, 2023).",
+        "-- Page 4 ---"
+      ],
+      "explanation_of_terms": {
+        "Manage": "the approach adopted by an organization to address and respond, which includes but \nis not limited to prioritizing and monitoring.",
+        "Dependencies (on the environment)": "aspects of environmental assets and ecosystem services \nthat an organization relies on to function (TNFD, 2023).",
+        "Impacts (on the environment)": "changes in the condition of nature (quality or quantity), which \nmay result in changes to the capacity of nature to provide social and economic functions \n(adapted from TNFD, 2023)."
+      },
+      "response_format": {
+        "type": "table",
+        "columns": [
+          {
+            "id": "2.2.col0",
+            "field": "Process in place",
+            "type": "select",
+            "options": [
+              "Yes",
+              "No, but we plan to within the next two years",
+              "No, and we do not plan to within the next two years"
+            ]
+          },
+          {
+            "id": "2.2.col1",
+            "field": "Dependencies and/or impacts evaluated in this process",
+            "type": "select",
+            "options": [
+              "Both dependencies and impacts",
+              "Dependencies only",
+              "Impacts only"
+            ]
+          },
+          {
+            "id": "2.2.col2",
+            "field": "Biodiversity impacts evaluated before the mining project development stage",
+            "type": "select",
+            "options": [
+              "Yes, in all cases",
+              "Yes, in some cases",
+              "No"
+            ]
+          },
+          {
+            "id": "2.2.col3",
+            "field": "Primary reason for not evaluating dependencies and/or impacts",
+            "type": "select",
+            "options": [
+              "Lack of internal resources, capabilities, or expertise",
+              "No standardized procedure",
+              "Not an immediate strategic priority",
+              "Judged to be unimportant or not relevant",
+              "Other, please specify"
+            ]
+          },
+          {
+            "id": "2.2.col4",
+            "field": "Explain why you do not evaluate dependencies and/or impacts",
+            "type": "textarea",
+            "max_length": 2500
+          }
+        ]
+      },
+      "children": [
+        {
+          "question_id": "2.2.1",
+          "title_en": "Does your organization have a process for identifying, assessing, and managing environmental risks and/or opportunities?",
+          "change_from_last_year": "No change",
+          "tags": {
+            "authority_type": "All requesters",
+            "environmental_issue": "All",
+            "sector": "All (+ M-B)",
+            "question_level": "All"
+          },
+          "rationale": "For many organizations, environmental issues pose significant challenges, now and in the future. \nThis question establishes whether the organization has a process for identifying, assessing, and \nmanaging environmental issues so that data users may gauge the organization's awareness of \nits own environmental risks and opportunities.",
+          "ambition": [
+            "The organization has a robust process to identify, assess, and manage environmental dependencies, impacts, risks, and opportunities across its direct operations, value chain, financed activities, and assets."
+          ],
+          "requested_content": [
+            "Select “Yes” if your organization has any process in place for identifying, assessing, and managing risks and/or opportunities. Select “Yes” regardless of whether both risks and opportunities are assessed, and regardless of whether the process is integrated (i.e. across multiple environmental issues, and any other issues) or separated. You will have the opportunity to provide further details on your assessment process in 2.2.2.",
+            "Only select \"No…\" if you do not have any form of process for identifying, assessing, and managing risks and/or opportunities.",
+            "This column only appears if you select any “No” option in column 1 “Process in place”.",
+            "Describe the primary reason selected in column 4 “Primary reason for not evaluating risks and/or opportunities”.",
+            "Describe any plans to evaluate environmental risks and/or opportunities in the future, such as initial measures taken to put an evaluation process in place.",
+            "If you selected “Judged to be unimportant or not relevant” in column 4 “Primary reason for not evaluating risks and/or opportunities”, explain the criteria used to decide that evaluating risks and/or opportunities is not important or relevant to your organization.",
+            "This column only appears if you select any option except “Both risks and opportunities” in column 2 “Risks and/or opportunities evaluated in this process” OR if you select “No” in response to column 3 “Is this process informed by the dependencies and/or impacts process?”.",
+            "If you select any option except “Both risks and opportunities” in column 2 “Risks and/or opportunities evaluated in this process”, describe the primary reason for not having a process to evaluate both environmental risks and opportunities and describe any plans to do so in the future.",
+            "If you selected “No” in response to column 3 “Is this process informed by the dependencies and/or impacts process?”, provide details of why this is the case, and any plans to consider dependencies and/or impacts as part of this process in the future.",
+            "This question is asking about the processes used to identify, assess, and respond to environmental risks and/or opportunities within your direct operations and upstream value chain. Please do not report the identification, assessment and management of environmental risks and/or opportunities in your portfolio here. You will be able to do this in 2.2.5.",
+            "Environmental risks: potential threats (effects of uncertainty) posed to an organization that arise from its and wider society’s dependencies and impacts on the environment. (Adapted from TNFD “Nature related risk”, 2023)",
+            "Environmental opportunities: opportunities are generated through impacts and dependencies on nature, and can occur: o When organizations avoid, reduce, mitigate or manage nature-related risks, for example, connected to the loss of nature and ecosystem services that the organization and society depend on;",
+            "Through the strategic transformation of business models, products, services, markets and investments that actively work to reverse the loss of nature, including by restoration, regeneration of nature and implementation of nature-based solutions (Adapted from TNFD “Nature related opportunities”, 2023).",
+            "-- Page 6 ---"
+          ],
+          "explanation_of_terms": {
+            "Environmental risks": "potential threats (effects of uncertainty) posed to an organization that arise \nfrom its and wider society’s dependencies and impacts on the environment. (Adapted from TNFD \n“Nature related risk”, 2023)",
+            "Environmental opportunities": "opportunities are generated through impacts and dependencies on \nnature, and can occur:  \no \nWhen organizations avoid, reduce, mitigate or manage nature"
+          },
+          "response_format": {
+            "type": "table",
+            "columns": [
+              {
+                "id": "2.2.1.col0",
+                "field": "Process in place",
+                "type": "select",
+                "options": [
+                  "Yes",
+                  "No, but we plan to within the next two years",
+                  "No, and we do not plan to within the next two years"
+                ]
+              },
+              {
+                "id": "2.2.1.col1",
+                "field": "Risks and/or opportunities evaluated in this process",
+                "type": "select",
+                "options": [
+                  "Both risks and opportunities",
+                  "Risks only",
+                  "Opportunities only"
+                ]
+              },
+              {
+                "id": "2.2.1.col2",
+                "field": "Primary reason for not evaluating risks and/or opportunities",
+                "type": "select",
+                "options": [
+                  "Lack of internal resources, capabilities, or expertise",
+                  "No standardized procedure",
+                  "Not an immediate strategic priority",
+                  "Judged to be unimportant or not relevant",
+                  "Other, please specify"
+                ]
+              },
+              {
+                "id": "2.2.1.col3",
+                "field": "Explain why you do not evaluate risks and/or opportunities",
+                "type": "textarea",
+                "max_length": 2500
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "2.2.2",
+          "title_en": "Provide details of your organization’s process for identifying, assessing, and managing environmental dependencies, impacts, risks, and/or opportunities.",
+          "change_from_last_year": "No change",
+          "question_dependencies": "you select “Yes” in response to column 1 “Process in place” of 2",
+          "tags": {
+            "authority_type": "All requesters",
+            "environmental_issue": "All",
+            "sector": "All",
+            "question_level": "All"
+          },
+          "rationale": "Organizations that have established a comprehensive, recurring procedure to identify, assess, \nand manage environmental dependencies, impacts, risks, and opportunities across their value \nchain and over a range of time-horizons will be better equipped to handle longer-term \nuncertainties and liabilities, as well as capitalize on opportunities. This question indicates to data \nusers how robust an organization’s assessment process is.",
+          "ambition": [
+            "The organization has a robust process to identify, assess, and manage environmental dependencies, impacts, risks, and opportunities across its direct operations, value chain, financed activities, and assets.",
+            "The organization maps its value chain, screens sites, and engages stakeholders to identify and assess environmental dependencies, impacts, risks, and opportunities. This is integrated into a multi-disciplinary organization-wide risk management, covers transition and physical risks/opportunities over different timeframes, and discloses methods and significance criteria.",
+            "The organization conducts the identification and assessment process at least once a year and describes how data was obtained.",
+            "The organization describes how the outputs from the scenario analysis are used in risk and opportunity identification, assessment, and management processes, given the organization’s activities and relevant timeframes."
+          ],
+          "requested_content": [
+            "Organizations are requested to report information on their approach to evaluating their dependencies and/or impacts on the environment, and consequently their approach to assessing risks and/or opportunities that are identified through understanding their dependencies and/or impacts o This question seeks to capture a holistic overview of this process in its entirety. o If your process is the same for multiple environmental issues, you may select all that apply in column 1 “Environmental issue”. o If your process differs for each environmental issue, add a new row and indicate these differences accordingly. If there are minor differences between how environmental issues are considered within your processes, you may use the text fields to provide details of these differences. o If you have multiple processes for the same environmental issue, for example if the process differs for different stages of the value chain, you may add rows accordingly. Alternatively, you may use the text fields to provide details of minor differences between the processes. Coverage (column 4)",
+            "This column will be presented if “Direct operations”, “Upstream value chain” or “Downstream value chain” is selected in column 3 “Value chain stages covered”.",
+            "If certain elements of your direct operations, or other parts of your value chain are excluded from the assessment process, select \"Partial\" and explain your reasons in column 16 “Further details of process”.",
+            "This column will be presented if “Upstream value chain” is selected in column 3 “Value chain stages covered”.",
+            "The options in this column are dependent on the estimate of highest supplier tier mapped or known that is provided in 1.24.",
+            "Select all options that represent the supplier tiers covered in your assessment process.",
+            "Disclose whether the assessment is qualitative, quantitative, or both.",
+            "Qualitative assessment is descriptive and may include stakeholder involvement, meetings, interviews, and analysis of scenario impacts or descriptive risk matrices.",
+            "-- Page 11 ---",
+            "Quantitative assessment is expressed in numbers and involves indicators, indices, variables, and metrics such as probabilistic or stochastic risk modelling considering frequency and severity of events.",
+            "Select the option that best reflects the frequency that all dependencies, impacts, risks and/or opportunities are assessed and/or reviewed. o The frequency disclosed here does not necessarily mean the frequency you complete a full assessment of all dependencies, impacts, risks and opportunities. For example, long-term risks may be relevant for several years and only require periodic review. Therefore, you may select the option that best reflects the frequency that all dependencies, impacts, risks and/or opportunities are assessed and/or reviewed. Time horizons covered (column 9)",
+            "Choose all the time horizons that are considered in your assessment. For example, if you only consider dependencies, impacts, risks, and opportunities relating to the environmental issue selected in column 1 “Environmental issue” in the short term (in line with your definition of time horizons provided in 2.1), you should select “short-term” here. Or, if you consider dependencies, impacts, risks, and/or opportunities over short-term, medium-term, and long-term time horizons, select all three.",
+            "This column only appears if you select “Risks” in column 2 “Indicate which of dependencies, impacts, risks, and opportunities are covered by the process”.",
+            "Select the option that best describes how your process for identifying, assessing, and managing risks is integrated into your overall assessment framework. o Integrated into multi-disciplinary organization-wide risk management process: a documented process where risks are identified and assessed in an integrated way in the company’s centralized enterprise risk management program covering all possible types/sources of risks. o A specific environmental risk management process: a documented process that identifies, assesses, and manages risks separately from other business risks.",
+            "Site-specific: the assessment process is conducted within the sites that your organization and/or its suppliers operate in, or any other relevant operational sites.",
+            "Local: the assessment process is conducted within a defined area below sub-national level (e.g., cities, towns, villages).",
+            "Sub-national: the assessment process is conducted within a defined area below country/area- level. This may include the immediate landscape that operational sites sit within and could impact, or defined political boundaries (e.g., state, province, district, municipality).",
+            "National: the assessment process is conducted across entire countries/areas. It does not consider dependencies, impact, risks, and/or opportunities that are specific to local areas or sites.",
+            "This column only appears if you select “Risks” in column 2 “Indicate which of dependencies, impacts, risks, and opportunities are covered by the process”.",
+            "Select all options that best represent the types of risk considered in the assessment process, whether a risk is subsequently identified or not:",
+            "-- Page 12 ---",
+            "Describe your process for identifying, assessing, and managing dependencies, impacts, risks, and/or opportunities, including: o If relevant to your selections in 2.2, an assessment of how your organization’s dependencies and/or impacts inform your assessment of your organization’s risks and/or opportunities. o The proportion of operational locations assessed (screening site locations, business activities and assets within value chain to identify dependencies, impacts, risks, and/or opportunities). o The methodology/data sources used for key data not obtained directly from the organization's operations. o Describes how your process for identifying, assessing, and managing dependencies, impacts, and/or opportunities is integrated into your company-wide risk management process.",
+            "Describe the process used to determine which risks and/or opportunities could have a substantive financial or strategic effect on the organization, and which dependencies and/or impacts are relevant to this, including: o The methodology used to assess the nature, likelihood, and magnitude of the effects of dependencies, impacts, risks, and/or opportunities (including qualitative factors, quantitative thresholds, or other criteria); o The inputs and parameters used (for example, information about data sources and the scope of operations covered by the process); o Details on the use of scenario analysis; o The processes and related policies for monitoring dependencies, impacts, risks, and/or opportunities.",
+            "-- Page 13 ---",
+            "If in column 3 “Value chain stages covered” you did not indicate that all areas of your organization’s value chain are covered, explain why this is the case.",
+            "If \"Partial\" was selected in column 4 “Coverage”, explain your exclusions and the reasons for them.",
+            "Indicate if this process has changed since the last reporting year. If it has changed, indicate if data quality has been improved as a result.",
+            "If you indicated in your questionnaire setup that you assess forests- and/or water-related issues, you should report on the details of the assessment processes here. E.g., if you indicated that you assess water-related issues in questionnaire setup, you should report at least 1 row with ‘Water’ selected in column 1 ‘Environmental issue’.",
+            "This question is asking about the processes used to identify, assess, and respond to environmental dependencies, impacts, risks and/or opportunities within your direct operations and upstream value chain. Please do not report the identification, assessment and management of environmental dependencies, impacts, risks and/or opportunities in your portfolio here. You will be able to do this in 2.2.6.",
+            "Direct operations: all activities and sites (e.g., buildings, farms, mines, retail stores) over which the reporting company has operational or financial control. This covers any internal supply chains between the organization’s business units (adapted from TNFD, 2023; SBTN, 2023).",
+            "Embedded commodity: a commodity is considered ‘embedded’ when it is used anywhere in the supply chains, or the direct operations associated with a final product. Adapted from the SBTN embedded (or highly transformed commodities) are volumes of high impact commodities, integrated into complex products, for example, companies do not purchase a commodity in its raw or processed forms, but they purchase a product that contains them. (SBTN, 2023)",
+            "Enterprise risk management: an integrated and joined-up approach to managing risk across an organization and its extended networks (Institute of Risk Management, 2016).",
+            "Environmental risks: potential threats (effects of uncertainty) posed to an organization that arise from its and wider society’s dependencies and impacts on the environment. (Adapted from TNFD “Nature related risk”, 2023)",
+            "Environmental opportunities: opportunities are generated through impacts and dependencies on nature, and can occur: o When organizations avoid, reduce, mitigate or manage nature-related risks, for example, connected to the loss of nature and ecosystem services that the organization and society depend on; o Through the strategic transformation of business models, products, services, markets and investments that actively work to reverse the loss of nature, including by restoration, regeneration of nature and implementation of nature-based solutions (Adapted from TNFD “Nature related opportunities”, 2023).",
+            "Leakage Market: refers to a market in which capital, income or commodities are diverted to non-compliant activities. For example, Southeast Asian palm oil producers facing a restrictive NDPE market, may move towards biofuel production due to weaker sustainability restrictions, creating potential for environmental damage and reputation risk (CRR, 2020).",
+            "Regulator: a body with a statutory authority to enforce laws, standards, and other legal regulations. They are appointed by government but can operate independently of it.",
+            "-- Page 14 ---",
+            "Risk management: involved understanding, identifying, assessing, and responding to risk to make sure organizations achieve their objectives. This must be proportionate to the complexity and type of organization (based on Institute of Risk Management, 2016). Risk management is a set of processes which are conducted by the board and management of an organization to support achievement of objectives through addressing risks and management of the combined potential impacts identified (Adapted from TCFD, 2021).",
+            "Upstream and downstream risks: defined based on the location of the risks in your value chain and can also refer to any of the risk types above i.e. emerging regulation, technology, legal, market reputation etc.",
+            "Value chain: the entire sequence of upstream and downstream activities, sites, resources, and relationships associated with the reporting organization’s operations, starting with the raw materials, and extending through end-of-life management, aimed at providing or receiving value from an organization’s products and services either within, upstream, or downstream of direct operations (adapted from GHG Protocol, 2013; ESRS, 2023; SBTN, 2023).",
+            "Value chain stage: A part of the sequence of activities that provide value to/ or receive value from the organization’s products and services. This can include activities within the organizations direct operations, or up or downstream of those operations; such as the supply chain, joint ventures, franchisees and product users.",
+            "Water stress (‘areas with’): a concept that considers physical quantity aspects related to water resources, including water availability. As good practice, a water stressed area should be measured at the catchment level as a minimum. Commonly accepted global indicators to assess areas as water stressed and their thresholds for reporting to CDP include: o Water availability – category greater than ‘High risk’: 3.4 (WWF Water Risk Filter). WWF recommends that users also take into consideration ‘Medium risk’: >2.6. This category is based on a multi-model approach which integrates the best available global water scarcity risk indicators: water depletion, baseline water stress, and blue water scarcity. o Baseline water stress – indicator equal to/greater than ‘High’: 40-80% (WRI Aqueduct Water Risk Atlas). This refers to ratio of total annual water withdrawals to available renewable water supply. o Baseline water depletion – indicator equal to/greater than ‘High’: 50-75% (WRI Aqueduct Water Risk Atlas). This refers to the ratio of total annual water consumption to available renewable water supply.",
+            "For information on dependencies, impacts, risks and opportunities, and how they relate to each other – see TNFD’s “Guidance on the identification and assessment of nature-related issues: the LEAP approach”, 2023."
+          ],
+          "explanation_of_terms": {
+            "Direct operations": "all activities and sites (e.g., buildings, farms, mines, retail stores) over \nwhich the reporting company has operational or financial control.  This covers any \ninternal supply chains between the organization’s business units (adapted from TNFD, \n2023; SBTN, 2023).",
+            "Embedded commodity": "a commodity is considered ‘embedded’ when it is used anywhere in \nthe supply chains, or the direct operations associated with a final product. Adapted from the \nSBTN embedded (or highly transformed commodities) are volumes of high impact \ncommodities, integrated into complex products, for example, companies do not purchase a \ncommodity in its raw or processed forms, but they purchase a product that contains them. \n(SBTN, 2023)",
+            "Enterprise risk management": "an integrated and joined",
+            "up approach to managing risk \nacross an organization and its extended networks (Institute of Risk Management, 2016). \n• \nEnvironmental risks": "potential threats (effects of uncertainty) posed to an organization that arise \nfrom its and wider society’s dependencies and impacts on the environment. (Adapted from TNFD \n“Nature related risk”, 2023)",
+            "Environmental opportunities": "opportunities are generated through impacts and dependencies on \nnature, and can occur:  \no \nWhen organizations avoid, reduce, mitigate or manage nature",
+            "related risks, for example, \nconnected to the loss of nature and ecosystem services that the organization and society \ndepend on;  \no \nThrough the strategic transformation of business models, products, services, markets and \ninvestments that actively work to reverse the loss of nature, including by restoration, \nregeneration of nature and implementation of nature-based solutions (Adapted from TNFD \n“Nature related opportunities”, 2023). \n• \nLeakage Market": "refers to a market in which capital, income or commodities are diverted \nto non",
+            "compliant activities. For example, Southeast Asian palm oil producers facing a \nrestrictive NDPE market, may move towards biofuel production due to weaker \nsustainability restrictions, creating potential for environmental damage and reputation \nrisk (CRR, 2020). \n• \nRegulator": "a body with a statutory authority to enforce laws, standards, and other legal \nregulations. They are appointed by government but can operate independently of it.",
+            "-- Page 14 ---\n \n \n \n \n81 \n• \nRisk management": "involved understanding, identifying, assessing, and responding to \nrisk to make sure organizations achieve their objectives. This must be proportionate to \nthe complexity and type of organization (based on Institute of Risk Management, 2016). \nRisk management is a set of processes which are conducted by the board and \nmanagement of an organization to support achievement of objectives through \naddressing risks and management of the combined potential impacts identified \n(Adapted from TCFD, 2021).",
+            "Upstream and downstream risks": "defined based on the location of the risks in your value \nchain and can also refer to any of the risk types above i.e. emerging regulation, \ntechnology, legal, market reputation etc.",
+            "Value chain": "the entire sequence of upstream and downstream activities, sites, \nresources, and relationships associated with the reporting organization’s operations, \nstarting with the raw materials, and extending through end",
+            "of-life management, aimed \nat providing or receiving value from an organization’s products and services either \nwithin, upstream, or downstream of direct operations (adapted from GHG Protocol, \n2013; ESRS, 2023; SBTN, 2023). \n• \nValue chain stage": "A part of the sequence of activities that provide value to/ or receive value \nfrom the organization’s products and services. This can include activities within the \norganizations direct operations, or up or downstream of those operations; such as the supply \nchain, joint ventures, franchisees and product users.",
+            "Water stress (‘areas with’)": "a concept that considers physical quantity aspects related to water \nresources, including water availability. As good practice, a water stressed area should be \nmeasured at the catchment level as a minimum. Commonly accepted global indicators to assess \nareas as water stressed and their thresholds for reporting to CDP include: \no \nWater availability – category greater than ‘High risk’: 3.4 (WWF Water Risk Filter). WWF \nrecommends that users also take into consideration ‘Medium risk’: >2.6. This category is \nbased on a multi",
+            "model approach which integrates the best available global water scarcity \nrisk indicators": "water depletion, baseline water stress, and blue water scarcity. \no \nBaseline water stress – indicator equal to/greater than ‘High’: 40",
+            "80% (WRI Aqueduct Water \nRisk Atlas). This refers to ratio of total annual water withdrawals to available renewable water \nsupply. \no \nBaseline water depletion": "indicator equal to/greater than ‘High’: 50",
+            "75% (WRI Aqueduct \nWater Risk Atlas). This refers to the ratio of total annual water consumption to available \nrenewable water supply. \n \nAdditional \ninformation \n• For information on dependencies, impacts, risks and opportunities, and how they relate to each \nother": "see TNFD’s “Guidance on the identification and assessment of nature",
+            "related issues": "the \nLEAP approach”, 2023."
+          },
+          "additional_information": "• For information on dependencies, impacts, risks and opportunities, and how they relate to each \nother – see TNFD’s “Guidance on the identification and assessment of nature-related issues: the \nLEAP approach”, 2023.",
+          "response_format": {
+            "type": "table",
+            "columns": [
+              {
+                "id": "2.2.2.col0",
+                "field": "Environmental issue",
+                "type": "select",
+                "options": [
+                  "Climate change",
+                  "Forests",
+                  "Water",
+                  "Plastics",
+                  "Biodiversity"
+                ]
+              },
+              {
+                "id": "2.2.2.col1",
+                "field": "Dependencies/impacts/risks/opportunities covered",
+                "type": "select",
+                "options": [
+                  "Dependencies only",
+                  "Impacts only",
+                  "Risks only",
+                  "Opportunities only",
+                  "Dependencies and impacts",
+                  "Risks and opportunities",
+                  "All (dependencies, impacts, risks, and opportunities)"
+                ]
+              },
+              {
+                "id": "2.2.2.col2",
+                "field": "Value chain stages covered",
+                "type": "select",
+                "options": [
+                  "Direct operations only",
+                  "Direct operations and upstream",
+                  "Direct operations and downstream",
+                  "All stages (direct operations, upstream and downstream)"
+                ]
+              },
+              {
+                "id": "2.2.2.col3",
+                "field": "Coverage",
+                "type": "select",
+                "options": [
+                  "Full",
+                  "Partial"
+                ]
+              },
+              {
+                "id": "2.2.2.col4",
+                "field": "Supplier tiers covered",
+                "type": "select",
+                "options": [
+                  "Tier 1 suppliers",
+                  "Tier 2 suppliers",
+                  "Tier 3 suppliers",
+                  "Tier 4+ suppliers"
+                ]
+              },
+              {
+                "id": "2.2.2.col5",
+                "field": "Mining projects covered",
+                "type": "select",
+                "options": [
+                  "Exploration",
+                  "Development",
+                  "Operation",
+                  "Closure",
+                  "Post-closure",
+                  "All stages"
+                ]
+              },
+              {
+                "id": "2.2.2.col6",
+                "field": "Type of assessment",
+                "type": "select",
+                "options": [
+                  "Qualitative only",
+                  "Quantitative only",
+                  "Qualitative and quantitative"
+                ]
+              },
+              {
+                "id": "2.2.2.col7",
+                "field": "Frequency of assessment",
+                "type": "select",
+                "options": [
+                  "More than once a year",
+                  "Annually",
+                  "Every two years",
+                  "Every three years or more",
+                  "As important matters arise",
+                  "Not defined"
+                ]
+              },
+              {
+                "id": "2.2.2.col8",
+                "field": "Time horizons covered",
+                "type": "select",
+                "options": [
+                  "Short-term",
+                  "Medium-term",
+                  "Long-term"
+                ]
+              },
+              {
+                "id": "2.2.2.col9",
+                "field": "Integration of risk management process",
+                "type": "select",
+                "options": [
+                  "Fully integrated",
+                  "Partially integrated",
+                  "Not integrated"
+                ]
+              },
+              {
+                "id": "2.2.2.col10",
+                "field": "Location-specificity used",
+                "type": "select",
+                "options": [
+                  "Yes",
+                  "No"
+                ]
+              },
+              {
+                "id": "2.2.2.col11",
+                "field": "Tools and methods used",
+                "type": "select",
+                "options": [
+                  "ENCORE",
+                  "IBAT",
+                  "SBTN",
+                  "TNFD LEAP approach",
+                  "WWF Biodiversity Risk Filter",
+                  "Other, please specify"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "2.2.3",
+          "title_en": "Provide mining-specific details of your organization’s process for identifying, assessing, and managing biodiversity impacts.",
+          "change_from_last_year": "No change",
+          "tags": {
+            "authority_type": "All requesters",
+            "environmental_issue": "B only",
+            "sector": "M-B",
+            "question_level": "All"
+          },
+          "rationale": "Assessing biodiversity impacts before the development of a mining project as part of an \nEnvironmental Impact Assessment (EIA) improves decision making and resource allocation, as \nwell as helping to avoid costs associated with unforeseen issues. Indicating how your projects \nhave gone through such assessment before the project development stage provides evidence to \ndata users that biodiversity impacts have been considered before implementation of the project.",
+          "requested_content": [
+            "-- Page 16 ---",
+            "Select the option that best reflects the nature of the assessment performed by your organization. Types of assessments are based on IFC (2012) and are listed according to the level of complexity, from most to least complex.",
+            "Select all options that influenced the definition of the scope and extent of your biodiversity- related assessment. Provide further details on how the scope of the assessment was defined in column 8 “Please explain”.",
+            "Select all options that are covered by your assessment of biodiversity impacts.",
+            "Select “Yes” if baseline biodiversity data was collected as part of the assessment, is properly stored and readily accessible.",
+            "Note that data does not need to be shared with regulatory agencies or more broadly to be considered available.",
+            "The Environmental Impact Statement (EIS) is considered to be publicly available if it is accessible to all stakeholders and interested parties (e.g., available on the organization’s website or at any other unrestricted site).",
+            "Select “Yes” if that is the case and use column 8 “Please explain” to provide details on how the EIS can be accessed.",
+            "If your organization does not have an EIS, or if the EIS is not publicly available, select “No”.",
+            "Provide any"
+          ],
+          "explanation_of_terms": {
+            "Baseline biodiversity data": "data on biodiversity values (specific species, habitats or ecosystems, \nand ecosystem services) occurring at a site, their current condition, and trends before a project \ncommences (Adapted from Gullison et al., 2015).",
+            "Cumulative impacts": "the overall impacts occurring in the project landscape caused by the project \nand non",
+            "project activities (related and unrelated to the project), generally including clusters of \nprojects, land use change trends, and/or foreseeable developments (Hardner et al., 2015). \n• \nDirect impacts": "the physical footprint of project activities (including project infrastructure and the \nincremental transportation and energy infrastructure required to support it) plus the area \naffected by emissions and effluents (Hardner et al., 2015).",
+            "Ecosystem services": "the contributions of ecosystems to the benefits that are used in \neconomic and other human activity (TNFD, 2023).",
+            "Environmental Impact Assessment (EIA)": "the process of identifying, predicting, \nevaluating and mitigating the biophysical, social, and other relevant effects of \ndevelopment proposals prior to major decisions being taken and commitments made \n(IAIA, 2009).",
+            "Environmental Impact Statement (EIS)": "a physical report on the EIA process and \nfindings. The EIS should provide a clear, jargon",
+            "free review of potential impacts and how \nthey have been and will be mitigated. The report often forms the basis of public \nconsultation activities and is the document that is presented to regulatory authorities and \nothers, as the basis for decision making (IFC, 2012). \n\n\n--- Page 17 ---\n \n \n \n \n84 \n• \nIndirect impacts": "the physical footprint of non"
+          },
+          "additional_information": "related to the assessment of biodiversity impacts prior to \nthe project development, e.g. local regulatory context, challenges related to data availability \nand whether there is a Strategic Environmental Assessment (SEA) in place. \n• \nAs sharing baseline biodiversity data is considered to be a best practice, if your baseline \nbiodiversity data was shared in some way provide details here. \n \nExplanation of \nterms \n• \nBaseline biodiversity data: data on biodiversity values (specific species, habitats or ecosystems, \nand ecosystem services) occurring at a site, their current condition, and trends before a project \ncommences (Adapted from Gullison et al., 2015). \n• \nCumulative impacts: the overall impacts occurring in the project landscape caused by the project \nand non-project activities (related and unrelated to the project), generally including clusters of \nprojects, land use change trends, and/or foreseeable developments (Hardner et al., 2015). \n• \nDirect impacts: the physical footprint of project activities (including project infrastructure and the \nincremental transportation and energy infrastructure required to support it) plus the area \naffected by emissions and effluents (Hardner et al., 2015). \n• \nEcosystem services:  the contributions of ecosystems to the benefits that are used in \neconomic and other human activity (TNFD, 2023). \n• \nEnvironmental Impact Assessment (EIA): the process of identifying, predicting, \nevaluating and mitigating the biophysical, social, and other relevant effects of \ndevelopment proposals prior to major decisions being taken and commitments made \n(IAIA, 2009). \n• \nEnvironmental Impact Statement (EIS): a physical report on the EIA process and \nfindings. The EIS should provide a clear, jargon-free review of potential impacts and how \nthey have been and will be mitigated. The report often forms the basis of public \nconsultation activities and is the document that is presented to regulatory authorities and \nothers, as the basis for decision making (IFC, 2012). \n\n\n--- Page 17 ---\n \n \n \n \n84 \n• \nIndirect impacts: the physical footprint of non-project activities in the surrounding area that are \ncaused or stimulated by the project plus the area affected by their emissions and effluents \n(Hardner et al., 2015).",
+          "response_format": {
+            "type": "table",
+            "columns": [
+              {
+                "id": "2.2.3.col0",
+                "field": "Mining project ID",
+                "type": "textarea",
+                "max_length": 2500
+              },
+              {
+                "id": "2.2.3.col1",
+                "field": "Extent of assessment",
+                "type": "select",
+                "options": [
+                  "Project 1-70"
+                ]
+              },
+              {
+                "id": "2.2.3.col2",
+                "field": "Impacts considered",
+                "type": "select",
+                "options": [
+                  "Project 1-70"
+                ]
+              },
+              {
+                "id": "2.2.3.col3",
+                "field": "Scope defined by",
+                "type": "textarea",
+                "max_length": 2500
+              },
+              {
+                "id": "2.2.3.col4",
+                "field": "Aspects considered",
+                "type": "textarea",
+                "max_length": 2500
+              },
+              {
+                "id": "2.2.3.col5",
+                "field": "Baseline biodiversity data available",
+                "type": "textarea",
+                "max_length": 2500
+              },
+              {
+                "id": "2.2.3.col6",
+                "field": "Environmental Impact Statement publicly available",
+                "type": "select"
+              },
+              {
+                "id": "2.2.3.col7",
+                "field": "Please explain",
+                "type": "textarea",
+                "max_length": 2500
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "2.2.4",
+          "title_en": "Does your organization have a process for identifying, assessing, and managing environmental dependencies and/or impacts related to your portfolio activities?",
+          "change_from_last_year": "No change",
+          "tags": {
+            "authority_type": "All requesters",
+            "environmental_issue": "All",
+            "sector": "FS",
+            "question_level": "All"
+          },
+          "rationale": "Dependencies and impacts on the environment can result in changes to the capacity of nature to \nprovide social and economic functions. Additionally, it is essential for financial institutions to \nidentify, assess, and manage dependencies and impacts on the environment in order to assess \neffectively the risks and opportunities related to their various portfolio activities. This question \nallows data users to gauge the organization’s awareness of its own environmental dependencies \nand impacts.",
+          "ambition": [
+            "The financial institution has a robust process to identify, assess, and manage environmental dependencies, impacts, risks, and opportunities across all of its portfolios."
+          ],
+          "requested_content": [
+            "Note that this question asks if you have a process to identify, access and manage dependencies and/or impacts related to your portfolio (lending, investing and insurance activities). You will be asked about risks and opportunities in the following question.",
+            "The rows presented in this question depend on the activities you selected in question 1.10.",
+            "Select “Yes” if your organization has any process in place for identifying, assessing, and managing dependencies and/or impacts relating to the portfolio in column 0 “Portfolio”. Select “Yes” regardless of whether both dependencies and impacts are assessed, and regardless of whether the process is integrated (i.e. across multiple environmental issues, and any other issues) or separated. You will have the opportunity to provide further details on your portfolio assessment process in 2.2.6.",
+            "Only select \"No…\" if you do not have any form of process for identifying, assessing, and managing dependencies and/or impacts related to the portfolio in column 0 “Portfolio”.",
+            "This column only appears if you select any “No” option in column 1 “Process in place covering this portfolio” OR if you select any option except “Both dependencies and impacts” in column 2 “Dependencies and/or impacts evaluated in this process”.",
+            "Describe the primary reason selected in column 3 “Primary reason for not evaluating dependencies and/or impacts related to this portfolio”.",
+            "Describe any plans to evaluate environmental dependencies and/or impacts in the future, such as initial measures taken to put an evaluation process in place.",
+            "If you selected “Judged to be unimportant or not relevant” in column 3 “Primary reason for not evaluating dependencies and/or impacts related to this portfolio”, explain the criteria used to decide that evaluating dependencies and/or impacts is not important or relevant to your organization."
+          ],
+          "response_format": {
+            "type": "table",
+            "columns": [
+              {
+                "id": "2.2.4.col0",
+                "field": "Process in place",
+                "type": "select",
+                "options": [
+                  "Yes",
+                  "No, but we plan to within the next two years",
+                  "No, and we do not plan to within the next two years"
+                ]
+              },
+              {
+                "id": "2.2.4.col1",
+                "field": "Primary reason",
+                "type": "select",
+                "options": [
+                  "Lack of internal resources, capabilities, or expertise",
+                  "No standardized procedure",
+                  "Not an immediate strategic priority",
+                  "Judged to be unimportant or not relevant",
+                  "Other, please specify"
+                ]
+              },
+              {
+                "id": "2.2.4.col2",
+                "field": "Explain why",
+                "type": "textarea",
+                "max_length": 2500
+              },
+              {
+                "id": "2.2.4.col3",
+                "field": "Primary reason for not evaluating dependencies and/or impact",
+                "type": "select",
+                "options": [
+                  "Lack of internal resources, capabilities, or expertise",
+                  "No standardized procedure",
+                  "Not an immediate strategic priority",
+                  "Judged to be unimportant or not relevant",
+                  "Other, please specify"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "2.2.5",
+          "title_en": "Does your organization have a process for identifying, assessing, and managing environmental risks and/or opportunities related to your portfolio activities?",
+          "change_from_last_year": "No change",
+          "tags": {
+            "authority_type": "All requesters",
+            "environmental_issue": "All",
+            "sector": "FS",
+            "question_level": "All"
+          },
+          "rationale": "For many organizations, environmental issues pose significant challenges, now and in the future. \nThis question establishes whether the financial institution has a process for identifying, \nassessing, and managing environmental issues related to their various portfolio activities so that \ndata users may gauge the organization’s awareness of its own environmental risks and \nopportunities.",
+          "ambition": [
+            "The financial institution has a robust process to identify, assess, and manage environmental",
+            "dependencies, impacts, risks, and opportunities across all of its portfolios."
+          ],
+          "requested_content": [
+            "The rows presented in this question depend on the activities you selected in question 1.10.",
+            "Select “Yes” if your organization has a process in place for identifying, assessing, and managing risks and/or opportunities related to the portfolio in column 0 “Portfolio”. Select “Yes” regardless of whether both risks and opportunities are assessed, and regardless of whether the process is integrated (i.e. across multiple environmental issues, and any other issues) or separated. o You will have the opportunity to provide further details on your assessment process in 2.2.6.",
+            "Only select \"No…\" if you do not have any form of process for identifying, assessing, and managing risks and/or opportunities related to the portfolio in column 0 “Portfolio”.",
+            "This column only appears if you select any “No” option in column 1 “Process in place covering this portfolio”.",
+            "Describe the primary reason selected in column 4 “Primary reason for not evaluating risks and/or opportunities related to this portfolio”.",
+            "Describe any plans to evaluate environmental risks and/or opportunities in the future, such as initial measures taken to put an evaluation process in place.",
+            "If you selected “Judged to be unimportant or not relevant” in column 4 “Primary reason for not evaluating risks and/or opportunities related to this portfolio”, explain the criteria used to decide that evaluating risks and opportunities related to the portfolio in column 0 “Portfolio” is not important or relevant to your organization.",
+            "This column only appears if you select any option except “Both risks and opportunities” in column 2 “Risks and/or opportunities relating to this portfolio evaluated in this process” OR if you select “No” in response to column 3 “Is this process informed by the dependencies and/or impacts process?”.",
+            "If you select any option except “Both risks and opportunities” in column 2 “Risks and/or opportunities relating to this portfolio evaluated in this process”, describe the primary reason for not having a process to evaluate both environmental risks and opportunities and describe any plans to do so in the future.",
+            "If you selected “No” in response to column 3 “Is this process informed by the dependencies and/or impacts process?”, provide details of why this is the case, and any plans to consider dependencies and/or impacts as part of this process in the future.",
+            "-- Page 21 ---"
+          ],
+          "response_format": {
+            "type": "table",
+            "columns": [
+              {
+                "id": "2.2.5.col0",
+                "field": "Process in place",
+                "type": "select",
+                "options": [
+                  "Yes",
+                  "No, but we plan to within the next two years",
+                  "No, and we do not plan to within the next two years"
+                ]
+              },
+              {
+                "id": "2.2.5.col1",
+                "field": "Primary reason",
+                "type": "select",
+                "options": [
+                  "Lack of internal resources, capabilities, or expertise",
+                  "No standardized procedure",
+                  "Not an immediate strategic priority",
+                  "Judged to be unimportant or not relevant",
+                  "Other, please specify"
+                ]
+              },
+              {
+                "id": "2.2.5.col2",
+                "field": "Explain why",
+                "type": "textarea",
+                "max_length": 2500
+              },
+              {
+                "id": "2.2.5.col3",
+                "field": "Primary reason for not evaluating risks and/or opportunities related to this portfolio Explain why you do not evaluate risks and/or opportunities related to this portfolio and describe any plans to do so in the future Explain why you do not have a process for evaluating both risks and opportunities related to this portfolio that is informed by a dependencies and/or impact",
+                "type": "select",
+                "options": [
+                  "Lack of internal resources, capabilities, or expertise",
+                  "No standardized procedure",
+                  "Not an immediate strategic priority",
+                  "Judged to be unimportant or not relevant",
+                  "Other, please specify"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "2.2.6",
+          "title_en": "Provide details of your organization’s process for identifying, assessing, and managing environmental dependencies, impacts, risks, and/or opportunities related to your portfolio activities.",
+          "change_from_last_year": "No change",
+          "tags": {
+            "authority_type": "All requesters",
+            "environmental_issue": "All",
+            "sector": "FS only",
+            "question_level": "All"
+          },
+          "rationale": "Financial institutions that have established a comprehensive, recurring procedure to identify, \nassess, and manage environmental dependencies, impacts, risks, and opportunities across all \ntheir portfolios and over a range of time-horizons will be better equipped to handle longer-term \nuncertainties and liabilities, as well as capitalize on opportunities. This question indicates to data \nusers how robust a financial institution’s assessment process is.",
+          "ambition": [
+            "The financial institution has a robust process to identify, assess, and manage environmental dependencies, impacts, risks, and opportunities across all of its portfolios.",
+            "The financial institution maps its portfolios and engages stakeholders to identify and assess environmental dependencies, impacts, risks, and opportunities. This is integrated into a multi- disciplinary portfolio-wide risk management, covers transition and physical risks/opportunities over different timeframes, and discloses methods and significance criteria.",
+            "Financial institutions include the value of their total assets and the proportion to which the identification, assessment and management process and environmental strategy apply.",
+            "The financial institution conducts the identification and assessment process at least once a year, describing how data was obtained, and evaluates the linkages between assessing dependencies, impacts, risks, and opportunities.",
+            "The financial institution describes how the outputs from the scenario analysis are used in risk and opportunity identification, assessment, and management processes, given the organization’s activities and relevant timeframes."
+          ],
+          "requested_content": [
+            "For each portfolio in column 0 “Portfolio”, financial institutions are requested to report information on their approach to evaluating their dependencies and/or impacts on the environment, and consequently their approach to assessing risks and/or opportunities in their lending, financial intermediary, investment and/or insurance underwriting activities, that are identified through understanding its their dependencies and/or impacts. o This question seeks to capture a holistic overview of this process in its entirety. o If your process is the same for multiple environmental issues, you may select all that apply in column 1 “Environmental issue”. o If your process differs for each environmental issue, add a new row and indicate these differences accordingly. If there are minor differences between how",
+            "-- Page 26 ---",
+            "The rows presented in this table depend on your response to 2.2.4 and 2.2.5",
+            "Respond to all rows individually.",
+            "For each of your portfolios, disclose the percentage of portfolio value covered by the assessment process to the portfolio value based on assets value reported in 1.10.",
+            "Disclose whether the assessment is qualitative, quantitative, or both.",
+            "Qualitative assessment is descriptive and may include stakeholder involvement, meetings, interviews, and analysis of scenario impacts or descriptive risk matrices.",
+            "Quantitative assessment is expressed in numbers and involves indicators, indices, variables and metrics such as probabilistic or stochastic risk modelling considering frequency and severity of events.",
+            "Select the option that best reflects the frequency that all dependencies, impacts, risks and/or opportunities are assessed and/or reviewed. o The frequency disclosed here does not necessarily mean the frequency you complete a full assessment of all dependencies, impacts, risks and opportunities. For example, long-term risks may be relevant for several years and only require periodic review. Therefore, you may select the option that best reflects the frequency that all dependencies, impacts, risks and/or opportunities are assessed and/or reviewed. Time horizons covered (column 7)",
+            "Choose all the time horizons that are considered in your assessment. For example, if you only consider dependencies, impacts, risks, and opportunities relating to the portfolio in column 0 “Portfolio” in the short term (in line with your definition of time horizons provided in 2.1), you should select “short-term” here. Or, if you consider, short-term, medium-term and long-term time horizons, select all three.",
+            "This column only appears if you select “Risks” in column 2 “Indicate which of dependencies, impacts, risks, and opportunities are covered by the process”.",
+            "Select the option that best describes how your process for identifying, assessing, and managing risks related to the portfolio in column 0 “Portfolio” is integrated into your overall assessment framework. o Integrated into multi-disciplinary organization-wide risk management processes: a documented process where risks related to the portfolio in column 0 “Portfolio” are identified and assessed in an integrated way in the company’s centralized enterprise risk management program covering all possible types/sources of risks.",
+            "-- Page 27 ---",
+            "Site-specific: the assessment process is conducted within the sites that your organization and/or its suppliers operate in, or any other relevant operational sites.",
+            "Local: the assessment process is conducted within a defined area below sub-national level (e.g., cities, towns, villages).",
+            "Sub-national: the assessment process is conducted within a defined area below country/area-level. This may include the immediate landscape that operational sites sit within and could impact, or defined political boundaries (e.g., state, province, district, municipality).",
+            "National: the assessment process is conducted across entire countries/areas. It does not consider dependencies, impact, risks, and/or opportunities that are specific to local areas or sites.",
+            "Select which tools and methodologies you use to assess your portfolio’s exposure to environmental risks: o UNEP FI Portfolio Impact Analysis Tool for Banks: helps banks analyze the impacts associated with their retail (consumer and business banking) and wholesale (corporate and investment banking) portfolios. o UNEP FI Corporate Impact Analysis Tool: enables users to perform a holistic analysis of companies, based on the reality of those companies’ business activities and the needs of the countries in which they operate, whether for sourcing, production, or sales. o 2DII Paris Agreement Capital Transition Assessment (PACTA) tool: portfolio-level analysis for equities and fixed income climate transition risks in power and some industrial sectors (cement and steel). o The Transition Pathway Initiative (TPI): bottom-up assessment of how listed companies are preparing for the transition to a low-carbon economy. o 2 Degrees of Separation: In-depth sector and company-level analysis of oil and gas companies’ upstream exposure to climate transition risks. o Portfolio temperature alignment: portfolio alignment tools are used to generate metrics to determine the overall level of alignment of a portfolio, by assessing the performance of its individual companies. o Risk models: computerized systems, such as catastrophe models, used to assess and quantify the financial impact of a range of potential future disasters. o Scenario analysis: considers how an organization is impacted by changes to policy/regulation, technology or market changes aimed at emissions reductions, energy efficiency, subsidies/taxes or other constraints or incentives implemented to facilitate a low carbon economy (for example, the ‘well below 2°C’ goal committed to by the Paris Agreement). Assesses the impact of acute or chronic physical change related to climate change such extreme weather, rising sea levels, water shortage, etc. o Stress tests: process of evaluating a number of statistically defined possibilities to determine the most damaging combination of events, and the loss they would produce. The likelihood of such an event is then assessed. o Corporate Bonds Water Credit Risk Tool (Water Credit Risk Tool): enables users to integrate financial risk exposure to water scarcity into standard financial models used",
+            "-- Page 28 ---",
+            "If you select “Other, please specify”, please describe the tools and methodologies you use to assess your portfolio’s exposure.",
+            "-- Page 29 ---",
+            "This column only appears if you select “Risks” in column 1 “Indicate which of dependencies, impacts, risks, and opportunities are covered by the process for this portfolio”.",
+            "Select the option that best represents the types of risk considered in your assessment process, having the following in mind: o Acute physical – occurrence of short term, specific events that change the state of nature. For example, oil spills, forest fires or pests affecting a harvest; o Chronic physical – gradual changes to the state of nature. For example, pollution stemming from pesticide use or climate change. o Policy – changes in the policy context due to new (or enforcement of existing) policies to create positive impacts on nature or mitigate negative impacts on nature; o Technology – Substitution of products or services with a reduced impact on nature and/or reduced dependency on nature. For example, the replacement of plastics with biodegradable containers; o Market – Changing dynamics in overall markets, including changes in consumer preferences, which arise from changing physical, regulatory, technological and reputational conditions and stakeholder dynamics. For example, the market value of a company is affected by assets that have decreased in value because there is insufficient freshwater for the production process, or the value of the business’ production process is reduced by the emergence of new technologies that require less water to operate; o Reputation – Changes in perception concerning an organization’s actual or perceived nature impacts, including at the local, economic and societal level. This can result from direct company impacts, industry impacts and/or impacts of activities upstream and/or downstream in a value chain. o Liability – Liability risks that arise directly or indirectly from legal claims. As laws, regulations and case law related to an organization’s preparedness for nature action evolves, the incident or probability of contingent liabilities arising from an organization may increase.",
+            "Details of the process for identifying, assessing, and managing dependencies, impacts, risks, and/or opportunities, including: o If relevant, an assessment of how your organization’s dependencies and/or impacts fed into your assessment of your risks and/or opportunities. o Explain how you defined and calculated the proportion of portfolio covered by your risk management process and if the assessment included systemic and sector risks. o Consideration of existing/emerging regulatory requirements (e.g., restrictions on water or land use). o The proportion of operational locations assessed (screening site locations, business activities and assets within value chain in order to identify dependencies, impacts, risks, and/or opportunities). o Describes how your process for identifying, assessing, and managing dependencies, impacts, and/or opportunities is integrated into your company-wide risk management process.",
+            "Describe the process used to determine which dependencies, impacts, risks, and/or opportunities relating to the portfolio in column 0 “Portfolio” could have a substantive financial or strategic impact on the portfolio, including: o The inputs and parameters used (for example, information about data sources and the scope of operations covered in the process) o Details on the use of scenario analysis",
+            "-- Page 30 ---",
+            "Describe the process for obtaining data for the identification and assessment of dependencies, impacts, risks, and/or opportunities, including: o The methodology used to assess the nature, likelihood and magnitude of the effects of dependencies, impacts, risks, and/or opportunities (including qualitative factors, quantitative thresholds, or other criteria); and o The methodology/data sources used for key data not obtained directly from the organization’s operations.",
+            "Indicate if this process has changed since the last reporting year. If it has changed, indicate if data quality has been improved as a result."
+          ],
+          "explanation_of_terms": {},
+          "response_format": {
+            "type": "table",
+            "columns": [
+              {
+                "id": "2.2.6.col0",
+                "field": "Environmental issue",
+                "type": "select",
+                "options": [
+                  "Climate change",
+                  "Forests",
+                  "Water",
+                  "Plastics",
+                  "Biodiversity"
+                ]
+              },
+              {
+                "id": "2.2.6.col1",
+                "field": "Coverage",
+                "type": "select",
+                "options": [
+                  "Full",
+                  "Partial"
+                ]
+              },
+              {
+                "id": "2.2.6.col2",
+                "field": "Frequency of assessment",
+                "type": "select",
+                "options": [
+                  "More than once a year",
+                  "Annually",
+                  "Every two years",
+                  "Every three years or more",
+                  "As important matters arise",
+                  "Not defined"
+                ]
+              },
+              {
+                "id": "2.2.6.col3",
+                "field": "Time horizons covered",
+                "type": "select",
+                "options": [
+                  "Short-term",
+                  "Medium-term",
+                  "Long-term"
+                ]
+              },
+              {
+                "id": "2.2.6.col4",
+                "field": "Tools or methodologies used",
+                "type": "select",
+                "options": [
+                  "ENCORE",
+                  "IBAT",
+                  "SBTN",
+                  "TNFD LEAP approach",
+                  "WWF Biodiversity Risk Filter",
+                  "Other, please specify"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "2.2.7",
+          "title_en": "Are the interconnections between environmental dependencies, impacts, risks and/or opportunities assessed?",
+          "change_from_last_year": "No change",
+          "tags": {
+            "authority_type": "All requesters",
+            "environmental_issue": "All",
+            "sector": "All",
+            "question_level": "All"
+          },
+          "rationale": "Nature-related disclosures should be integrated with other business and sustainability-related \ndisclosures, whenever possible, to provide report users with an integrated and holistic picture of \nthe organization’s financial position and prospects. Integration of climate- and nature-related \ndisclosures is of particular importance. It is important that any alignment, synergies, \ncontributions and possible trade-offs between climate and nature are clearly identified. This \nquestion demonstrates that assessing the interconnections between environmental \ndependencies, impacts, risks and opportunities is part of the organization’s assessment process.",
+          "ambition": [
+            "The organization assesses the interconnections between environmental dependencies, impacts,",
+            "risks and/or opportunities and identifies any alignment, synergies, contributions and possible",
+            "trade-offs."
+          ],
+          "requested_content": [
+            "Select “Yes” if you assess the interconnections between environmental dependencies, impacts, risks and/or opportunities. This includes whether you have assessed the extent to which any risks may arise from your activities linked to environmental dependencies and/or impacts. o For instance, if you have identified that your organization is dependent on certain ecosystem services (e.g., flood mitigation services), you may have assessed this dependency in the context of forests, water, and climate-related risks.",
+            "This column only appears if “Yes” is selected in column 1 “Interconnections between environmental dependencies, impacts, risks and/or opportunities assessed”.",
+            "Provide a brief description of the framework or methodology used to integrate your assessment of different environmental dependencies, impacts, risks and/or opportunities into a single process. This could include guidance from relevant reporting standards or protocols developed internally.",
+            "Describe how this process is incorporated into the assessment process disclosed in 2.2.2.",
+            "Describe the process for identifying any alignment, synergies, contributions and possible trade- offs between dependencies, impacts, risks and/or opportunities.",
+            "Provide examples of how you consider the interconnections between dependencies, impacts, risks and/or opportunities and describe how you assessed the issues together rather than separately.",
+            "If you have assessed the interconnections between environmental dependencies, impacts, risks and/or opportunities but have faced challenges in integrating all these aspects into a holistic approach, explain the reasons for this difficulty.",
+            "This column only appears if “No” is selected in column 1 “Interconnections between environmental dependencies, impacts, risks and/or opportunities assessed”.",
+            "-- Page 32 ---",
+            "Describe the primary reason selected in column 2 “Primary reason for not assessing interconnections between environmental dependencies, impacts, risks and/or opportunities” and describe any plans to do so in the future.",
+            "If you selected “Judged to be unimportant or not relevant” in column 3 “Primary reason for not assessing interconnections between environmental dependencies, impacts, risks and/or opportunities”, explain the criteria used to decide that assessing the interconnections between environmental issues was not important or relevant to your organization."
+          ],
+          "explanation_of_terms": {
+            "offs": "the strategic choices made by an organization to balance environmental dependencies, \nimpacts, risks, and opportunities, while acknowledging and managing any conflicts or \ncompromises that arise in pursuit of a single holistic approach."
+          },
+          "response_format": {
+            "type": "table",
+            "columns": [
+              {
+                "id": "2.2.7.col0",
+                "field": "Primary reason",
+                "type": "select",
+                "options": [
+                  "Lack of internal resources, capabilities, or expertise",
+                  "No standardized procedure",
+                  "Not an immediate strategic priority",
+                  "Judged to be unimportant or not relevant",
+                  "Other, please specify"
+                ]
+              },
+              {
+                "id": "2.2.7.col1",
+                "field": "Explain why",
+                "type": "textarea",
+                "max_length": 3000
+              },
+              {
+                "id": "2.2.7.col2",
+                "field": "Description",
+                "type": "textarea",
+                "max_length": 3000
+              },
+              {
+                "id": "2.2.7.col3",
+                "field": "Primary reason for not assessing interconnections between environmental dependencies, impact",
+                "type": "select",
+                "options": [
+                  "Lack of internal resources, capabilities, or expertise",
+                  "No standardized procedure",
+                  "Not an immediate strategic priority",
+                  "Judged to be unimportant or not relevant",
+                  "Other, please specify"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "2.2.8",
+          "title_en": "Does your organization consider environmental information about your clients/investees as part of your due diligence and/or environmental dependencies, impacts, risks and/or opportunities assessment process?",
+          "change_from_last_year": "No change",
+          "tags": {
+            "authority_type": "All requesters",
+            "environmental_issue": "CC; W; F",
+            "sector": "FS",
+            "question_level": "All"
+          },
+          "rationale": "Considering environmental information about clients/investees in the initial phases of a financial \ninstitution’s assessment of dependencies, impacts, risks, and opportunities and/or as part of \ntheir due diligence process helps data users and the organization understand their value chain’s \nexposure to environmental risks and opportunities. This question helps attest to the robustness \nof an organization’s assessment of environmental issues to data users.",
+          "ambition": [
+            "Financial institutions consider environmental information about clients/investees as part of the",
+            "due diligence and/or risk assessment process for all relevant portfolios."
+          ],
+          "requested_content": [
+            "Incorporating clients’ environmental information in borrower and deal-level credit risk and other pre-lending assessments such as due diligence and “know your client” processes.",
+            "Incorporating investees’ environmental information in fund allocation and investment dependencies, impact, risk and/or opportunities assessment processes.",
+            "Incorporating policyholders’ environmental information in insurance underwriting due diligence processes.",
+            "Due diligence: research or investigation performed by the financial services company before entering into an agreement or a financial transaction with another party.",
+            "-- Page 34 ---",
+            "Portfolio: in the context of this questionnaire your portfolio is the entire collection of your core financing activities and insurance policies that you offer. For banking, this is the entire collection of products, securities and loans held on your balance sheet for which you own the receivable stream. For asset managers, this is the entire collection of your products and investments that you hold and/or manage on behalf of your clients. For asset owners, this is the entire collection of products, funds and investments owned and controlled by your company. For investment portfolios, asset managers should consider discretionary investments, those where the company has discretion over investment decisions. For insurance underwriting, this is the entire collection of products and insurance policies you provide to your clients."
+          ],
+          "explanation_of_terms": {
+            "Due diligence": "research or investigation performed by the financial services company before \nentering into an agreement or a financial transaction with another party.",
+            "-- Page 34 ---\n \n \n \n \n101 \n• \nPortfolio": "in the context of this questionnaire your portfolio is the entire collection of your core \nfinancing activities and insurance policies that you offer. For banking, this is the entire \ncollection of products, securities and loans held on your balance sheet for which you own the \nreceivable stream. For asset managers, this is the entire collection of your products and \ninvestments that you hold and/or manage on behalf of your clients. For asset owners, this is \nthe entire collection of products, funds and investments owned and controlled by your \ncompany. For investment portfolios, asset managers should consider discretionary \ninvestments, those where the company has discretion over investment decisions. For \ninsurance underwriting, this is the entire collection of products and insurance policies you \nprovide to your clients."
+          },
+          "response_format": {
+            "type": "table",
+            "columns": [
+              {
+                "id": "2.2.8.col0",
+                "field": "Explain why",
+                "type": "textarea",
+                "max_length": 2500
+              }
+            ]
+          }
+        },
+        {
+          "question_id": "2.2.9",
+          "title_en": "Indicate the environmental information your organization considers about clients/investees as part of your due diligence and/or environmental dependencies, impacts, risks and/or opportunities assessment process, and how this influences decision-making.",
+          "change_from_last_year": "No change",
+          "tags": {
+            "authority_type": "All requesters",
+            "environmental_issue": "C, F, W",
+            "sector": "FS only",
+            "question_level": "All"
+          },
+          "rationale": "Considering environmental information about clients/investees in the initial phases of a financial \ninstitutions’ assessment of dependencies, impacts, risks, and opportunities and/or as part of \ntheir due diligence process helps data users and the organization understand their value chain’s \nexposure to environmental risks and opportunities. Data users are interested in what information \nfinancial institutions consider, about which clients/investees, and whether that is enough for \nthem to make informed lending, investment and/or insurance underwriting decisions and thus \nmitigate environmental risks within their portfolio.",
+          "ambition": [
+            "Financial institutions consider environmental information about clients/investees as part of the due diligence and/or risk assessment process for all relevant portfolios.",
+            "Financial institutions describe the due-diligence processes applied, the screening criteria used, and the proportion of the portfolio covered, disclosing the total value of loans and investments."
+          ],
+          "requested_content": [
+            "For each of your portfolios, disclose which types of environmental information you consider about your clients/investee companies as part of your screening, dependencies, impacts, risks and/or opportunities assessment process assessment and/or due diligence process. For example:",
+            "Banks: o Considering clients’ environmental information in borrower and deal-level credit risk and other pre-lending assessments such as due diligence and “know your client” processes. o For the purpose of this question, focus on your commercial/corporate clients.",
+            "Asset managers: o Considering investees' environmental information in fund allocation and investment risk assessment processes.",
+            "Insurance companies: o Considering policyholders’ environmental information in insurance underwriting due diligence processes.",
+            "A row will appear if “Yes” is selected in the corresponding row in 2.2.8.",
+            "Select all environmental issues for which information is considered.",
+            "If the details you are requested to provide differ for the different environmental issues (e.g. if the process through which information on the climate issue is obtained is different from the process for obtaining forests-related information), add a new response row for the relevant portfolio.",
+            "-- Page 38 ---",
+            "Select which type of environmental information you consider as part of your screening, dependencies, impacts, risks and/or opportunities assessment and/or due diligence process.",
+            "If you consider environmental information that is not in the list, select “Other, please specify” and provide a label.",
+            "Select how you obtain environmental information about clients/investee companies. This information could either be requested from the client/investee directly or gathered from other data sources.",
+            "For each of your portfolios selected, disclose the percentage of portfolio value covered by the process out of the total portfolio value based on assets value reported in question 1.10.",
+            "This value will be auto calculated based on the percentage of portfolio covered by the process, reported in column 6 “% of portfolio covered by the process in relation to total portfolio value”, and the total assets value for the portfolio, reported in column 4 “Portfolio value based on total assets” of 1.10.",
+            "Access to WASH in the workplace refers to water, sanitation, and hygiene services.",
+            "Breaches to local water regulations refers to failures in observing water regulations, which aim to prevent overuse, contamination and other detrimental activities.",
+            "Certification: the action or process of providing a product with an official document attesting to a status or level of achievement against a certain standard.",
+            "Commodity volumes: the total volumes of a commodity that are produced and/or sourced-by the portfolio company.",
+            "Certification of commodities: a certification process is carried out by an independent organization to ensure environmental and social criteria have been met.",
+            "Commitment to eliminate deforestation and conversion of other natural ecosystems: a company committing to no deforestation and no conversion of natural ecosystems.",
+            "Deforestation: loss of natural forest as a result of: i) conversion to agriculture or other non- forest land use; ii) conversion to a tree plantation; or iii) severe and sustained degradation. o Severe and sustained degradation (scenario iii in the definition) constitutes deforestation even if the land is not subsequently used for non-forest land use. o Loss of natural forest that meets this definition is considered to be deforestation regardless of whether or not it is legal. o Deforestation signifies ‘gross deforestation’ of natural forest where ‘gross’ is used in the sense of “total; aggregate; without deduction for reforestation or other offset.” (adapted from AFi, 2024).",
+            "Conversion: loss of a natural ecosystem as a result of its replacement with agriculture or another land use, or due to a profound and sustained change in the natural ecosystem’s species composition, structure, or function. o Deforestation is one form of conversion (conversion of natural forests).",
+            "-- Page 39 ---",
+            "Due diligence: research or investigation performed by the financial services company before transacting with another party.",
+            "Impingements on the human right to water in communities refers water withdrawals, consumption or discharges which limit the water availability for local communities due to quantity or quality factors.",
+            "No-conversion (synonym: conversion-free): commodity production, sourcing, or financial investments that do not cause or contribute to the conversion of natural ecosystems (as defined by the Accountability Framework). o No-conversion refers to no gross conversion of natural ecosystems, which the Accountability Framework specifies as the appropriate policy and goal on this topic for companies and supply chains. o The terms “no-conversion” and “conversion-free” are used in favor of “zero-conversion” because “zero” can imply an absolutist approach that may be at odds with the need to sometimes accommodate minimal levels of conversion at the site level in the interest of facilitating optimal conservation and production outcomes.",
+            "No-deforestation (synonym: deforestation-free): commodity production, sourcing, or financial investments that do not cause or contribute to deforestation (as defined by the Accountability Framework). o No-deforestation refers to no gross deforestation of natural forests, which the Accountability Framework specifies as the appropriate policy and goal on this topic for companies and supply chains. o In the context of the Accountability Framework, deforestation refers to the loss of natural forest (see definition of deforestation). o The terms “no-deforestation” and “deforestation-free” are used in favor of “zero deforestation” because “zero” can imply an absolutist approach that may be at odds with the need sometimes to accommodate minimal levels of conversion at the site level in the interest of facilitating optimal conservation and production outcomes (see definition for minimal level [of deforestation or conversion]).",
+            "Origin of commodities: where the supply base of a given commodity is grown, harvested or reared.",
+            "Proportion of commodity volumes in compliance with no deforestation and conversion: how much of the total commodity volume produced or consumed by the portfolio company can be verified as in compliance with no-deforestation and no-conversion policies and commitments.",
+            "Scope and content of forests policy: a statement by a portfolio organization specifying the goals or targets that it intends to meet or the actions it intends to take in regards to its management of forest-related issues.",
+            "Scope and content of water policy refers to a statement of an organization’s water-related commitments, and the actions that will achieve them.",
+            "Traceability: the ability to follow a product or its components through stages of the value chain (e.g., production, processing, manufacturing, and distribution) (adapted from AFi, 2024).",
+            "Water withdrawal: the sum of all water drawn into the boundaries of an organization from all sources for any use over the course of a reporting period.",
+            "Water consumption: the amount of water that is drawn into the boundaries of an organization and not discharged back to the water environment or a third party over the course of a reporting year.",
+            "Water stress (‘areas with’): a concept that considers physical quantity aspects related to water resources, including water availability. As good practice, a water stressed area should be",
+            "-- Page 40 ---",
+            "Water discharge treatment data informs on the quality of effluents and other water leaving the boundaries of an organization and released to surface water, groundwater, or third parties."
+          ],
+          "explanation_of_terms": {
+            "Access to WASH in the workplace refers to water, sanitation, and hygiene services. \n• \nBreaches to local water regulations refers to failures in observing water regulations, which aim \nto prevent overuse, contamination and other detrimental activities. \n• \nCertification": "the action or process of providing a product with an official document attesting to \na status or level of achievement against a certain standard.",
+            "Commodity volumes": "the total volumes of a commodity that are produced and/or sourced",
+            "by \nthe portfolio company. \n• \nCertification of commodities": "a certification process is carried out by an independent \norganization to ensure environmental and social criteria have been met.",
+            "Commitment to eliminate deforestation and conversion of other natural ecosystems": "a \ncompany committing to no deforestation and no conversion of natural ecosystems.",
+            "Deforestation": "loss of natural forest as a result of: i) conversion to agriculture or other non",
+            "forest land use; ii) conversion to a tree plantation; or iii) severe and sustained degradation. \no \nSevere and sustained degradation (scenario iii in the definition) constitutes \ndeforestation even if the land is not subsequently used for non-forest land use. \no \nLoss of natural forest that meets this definition is considered to be deforestation \nregardless of whether or not it is legal. \no \nDeforestation signifies ‘gross deforestation’ of natural forest where ‘gross’ is used in \nthe sense of “total; aggregate; without deduction for reforestation or other offset.” \n(adapted from AFi, 2024). \n• \nConversion": "loss of a natural ecosystem as a result of its replacement with agriculture or \nanother land use, or due to a profound and sustained change in the natural ecosystem’s \nspecies composition, structure, or function. \no \nDeforestation is one form of conversion (conversion of natural forests).",
+            "-- Page 39 ---\n \n \n \n \n106 \no \nConversion includes severe degradation or the introduction of management practices that \nresult in a profound and sustained change in the ecosystem’s species composition, \nstructure, or function. \no \nChange to natural ecosystems that meets this definition is considered to be conversion \nregardless of whether or not it is legal (AFi, 2024). \n• \nDue diligence": "research or investigation performed by the financial services company before \ntransacting with another party.",
+            "Impingements on the human right to water in communities refers water withdrawals, \nconsumption or discharges which limit the water availability for local communities due to \nquantity or quality factors. \n• \nNo-conversion (synonym": "conversion",
+            "free)": "commodity production, sourcing, or financial \ninvestments that do not cause or contribute to deforestation (as defined by the Accountability \nFramework). \no \nNo",
+            "conversion refers to no gross conversion of natural ecosystems, which the \nAccountability Framework specifies as the appropriate policy and goal on this topic for \ncompanies and supply chains. \no \nThe terms “no-conversion” and “conversion-free” are used in favor of “zero-conversion” \nbecause “zero” can imply an absolutist approach that may be at odds with the need to \nsometimes accommodate minimal levels of conversion at the site level in the interest \nof facilitating optimal conservation and production outcomes. \n• \nNo-deforestation (synonym": "deforestation",
+            "deforestation refers to no gross deforestation of natural forests, which the \nAccountability Framework specifies as the appropriate policy and goal on this topic for \ncompanies and supply chains. \no \nIn the context of the Accountability Framework, deforestation refers to the loss of \nnatural forest (see definition of deforestation). \no \nThe terms “no-deforestation” and “deforestation-free” are used in favor of “zero \ndeforestation” because “zero” can imply an absolutist approach that may be at odds \nwith the need sometimes to accommodate minimal levels of conversion at the site \nlevel in the interest of facilitating optimal conservation and production outcomes (see \ndefinition for minimal level [of deforestation or conversion]). \n• \nOrigin of commodities": "where the supply base of a given commodity is grown, harvested or \nreared.",
+            "Proportion of commodity volumes in compliance with no deforestation and conversion": "how \nmuch of the total commodity volume produced or consumed by the portfolio company can be \nverified as in compliance with no",
+            "deforestation and no-conversion policies and commitments.  \n• \nScope and content of forests policy": "a statement by a portfolio organization specifying the \ngoals or targets that it intends to meet or the actions it intends to take in regards to its \nmanagement of forest",
+            "related issues. \n• \nScope and content of water policy refers to a statement of an organization’s water-related \ncommitments, and the actions that will achieve them. \n• \nTraceability": "the ability to follow a product or its components through stages of the value chain \n(e.g., production, processing, manufacturing, and distribution) (adapted from AFi, 2024).",
+            "Water withdrawal": "the sum of all water drawn into the boundaries of an organization from all \nsources for any use over the course of a reporting period.",
+            "Water consumption": "the amount of water that is drawn into the boundaries of an organization \nand not discharged back to the water environment or a third party over the course of a \nreporting year.",
+            "Water stress (‘areas with’)": "a concept that considers physical quantity aspects related to water \nresources, including water availability. As good practice, a water stressed area should be",
+            "-- Page 40 ---\n \n \n \n \n107 \nmeasured at the catchment level as a minimum. Commonly accepted global indicators to assess \nareas as water stressed and their thresholds for reporting to CDP include": "o \nWater availability – category greater than ‘High risk’: 3.4 (WWF Water Risk Filter). WWF \nrecommends that users also take into consideration ‘Medium risk’: >2.6. This category \nis based on a multi",
+            "model approach which integrates the best available global water \nscarcity risk indicators": "water depletion, baseline water stress, and blue water scarcity. \no \nBaseline water stress – indicator equal to/greater than ‘High’: 40",
+            "80% (WRI Aqueduct \nWater Risk Atlas). This refers to ratio of total annual water withdrawals to available \nrenewable water supply. \no \nBaseline water depletion": "indicator equal to/greater than ‘High’: 50"
+          },
+          "response_format": {
+            "type": "table",
+            "columns": [
+              {
+                "id": "2.2.9.col0",
+                "field": "Multi-selection (Emissions)",
+                "type": "multiselect",
+                "options": [
+                  "Emissions"
+                ]
+              },
+              {
+                "id": "2.2.9.col1",
+                "field": "Multi-selection (Directly from)",
+                "type": "multiselect",
+                "options": [
+                  "Directly from"
+                ]
+              },
+              {
+                "id": "2.2.9.col2",
+                "field": "Multi-selection (Apparel/Biotech,)",
+                "type": "multiselect",
+                "options": [
+                  "Apparel",
+                  "Biotech,"
+                ]
+              },
+              {
+                "id": "2.2.9.col3",
+                "field": "Selection (Banking)",
+                "type": "select",
+                "options": [
+                  "Banking"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "question_id": "2.3",
+      "title_en": "Have you identified priority locations across your value chain?",
+      "change_from_last_year": "Additional guidance",
+      "tags": {
+        "authority_type": "All requesters",
+        "environmental_issue": "Forests, Water, Biodiversity",
+        "sector": "All (except FS)",
+        "question_level": "All"
+      },
+      "rationale": "To effectively address nature-related issues and to ensure operational stability, organizations \nshould prioritize their attention in or near areas with ecosystems whose current and future health \nand resilience are challenged. Identifying and prioritizing locations in or near areas with \necological sensitivity, as well as areas where the organization has substantive dependencies, \nimpacts, risks, and opportunities related to nature allows the organization to focus on areas \nwhere action is needed most urgently, maximizing the potential for positive impacts.",
+      "ambition": [
+        "The organization identifies where in its direct operations and value chain it has activities in: o Sensitive locations: Locations where the activities in its direct operations – and, where possible upstream and downstream value chain – interface with nature in:",
+        "-- Page 41 ---",
+        "The organization discloses a list or spatial map of their identified priority locations."
+      ],
+      "requested_content": [
+        "“Priority locations” are locations where your organization’s activities across the value chain have interfaces with nature, which your organization has prioritized for action due to certain characteristics that increase their vulnerability.",
+        "Locations could be prioritized either because they are in or near ecologically sensitive locations, e.g. in areas that are important for biodiversity; and/or because the organization has identified substantive nature-related dependencies, impacts, risks, and opportunities in these locations.",
+        "Outline your organization’s process to identify priority locations in each value chain stage, with reference to your wider assessment process as reported in 2.2.2 if applicable. For example: o state the tools, data sources, and indicators and metrics used; o briefly describe your approach to determine whether the dependencies, impacts, risks, and/or opportunities in a location are substantive; and o specify the thresholds used to define an area as a type of sensitive location.",
+        "Refer to the level of geographic specificity achieved. If priority locations have been aggregated, explain how, and provide the reasons for aggregating.",
+        "If relevant, briefly describe any plans to improve your process for identifying priority locations in the future.",
+        "This column is only presented if you select “Yes” in column 5 “Will you be disclosing a list/spatial map of priority locations?”",
+        "Attach a list and/or spatial map of the locations in your direct operations and/or upstream/downstream value chain stages: o that are in or near to sensitive locations; and o where substantive nature-related dependencies, impacts, risks, and/or opportunities have been identified, specifying whether any of these locations also meet the criteria for sensitive locations.",
+        "You may include an ID number per priority location in case it would be desirable for your organization to reference them throughout your CDP disclosure.",
+        "For further guidance on priority locations, you can find"
+      ],
+      "explanation_of_terms": {
+        "Priority locations": "locations that the organization has identified in their value chain where action \nshould be prioritized most urgently due to locations being in or near sensitive locations and/or \nareas where the organization has substantive nature",
+        "related dependencies, impacts, risks, \nand/or opportunities (adapted from the TNFD, 2024).   \n• \nAreas important for biodiversity": "according to the TNFD, areas important for biodiversity \ninclude, but are not limited to: \no \nAreas protected through legal or other effective means, for example, areas designated \nas protected areas according to local, national, regional and/or international \nconventions and agreements, and/or areas conserved through other effective area",
+        "based conservation measures (OECMs). \no \nAreas scientifically recognized for importance for biodiversity. \no \nAreas important for species, including threatened species (Critically Endangered, \nEndangered and Vulnerable at global and/ or national and/or regional levels), and/ or \ncongregatory, migratory and/or range-restricted or endemic species. \no \nAreas containing ecosystems that are rare or very localized, highly threatened, \nimportant for ecosystem connectivity, and/or associated with key evolutionary \nprocesses. \no \nAreas important for ecological connectivity": "including important ecological corridors, \nareas and routes that are important for seasonal migratory patterns and areas that \nprovide adaptive space for species to spread across a landscape in the face of \nchanging environmental conditions.",
+        "Ecosystem integrity": "according to the TNFD, ecosystem integrity refers to the extent to which \nthe composition, structure and function of an ecosystem falls within the natural range of \nvariation. It should be characterized at a landscape scale, using an appropriate area of \nassessment, such as an ecoregion. \no \nAreas of high ecosystem integrity: (both at global scale, and relative to the integrity in \nthe surrounding landscape) are those that may contain large opportunities for \nsafeguarding stocks of environmental assets and maintaining ecosystem service \nprovision, both locally and globally. \no \nAreas of rapid decline in ecosystem integrity: represent areas with declining resilience \nof ecosystem service provision, high exposure to an organization’s dependency",
+        "related \nrisks, and potentially at risk of ecological tipping points. This could include areas that \nhave declined to a low state of integrity. \n• \nAreas of limited water availability, flooding, and/or poor quality of water": "commonly accepted \ntools to assess these and the thresholds for reporting to CDP include: \no \nWWF Water Risk Filter:  \n§ \nLimited water availability: when the physical risk category ‘Water Availability’ is \ngreater than ‘High risk’: 3.4. WWF recommends that users also take into \nconsideration locations facing equal to/greater than ‘Medium risk’: >2.6; \n§ \nFlooding: when the physical risk category ‘Flooding’ is greater than ‘High risk’: \n3.4. WWF recommends that users also take into consideration locations facing \n‘Medium risk’: >2.6; \n§ \nPoor quality of water: when the physical risk category ‘Water Quality’ is greater \nthan ‘High risk’: 3.4. WWF recommends that users also take into consideration \nlocations facing ‘Medium risk’: >2.6. \no \nWRI Aqueduct Water Risk Atlas:",
+        "-- Page 44 ---\n \n \n \n \n111 \n§ \nLimited water availability": "when the risk indicator ‘Water stress’ or ‘Water \ndepletion’ is equal to/greater than ‘Medium – high’;  \n§ \nFlooding: when the risk indicator ‘Riverine flood risk’ or ‘Coastal flood’ is equal \nto/greater than ‘Medium – high’; \n§ \nPoor quality of water: when the risk category ‘Physical Risk – Quality’ or when \neither of the risk indicators ‘Untreated connected wastewater’ or ‘Coastal \neutrophication potential’ is equal to/greater than ‘Medium – high’.",
+        "Areas of importance for ecosystem service provision": "when the reputational risk \nindicator ‘Resource Scarcity’ is greater than ‘High risk’: 3.4. WWF recommends \nthat users also take into consideration locations facing ‘Medium risk’: >2.6.",
+        "related dependencies, impacts, risks, and opportunities in locations \nwith certain characteristics. An organization should bear in mind that this prioritization is part of an \niterative process, with location prioritization guiding the assessment of dependencies, impacts, risks, \nand opportunities and vice versa. \n \nWWF tools to assess for ‘priority locations’ \nThe WWF Water Risk Filter and the WWF Biodiversity Risk Filter are accepted tools to assess \nsensitive locations as defined by the TNFD. \n \nWWF Water Risk Filter \n• \nAreas important for biodiversity": "when the reputational risk category “Environmental \nFactors” and associated indicators are greater than ‘High risk’: 3.4.. WWF \nrecommends that users also take into consideration locations facing ‘Medium risk’ \n>2.6.",
+        "Areas of high ecosystem integrity": "when the reputational risk indicator ‘Ecosystem \nCondition’ is greater than ‘High risk’: 3.4. WWF recommends that users also take into \nconsideration locations facing ‘Medium risk’: >2.6.",
+        "Areas of rapid decline in ecosystem integrity": "o \nwhen the physical risk indicator ‘Ecosystem Condition’ is greater than ‘High \nrisk’: 3.4. WWF recommends that users also take into consideration locations \nfacing ‘Medium risk’: >2.6; \no \nwhen the physical risk category ‘Pressures on Biodiversity’ and associated \nindicators are greater than ‘High risk’: 3.4. WWF recommends that users also \ntake into consideration locations facing ‘Medium risk’: >2.6.",
+        "Areas of limited water availability, flooding, and/or poor quality of water": "when the \nphysical risk indicator ‘Water Condition’ (which includes marine water quality) is \ngreater than ‘High risk’: 3.4. WWF recommends that users also take into \nconsideration locations facing ‘Medium risk’: >2.6.",
+        "-- Page 45 ---\n \n \n \n \n112 \no \nFlooding": "when the physical risk category ‘Flooding’ is greater than ‘High risk’: \n3.4. WWF recommends that users also take into consideration locations \nfacing ‘Medium risk’ >2.6; \no \nPoor quality of water: when the physical risk category ‘Water Quality’ is \ngreater than ‘High risk’: 3.4. WWF recommends that users also take into \nconsideration locations facing ‘Medium risk’ >2.6. \nWWF Biodiversity Risk \nFilter",
+        "Areas important for biodiversity": "when the reputational risk category ‘Environmental \nFactors’ and associated indicators are greater than ‘High risk’: 3.4. WWF recommends \nthat users also take into consideration locations facing ‘Medium risk’: >2.6."
+      },
+      "additional_information": "on the TNFD \nwebsite.  \n \n\n\n--- Page 43 ---\n \n \n \n \n110 \nExplain why you do not identify priority locations (column 8) \n• \nThis column is only presented if you select either “No…” option in column 1 “Identification of \npriority locations”. \n• \nBriefly describe the reasons for not having identified priority locations and any plans to do \nso in the future. \n \nExplanation of \nterms \n• \nPriority locations: locations that the organization has identified in their value chain where action \nshould be prioritized most urgently due to locations being in or near sensitive locations and/or \nareas where the organization has substantive nature-related dependencies, impacts, risks, \nand/or opportunities (adapted from the TNFD, 2024).   \n• \nAreas important for biodiversity: according to the TNFD, areas important for biodiversity \ninclude, but are not limited to: \no \nAreas protected through legal or other effective means, for example, areas designated \nas protected areas according to local, national, regional and/or international \nconventions and agreements, and/or areas conserved through other effective area-\nbased conservation measures (OECMs). \no \nAreas scientifically recognized for importance for biodiversity. \no \nAreas important for species, including threatened species (Critically Endangered, \nEndangered and Vulnerable at global and/ or national and/or regional levels), and/ or \ncongregatory, migratory and/or range-restricted or endemic species. \no \nAreas containing ecosystems that are rare or very localized, highly threatened, \nimportant for ecosystem connectivity, and/or associated with key evolutionary \nprocesses. \no \nAreas important for ecological connectivity – including important ecological corridors, \nareas and routes that are important for seasonal migratory patterns and areas that \nprovide adaptive space for species to spread across a landscape in the face of \nchanging environmental conditions. \n• \nEcosystem integrity: according to the TNFD, ecosystem integrity refers to the extent to which \nthe composition, structure and function of an ecosystem falls within the natural range of \nvariation. It should be characterized at a landscape scale, using an appropriate area of \nassessment, such as an ecoregion. \no \nAreas of high ecosystem integrity: (both at global scale, and relative to the integrity in \nthe surrounding landscape) are those that may contain large opportunities for \nsafeguarding stocks of environmental assets and maintaining ecosystem service \nprovision, both locally and globally. \no \nAreas of rapid decline in ecosystem integrity: represent areas with declining resilience \nof ecosystem service provision, high exposure to an organization’s dependency-related \nrisks, and potentially at risk of ecological tipping points. This could include areas that \nhave declined to a low state of integrity. \n• \nAreas of limited water availability, flooding, and/or poor quality of water: commonly accepted \ntools to assess these and the thresholds for reporting to CDP include: \no \nWWF Water Risk Filter:  \n§ \nLimited water availability: when the physical risk category ‘Water Availability’ is \ngreater than ‘High risk’: 3.4. WWF recommends that users also take into \nconsideration locations facing equal to/greater than ‘Medium risk’: >2.6; \n§ \nFlooding: when the physical risk category ‘Flooding’ is greater than ‘High risk’: \n3.4. WWF recommends that users also take into consideration locations facing \n‘Medium risk’: >2.6; \n§ \nPoor quality of water: when the physical risk category ‘Water Quality’ is greater \nthan ‘High risk’: 3.4. WWF recommends that users also take into consideration \nlocations facing ‘Medium risk’: >2.6. \no \nWRI Aqueduct Water Risk Atlas:  \n\n\n--- Page 44 ---\n \n \n \n \n111 \n§ \nLimited water availability: when the risk indicator ‘Water stress’ or ‘Water \ndepletion’ is equal to/greater than ‘Medium – high’;  \n§ \nFlooding: when the risk indicator ‘Riverine flood risk’ or ‘Coastal flood’ is equal \nto/greater than ‘Medium – high’; \n§ \nPoor quality of water: when the risk category ‘Physical Risk – Quality’ or when \neither of the risk indicators ‘Untreated connected wastewater’ or ‘Coastal \neutrophication potential’ is equal to/greater than ‘Medium – high’. \n• \nAreas of importance for ecosystem service provision: according to the TNFD, these include \nareas in which healthy ecosystems and biodiversity support local livelihoods, areas in which \nbiodiversity and ecosystem services are important for the realization of human rights, areas \nthat have been traditionally owned, occupied or otherwise used and/or acquired by Indigenous \nPeoples and Local Communities, and areas of biocultural importance to Indigenous Peoples \nand Local Communities. \n \nAdditional \ninformation \nMore about ‘priority locations’ \n“Priority locations” is a concept mainly promoted by the TNFD recommendations and LEAP approach, \nbut also encountered in other frameworks and standards such as SBTN and ESRS. The TNFD \ndisclosure guidance recommends that an organization discloses the full list of priority locations (i.e., \na list of all locations that meet at least one of the “Priority locations” criteria) under recommended \ndisclosure Strategy D. This applies even if organizations choose to apply further prioritization criteria. \nAccording to the TNFD, the concept of “priority locations” is based on the premise that organizations \nare more likely to face nature-related dependencies, impacts, risks, and opportunities in locations \nwith certain characteristics. An organization should bear in mind that this prioritization is part of an \niterative process, with location prioritization guiding the assessment of dependencies, impacts, risks, \nand opportunities and vice versa. \n \nWWF tools to assess for ‘priority locations’ \nThe WWF Water Risk Filter and the WWF Biodiversity Risk Filter are accepted tools to assess \nsensitive locations as defined by the TNFD. \n \nWWF Water Risk Filter \n• \nAreas important for biodiversity: when the reputational risk category “Environmental \nFactors” and associated indicators are greater than ‘High risk’: 3.4.. WWF \nrecommends that users also take into consideration locations facing ‘Medium risk’ \n>2.6.   \n• \nAreas of high ecosystem integrity: when the reputational risk indicator ‘Free Flowing \nRivers’ is greater than ‘High risk’: 3.4. WWF recommends that users also take into \nconsideration locations facing ‘Medium risk’: >2.6. \n• \nAreas of rapid decline in ecosystem integrity: when the physical risk category \n‘Ecosystem Services Status’ and associated indicators are greater than ‘High risk’: 3.4. \nWWF recommends that users also take into consideration locations facing ‘Medium \nrisk’: >2.6. \n• \nAreas of limited water availability, flooding, and/or poor quality of water: \no \nLimited water availability: when the physical risk category ‘Water Availability’ \nis greater than ‘High risk’: 3.4. WWF recommends that users also take into \nconsideration locations facing ‘Medium risk’ >2.6, In addition, WWF \nrecommends that users take into consideration locations facing ‘Drought’ risk \nas these can exacerbate risks related to ‘Water Availability’. \n\n\n--- Page 45 ---\n \n \n \n \n112 \no \nFlooding: when the physical risk category ‘Flooding’ is greater than ‘High risk’: \n3.4. WWF recommends that users also take into consideration locations \nfacing ‘Medium risk’ >2.6; \no \nPoor quality of water: when the physical risk category ‘Water Quality’ is \ngreater than ‘High risk’: 3.4. WWF recommends that users also take into \nconsideration locations facing ‘Medium risk’ >2.6. \nWWF Biodiversity Risk \nFilter \n• \nAreas important for biodiversity: when the reputational risk category ‘Environmental \nFactors’ and associated indicators are greater than ‘High risk’: 3.4. WWF recommends \nthat users also take into consideration locations facing ‘Medium risk’: >2.6. \n• \nAreas of high ecosystem integrity: when the reputational risk indicator ‘Ecosystem \nCondition’ is greater than ‘High risk’: 3.4. WWF recommends that users also take into \nconsideration locations facing ‘Medium risk’: >2.6. \n• \nAreas of rapid decline in ecosystem integrity:  \no \nwhen the physical risk indicator ‘Ecosystem Condition’ is greater than ‘High \nrisk’: 3.4. WWF recommends that users also take into consideration locations \nfacing ‘Medium risk’: >2.6; \no \nwhen the physical risk category ‘Pressures on Biodiversity’ and associated \nindicators are greater than ‘High risk’: 3.4. WWF recommends that users also \ntake into consideration locations facing ‘Medium risk’: >2.6. \n• \nAreas of limited water availability, flooding, and/or poor quality of water: when the \nphysical risk indicator ‘Water Condition’ (which includes marine water quality) is \ngreater than ‘High risk’: 3.4. WWF recommends that users also take into \nconsideration locations facing ‘Medium risk’: >2.6. \n• \nAreas of importance for ecosystem service provision: when the reputational risk \nindicator ‘Resource Scarcity’ is greater than ‘High risk’: 3.4. WWF recommends \nthat users also take into consideration locations facing ‘Medium risk’: >2.6.",
+      "response_format": {
+        "type": "table",
+        "columns": [
+          {
+            "id": "2.3.col0",
+            "field": "Identification of priority locations",
+            "type": "select",
+            "options": [
+              "Yes",
+              "No, but we plan to within the next two years",
+              "No, and we do not plan to within the next two years"
+            ]
+          },
+          {
+            "id": "2.3.col1",
+            "field": "Value chain stages where priority locations have been identified",
+            "type": "select",
+            "options": [
+              "Direct operations only",
+              "Direct operations and upstream",
+              "Direct operations and downstream",
+              "All stages (direct operations, upstream and downstream)"
+            ]
+          },
+          {
+            "id": "2.3.col2",
+            "field": "Types of priority locations identified",
+            "type": "select",
+            "options": [
+              "Sites located in or near protected areas",
+              "Sites located in or near key biodiversity areas",
+              "Sites with water stress",
+              "Sites in proximity to local communities",
+              "Other, please specify"
+            ]
+          },
+          {
+            "id": "2.3.col3",
+            "field": "Description of process to identify priority locations",
+            "type": "textarea",
+            "max_length": 3000
+          }
+        ]
+      }
+    },
+    {
+      "question_id": "2.4",
+      "title_en": "How does your organization define substantive effects on your organization?",
+      "change_from_last_year": "Modified guidance",
+      "tags": {
+        "authority_type": "All requesters",
+        "environmental_issue": "All",
+        "sector": "All (+M-B)",
+        "question_level": "All"
+      },
+      "rationale": "Indicators and thresholds employed to define which effects on the organization are considered \nsubstantive can differ among disclosers depending on their sector, value chain, or geography. \nTherefore, outlining clear definitions on how organizations determine potential effects as \nsubstantive provides critical context to data users. This question increases transparency and \nimproves clarity as to what the discloser deems to be a substantive effect on their organization.",
+      "ambition": [
+        "With respect to the identification, assessment, and management of substantive environmental dependencies, impacts, risks, and opportunities, the organization: o Describes how the organization defines substantive effects."
+      ],
+      "requested_content": [
+        "This question seeks to define and quantify how your organization defines a ‘substantive effect’ on your organization at the corporate level, in the context of environmental risks and opportunities. This will be used to understand the threshold for your reported risks and opportunities in 3.1 and 3.6.",
+        "What constitutes a substantive effect will vary between organizations. You are therefore asked to determine ‘substantive’ in the way that you would do for your business decision-making. For example, a 1% reduction in profits will have different effects on different organizations depending on its respective profit margins. A substantive effect of relatively high magnitude could occur because of a large impact on one of the following aspects, or because of a small number for all three combines to create a larger effect: o the proportion of business units affected; o the size of the effect on those business units; o the dependency of the organization on that unit; and/or o the potential for shareholder or customer concern.",
+        "Use the “Add row” function if you define a substantive effect on your organization with respect to risks or opportunities in more than one way. For example, if you use multiple indicators or have different definitions for different parts of the business.",
+        "This column only appears if “Quantitative” is selected in column 2 “Type of definition” and either “% increase” or “% decrease” is selected in column 4” Change to indicator”.",
+        "This column seeks to capture the different factors taken into account when defining a substantive effect on your organization with respect to risks and opportunities.",
+        "If you have provided a quantitative definition, these metrics could give further context to your quantitative indicator. For example, you may define risks to be substantive if they could lead to a 10% decrease in revenue over your short-term time horizon (as",
+        "-- Page 48 ---",
+        "If you are only providing a qualitative definition, select all relevant metrics used to define a substantive effect, or use “Other, please specify” to specify a different metric.",
+        "Describe the thresholds considered to be substantive for the metrics reported in column 7 “Metrics considered in definition”. For example: o Frequency of effect occurring: i.e. once, quarterly, every two years etc. o Time horizon over which the effect occurs: i.e., short-, medium-, and long-term in line with your time horizons reported in 2.1. o Likelihood of effect occurring: i.e., the percentage chance the effect will occur",
+        "Often, multiple metrics are used together as part of a matrix approach. If using a matrix approach, describe how the metrics selected in column 7 “Metrics considered in definition” are used in combination and their respective weightings.",
+        "Describe how often the metrics, and their thresholds, are selected, reviewed, and updated.",
+        "Substantive effect: an effect that has a considerable or relatively significant effect on an organization at the corporate level in terms of risks and opportunities. This could include operational, financial, or strategic effects that undermine, or provide opportunities for, the entire organization or part of the organization."
+      ],
+      "explanation_of_terms": {
+        "Substantive effect": "an effect that has a considerable or relatively significant effect on an \norganization at the corporate level in terms of risks and opportunities. This could include \noperational, financial, or strategic effects that undermine, or provide opportunities for, the \nentire organization or part of the organization."
+      },
+      "response_format": {
+        "type": "table",
+        "columns": [
+          {
+            "id": "2.4.col0",
+            "field": "Effect type",
+            "type": "select",
+            "options": [
+              "Risks",
+              "Opportunities"
+            ]
+          },
+          {
+            "id": "2.4.col1",
+            "field": "Type of definition",
+            "type": "select",
+            "options": [
+              "Qualitative",
+              "Quantitative"
+            ]
+          },
+          {
+            "id": "2.4.col2",
+            "field": "Indicator used to define substantive effect",
+            "type": "textarea",
+            "max_length": 2500
+          },
+          {
+            "id": "2.4.col3",
+            "field": "Change to indicator",
+            "type": "select",
+            "options": [
+              "Absolute decrease",
+              "Absolute increase",
+              "% decrease",
+              "% increase"
+            ]
+          },
+          {
+            "id": "2.4.col4",
+            "field": "% change to indicator",
+            "type": "select",
+            "options": [
+              "Less than 1%",
+              "1-10",
+              "11-20",
+              "21-30",
+              "31-40",
+              "41-50",
+              "51-60",
+              "61-70",
+              "71-80",
+              "81-90",
+              "91-99",
+              "100%"
+            ]
+          },
+          {
+            "id": "2.4.col5",
+            "field": "Absolute increase/decrease figure",
+            "type": "number"
+          },
+          {
+            "id": "2.4.col6",
+            "field": "Metrics considered in definition",
+            "type": "textarea",
+            "max_length": 2500
+          },
+          {
+            "id": "2.4.col7",
+            "field": "Application of definition",
+            "type": "textarea",
+            "max_length": 2500
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1143 @@
+{
+  "version": "2025",
+  "module": "2",
+  "title": "Dependencies, Impacts, Risks, and Opportunities",
+  "questions": {
+    "2.1": {
+      "title": "Time horizons definition",
+      "title_ko": "시간 범위 정의",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "row_labels": [
+        "Short-term",
+        "Medium-term",
+        "Long-term"
+      ],
+      "columns": [
+        {
+          "id": "time_horizon",
+          "header": "Time horizon",
+          "header_ko": "시간 범위",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Short-term",
+            "Medium-term",
+            "Long-term"
+          ]
+        },
+        {
+          "id": "from_years",
+          "header": "From (years)",
+          "header_ko": "시작 (년)",
+          "type": "number",
+          "min_value": 0,
+          "max_value": 100,
+          "required": true
+        },
+        {
+          "id": "to_years",
+          "header": "To (years)",
+          "header_ko": "종료 (년)",
+          "type": "number",
+          "min_value": 0,
+          "max_value": 100,
+          "required": true
+        },
+        {
+          "id": "rationale",
+          "header": "How this time horizon is linked to strategic and/or financial planning",
+          "header_ko": "전략/재무 계획과의 연관성",
+          "type": "textarea",
+          "max_length": 1500,
+          "required": false
+        }
+      ]
+    },
+    "2.2": {
+      "title": "Environmental dependencies and impacts management process",
+      "title_ko": "환경 의존성 및 영향 관리 프로세스",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "process_in_place",
+          "header": "Process in place",
+          "header_ko": "프로세스 보유 여부",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Yes",
+            "No – this is our first year of disclosure",
+            "No – we have previously disclosed but have not had a process",
+            "No – we do not have a process"
+          ]
+        },
+        {
+          "id": "deps_impacts_evaluated",
+          "header": "Dependencies and/or impacts evaluated in this process",
+          "header_ko": "평가 대상",
+          "type": "select",
+          "condition": {
+            "field": "process_in_place",
+            "value": "Yes"
+          },
+          "options": [
+            "Both dependencies and impacts",
+            "Dependencies only",
+            "Impacts only"
+          ]
+        },
+        {
+          "id": "primary_reason_no",
+          "header": "Primary reason for not evaluating",
+          "header_ko": "미평가 주요 사유",
+          "type": "select",
+          "condition": {
+            "field": "process_in_place",
+            "value_not": "Yes"
+          },
+          "options": [
+            "Lack of internal resources, capabilities, or expertise",
+            "No standardized procedure",
+            "Not an immediate strategic priority",
+            "Judged to be unimportant or not relevant",
+            "Other, please specify"
+          ]
+        },
+        {
+          "id": "explain_no_process",
+          "header": "Explain why you do not evaluate and describe any plans",
+          "header_ko": "미평가 사유 및 향후 계획",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {
+            "field": "process_in_place",
+            "value_not": "Yes"
+          }
+        }
+      ]
+    },
+    "2.2.1": {
+      "title": "Environmental risks and opportunities management process",
+      "title_ko": "환경 리스크 및 기회 관리 프로세스",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "process_in_place",
+          "header": "Process in place",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Yes",
+            "No – this is our first year of disclosure",
+            "No – we have previously disclosed but have not had a process",
+            "No – we do not have a process"
+          ]
+        },
+        {
+          "id": "risks_opps_evaluated",
+          "header": "Risks and/or opportunities evaluated in this process",
+          "type": "select",
+          "condition": {
+            "field": "process_in_place",
+            "value": "Yes"
+          },
+          "options": [
+            "Both risks and opportunities",
+            "Risks only",
+            "Opportunities only"
+          ]
+        },
+        {
+          "id": "informed_by_deps_impacts",
+          "header": "Is this process informed by the dependencies and/or impacts process?",
+          "type": "select",
+          "condition": {
+            "field": "process_in_place",
+            "value": "Yes"
+          },
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "id": "primary_reason_no_process",
+          "header": "Primary reason for not evaluating risks and/or opportunities",
+          "header_ko": "리스크/기회 평가 미수행 주요 사유",
+          "type": "select",
+          "condition": {
+            "field": "process_in_place",
+            "value_not": "Yes"
+          },
+          "options": [
+            "Lack of internal resources, capabilities, or expertise",
+            "No standardized procedure",
+            "Not an immediate strategic priority",
+            "Judged to be unimportant or not relevant",
+            "Other, please specify"
+          ]
+        },
+        {
+          "id": "explain_no_process",
+          "header": "Explain why you do not evaluate and describe any plans",
+          "header_ko": "미평가 사유 및 향후 계획",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {
+            "field": "process_in_place",
+            "value_not": "Yes"
+          }
+        },
+        {
+          "id": "explain_gaps_or_not_informed",
+          "header": "Explain gaps in evaluating both risks and opportunities and/or why this process is not informed by dependencies and/or impacts",
+          "header_ko": "리스크/기회 동시 평가 미수행 또는 의존성/영향 미반영 사유",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {
+            "any": [
+              {
+                "field": "risks_opps_evaluated",
+                "value_not": "Both risks and opportunities"
+              },
+              {
+                "field": "informed_by_deps_impacts",
+                "value": "No"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "2.2.2": {
+      "title": "Details of identification, assessment, and management process",
+      "title_ko": "식별, 평가 및 관리 프로세스 세부사항",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "environmental_issue",
+          "header": "Environmental issue",
+          "type": "multiselect",
+          "required": true,
+          "options": [
+            "Climate change",
+            "Forests",
+            "Water",
+            "Plastics",
+            "Biodiversity"
+          ]
+        },
+        {
+          "id": "diro_covered",
+          "header": "Indicate which of dependencies, impacts, risks, and opportunities are covered",
+          "type": "multiselect",
+          "required": true,
+          "options": [
+            "Dependencies",
+            "Impacts",
+            "Risks",
+            "Opportunities"
+          ]
+        },
+        {
+          "id": "value_chain_stages",
+          "header": "Value chain stages covered",
+          "type": "multiselect",
+          "required": true,
+          "options": [
+            "Direct operations",
+            "Upstream value chain",
+            "Downstream value chain"
+          ]
+        },
+        {
+          "id": "coverage",
+          "header": "Coverage",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Full",
+            "Partial"
+          ]
+        },
+        {
+          "id": "supplier_tiers",
+          "header": "Supplier tiers covered",
+          "type": "multiselect",
+          "condition": {
+            "field": "value_chain_stages",
+            "contains": "Upstream value chain"
+          },
+          "options": [
+            "Tier 1 suppliers",
+            "Tier 2 suppliers",
+            "Tier 3 suppliers",
+            "Tier 4+ suppliers"
+          ]
+        },
+        {
+          "id": "assessment_type",
+          "header": "Type of assessment",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Qualitative only",
+            "Quantitative only",
+            "Qualitative and quantitative"
+          ]
+        },
+        {
+          "id": "frequency",
+          "header": "Frequency of assessment",
+          "type": "select",
+          "required": true,
+          "options": [
+            "More than once a year",
+            "Annually",
+            "Every two years",
+            "Every three years or more",
+            "As important matters arise",
+            "Not defined"
+          ]
+        },
+        {
+          "id": "time_horizons",
+          "header": "Time horizons covered",
+          "type": "multiselect",
+          "required": true,
+          "options": [
+            "Short-term",
+            "Medium-term",
+            "Long-term"
+          ]
+        },
+        {
+          "id": "integration",
+          "header": "Integration of risk management process",
+          "type": "select",
+          "condition": {
+            "field": "diro_covered",
+            "contains": "Risks"
+          },
+          "options": [
+            "Integrated into multi-disciplinary organization-wide risk management process",
+            "A specific environmental risk management process"
+          ]
+        },
+        {
+          "id": "location_specificity",
+          "header": "Location-specificity used",
+          "type": "multiselect",
+          "options": [
+            "Site-specific",
+            "Local",
+            "Sub-national",
+            "National",
+            "Not location specific"
+          ]
+        },
+        {
+          "id": "tools_used",
+          "header": "Tools and/or methods used",
+          "type": "grouped_select",
+          "grouped_options": {
+            "Enterprise Risk Management": [
+              "COSO Enterprise Risk Management Framework",
+              "ISO 31000 Risk Management Standard",
+              "Other enterprise risk management, please specify"
+            ],
+            "International methodologies": [
+              "Environmental Impact Assessment",
+              "IPCC Climate Change Projections",
+              "ISO 14001 Environmental Management Standard",
+              "Life Cycle Assessment",
+              "Science Based Targets Initiative (SBTi)",
+              "TCFD recommendations",
+              "TNFD recommendations",
+              "Other international methodology, please specify"
+            ],
+            "Sector-specific tools": [
+              "SASB standards",
+              "Other sector-specific, please specify"
+            ],
+            "Other tools": [
+              "Internal company methods",
+              "External consultants",
+              "Scenario analysis",
+              "Other, please specify"
+            ]
+          }
+        },
+        {
+          "id": "risk_types_considered",
+          "header": "Risk types considered",
+          "type": "grouped_select",
+          "condition": {
+            "field": "diro_covered",
+            "contains": "Risks"
+          },
+          "grouped_options": {
+            "Acute physical": [
+              "Avalanche",
+              "Cold wave/frost",
+              "Cyclone, hurricane, typhoon",
+              "Drought",
+              "Flood (coastal, fluvial, pluvial, ground water)",
+              "Heat wave",
+              "Heavy precipitation (rain, hail, snow/ice)",
+              "Landslide",
+              "Storm (including blizzards, dust, and sandstorms)",
+              "Tornado",
+              "Wildfire",
+              "Other acute physical, please specify"
+            ],
+            "Chronic physical": [
+              "Changing precipitation patterns and types",
+              "Changing temperature (air, freshwater, marine water)",
+              "Coastal erosion",
+              "Heat stress",
+              "Ocean acidification",
+              "Permafrost thawing",
+              "Sea level rise",
+              "Soil degradation",
+              "Soil erosion",
+              "Water scarcity",
+              "Water stress",
+              "Other chronic physical, please specify"
+            ],
+            "Policy": [
+              "Carbon pricing mechanisms",
+              "Enhanced emissions-reporting obligations",
+              "Mandates on and regulation of existing products and services",
+              "Other policy, please specify"
+            ],
+            "Technology": [
+              "Substitution of existing products and services with lower emissions options",
+              "Unsuccessful investment in new technologies",
+              "Other technology, please specify"
+            ],
+            "Market": [
+              "Changing customer behavior",
+              "Increased cost of raw materials",
+              "Uncertainty in market signals",
+              "Other market, please specify"
+            ],
+            "Reputation": [
+              "Increased stakeholder concern or negative stakeholder feedback",
+              "Stigmatization of sector",
+              "Other reputation, please specify"
+            ],
+            "Liability": [
+              "Exposure to litigation",
+              "Non-compliance with regulations",
+              "Other liability, please specify"
+            ]
+          }
+        },
+        {
+          "id": "opportunity_types_considered",
+          "header": "Opportunity types considered",
+          "type": "grouped_select",
+          "condition": {
+            "field": "diro_covered",
+            "contains": "Opportunities"
+          },
+          "grouped_options": {
+            "Resource efficiency": [
+              "Use of more efficient production and distribution processes",
+              "Use of recycling",
+              "Move to more efficient buildings",
+              "Reduced water usage and consumption",
+              "Other resource efficiency, please specify"
+            ],
+            "Energy source": [
+              "Use of lower-emission sources of energy",
+              "Use of supportive policy incentives",
+              "Use of new technologies",
+              "Participation in carbon market",
+              "Other energy source, please specify"
+            ],
+            "Products and services": [
+              "Development and/or expansion of low emission goods and services",
+              "Development of climate adaptation solutions",
+              "Shift in consumer preferences",
+              "Other products and services, please specify"
+            ],
+            "Markets": [
+              "Access to new markets",
+              "Use of public-sector incentives",
+              "Other markets, please specify"
+            ],
+            "Resilience": [
+              "Resource substitutes/diversification",
+              "Other resilience, please specify"
+            ]
+          }
+        },
+        {
+          "id": "further_details",
+          "header": "Further details of process",
+          "type": "textarea",
+          "max_length": 3500
+        }
+      ]
+    },
+    "2.2.3": {
+      "title": "Identified environmental dependencies and impacts",
+      "title_ko": "식별된 환경 의존성 및 영향",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "environmental_issue",
+          "header": "Environmental issue",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Climate change",
+            "Forests",
+            "Water",
+            "Plastics",
+            "Biodiversity"
+          ]
+        },
+        {
+          "id": "dependency_or_impact",
+          "header": "Dependency or impact",
+          "type": "select",
+          "options": [
+            "Dependency",
+            "Impact"
+          ],
+          "required": true
+        },
+        {
+          "id": "type_of_dependency_impact",
+          "header": "Type of dependency/impact",
+          "type": "textarea",
+          "max_length": 500,
+          "required": true
+        },
+        {
+          "id": "description",
+          "header": "Description",
+          "type": "textarea",
+          "max_length": 2500
+        },
+        {
+          "id": "value_chain_stage",
+          "header": "Value chain stage",
+          "type": "multiselect",
+          "options": [
+            "Direct operations",
+            "Upstream value chain",
+            "Downstream value chain"
+          ]
+        }
+      ]
+    },
+    "2.2.4": {
+      "title": "Portfolio environmental dependencies and impacts (Financial Services)",
+      "title_ko": "포트폴리오 환경 의존성 및 영향 (금융)",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "sector_specific": "Financial Services",
+      "columns": [
+        {
+          "id": "process_in_place",
+          "header": "Process in place",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Yes",
+            "No, but we plan to within the next two years",
+            "No, and we do not plan to within the next two years"
+          ]
+        },
+        {
+          "id": "portfolio_coverage",
+          "header": "Portfolio coverage (%)",
+          "type": "percentage",
+          "min_value": 0,
+          "max_value": 100
+        },
+        {
+          "id": "methodology",
+          "header": "Methodology used",
+          "type": "textarea",
+          "max_length": 2500
+        }
+      ]
+    },
+    "2.2.5": {
+      "title": "Portfolio environmental risks and opportunities (Financial Services)",
+      "title_ko": "포트폴리오 환경 리스크 및 기회 (금융)",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "sector_specific": "Financial Services",
+      "columns": [
+        {
+          "id": "process_in_place",
+          "header": "Process in place",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Yes",
+            "No, but we plan to within the next two years",
+            "No, and we do not plan to within the next two years"
+          ]
+        },
+        {
+          "id": "portfolio_coverage",
+          "header": "Portfolio coverage (%)",
+          "type": "percentage",
+          "min_value": 0,
+          "max_value": 100
+        },
+        {
+          "id": "risk_types",
+          "header": "Risk types assessed",
+          "type": "grouped_select",
+          "grouped_options": {
+            "Acute physical": [
+              "Avalanche",
+              "Cold wave/frost",
+              "Cyclone, hurricane, typhoon",
+              "Drought",
+              "Flood (coastal, fluvial, pluvial, ground water)",
+              "Heat wave",
+              "Heavy precipitation (rain, hail, snow/ice)",
+              "Landslide",
+              "Storm (including blizzards, dust, and sandstorms)",
+              "Tornado",
+              "Wildfire",
+              "Other acute physical, please specify"
+            ],
+            "Chronic physical": [
+              "Changing precipitation patterns and types",
+              "Changing temperature (air, freshwater, marine water)",
+              "Coastal erosion",
+              "Heat stress",
+              "Ocean acidification",
+              "Permafrost thawing",
+              "Sea level rise",
+              "Soil degradation",
+              "Soil erosion",
+              "Water scarcity",
+              "Water stress",
+              "Other chronic physical, please specify"
+            ],
+            "Policy": [
+              "Carbon pricing mechanisms",
+              "Enhanced emissions-reporting obligations",
+              "Mandates on and regulation of existing products and services",
+              "Other policy, please specify"
+            ],
+            "Technology": [
+              "Substitution of existing products and services with lower emissions options",
+              "Unsuccessful investment in new technologies",
+              "Other technology, please specify"
+            ],
+            "Market": [
+              "Changing customer behavior",
+              "Increased cost of raw materials",
+              "Uncertainty in market signals",
+              "Other market, please specify"
+            ],
+            "Reputation": [
+              "Increased stakeholder concern or negative stakeholder feedback",
+              "Stigmatization of sector",
+              "Other reputation, please specify"
+            ],
+            "Liability": [
+              "Exposure to litigation",
+              "Non-compliance with regulations",
+              "Other liability, please specify"
+            ]
+          }
+        },
+        {
+          "id": "methodology",
+          "header": "Methodology used",
+          "type": "textarea",
+          "max_length": 2500
+        }
+      ]
+    },
+    "2.2.6": {
+      "title": "Scenario analysis usage",
+      "title_ko": "시나리오 분석 사용 여부",
+      "response_type": "table",
+      "allow_multiple_rows": false,
+      "columns": [
+        {
+          "id": "uses_scenario_analysis",
+          "header": "Does your organization use scenario analysis?",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Yes",
+            "No, but we plan to within the next two years",
+            "No, and we do not plan to within the next two years"
+          ]
+        },
+        {
+          "id": "explanation_no",
+          "header": "Explain why not and any future plans",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {
+            "field": "uses_scenario_analysis",
+            "value_not": "Yes"
+          }
+        }
+      ]
+    },
+    "2.2.7": {
+      "title": "Scenario analysis details",
+      "title_ko": "시나리오 분석 세부사항",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "environmental_issue",
+          "header": "Environmental issue",
+          "type": "multiselect",
+          "required": true,
+          "options": [
+            "Climate change",
+            "Forests",
+            "Water",
+            "Plastics",
+            "Biodiversity"
+          ]
+        },
+        {
+          "id": "scenario_type",
+          "header": "Type of scenario",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Physical scenarios",
+            "Transition scenarios",
+            "Both physical and transition"
+          ]
+        },
+        {
+          "id": "scenario_source",
+          "header": "Scenario source",
+          "type": "select",
+          "options": [
+            "IEA NZE 2050",
+            "IEA STEPS",
+            "IEA APS",
+            "IPCC RCP 2.6",
+            "IPCC RCP 4.5",
+            "IPCC RCP 8.5",
+            "NGFS scenarios",
+            "Internally developed",
+            "Other, please specify"
+          ]
+        },
+        {
+          "id": "time_horizon",
+          "header": "Time horizon covered",
+          "type": "multiselect",
+          "options": [
+            "Short-term",
+            "Medium-term",
+            "Long-term"
+          ]
+        },
+        {
+          "id": "temperature_alignment",
+          "header": "Temperature alignment",
+          "type": "select",
+          "options": [
+            "1.5°C",
+            "Below 2°C",
+            "2°C",
+            "Above 2°C",
+            "N/A"
+          ]
+        },
+        {
+          "id": "description",
+          "header": "Description of scenario and results",
+          "type": "textarea",
+          "max_length": 3500
+        }
+      ]
+    },
+    "2.2.8": {
+      "title": "Business strategy impact from scenario analysis",
+      "title_ko": "시나리오 분석의 사업 전략 영향",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "strategy_impacted",
+          "header": "Has scenario analysis impacted your business strategy?",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "id": "description",
+          "header": "Description of impact on business strategy",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {
+            "field": "strategy_impacted",
+            "value": "Yes"
+          }
+        }
+      ]
+    },
+    "2.2.9": {
+      "title": "Financial planning impact from scenario analysis",
+      "title_ko": "시나리오 분석의 재무 계획 영향",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "financial_planning_impacted",
+          "header": "Has scenario analysis impacted your financial planning?",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Yes",
+            "No"
+          ]
+        },
+        {
+          "id": "description",
+          "header": "Description of impact on financial planning",
+          "type": "textarea",
+          "max_length": 2500,
+          "condition": {
+            "field": "financial_planning_impacted",
+            "value": "Yes"
+          }
+        }
+      ]
+    },
+    "2.3": {
+      "title": "Identified environmental risks with substantive financial or strategic impact",
+      "title_ko": "재무/전략적 영향이 큰 환경 리스크",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "environmental_issue",
+          "header": "Environmental issue",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Climate change",
+            "Forests",
+            "Water",
+            "Plastics",
+            "Biodiversity"
+          ]
+        },
+        {
+          "id": "risk_type",
+          "header": "Risk type",
+          "type": "grouped_select",
+          "required": true,
+          "grouped_options": {
+            "Acute physical": [
+              "Avalanche",
+              "Cold wave/frost",
+              "Cyclone, hurricane, typhoon",
+              "Drought",
+              "Flood (coastal, fluvial, pluvial, ground water)",
+              "Heat wave",
+              "Heavy precipitation (rain, hail, snow/ice)",
+              "Landslide",
+              "Storm (including blizzards, dust, and sandstorms)",
+              "Tornado",
+              "Wildfire",
+              "Other acute physical, please specify"
+            ],
+            "Chronic physical": [
+              "Changing precipitation patterns and types",
+              "Changing temperature (air, freshwater, marine water)",
+              "Coastal erosion",
+              "Heat stress",
+              "Ocean acidification",
+              "Permafrost thawing",
+              "Sea level rise",
+              "Soil degradation",
+              "Soil erosion",
+              "Water scarcity",
+              "Water stress",
+              "Other chronic physical, please specify"
+            ],
+            "Policy": [
+              "Carbon pricing mechanisms",
+              "Enhanced emissions-reporting obligations",
+              "Mandates on and regulation of existing products and services",
+              "Other policy, please specify"
+            ],
+            "Technology": [
+              "Substitution of existing products and services with lower emissions options",
+              "Unsuccessful investment in new technologies",
+              "Other technology, please specify"
+            ],
+            "Market": [
+              "Changing customer behavior",
+              "Increased cost of raw materials",
+              "Uncertainty in market signals",
+              "Other market, please specify"
+            ],
+            "Reputation": [
+              "Increased stakeholder concern or negative stakeholder feedback",
+              "Stigmatization of sector",
+              "Other reputation, please specify"
+            ],
+            "Liability": [
+              "Exposure to litigation",
+              "Non-compliance with regulations",
+              "Other liability, please specify"
+            ]
+          }
+        },
+        {
+          "id": "primary_risk_driver",
+          "header": "Primary risk driver",
+          "type": "textarea",
+          "max_length": 500
+        },
+        {
+          "id": "description",
+          "header": "Description of risk",
+          "type": "textarea",
+          "max_length": 2500,
+          "required": true
+        },
+        {
+          "id": "value_chain_stage",
+          "header": "Primary value chain stage affected",
+          "type": "select",
+          "options": [
+            "Direct operations",
+            "Upstream value chain",
+            "Downstream value chain"
+          ]
+        },
+        {
+          "id": "time_horizon",
+          "header": "Time horizon",
+          "type": "select",
+          "options": [
+            "Short-term",
+            "Medium-term",
+            "Long-term"
+          ]
+        },
+        {
+          "id": "likelihood",
+          "header": "Likelihood",
+          "type": "select",
+          "options": [
+            "Virtually certain",
+            "Very likely",
+            "Likely",
+            "More likely than not",
+            "About as likely as not",
+            "Unlikely",
+            "Very unlikely",
+            "Exceptionally unlikely"
+          ]
+        },
+        {
+          "id": "magnitude",
+          "header": "Magnitude of impact",
+          "type": "select",
+          "options": [
+            "High",
+            "Medium-high",
+            "Medium",
+            "Medium-low",
+            "Low"
+          ]
+        },
+        {
+          "id": "financial_impact",
+          "header": "Potential financial impact",
+          "type": "number",
+          "min_value": 0
+        },
+        {
+          "id": "financial_impact_explanation",
+          "header": "Explanation of financial impact",
+          "type": "textarea",
+          "max_length": 2500
+        },
+        {
+          "id": "management_method",
+          "header": "Management method",
+          "type": "textarea",
+          "max_length": 2500
+        },
+        {
+          "id": "cost_of_management",
+          "header": "Cost of management",
+          "type": "number",
+          "min_value": 0
+        }
+      ]
+    },
+    "2.4": {
+      "title": "Identified environmental opportunities with substantive financial or strategic impact",
+      "title_ko": "재무/전략적 영향이 큰 환경 기회",
+      "response_type": "table",
+      "allow_multiple_rows": true,
+      "columns": [
+        {
+          "id": "environmental_issue",
+          "header": "Environmental issue",
+          "type": "select",
+          "required": true,
+          "options": [
+            "Climate change",
+            "Forests",
+            "Water",
+            "Plastics",
+            "Biodiversity"
+          ]
+        },
+        {
+          "id": "opportunity_type",
+          "header": "Opportunity type",
+          "type": "grouped_select",
+          "required": true,
+          "grouped_options": {
+            "Resource efficiency": [
+              "Use of more efficient production and distribution processes",
+              "Use of recycling",
+              "Move to more efficient buildings",
+              "Reduced water usage and consumption",
+              "Other resource efficiency, please specify"
+            ],
+            "Energy source": [
+              "Use of lower-emission sources of energy",
+              "Use of supportive policy incentives",
+              "Use of new technologies",
+              "Participation in carbon market",
+              "Other energy source, please specify"
+            ],
+            "Products and services": [
+              "Development and/or expansion of low emission goods and services",
+              "Development of climate adaptation solutions",
+              "Shift in consumer preferences",
+              "Other products and services, please specify"
+            ],
+            "Markets": [
+              "Access to new markets",
+              "Use of public-sector incentives",
+              "Other markets, please specify"
+            ],
+            "Resilience": [
+              "Resource substitutes/diversification",
+              "Other resilience, please specify"
+            ]
+          }
+        },
+        {
+          "id": "primary_opportunity_driver",
+          "header": "Primary opportunity driver",
+          "type": "textarea",
+          "max_length": 500
+        },
+        {
+          "id": "description",
+          "header": "Description of opportunity",
+          "type": "textarea",
+          "max_length": 2500,
+          "required": true
+        },
+        {
+          "id": "value_chain_stage",
+          "header": "Primary value chain stage affected",
+          "type": "select",
+          "options": [
+            "Direct operations",
+            "Upstream value chain",
+            "Downstream value chain"
+          ]
+        },
+        {
+          "id": "time_horizon",
+          "header": "Time horizon",
+          "type": "select",
+          "options": [
+            "Short-term",
+            "Medium-term",
+            "Long-term"
+          ]
+        },
+        {
+          "id": "likelihood",
+          "header": "Likelihood",
+          "type": "select",
+          "options": [
+            "Virtually certain",
+            "Very likely",
+            "Likely",
+            "More likely than not",
+            "About as likely as not",
+            "Unlikely",
+            "Very unlikely",
+            "Exceptionally unlikely"
+          ]
+        },
+        {
+          "id": "magnitude",
+          "header": "Magnitude of impact",
+          "type": "select",
+          "options": [
+            "High",
+            "Medium-high",
+            "Medium",
+            "Medium-low",
+            "Low"
+          ]
+        },
+        {
+          "id": "financial_impact",
+          "header": "Potential financial impact",
+          "type": "number",
+          "min_value": 0
+        },
+        {
+          "id": "financial_impact_explanation",
+          "header": "Explanation of financial impact",
+          "type": "textarea",
+          "max_length": 2500
+        },
+        {
+          "id": "strategy_to_realize",
+          "header": "Strategy to realize opportunity",
+          "type": "textarea",
+          "max_length": 2500
+        },
+        {
+          "id": "cost_to_realize",
+          "header": "Cost to realize opportunity",
+          "type": "number",
+          "min_value": 0
+        }
+      ]
+    }
+  }
+}

@@ -104,6 +104,13 @@ class GuidanceRaw:
     ambition_ko: Optional[List[str]] = None
     requested_content_ko: Optional[List[str]] = None
     additional_information_ko: Optional[str] = None
+    # Summary fields (요약)
+    rationale_summary: Optional[str] = None
+    rationale_ko_summary: Optional[str] = None
+    ambition_summary: Optional[List[str]] = None
+    ambition_ko_summary: Optional[List[str]] = None
+    requested_content_summary: Optional[List[str]] = None
+    requested_content_ko_summary: Optional[List[str]] = None
 
 
 @dataclass
@@ -319,6 +326,78 @@ def clean_guidance_text(text: str, max_length: int = 500) -> str:
     return text
 
 
+def summarize_text(text: Optional[str], max_length: int = 200) -> Optional[str]:
+    """텍스트 요약 (문장 단위로 자르기)
+
+    - 최대 길이까지 완전한 문장만 포함
+    - 문장 중간에서 자르지 않음
+    """
+    if not text:
+        return None
+
+    text = text.strip()
+    if len(text) <= max_length:
+        return text
+
+    # 문장 구분자로 분리
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    result = []
+    current_length = 0
+
+    for sentence in sentences:
+        if current_length + len(sentence) + 1 <= max_length:
+            result.append(sentence)
+            current_length += len(sentence) + 1
+        else:
+            break
+
+    if result:
+        return ' '.join(result)
+
+    # 문장이 너무 길면 단어 단위로 자르기
+    words = text.split()
+    result = []
+    current_length = 0
+
+    for word in words:
+        if current_length + len(word) + 1 <= max_length - 3:  # ... 공간 확보
+            result.append(word)
+            current_length += len(word) + 1
+        else:
+            break
+
+    return ' '.join(result) + '...' if result else text[:max_length-3] + '...'
+
+
+def summarize_list(
+    items: Optional[List[str]],
+    max_items: int = 2,
+    max_item_length: int = 100
+) -> Optional[List[str]]:
+    """리스트 요약 (상위 N개 항목만, 각 항목 길이 제한)"""
+    if not items:
+        return None
+
+    result = []
+    for item in items[:max_items]:
+        if len(item) <= max_item_length:
+            result.append(item)
+        else:
+            # 단어 단위로 자르기
+            words = item.split()
+            truncated = []
+            current_length = 0
+            for word in words:
+                if current_length + len(word) + 1 <= max_item_length - 3:
+                    truncated.append(word)
+                    current_length += len(word) + 1
+                else:
+                    break
+            result.append(' '.join(truncated) + '...' if truncated else item[:max_item_length-3] + '...')
+
+    return result if result else None
+
+
 def extract_guidance_raw(
     parsed_q: Dict[str, Any],
     translator: Optional[Any] = None,
@@ -361,6 +440,14 @@ def extract_guidance_raw(
         if additional_information:
             additional_information_ko = clean_guidance_text(translator.to_korean(additional_information), max_length=300)
 
+    # 요약 생성
+    rationale_summary = summarize_text(rationale, max_length=200)
+    rationale_ko_summary = summarize_text(rationale_ko, max_length=200) if rationale_ko else None
+    ambition_summary = summarize_list(ambition, max_items=1, max_item_length=100)
+    ambition_ko_summary = summarize_list(ambition_ko, max_items=1, max_item_length=100) if ambition_ko else None
+    requested_content_summary = summarize_list(requested_content, max_items=2, max_item_length=80)
+    requested_content_ko_summary = summarize_list(requested_content_ko, max_items=2, max_item_length=80) if requested_content_ko else None
+
     return GuidanceRaw(
         rationale=rationale,
         ambition=ambition,
@@ -371,6 +458,13 @@ def extract_guidance_raw(
         ambition_ko=ambition_ko,
         requested_content_ko=requested_content_ko,
         additional_information_ko=additional_information_ko,
+        # Summary fields
+        rationale_summary=rationale_summary,
+        rationale_ko_summary=rationale_ko_summary,
+        ambition_summary=ambition_summary,
+        ambition_ko_summary=ambition_ko_summary,
+        requested_content_summary=requested_content_summary,
+        requested_content_ko_summary=requested_content_ko_summary,
     )
 
 

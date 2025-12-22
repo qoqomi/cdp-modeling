@@ -1,0 +1,184 @@
+/* Tailwind v4는 index.css에서 처리됨 */
+
+/* Kakao Small Font - 본문용 */
+@font-face {
+  font-family: "KakaoSmallFont";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoSmallSans-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KakaoSmallFont";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoSmallSans-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KakaoSmallFont";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoSmallSans-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Kakao Big Font - 제목용 */
+@font-face {
+  font-family: "KakaoBigFont";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KakaoBigFont";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KakaoBigFont";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2503@1.0/KakaoBigSans-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+
+/* 폰트 패밀리는 기본값으로 설정 (Tailwind 클래스가 우선순위를 가짐) */
+body {
+  /* 배경색은 App.vue에서 themeStore로 관리 */
+  font-family: "KakaoSmallFont", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+}
+
+/* h 태그는 KakaoBigFont 사용 (인라인 스타일이나 클래스로 오버라이드 가능) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "KakaoBigFont", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+}
+
+/* 큰 텍스트 크기 유틸리티 클래스들 */
+.text-4xl {
+  font-size: 2.25rem !important; /* 36px */
+  line-height: 1.2;
+}
+
+.text-5xl {
+  font-size: 3rem !important; /* 48px */
+  line-height: 1.2;
+}
+
+.text-6xl {
+  font-size: 4rem !important; /* 64px */
+  line-height: 1.2;
+}
+
+.text-7xl {
+  font-size: 5rem !important; /* 80px */
+  line-height: 1.2;
+}
+
+.text-8xl {
+  font-size: 6rem !important; /* 96px */
+  line-height: 1.2;
+}
+
+/* 메인 타이틀 클래스 */
+.main-title {
+  font-size: 4rem !important; /* 64px */
+  line-height: 1.2;
+}
+
+/* 반응형: 모바일에서는 작게 */
+@media (max-width: 768px) {
+  .text-4xl {
+    font-size: 1.75rem !important; /* 28px */
+  }
+
+  .text-5xl {
+    font-size: 2.25rem !important; /* 36px */
+  }
+
+  .text-6xl {
+    font-size: 3rem !important; /* 48px */
+  }
+
+  .text-7xl {
+    font-size: 3.5rem !important; /* 56px */
+  }
+
+  .text-8xl {
+    font-size: 4rem !important; /* 64px */
+  }
+
+  .main-title {
+    font-size: 2.5rem !important; /* 40px */
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(26, 26, 26, 0.4);
+  border-left: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 185, 129, 0.6),
+    rgba(5, 150, 105, 0.6)
+  );
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 185, 129, 0.8),
+    rgba(5, 150, 105, 0.8)
+  );
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
+}
+
+/* Recharts Customization */
+.recharts-wrapper {
+  font-family: inherit;
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: rgba(16, 185, 129, 0.15);
+  stroke-width: 0.5;
+}
+
+.recharts-text {
+  fill: rgba(16, 185, 129, 0.7);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Primary color utilities */
+.text-primary {
+  color: #10b981;
+}
+
+.bg-primary {
+  background-color: #10b981;
+}
+
+.border-primary {
+  border-color: #10b981;
+}

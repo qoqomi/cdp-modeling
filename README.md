@@ -1,337 +1,637 @@
-# CDP 답변 자동 생성 시스템 (RAG-based Diff Generator)
+# CDP Modeling AI Worker
 
-SK Inc.의 CDP 2025 보고서 작성을 위한 자동 답변 생성 및 업데이트 시스템
+> **CDP/지속가능성 보고서를 기반으로 연도·문항·근거 문서를 정확히 추적하여 신뢰 가능한 AI 답변을 생성하는 Retrieval-Augmented Generation(RAG) 시스템**
 
-## 📋 프로젝트 개요
-
-이 시스템은 다음 3가지 데이터를 결합하여 CDP 답변의 **변경사항(Diff)**을 자동으로 생성합니다:
-
-1. **2024년 CDP 답변** (이전 답변 구조)
-2. **CDP 2025 Updates** (질문/채점 방식 변경사항)
-3. **SK 2025 Sustainability Report** (최신 증거 데이터)
-
-### 핵심 기능
-
-- ✅ RAG 기반 증거 검색 (2-stage: Vector Search + Reranking)
-- ✅ 문장 단위 Diff 생성 (Keep/Modify/Add/Delete)
-- ✅ CDP 질문 구조 완벽 보존
-- ✅ 증거 페이지 번호 및 스니펫 제공
-- ✅ 실무자 검토 플래그 자동 생성
+CDP(Carbon Disclosure Project) 질문지 응답 자동화를 위해 설계된 본 시스템은, 단순 LLM 생성이 아닌 **메타데이터 기반 검색 + 역할 명시 프롬프팅**을 통해 근거 있는 답변을 생성합니다.
 
 ---
 
-## 📁 프로젝트 구조
+## 1. 문제 정의 (Problem Statement)
+
+### 왜 그냥 LLM이 아닌가?
+
+기존 LLM 기반 답변 생성은 CDP 도메인에서 다음과 같은 치명적 한계를 가집니다:
+
+| 문제 | 설명 |
+|------|------|
+| **Hallucination** | 과거 연도(2023) 데이터와 현재 연도(2025) 데이터가 혼합되어 사실과 다른 수치 생성 |
+| **문항 요구사항 무시** | CDP의 `Requested Content`, `Scoring Criteria`를 무시한 일반론적 답변 |
+| **근거 부재** | 답변의 출처를 명확히 제시할 수 없어 감사(Audit) 대응 불가 |
+| **연도 혼동** | "In 2023, we achieved..." 같은 과거 표현이 현재 응답에 그대로 복사 |
+
+👉 **RAG는 선택이 아닌 필연입니다.**
+
+CDP 응답은 매년 제출되며, 각 연도별 지속가능성 보고서의 **정확한 수치와 정책**을 기반으로 작성되어야 합니다. 과거 CDP 응답은 **형식 참고용**일 뿐, 사실의 근거가 될 수 없습니다.
+
+---
+
+## 2. 해결 전략 (Why RAG?)
+
+본 시스템은 **3-Layer Architecture**를 통해 문제를 해결합니다:
 
 ```
-cdp-modeling/
-├── 1_parse_pdf.py                  # PDF → JSON 파싱
-├── 2_create_vectordb.py            # Vector DB 생성
-├── 7_parse_cdp_updates.py         # CDP 업데이트 파싱
-├── 8_generate_answers.py          # 답변 생성 (Diff 방식) ⭐
-│
-├── config/
-│   ├── previous_cdp_answers.json  # 2024년 CDP 답변
-│   └── cdp_2025_updates.json      # CDP 2025 업데이트
-│
-├── data/
-│   ├── 2025_SK-Inc_Sustainability Report_ENG.pdf
-│   ├── Corporate_Questionnaires_and_Scoring_Methodologies_Updates_2025_V1.3.pdf
-│   ├── extracted_text.json        # 파싱된 텍스트 (554 chunks)
-│   └── qdrant_db/                 # Vector Database
-│
-└── output/
-    └── generated_cdp_answers_en.json  # 최종 결과 (영문 Diff)
+┌─────────────────────────────────────────────────────────────┐
+│                     3-Layer Architecture                     │
+├─────────────────────────────────────────────────────────────┤
+│  Layer 1: RAG Layer                                          │
+│  → 연도·문항·문서유형 기반 Metadata Filtering                  │
+│  → Dense Vector Search + Reranking                           │
+├─────────────────────────────────────────────────────────────┤
+│  Layer 2: Mapping Layer                                      │
+│  → 연도별 질문 코드 매핑 (2025 Q2.1 → 2024 Q2.1)              │
+│  → 유사도 검색만으로 문항 매칭 금지 (Rule-based)               │
+├─────────────────────────────────────────────────────────────┤
+│  Layer 3: Prompt Layer                                       │
+│  → 과거 답변 = "REFERENCE ONLY" 명시                         │
+│  → 현재 보고서 = "PRIMARY SOURCE" 명시                       │
+│  → 연도 표현 제거 지시 ("In 2023" → "Currently")              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 핵심 설계 원칙
+
+```python
+# ❌ 금지 사항
+- 연도 메타데이터 없이 벡터 검색 금지
+- 유사도만으로 문항 매칭 금지 (Mapping Layer 필수)
+- 과거 답변을 정답처럼 그대로 복사 금지
+- "관련 문서를 참고해서 답변해줘" 같은 모호한 프롬프트 금지
+
+# ✅ 필수 사항
+- 모든 검색에 source_type, year 필터 적용
+- 과거 CDP 답변 검색 시 question_code 필터 필수
+- 프롬프트에서 역할(참고용 vs 사실기반) 명시
 ```
 
 ---
 
-## 🔄 데이터 처리 파이프라인
+## 3. 전체 아키텍처 (Architecture Overview)
 
-### STEP 1: PDF 파싱
-
-```bash
-python 1_parse_pdf.py
 ```
-
-- **Input**: `data/2025_SK-Inc_Sustainability Report_ENG.pdf`
-- **Output**: `data/extracted_text.json`
-- **설정**: 200 words/chunk, 50 words overlap
-- **결과**: 554개 chunk 생성
-
-### STEP 2: Vector DB 생성
-
-```bash
-python 2_create_vectordb.py
+┌──────────────────────────────────────────────────────────────────────────┐
+│                              User Request                                 │
+│                    POST /ai/v1/generate/answer                           │
+│                         { question_id: "2.1" }                           │
+└─────────────────────────────────┬────────────────────────────────────────┘
+                                  │
+                                  ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                         Layer 2: Mapping Layer                            │
+│  ┌────────────────────────────────────────────────────────────────────┐  │
+│  │  QuestionMapper.get_historical_codes("2.1")                         │  │
+│  │  → ["2.1", "2.1.old"]  (2024년 대응 질문 코드)                       │  │
+│  │  → mapping_confidence: "high" | "medium" | "low"                    │  │
+│  └────────────────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────┬────────────────────────────────────────┘
+                                  │
+                                  ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                          Layer 1: RAG Layer                               │
+│  ┌─────────────────────────────────┐  ┌────────────────────────────────┐ │
+│  │   Historical CDP Answers        │  │   Sustainability Report        │ │
+│  │   ─────────────────────────     │  │   ────────────────────────     │ │
+│  │   source_type: CDP_ANSWER       │  │   source_type: SUSTAINABILITY  │ │
+│  │   year: [2024]                  │  │   year: [2025]                 │ │
+│  │   question_codes: ["2.1"]       │  │   (no question filter)         │ │
+│  │   top_k: 3                      │  │   top_k: 5                     │ │
+│  └─────────────────────────────────┘  └────────────────────────────────┘ │
+│                         │                            │                    │
+│                         └──────────────┬─────────────┘                    │
+│                                        ▼                                  │
+│  ┌────────────────────────────────────────────────────────────────────┐  │
+│  │                    BGE Reranker (외부 서비스 /rerank 호출)           │  │
+│  │                    → 문항 적합도 기준 재정렬                          │  │
+│  └────────────────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────┬────────────────────────────────────────┘
+                                  │
+                                  ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                         Layer 3: Prompt Layer                             │
+│  ┌────────────────────────────────────────────────────────────────────┐  │
+│  │  System: "You are a CDP disclosure expert"                          │  │
+│  │                                                                      │  │
+│  │  ⚠️ HISTORICAL REFERENCE (참고용 - 그대로 사용 금지!)                │  │
+│  │  [2024 CDP Answer for Q2.1]                                         │  │
+│  │                                                                      │  │
+│  │  ✅ CURRENT DATA SOURCE (사실 기반)                                  │  │
+│  │  [2025 Sustainability Report, Page 45-47]                           │  │
+│  │                                                                      │  │
+│  │  Question Schema: columns, row_labels, options                      │  │
+│  └────────────────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────┬────────────────────────────────────────┘
+                                  │
+                                  ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                        OpenAI GPT-4o-mini                                 │
+│                    temperature: 0.2 (일관성 중시)                         │
+│                    response_format: JSON                                  │
+└─────────────────────────────────┬────────────────────────────────────────┘
+                                  │
+                                  ▼
+┌──────────────────────────────────────────────────────────────────────────┐
+│                          Response                                         │
+│  {                                                                        │
+│    "rows": [{ "time_horizon": "Short-term", "from_years": 0, ... }],     │
+│    "sources": [                                                           │
+│      { "type": "sustainability_report", "year": 2025, "page": 45 },      │
+│      { "type": "cdp_historical", "year": 2024, "note": "Reference only" }│
+│    ],                                                                     │
+│    "confidence": 0.85,                                                    │
+│    "rationale_en": "Based on the 2025 report...",                        │
+│    "rationale_ko": "2025년 보고서에 따르면..."                            │
+│  }                                                                        │
+└──────────────────────────────────────────────────────────────────────────┘
 ```
-
-- **Input**: `data/extracted_text.json`
-- **Model**: BAAI/bge-m3 (1024-dim embeddings)
-- **Output**: `data/qdrant_db/`
-- **설정**: Collection "company_docs", COSINE similarity
-
-### STEP 3: CDP 업데이트 파싱
-
-```bash
-python 7_parse_cdp_updates.py
-```
-
-- **Input**: `data/Corporate_Questionnaires_*.pdf`
-- **Output**: `config/cdp_2025_updates.json`
-- **결과**: 35개 질문의 변경사항 추출
-
-### STEP 4: 답변 생성 (Diff 방식)
-
-```bash
-python 8_generate_answers.py
-```
-
-- **Input**:
-  - `config/previous_cdp_answers.json` (2024년 답변)
-  - `config/cdp_2025_updates.json` (CDP 질문 변경)
-  - `data/qdrant_db/` (SK 2025 보고서 증거)
-- **Output**: `output/generated_cdp_answers_en.json`
-- **결과**: 6개 질문, 47개 변경사항 제안
 
 ---
 
-## 🧠 RAG 시스템 아키텍처
+## 4. 데이터 설계 (Data & Schema Design)
 
-### 2-Stage Retrieval
+### RAG Document Schema
 
+```python
+@dataclass
+class RAGDocument:
+    # 필수 필드
+    text: str                      # 문서 내용
+    source_type: SourceType        # CDP_ANSWER | SUSTAINABILITY_REPORT
+    year: int                      # 연도 (2024, 2025)
+
+    # CDP 답변 전용 (source_type=CDP_ANSWER일 때 필수)
+    question_code: Optional[str]   # "2.1", "2.2a"
+    module: Optional[str]          # "C2", "C3"
+
+    # 지속가능성 보고서 전용
+    section: Optional[str]         # "emissions", "governance", "strategy"
+    page_num: Optional[int]        # 페이지 번호
+    chunk_id: Optional[str]        # 청크 ID
+
+    # 검색 메타
+    score: float = 0.0             # 검색 점수
+    historical: bool = False       # 과거 데이터 여부
 ```
-Query → [Stage 1: Vector Search] → 20 candidates
-                ↓
-        [Stage 2: Reranking] → Top 5 results
-```
 
-#### Stage 1: Dense Retrieval (Vector Search)
-
-- **Model**: BAAI/bge-m3
-- **Dimension**: 1024
-- **Similarity**: COSINE
-- **Limit**: 20 candidates
-
-#### Stage 2: Cross-Encoder Reranking
-
-- **Model**: cross-encoder/ms-marco-MiniLM-L-6-v2
-- **Input**: Query-Document pairs
-- **Output**: Relevance scores (-10 ~ +10)
-- **Final**: Top 5 results
-
-### 성능 개선 결과
-
-- ✅ **Score 구분도**: 500% 향상 (0.6 range → 1.2~6.9 range)
-- ✅ **검색 속도**: 21% 향상
-- ✅ **정확도**: 3.6% 향상
-- ✅ **비용**: 37% 절감
-
----
-
-## 💬 LLM Prompt 기법
-
-### 사용된 Prompt Engineering 기법
-
-| 기법                          | 설명                  | 적용 위치                                |
-| ----------------------------- | --------------------- | ---------------------------------------- |
-| **Zero-shot**                 | 예제 없이 구조만 제시 | Previous answer 구조                     |
-| **Few-shot**                  | 여러 예제 암묵적 제시 | Change types (keep/modify/add/delete)    |
-| **Chain-of-Thought**          | 단계별 사고 유도      | "For each sentence... 1. If... 2. If..." |
-| **Structured Output**         | JSON 형식 강제        | "Return ONLY valid JSON"                 |
-| **In-Context Learning**       | 이전 답변 구조 학습   | previous_data JSON                       |
-| **RAG (Retrieval-Augmented)** | 외부 증거 주입        | SK Report evidence                       |
-
-### LLM 설정
-
-- **Model**: gpt-4o-mini (OpenAI)
-- **Temperature**: 0.3
-- **Max Tokens**: 4000
-
----
-
-## 📊 최종 결과물 구조
-
-### output/generated_cdp_answers_en.json
+### Question Schema (CDP 문항 구조)
 
 ```json
 {
-  "metadata": {
-    "year": 2025,
-    "company": "SK Inc.",
-    "baseline": "2024 CDP Submission",
-    "language": "en",
-    "output_format": "diff"
-  },
-  "questions": {
-    "2.2": {
-      "cdp_question_updates": {
-        "has_changes": false,
-        "description": "No changes for this question in 2025",
-        "source": "Corporate_Questionnaires_Updates_2025_V1.3"
-      },
-      "previous_answer_2024": {
-        /* 2024년 답변 구조 */
-      },
-      "sk_2025_report_evidence": [
-        {
-          "text": "assessing climate-related risks...",
-          "page": 193,
-          "rerank_score": 3.753,
-          "confidence": 3.753
-        }
-      ],
-      "suggested_answer_updates": {
-        "changes": [
-          {
-            "type": "modify",
-            "old_text": "Both dependencies and impacts",
-            "new_text": "Both dependencies and impacts, with systematic climate risk identification...",
-            "reason": "Updated based on 2025 evidence",
-            "evidence_page": 43,
-            "evidence_snippet": "A systematic climate risk identification..."
-          }
-        ],
-        "final_suggested_answer": {
-          /* 최종 제안 답변 */
-        }
-      },
-      "review_flags": {
-        "needs_review": true,
-        "reasons": ["Content modifications (1 changes)"],
-        "confidence": "high",
-        "change_summary": {
-          "modifications": 1,
-          "additions": 0,
-          "deletions": 0,
-          "total_changes": 1
-        }
+  "question_id": "2.1",
+  "title": "Describe your organization's process for identifying climate risks",
+  "rationale": "CDP seeks to understand how organizations identify risks...",
+  "requested_content": [
+    "Time horizons covered",
+    "Risk assessment methodology",
+    "Integration with enterprise risk management"
+  ],
+  "columns": [
+    { "id": "time_horizon", "type": "select", "options": ["Short-term", "Medium-term", "Long-term"] },
+    { "id": "from_years", "type": "number" },
+    { "id": "to_years", "type": "number" },
+    { "id": "description", "type": "textarea" }
+  ],
+  "row_labels": ["Short-term", "Medium-term", "Long-term"]
+}
+```
+
+### Sustainability Report Chunking
+
+```python
+class SustainabilityReportChunker:
+    SECTION_KEYWORDS = {
+        "governance": ["board", "committee", "oversight", "이사회"],
+        "strategy": ["roadmap", "target", "net zero", "전략"],
+        "emissions": ["scope 1", "scope 2", "ghg", "배출"],
+        "energy": ["renewable", "consumption", "에너지"],
+        # ...
+    }
+
+    # 청킹 설정
+    chunk_size = 800        # 문자
+    chunk_overlap = 200     # 오버랩
+    min_chunk_size = 100    # 최소 크기
+```
+
+---
+
+## 5. Retrieval 전략 상세
+
+### 기술 스택
+
+| 구성 요소 | 기술 | 설명 |
+|----------|------|------|
+| Embedding | BGE-M3 | 1024차원, 다국어 지원 |
+| Vector DB | Qdrant | 로컬 파일 기반, Cosine Similarity |
+| Reranker | BGE Cross-Encoder | 외부 서비스 호출 |
+| Search | Dense Vector + Metadata Filter | 의미 검색 + 메타데이터 필터링 |
+
+### 적용된 RAG 기법 정리
+
+| 단계 | 기법 | 적용 | 설명 |
+|------|------|:----:|------|
+| **Pre-retrieval** | Query Mapping | ✅ | 연도/문항 코드 매핑 (Mapping Layer) |
+| **Pre-retrieval** | Query Expansion | ❌ | 미적용 |
+| **Retrieval** | Dense Search | ✅ | BGE-M3 임베딩 기반 의미 검색 |
+| **Retrieval** | Metadata Filtering | ✅ | `source_type`, `year`, `question_code` 필터 |
+| **Retrieval** | Hybrid Search | ❌ | Dense만 사용 (Sparse 미적용) |
+| **Post-retrieval** | Reranking | ✅ | 외부 BGE 서비스 `/rerank` 엔드포인트 호출 |
+| **Post-retrieval** | Compression | ❌ | 미적용 |
+
+### Retrieval 범위 및 Fallback 전략
+
+#### 검색 범위 (top_k)
+
+| 검색 대상 | top_k | fetch_k (리랭킹용) | 설명 |
+|----------|:-----:|:-----------------:|------|
+| **과거 CDP 답변** | 3 | 9 (top_k × 3) | 형식/구조 참고용 |
+| **지속가능성 보고서** | 5 | 15 (top_k × 3) | 사실 기반 주 데이터 |
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                     Retrieval Pipeline                           │
+├─────────────────────────────────────────────────────────────────┤
+│  Step 1: Dense Vector Search                                     │
+│          → fetch_k = top_k × 3 (리랭킹을 위해 더 많이 가져옴)      │
+│          → CDP 답변: 9개 / 보고서: 15개                           │
+├─────────────────────────────────────────────────────────────────┤
+│  Step 2: Reranking (외부 BGE 서비스)                              │
+│          → 문항 적합도 기준 재정렬                                 │
+│          → 상위 top_k개만 선택                                    │
+│          → CDP 답변: 3개 / 보고서: 5개                            │
+├─────────────────────────────────────────────────────────────────┤
+│  Step 3: LLM Context                                             │
+│          → 최종 8개 문서가 프롬프트에 포함                         │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+#### Fallback 전략 (문제 발생 시)
+
+| 상황 | Fallback 동작 | 결과 |
+|------|--------------|------|
+| **Qdrant 미초기화** | 빈 리스트 반환 | LLM이 스키마 기반으로만 답변 생성 |
+| **Embedding 서비스 장애** | 검색 스킵 | 빈 컨텍스트로 진행 |
+| **CDP 답변 검색 실패** | `historical_answers = []` | 현재 보고서만으로 답변 생성 |
+| **보고서 검색 실패** | `current_context = []` | CDP 가이드라인 기반 답변 생성 |
+| **Reranking 실패** | 원본 순서 유지 | Dense Search 결과 그대로 사용 |
+| **LLM API 장애** | Soft Fallback | RAG 컨텍스트만 반환 (confidence: 0.0) |
+
+```python
+# cdp_generator.py - Fallback 로직
+historical_answers = []
+if historical_codes and historical_years:
+    try:
+        historical_answers = self.rag.search_cdp_answers(...)
+    except Exception as e:
+        print(f"과거 CDP 답변 검색 실패: {e}")
+        # historical_answers는 빈 리스트로 유지 → 계속 진행
+
+current_context = []
+try:
+    current_context = self.rag.search_sustainability_report(...)
+except Exception as e:
+    print(f"지속가능경영보고서 검색 실패: {e}")
+    # current_context는 빈 리스트로 유지 → 계속 진행
+
+# 둘 다 실패해도 LLM 호출은 진행 (스키마 기반 답변 생성)
+```
+
+#### 검색 실패 시 신뢰도 영향
+
+```python
+def calculate_confidence(has_historical, rag_scores, mapping_confidence):
+    base_score = 0.4  # 기본 점수
+
+    # rag_scores가 비어있으면 RAG 가중치(50%) 반영 안 됨
+    if rag_scores:
+        base_score += (avg_score) * 0.5
+
+    # 과거 답변 없으면 10% 가중치 반영 안 됨
+    if has_historical:
+        base_score += 0.1
+```
+
+| 검색 상태 | 예상 신뢰도 |
+|----------|:---------:|
+| 모두 성공 (보고서 + CDP) | 0.75 ~ 0.95 |
+| 보고서만 성공 | 0.65 ~ 0.85 |
+| CDP만 성공 | 0.40 ~ 0.50 |
+| 모두 실패 | 0.40 (기본값) |
+
+### 검색 코드 예시
+
+```python
+# retriever.py
+def search_cdp_answers(self, query, years, question_codes, top_k=3):
+    """과거 CDP 답변 검색 - Mapping Layer 결과 사용 필수"""
+    return self.search(
+        query=query,
+        source_types=[SourceType.CDP_ANSWER],
+        years=years,              # Mapping에서 받은 연도 [2024]
+        question_codes=question_codes,  # Mapping에서 받은 코드 ["2.1"]
+        top_k=top_k,
+        use_rerank=True,
+    )
+
+def search_sustainability_report(self, query, year, top_k=5):
+    """현재 지속가능성 보고서 검색"""
+    return self.search(
+        query=query,
+        source_types=[SourceType.SUSTAINABILITY_REPORT],
+        years=[year],             # 현재 연도 [2025]
+        top_k=top_k,
+        use_rerank=True,
+    )
+```
+
+---
+
+## 6. Answer Generation 전략 (LLM Prompting)
+
+### 프롬프트 구조
+
+```python
+SYSTEM_PROMPT = """You are a CDP (Carbon Disclosure Project) disclosure expert.
+
+CRITICAL RULES - YOU MUST FOLLOW:
+1. Historical CDP answers are REFERENCE ONLY - DO NOT copy them directly
+2. Remove any year-specific expressions (e.g., "In 2023" → "Currently")
+3. Use ONLY current year data from sustainability reports for facts/numbers
+4. All numerical data must come from the current sustainability report
+
+OUTPUT FORMAT:
+- Respond in JSON format matching the provided schema
+- Include rationale in both English and Korean
+"""
+```
+
+### 역할 분리 프롬프트
+
+```python
+# 과거 답변 (참고용)
+HISTORICAL_CONTEXT = """
+⚠️ WARNING: The following are PAST CDP answers for REFERENCE ONLY.
+DO NOT copy these directly. Use them ONLY for:
+- Understanding the expected format/structure
+- Identifying relevant topics to cover
+- Learning the appropriate tone/style
+
+{historical_answers}
+
+⚠️ DO NOT use past numbers/metrics - use current sustainability report data
+"""
+
+# 현재 보고서 (사실 기반)
+CURRENT_CONTEXT = """
+✅ The following is from the {year} Sustainability Report.
+Use this as the PRIMARY and ONLY source for facts, numbers, and current policies.
+
+{sustainability_content}
+
+✅ This is your authoritative source for current metrics and policies.
+"""
+```
+
+---
+
+## 7. 신뢰성 확보 장치 (Reliability & Evaluation)
+
+### 신뢰도 계산 로직
+
+```python
+def calculate_confidence(has_historical, rag_scores, mapping_confidence):
+    base_score = 0.4
+
+    # 현재 RAG 점수 (50%) - 핵심 가중치
+    if rag_scores:
+        base_score += (sum(rag_scores) / len(rag_scores)) * 0.5
+
+    # 과거 답변 유무 (10%) - 참고용이므로 낮은 가중치
+    if has_historical:
+        base_score += 0.1
+
+    # 매핑 신뢰도 (10%)
+    bonus = {"high": 0.1, "medium": 0.05, "low": 0.0}
+    base_score += bonus.get(mapping_confidence, 0.0)
+
+    return min(base_score, 0.95)
+```
+
+### 검증 체크리스트
+
+| 검증 항목 | 방법 |
+|----------|------|
+| **연도 일관성** | 검색 결과의 year 메타데이터 확인 |
+| **출처 명시** | 모든 답변에 sources 배열 포함 |
+| **수치 근거** | 지속가능성 보고서 페이지 번호 제공 |
+| **형식 준수** | CDP 문항의 columns 스키마 검증 |
+| **과거 답변 역할** | `is_primary: false`, `note: "Reference only"` 표시 |
+
+### 응답 예시
+
+```json
+{
+  "question_id": "2.1",
+  "rows": [
+    {
+      "columns": {
+        "time_horizon": "Short-term",
+        "from_years": 0,
+        "to_years": 3,
+        "description": "Our risk identification process covers..."
       }
     }
-  }
+  ],
+  "sources": [
+    {
+      "type": "sustainability_report",
+      "year": 2025,
+      "page_num": 45,
+      "section": "risk_management",
+      "score": 0.89,
+      "is_primary": true
+    },
+    {
+      "type": "cdp_historical",
+      "year": 2024,
+      "question_code": "2.1",
+      "score": 0.76,
+      "is_primary": false,
+      "note": "Reference only - not used as source of facts"
+    }
+  ],
+  "overall_confidence": 0.85,
+  "rationale_en": "Based on SK Inc's 2025 Sustainability Report (p.45-47)...",
+  "rationale_ko": "SK Inc의 2025년 지속가능성 보고서(p.45-47)에 따르면..."
 }
 ```
 
 ---
 
-## 🚀 사용 방법
+## 8. 기술 스택 (Tech Stack)
 
-### 1. 환경 설정
+### Backend
+
+| 기술 | 버전 | 용도 |
+|------|------|------|
+| Python | 3.11 | 런타임 |
+| FastAPI | 0.109.0 | REST API 서버 |
+| Pydantic | 2.5.3 | 데이터 검증 |
+| Uvicorn | 0.27.0 | ASGI 서버 |
+
+### AI/ML
+
+| 기술 | 버전 | 용도 |
+|------|------|------|
+| OpenAI API | 1.6.1 | GPT-4o-mini LLM |
+| BGE-M3 | External | 임베딩 + 리랭킹 |
+| Qdrant | 1.7.0 | 벡터 데이터베이스 |
+
+### Document Processing
+
+| 기술 | 버전 | 용도 |
+|------|------|------|
+| PyMuPDF | 1.23.8 | PDF 파싱 + 테이블 추출 |
+| pdfplumber | 0.10.3 | PDF 텍스트 추출 |
+
+### Infrastructure
+
+| 기술 | 용도 |
+|------|------|
+| Docker | 컨테이너화 |
+| httpx | 비동기 HTTP 클라이언트 |
+
+---
+
+## 9. 한계와 개선 방향 (Limitations & Future Work)
+
+### 현재 한계
+
+| 한계 | 설명 |
+|------|------|
+| **문항 간 추론 부재** | Q2.1 답변이 Q2.2에 영향을 주는 관계를 고려하지 못함 |
+| **테이블/차트 한계** | PDF 내 복잡한 테이블은 정확한 추출이 어려움 |
+| **단일 문서 의존** | 여러 보고서 간 교차 검증 미지원 |
+| **실시간 업데이트** | 새 보고서 추가 시 전체 재인덱싱 필요 |
+
+### 향후 개선 계획
+
+```
+1. Multi-hop RAG
+   → 문항 간 참조 관계를 고려한 연쇄 검색
+
+2. Answer Scoring Model
+   → CDP 채점 기준 기반 자동 점수 예측
+
+3. Table Extraction 고도화
+   → 구조화된 테이블 데이터 전용 청킹
+
+4. Feedback Loop
+   → 사용자 피드백 기반 Retrieval 품질 개선
+
+5. Hybrid Search
+   → Dense + Sparse (BM25) 결합 검색
+```
+
+---
+
+## 10. 프로젝트 기여 (My Contribution)
+
+| 영역 | 기여 내용 |
+|------|----------|
+| **아키텍처 설계** | 3-Layer (RAG → Mapping → Prompt) 아키텍처 설계 |
+| **데이터 모델링** | RAGDocument, Question Schema 설계 |
+| **Retrieval 전략** | 메타데이터 필터링 + 리랭킹 파이프라인 구현 |
+| **프롬프트 엔지니어링** | 역할 분리 프롬프트 규칙 정의 |
+| **신뢰도 설계** | 가중치 기반 신뢰도 계산 로직 구현 |
+| **PDF 처리** | 시맨틱 청킹 + 섹션 분류 구현 |
+
+---
+
+## 11. 데모 / 결과 예시
+
+### 요청
 
 ```bash
-# Python 가상환경 생성
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+curl -X POST "http://localhost:8000/ai/v1/generate/answer" \
+  -H "Content-Type: application/json" \
+  -d '{"question_id": "2.1"}'
+```
 
-# 패키지 설치
+### 응답
+
+```
+Q. CDP 2.1: Describe your organization's time horizons for climate risk identification
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 Answer:
+┌─────────────┬────────────┬──────────┬─────────────────────────────┐
+│ Time Horizon│ From Years │ To Years │ Description                 │
+├─────────────┼────────────┼──────────┼─────────────────────────────┤
+│ Short-term  │ 0          │ 3        │ Annual risk assessment...   │
+│ Medium-term │ 3          │ 10       │ Strategic planning cycle... │
+│ Long-term   │ 10         │ 30       │ Net-zero pathway analysis...│
+└─────────────┴────────────┴──────────┴─────────────────────────────┘
+
+📎 Evidence:
+  ✅ [PRIMARY] 2025 Sustainability Report, p.45-47, Section: Risk Management
+  ⚠️ [REF ONLY] 2024 CDP Response, Q2.1
+
+🎯 Confidence: 85%
+
+💬 Rationale:
+  Based on SK Inc's 2025 Sustainability Report, the organization employs
+  a three-tiered time horizon approach aligned with TCFD recommendations...
+```
+
+---
+
+## 12. 설치 및 실행
+
+### 환경 설정
+
+```bash
+# 1. 환경 변수 설정
+cp .env.example .env
+
+# .env 파일 편집
+OPENAI_API_KEY=sk-xxxxx
+BGE_EMBEDDING_URL=http://localhost:5002
+SPRING_API_URL=http://localhost:8080
+```
+
+### 실행
+
+```bash
+# 의존성 설치
+cd backend
 pip install -r requirements.txt
 
-# .env 파일 설정
-cp .env.example .env
-# OPENAI_API_KEY를 .env에 입력
+# 서버 실행
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-### 2. 전체 파이프라인 실행
+### API 문서
 
-```bash
-# Step 1: PDF 파싱
-python 1_parse_pdf.py
-
-# Step 2: Vector DB 생성
-python 2_create_vectordb.py
-
-# Step 3: CDP 업데이트 파싱
-python 7_parse_cdp_updates.py
-
-# Step 4: 답변 생성
-python 8_generate_answers.py
-```
-
-### 3. 결과 확인
-
-```bash
-# 결과 파일 확인
-cat output/generated_cdp_answers_en.json
-
-# 또는 Python으로 분석
-python << EOF
-import json
-with open('output/generated_cdp_answers_en.json') as f:
-    data = json.load(f)
-    print(f"총 {len(data['questions'])}개 질문 처리")
-    for q_id, q_data in data['questions'].items():
-        changes = q_data['suggested_answer_updates']['changes']
-        print(f"{q_id}: {len(changes)}개 변경사항")
-EOF
-```
+- Swagger UI: http://localhost:8000/ai/v1/docs
+- ReDoc: http://localhost:8000/ai/v1/redoc
 
 ---
 
-## 📌 주요 설정 파일
+## 13. API 엔드포인트
 
-### .env
-
-```bash
-OPENAI_API_KEY=your_openai_api_key_here
-OPENAI_MODEL=gpt-4o-mini
-EMBEDDING_MODEL=BAAI/bge-m3
-QDRANT_PATH=./data/qdrant_db
-```
-
-### 8_generate_answers.py 주요 설정
-
-```python
-# 질문 리스트 (수정 가능)
-test_questions = ["2.2", "2.2.1", "2.2.2", "2.2.7", "2.3", "2.4"]
-
-# RAG 설정
-top_k = 5           # 최종 반환 결과 개수
-initial_k = 20      # Vector search 후보 개수
-
-# LLM 설정
-temperature = 0.3   # 창의성 (낮을수록 일관성 높음)
-max_tokens = 4000   # 최대 응답 길이
-```
-
-## 📈 성능 지표
-
-| 항목                | 값              |
-| ------------------- | --------------- |
-| **처리 질문 수**    | 6개             |
-| **생성 변경사항**   | 47개            |
-| **평균 증거 개수**  | 5개/질문        |
-| **평균 Confidence** | 2.5~6.9 (high)  |
-| **처리 시간**       | ~2분 (6개 질문) |
+| Method | Endpoint | 설명 |
+|--------|----------|------|
+| POST | `/ai/v1/generate/answer` | 단일 질문 RAG 답변 생성 |
+| POST | `/ai/v1/generate/batch` | 일괄 답변 생성 |
+| GET | `/ai/v1/questions` | 전체 질문 스키마 조회 |
+| GET | `/ai/v1/questions/{id}` | 특정 질문 스키마 조회 |
+| GET | `/ai/v1/questionnaire` | CDP 질문 + 가이드라인 조회 |
+| POST | `/ai/v1/upload/sustainability-report` | 지속가능성 보고서 인덱싱 |
+| POST | `/ai/v1/upload/cdp-response` | 과거 CDP 응답 인덱싱 |
+| GET | `/ai/v1/health` | 헬스체크 |
 
 ---
 
-## 🛣️ 다음 단계
+## License
 
-### Backend API (계획)
-
-```python
-# FastAPI 또는 Flask로 REST API 제공
-GET /api/cdp/questions/{question_id}
-POST /api/translate/ko-to-en
-```
-
-### Frontend Integration (계획)
-
-- React/Vue에서 영문 데이터 받기
-- 실시간 한글 번역 (i18n)
-- 사용자 수정 → RDB 저장
-- 제출 시점에 한→영 번역
-
-### RDB Schema (계획)
-
-```sql
-CREATE TABLE users_cdp_answers (
-    id SERIAL PRIMARY KEY,
-    question_id VARCHAR(10),
-    answer_ko TEXT,
-    answer_en TEXT,
-    status VARCHAR(20),
-    created_at TIMESTAMP,
-    modified_at TIMESTAMP
-);
-```
-
----
+This project is proprietary software. All rights reserved.

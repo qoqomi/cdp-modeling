@@ -1,0 +1,777 @@
+{
+  "total_questions": 13,
+  "average_confidence": 0.96,
+  "answers": [
+    {
+      "question_id": "2.1",
+      "question_title": "Time horizons definition",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "time_horizon": "Short-term",
+            "from_years": 0.0,
+            "to_years": 3.0,
+            "rationale_en": "This information was not found in the report.",
+            "rationale_ko": "이 정보는 보고서에서 발견되지 않았습니다."
+          },
+          "confidence": 0.7
+        },
+        {
+          "row_index": 1,
+          "columns": {
+            "time_horizon": "Medium-term",
+            "from_years": 4.0,
+            "to_years": 10.0,
+            "rationale_en": "This information was not found in the report.",
+            "rationale_ko": "이 정보는 보고서에서 발견되지 않았습니다."
+          },
+          "confidence": 0.7
+        },
+        {
+          "row_index": 2,
+          "columns": {
+            "time_horizon": "Long-term",
+            "from_years": 11.0,
+            "to_years": 25.0,
+            "rationale_en": "This information was not found in the report.",
+            "rationale_ko": "이 정보는 보고서에서 발견되지 않았습니다."
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 1.0,
+      "rationale_en": "The answer is appropriate as it specifies a long-term time horizon of 11 to 25 years, which aligns with the CDP's focus on understanding how organizations assess environmental issues over different timescales. However, the rationale indicates that this specific information was not found in the report, suggesting that the organization may not have explicitly defined its time horizons in the referenced pages (15, 28, 30, 55, 148). This highlights a potential gap in the report regarding the clarity of the organization's approach to time horizons.",
+      "rationale_ko": "답변은 11년에서 25년까지의 장기적인 시간 범위를 명시하고 있어 적절합니다. 이는 CDP가 조직이 다양한 시간 척도에서 환경 문제를 어떻게 평가하는지를 이해하는 데 중점을 두고 있다는 점과 일치합니다. 그러나 근거에서는 이 특정 정보가 보고서에서 발견되지 않았다고 언급하고 있어, 해당 조직이 참조된 페이지(15, 28, 30, 55, 148)에서 시간 범위를 명확히 정의하지 않았을 가능성을 시사합니다. 이는 조직의 시간 범위 접근 방식에 대한 명확성이 부족하다는 점에서 보고서의 잠재적인 격차를 강조합니다.",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 15,
+          "score": 0.647,
+          "rerank_score": 0.957
+        },
+        {
+          "chunk_id": "report_chunk_96",
+          "page_num": 28,
+          "score": 0.64,
+          "rerank_score": 0.953
+        },
+        {
+          "chunk_id": "table_30_101",
+          "page_num": 30,
+          "score": 0.63,
+          "rerank_score": 0.932
+        },
+        {
+          "chunk_id": "report_chunk_179",
+          "page_num": 55,
+          "score": 0.792,
+          "rerank_score": 0.928
+        },
+        {
+          "chunk_id": "table_148_508",
+          "page_num": 148,
+          "score": 0.657,
+          "rerank_score": 0.916
+        }
+      ]
+    },
+    {
+      "question_id": "2.2",
+      "question_title": "Environmental dependencies and impacts management process",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "process_in_place": "Yes",
+            "deps_impacts_evaluated": "Both dependencies and impacts"
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 1.0,
+      "rationale_en": "The answer is appropriate because it confirms that the organization has a process in place to manage both environmental dependencies and impacts, which is crucial for understanding the associated risks and opportunities. This aligns with the CDP guidelines emphasizing the need for comprehensive evaluation, as highlighted on pages 15 and 43, which discuss the importance of assessing both aspects for effective environmental management. Additionally, references on pages 55 and 61 further support the necessity of such evaluations in maintaining ecological balance and ensuring sustainable operations.",
+      "rationale_ko": "답변은 적절합니다. 이는 조직이 환경 의존성과 영향을 관리하기 위한 프로세스를 갖추고 있음을 확인해 주며, 이는 관련된 위험과 기회를 이해하는 데 매우 중요합니다. 이는 포괄적인 평가의 필요성을 강조하는 CDP 가이드라인과 일치하며, 페이지 15와 43에서 효과적인 환경 관리를 위해 두 가지 측면을 모두 평가하는 것의 중요성을 논의합니다. 또한, 페이지 55와 61의 참고자료는 생태적 균형을 유지하고 지속 가능한 운영을 보장하기 위한 이러한 평가의 필요성을 더욱 뒷받침합니다.",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 15,
+          "score": 0.647,
+          "rerank_score": 0.993
+        },
+        {
+          "chunk_id": "report_chunk_178",
+          "page_num": 55,
+          "score": 0.64,
+          "rerank_score": 0.993
+        },
+        {
+          "chunk_id": "report_chunk_141",
+          "page_num": 43,
+          "score": 0.783,
+          "rerank_score": 0.993
+        },
+        {
+          "chunk_id": "report_chunk_201",
+          "page_num": 61,
+          "score": 0.643,
+          "rerank_score": 0.992
+        },
+        {
+          "chunk_id": "report_chunk_198",
+          "page_num": 61,
+          "score": 0.634,
+          "rerank_score": 0.992
+        }
+      ]
+    },
+    {
+      "question_id": "2.2.1",
+      "question_title": "Environmental risks and opportunities management process",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "process_in_place": "Yes",
+            "risks_opps_evaluated": "Both risks and opportunities",
+            "informed_by_deps_impacts": "Yes",
+            "explain_gaps_or_not_informed_en": "Yes, SK Inc. has a robust process in place for identifying, assessing, and managing environmental risks and opportunities, as outlined on Page 43 and Page 55 of the report. The integrated process links the Environmental Management System (ISO 14001) with the Enterprise Risk Management system (ISO 31000) to preemptively identify and assess climate risks, while implementing preventive measures. The risk assessment process includes verification through internal and external audits at least once a year, and material environmental and climate risks are reported to the CEO and the Board of Directors for company-wide integration into decision-making.",
+            "explain_gaps_or_not_informed_ko": "네, SK Inc.는 환경 위험 및 기회를 식별, 평가 및 관리하기 위한 강력한 프로세스를 갖추고 있으며, 이는 보고서의 페이지 43과 페이지 55에 설명되어 있습니다. 이 통합 프로세스는 환경 관리 시스템(ISO 14001)과 기업 위험 관리 시스템(ISO 31000)을 연결하여 기후 위험을 사전적으로 식별하고 평가하며, 예방 조치를 시행합니다. 위험 평가 프로세스는 최소 연 1회 내부 및 외부 감사로 검증되며, 중요한 환경 및 기후 위험은 CEO와 이사회에 보고되어 회사 전반의 의사 결정에 통합됩니다."
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 1.0,
+      "rationale_en": "This answer is appropriate because it clearly indicates that SK Inc. has a comprehensive process for managing environmental risks and opportunities, as supported by specific references to the report on pages 43 and 55. By linking the Environmental Management System (ISO 14001) with the Enterprise Risk Management system (ISO 31000), the organization demonstrates a proactive approach to identifying and assessing environmental challenges, thereby showcasing its commitment to sustainability and risk management.",
+      "rationale_ko": "이 답변은 SK Inc.가 환경 위험 및 기회를 관리하기 위한 포괄적인 프로세스를 갖추고 있음을 명확히 나타내기 때문에 적절합니다. 이는 43페이지와 55페이지의 보고서에 대한 구체적인 언급으로 뒷받침됩니다. 환경 관리 시스템(ISO 14001)과 기업 위험 관리 시스템(ISO 31000)을 연결함으로써, 조직은 환경적 도전을 식별하고 평가하는 데 있어 적극적인 접근 방식을 보여주며, 지속 가능성과 위험 관리에 대한 헌신을 드러냅니다.",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_140",
+          "page_num": 43,
+          "score": 0.867,
+          "rerank_score": 0.996
+        },
+        {
+          "chunk_id": "report_chunk_504",
+          "page_num": 147,
+          "score": 0.83,
+          "rerank_score": 0.995
+        },
+        {
+          "chunk_id": "report_chunk_178",
+          "page_num": 55,
+          "score": 0.945,
+          "rerank_score": 0.995
+        },
+        {
+          "chunk_id": "report_chunk_476",
+          "page_num": 139,
+          "score": 0.843,
+          "rerank_score": 0.995
+        },
+        {
+          "chunk_id": "table_148_508",
+          "page_num": 148,
+          "score": 0.884,
+          "rerank_score": 0.994
+        }
+      ]
+    },
+    {
+      "question_id": "2.2.2",
+      "question_title": "Details of identification, assessment, and management process",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "environmental_issue": [
+              "Climate change",
+              "Water"
+            ],
+            "diro_covered": [
+              "Dependencies",
+              "Impacts",
+              "Risks",
+              "Opportunities"
+            ],
+            "value_chain_stages": [
+              "Direct operations",
+              "Upstream value chain",
+              "Downstream value chain"
+            ],
+            "coverage": "Partial",
+            "supplier_tiers": [
+              "Tier 1 suppliers",
+              "Tier 2 suppliers",
+              "Tier 3 suppliers",
+              "Tier 4+ suppliers"
+            ],
+            "assessment_type": "Qualitative and quantitative",
+            "frequency": "Annually",
+            "time_horizons": [
+              "Short-term",
+              "Medium-term",
+              "Long-term"
+            ],
+            "integration": "Integrated into multi-disciplinary organization-wide risk management process",
+            "location_specificity": [
+              "Site-specific",
+              "Local",
+              "Sub-national",
+              "National"
+            ],
+            "tools_used": "조직의 환경 의존성, 영향, 위험 및 기회를 식별, 평가 및 관리하는 과정은 다음과 같은 도구 및 방법을 포함합니다:\n\n1. **위험 식별 및 분석**: 조직은 기후 관련 위험 및 기회 요인을 포괄적으로 분석하여 주요 물질적 위험과 기회를 식별합니다. 이 과정은 산업별 특성을 반영하여 대응 우선 영역을 결정하는 데 도움을 줍니다. (페이지 29)\n\n2. **이해관계자 참여**: 조직은 이해관계자와의 긴밀한 소통을 통해 공급자의 현재 상태와 필요를 파악하고, 지속 가능한 공급망 관리를 위한 종합적인 활동을 수행합니다. (페이지 95)\n\n3. **환경 영향 평가**: 환경 규정 준수를 포함한 다양한 환경 관리 프로세스를 통해 위험을 식별하고 대응합니다. (페이지 55)\n\n4. **전략",
+            "risk_types_considered": "조직은 환경 의존성, 영향, 위험 및 기회를 식별, 평가 및 관리하기 위한 포괄적이고 반복적인 절차를 수립하여야 합니다. 이러한 과정은 조직이 장기적인 불확실성과 책임을 처리하고 기회를 활용하는 데 도움이 됩니다. \n\n위험 유형에 대한 고려 사항은 다음과 같습니다:\n\n1. **확률 (Probability)**:\n   - 글로벌 기후 정책 및 규제 변화의 속도\n   - 산업 내 유사 사례의 빈도 및 재무적 영향\n   - 기후 관련 공시 요구 증가\n\n2. **심각도 (Severity)**:\n   - 사업 수익 및 비용 구조에 미치는 영향\n   - 공급망 중단 및 운영 위험으로 인한 피해 규모\n   - 부정적인 미디어 노출로 인한 기업 평판 및 고객 신뢰의 잠재적 하락\n\n3. **영향 (Impact)**:\n   - 기",
+            "opportunity_types_considered": "조직은 환경 의존성, 영향, 위험 및 기회를 식별, 평가 및 관리하기 위한 포괄적이고 반복적인 절차를 수립하여 장기적인 불확실성과 책임을 처리하고 기회를 활용할 수 있는 능력을 갖추고 있습니다. \n\n조직의 접근 방식은 다음과 같습니다:\n\n1. **위험 식별 및 평가**: 조직은 기후 관련 위험 및 기회 요소에 대한 포괄적인 분석을 통해 고위험 및 기회 영역을 식별합니다. 이 과정에서 산업별 특성을 반영하여 우선 대응 분야를 결정합니다(페이지 29).\n\n2. **이해관계자 참여**: 공급업체와의 긴밀한 소통을 통해 현재 상태와 필요를 파악하고, 지속 가능한 공급망 관리를 위한 포괄적인 활동을 수행합니다(페이지 95).\n\n3. **전략적 의사결정 통합**:",
+            "further_details_en": "The organization employs a comprehensive process for identifying, assessing, and managing environmental dependencies, impacts, risks, and opportunities across its value chain. This includes mapping the value chain, engaging stakeholders, and conducting a double materiality assessment to integrate key sustainability-related issues into strategic decision-making and risk management (Page 15). The risk identification process encompasses environmental risks such as climate change response and compliance with legal regulations, while the risk assessment process evaluates the severity and probability of these risks (Page 148). Additionally, the organization enhances environmental management awareness and promotes eco-friendly initiatives among suppliers to ensure sustainable supply chain management (Page 55).",
+            "further_details_ko": "조직은 가치 사슬 전반에 걸쳐 환경 의존성, 영향, 위험 및 기회를 식별, 평가 및 관리하기 위한 포괄적인 프로세스를 운영합니다. 여기에는 가치 사슬 매핑, 이해관계자 참여, 그리고 주요 지속 가능성 관련 이슈를 전략적 의사 결정 및 위험 관리에 통합하기 위한 이중 중요성 평가(double materiality assessment)가 포함됩니다 (Page 15). 위험 식별 프로세스는 기후 변화 대응 및 법적 규제 준수와 같은 환경 위험을 포함하며, 위험 평가 프로세스는 이러한 위험의 심각성과 발생 가능성을 평가합니다 (Page 148). 또한, 조직은 환경 관리 인식을 높이고 공급업체 간의 친환경 이니셔티브를 촉진하여 지속 가능한 공급망 관리를 보장합니다 (Page 55)."
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 0.7,
+      "rationale_en": "This answer is appropriate as it outlines a structured approach to identifying, assessing, and managing environmental issues, specifically climate change and water, across various stages of the value chain, as indicated on pages 15 and 29 of the retrieved sources. The inclusion of both qualitative and quantitative assessment methods, along with a comprehensive coverage of supplier tiers and multiple time horizons, demonstrates a thorough understanding of the complexities involved in environmental risk management, as emphasized on pages 55 and 200. The annual frequency of assessments further supports the organization's commitment to ongoing evaluation and adaptation, aligning with best practices in sustainability management.",
+      "rationale_ko": "이 답변은 가치 사슬의 다양한 단계에서 환경 문제, 특히 기후 변화와 물을 식별하고 평가하며 관리하는 구조화된 접근 방식을 설명하고 있어 적절합니다. 이는 검색된 자료의 15페이지와 29페이지에서 언급되었습니다. 정성적 및 정량적 평가 방법을 모두 포함하고 공급업체 계층 및 여러 시간 범위를 포괄적으로 다루는 것은 환경 위험 관리의 복잡성을 철저히 이해하고 있음을 보여줍니다. 이는 55페이지와 200페이지에서 강조되었습니다. 평가의 연간 빈도는 지속적인 평가 및 적응에 대한 조직의 헌신을 뒷받침하며, 지속 가능성 관리의 모범 사례와 일치합니다.",
+      "sources": [
+        {
+          "chunk_id": "table_29_98",
+          "page_num": 29,
+          "score": 0.843,
+          "rerank_score": 0.609
+        },
+        {
+          "chunk_id": "report_chunk_178",
+          "page_num": 55,
+          "score": 0.653,
+          "rerank_score": 0.555
+        },
+        {
+          "chunk_id": "report_chunk_326",
+          "page_num": 95,
+          "score": 0.642,
+          "rerank_score": 0.517
+        },
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 15,
+          "score": 0.639,
+          "rerank_score": 0.508
+        },
+        {
+          "chunk_id": "report_chunk_735",
+          "page_num": 200,
+          "score": 0.637,
+          "rerank_score": 0.505
+        }
+      ]
+    },
+    {
+      "question_id": "2.2.3",
+      "question_title": "Identified environmental dependencies and impacts",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "environmental_issue": "Biodiversity",
+            "dependency_or_impact": "Impact",
+            "type_of_dependency_impact_en": "A focused biodiversity risk assessment was conducted for the Pangyo and Daedeok Data Centers, which have relatively high energy consumption and greenhouse gas emissions (Page 61). The evaluation considers both biodiversity dependency risks and impact-related risks (Page 61). Baseline biodiversity data was collected as part of the assessment (Page 61).",
+            "type_of_dependency_impact_ko": "판교 및 대덕 데이터 센터에 대해 집중적인 생물다양성 위험 평가가 수행되었으며, 이들 센터는 상대적으로 높은 에너지 소비와 온실가스 배출을 가지고 있습니다 (Page 61). 평가는 생물다양성 의존 위험과 영향 관련 위험을 모두 고려합니다 (Page 61). 평가의 일환으로 기초 생물다양성 데이터가 수집되었습니다 (Page 61).",
+            "description_en": "A focused biodiversity risk assessment was conducted for the Pangyo and Daedeok Data Centers, which have relatively high energy consumption and greenhouse gas emissions (Page 61). The evaluation considers both biodiversity dependency risks and impact-related risks (Page 61). Risks are identified through regular annual analyses of internal and external environmental issues as well as stakeholder needs (Page 55). Although SK Inc. does not operate any facilities subject to mandatory environmental impact assessments, it conducts annual evaluations of the environmental impacts associated with business activities and facility operations at each site (Page 55). Baseline biodiversity data was collected as part of the assessment (Page 61).",
+            "description_ko": "판교 및 대덕 데이터 센터에 대해 집중적인 생물다양성 위험 평가가 수행되었으며, 이들 센터는 상대적으로 높은 에너지 소비와 온실가스 배출을 가지고 있습니다 (Page 61). 평가는 생물다양성 의존 위험과 영향 관련 위험을 모두 고려합니다 (Page 61). 위험은 내부 및 외부 환경 문제와 이해관계자의 요구에 대한 정기적인 연간 분석을 통해 식별됩니다 (Page 55). SK Inc.는 의무적인 환경 영향 평가를 받아야 하는 시설을 운영하지 않지만, 각 사이트에서 비즈니스 활동 및 시설 운영과 관련된 환경 영향을 연간 평가합니다 (Page 55). 평가의 일환으로 기초 생물다양성 데이터가 수집되었습니다 (Page 61).",
+            "value_chain_stage": [
+              "Direct operations",
+              "Upstream value chain",
+              "Downstream value chain"
+            ]
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 1.0,
+      "rationale_en": "This answer is appropriate as it clearly identifies biodiversity as a significant environmental issue and outlines the proactive measures taken to assess its impacts and dependencies at the Pangyo and Daedeok Data Centers. The mention of a focused biodiversity risk assessment, along with the collection of baseline biodiversity data, demonstrates a thorough approach to understanding the potential risks associated with high energy consumption and greenhouse gas emissions (Page 61). Additionally, referencing specific pages (55 and 61) provides credibility and allows for further verification of the information presented.",
+      "rationale_ko": "이 답변은 생물 다양성(biodiversity)을 중요한 환경 문제로 명확히 지적하고, 판교 및 대덕 데이터 센터에서 그 영향을 평가하기 위해 취한 적극적인 조치를 설명하고 있어 적절합니다. 집중적인 생물 다양성 위험 평가와 기초 생물 다양성 데이터 수집의 언급은 높은 에너지 소비와 온실가스 배출과 관련된 잠재적 위험을 이해하기 위한 철저한 접근 방식을 보여줍니다 (Page 61). 또한, 특정 페이지(55 및 61)를 참조함으로써 신뢰성을 제공하고 제시된 정보를 추가로 검증할 수 있게 합니다.",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_201",
+          "page_num": 61,
+          "score": 0.894,
+          "rerank_score": 0.989
+        },
+        {
+          "chunk_id": "report_chunk_179",
+          "page_num": 55,
+          "score": 0.928,
+          "rerank_score": 0.972
+        },
+        {
+          "chunk_id": "report_chunk_200",
+          "page_num": 61,
+          "score": 0.642,
+          "rerank_score": 0.964
+        },
+        {
+          "chunk_id": "report_chunk_178",
+          "page_num": 55,
+          "score": 0.638,
+          "rerank_score": 0.957
+        },
+        {
+          "chunk_id": "report_chunk_198",
+          "page_num": 61,
+          "score": 0.7,
+          "rerank_score": 0.898
+        }
+      ]
+    },
+    {
+      "question_id": "2.2.4",
+      "question_title": "Portfolio environmental dependencies and impacts (Financial Services)",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "process_in_place": "Yes",
+            "portfolio_coverage": 0.0,
+            "methodology_en": "Yes, the organization has a process in place for identifying, assessing, and managing dependencies and/or impacts relating to the portfolio. This includes a focused biodiversity risk assessment for data centers (Page 61), regular annual analyses of environmental issues (Page 55), and the establishment of mitigation plans for identified high-risk items (Page 55).",
+            "methodology_ko": "네, 이 조직은 포트폴리오와 관련된 의존성 및/또는 영향을 식별, 평가 및 관리하기 위한 프로세스를 갖추고 있습니다. 여기에는 데이터 센터를 위한 집중적인 생물다양성 위험 평가(Page 61), 환경 문제에 대한 정기적인 연간 분석(Page 55), 그리고 식별된 고위험 항목에 대한 완화 계획 수립(Page 55)이 포함됩니다."
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 1.0,
+      "rationale_en": "This answer is appropriate as it clearly outlines the organization's proactive approach to identifying, assessing, and managing environmental dependencies and impacts within its portfolio. The mention of a focused biodiversity risk assessment for data centers (Page 61) and regular annual analyses of environmental issues (Page 55) demonstrates a systematic methodology in place. Additionally, the establishment of mitigation plans for identified high-risk items (Page 55) indicates a commitment to addressing potential environmental risks effectively.",
+      "rationale_ko": "이 답변은 조직이 포트폴리오 내에서 환경 의존성과 영향을 식별, 평가 및 관리하는 데 있어 적극적인 접근 방식을 명확하게 설명하고 있기 때문에 적절합니다. 데이터 센터를 위한 집중적인 생물 다양성 위험 평가(Page 61)와 환경 문제에 대한 정기적인 연간 분석(Page 55)의 언급은 체계적인 방법론이 마련되어 있음을 보여줍니다. 또한, 식별된 고위험 항목에 대한 완화 계획의 수립(Page 55)은 잠재적인 환경 위험을 효과적으로 해결하려는 의지를 나타냅니다.",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_201",
+          "page_num": 61,
+          "score": 0.662,
+          "rerank_score": 0.991
+        },
+        {
+          "chunk_id": "report_chunk_198",
+          "page_num": 61,
+          "score": 0.628,
+          "rerank_score": 0.988
+        },
+        {
+          "chunk_id": "report_chunk_133",
+          "page_num": 40,
+          "score": 0.632,
+          "rerank_score": 0.988
+        },
+        {
+          "chunk_id": "report_chunk_178",
+          "page_num": 55,
+          "score": 0.622,
+          "rerank_score": 0.987
+        },
+        {
+          "chunk_id": "report_chunk_96",
+          "page_num": 28,
+          "score": 0.669,
+          "rerank_score": 0.986
+        }
+      ]
+    },
+    {
+      "question_id": "2.2.5",
+      "question_title": "Portfolio environmental risks and opportunities (Financial Services)",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "process_in_place": "Yes",
+            "portfolio_coverage": 0.0,
+            "risk_types": "Yes, our organization has a process in place for identifying, assessing, and managing environmental risks and opportunities related to our portfolio activities. \n\nAs outlined on **Page 55** of our sustainability report, we conduct regular annual analyses of both internal and external environmental issues, as well as stakeholder needs, to identify risks. The appropriateness of our response measures for identified risks is evaluated, and we establish mitigation plans for any remaining high-risk items. Additionally, we monitor environmental safety risks through our ISO 45001-certified safety and health management system, which integrates environmental accident management.\n\nFurthermore, we assess material risks and opportunities at the portfolio level, including the level of climate risk exposure by investment sector and market outlook driven by the transition to low carbon, as detailed on **Page 30**. This comprehensive approach ensures that we are aware of and can effectively manage our environmental impacts and dependencies across all portfolio activities.",
+            "methodology_en": "Yes, SK Inc. has a process in place for identifying, assessing, and managing environmental risks and opportunities related to its portfolio. This is detailed on Page 55, where it states that risks are identified through regular annual analyses of internal and external environmental issues and stakeholder needs, and mitigation plans are established for high-risk items. Additionally, Page 30 outlines the identification of material risks and opportunities at the portfolio level, including climate risk exposure by investment sector.",
+            "methodology_ko": "네, SK Inc.는 포트폴리오와 관련된 환경 위험 및 기회를 식별, 평가 및 관리하는 프로세스를 갖추고 있습니다. 이는 Page 55에 자세히 설명되어 있으며, 위험은 내부 및 외부 환경 문제와 이해관계자의 요구에 대한 정기적인 연간 분석을 통해 식별되며, 고위험 항목에 대한 완화 계획이 수립됩니다. 또한, Page 30에서는 투자 섹터별 기후 위험 노출을 포함하여 포트폴리오 수준에서의 중요 위험 및 기회 식별에 대해 설명하고 있습니다."
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 1.0,
+      "rationale_en": "The answer is appropriate as it clearly states that the organization has a process in place for identifying, assessing, and managing environmental risks and opportunities, which aligns with the CDP guidelines. It references Page 55 of the sustainability report, where the organization details its annual analyses of environmental issues and stakeholder needs, demonstrating a structured approach to risk management. Additionally, the mention of specific pages (29, 30, 55, 180) indicates that the organization has comprehensive documentation supporting its claims.",
+      "rationale_ko": "답변은 적절하며, 조직이 환경 위험 및 기회를 식별, 평가 및 관리하기 위한 프로세스를 갖추고 있음을 명확히 설명하고 있어 CDP 지침과 일치합니다. 이는 지속 가능성 보고서의 55페이지를 참조하며, 해당 페이지에서 조직이 환경 문제와 이해관계자의 요구에 대한 연간 분석을 상세히 설명하고 있어 위험 관리에 대한 체계적인 접근 방식을 보여줍니다. 또한, 특정 페이지(29, 30, 55, 180)의 언급은 조직이 주장을 뒷받침하는 포괄적인 문서를 갖추고 있음을 나타냅니다.",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_178",
+          "page_num": 55,
+          "score": 0.844,
+          "rerank_score": 0.997
+        },
+        {
+          "chunk_id": "report_chunk_179",
+          "page_num": 55,
+          "score": 0.856,
+          "rerank_score": 0.997
+        },
+        {
+          "chunk_id": "table_30_101",
+          "page_num": 30,
+          "score": 0.795,
+          "rerank_score": 0.996
+        },
+        {
+          "chunk_id": "report_chunk_651",
+          "page_num": 180,
+          "score": 0.836,
+          "rerank_score": 0.995
+        },
+        {
+          "chunk_id": "table_29_98",
+          "page_num": 29,
+          "score": 0.875,
+          "rerank_score": 0.995
+        }
+      ]
+    },
+    {
+      "question_id": "2.2.6",
+      "question_title": "Scenario analysis usage",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "uses_scenario_analysis": "Yes"
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 0.82,
+      "rationale_en": "The answer \"Yes\" is appropriate because it indicates that the financial institution actively employs scenario analysis as part of its strategy to identify and manage environmental risks and opportunities. This aligns with the CDP guideline, which emphasizes the importance of a comprehensive and recurring procedure for assessing environmental dependencies across portfolios (source pages 15, 21). Furthermore, the reference to pages 28 and 29 highlights the necessity of using scenario analysis to navigate long-term uncertainties, reinforcing the institution's commitment to proactive risk management.",
+      "rationale_ko": "\"예\"라는 대답은 적절합니다. 이는 금융 기관이 환경 위험 및 기회를 식별하고 관리하기 위한 전략의 일환으로 시나리오 분석을 적극적으로 활용하고 있음을 나타내기 때문입니다. 이는 포트폴리오 전반에 걸쳐 환경 의존성을 평가하기 위한 포괄적이고 반복적인 절차의 중요성을 강조하는 CDP 가이드라인과 일치합니다(출처 페이지 15, 21). 또한 페이지 28과 29에 대한 언급은 장기적인 불확실성을 탐색하기 위해 시나리오 분석을 사용하는 필요성을 강조하며, 기관의 능동적인 위험 관리에 대한 의지를 강화합니다.",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 15,
+          "score": 0.681,
+          "rerank_score": 0.703
+        },
+        {
+          "chunk_id": "report_chunk_96",
+          "page_num": 28,
+          "score": 0.654,
+          "rerank_score": 0.702
+        },
+        {
+          "chunk_id": "report_chunk_179",
+          "page_num": 55,
+          "score": 0.916,
+          "rerank_score": 0.664
+        },
+        {
+          "chunk_id": "report_chunk_74",
+          "page_num": 21,
+          "score": 0.672,
+          "rerank_score": 0.63
+        },
+        {
+          "chunk_id": "table_29_98",
+          "page_num": 29,
+          "score": 0.861,
+          "rerank_score": 0.6
+        }
+      ]
+    },
+    {
+      "question_id": "2.2.7",
+      "question_title": "Scenario analysis details",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "environmental_issue": [
+              "Climate change"
+            ],
+            "scenario_type": "Both physical and transition",
+            "scenario_source": "IEA NZE 2050",
+            "time_horizon": [
+              "Short-term",
+              "Medium-term",
+              "Long-term"
+            ],
+            "temperature_alignment": "N/A",
+            "description_en": "Yes, the organization assesses the interconnections between environmental dependencies, impacts, risks and/or opportunities. The framework used integrates scenario analyses for both investment and business divisions, identifying key sustainability-related issues that are incorporated into strategic decision-making and risk management to promote sustainable growth (Page 26, Page 15).",
+            "description_ko": "네, 이 조직은 환경 의존성, 영향, 위험 및/또는 기회 간의 상호 연결성을 평가합니다. 사용되는 프레임워크는 투자 및 비즈니스 부문 모두에 대한 시나리오 분석을 통합하여, 전략적 의사 결정 및 위험 관리에 포함되는 주요 지속 가능성 관련 문제를 식별하여 지속 가능한 성장을 촉진합니다 (Page 26, Page 15)."
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 0.94,
+      "rationale_en": "This answer is appropriate as it clearly outlines the organization's approach to scenario analysis by identifying both physical and transition risks related to climate change, as specified in the CDP guidelines. The use of the IEA NZE 2050 scenario source indicates a credible framework for assessing long-term impacts, while the mention of a comprehensive time horizon (short-term, medium-term, long-term) aligns with best practices for integrated reporting (Reference pages: 8, 15, 26). Additionally, the description emphasizes the organization's commitment to understanding the interconnections between environmental factors, which is crucial for holistic sustainability disclosures (Reference pages: 29, 43).",
+      "rationale_ko": "이 답변은 CDP 가이드라인에 명시된 대로 기후 변화와 관련된 물리적 위험과 전환 위험을 모두 식별하여 조직의 시나리오 분석 접근 방식을 명확하게 설명하고 있으므로 적절합니다. IEA NZE 2050 시나리오 출처의 사용은 장기적 영향을 평가하기 위한 신뢰할 수 있는 프레임워크를 나타내며, 포괄적인 시간 범위(단기, 중기, 장기)의 언급은 통합 보고를 위한 모범 사례와 일치합니다(참고 페이지: 8, 15, 26). 또한, 이 설명은 환경 요인 간의 상호 연결성을 이해하려는 조직의 의지를 강조하며, 이는 포괄적인 지속 가능성 공시를 위해 매우 중요합니다(참고 페이지: 29, 43).",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_140",
+          "page_num": 43,
+          "score": 0.615,
+          "rerank_score": 0.927
+        },
+        {
+          "chunk_id": "report_chunk_17",
+          "page_num": 8,
+          "score": 0.61,
+          "rerank_score": 0.927
+        },
+        {
+          "chunk_id": "report_chunk_91",
+          "page_num": 26,
+          "score": 0.611,
+          "rerank_score": 0.886
+        },
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 15,
+          "score": 0.626,
+          "rerank_score": 0.859
+        },
+        {
+          "chunk_id": "table_29_98",
+          "page_num": 29,
+          "score": 0.922,
+          "rerank_score": 0.854
+        }
+      ]
+    },
+    {
+      "question_id": "2.2.8",
+      "question_title": "Business strategy impact from scenario analysis",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "strategy_impacted": "Yes",
+            "description_en": "The business strategy impact from scenario analysis includes the recognition of climate change as a significant risk to financial soundness and operational continuity, with the establishment of a climate risk management system that integrates policy changes, industry trends, and stakeholder expectations into the company-wide risk strategy (Page 18). Scenario analyses are conducted for both investment and business divisions to identify key sustainability-related issues and incorporate them into strategic decision-making and risk management (Page 26). Transition risks may arise from increased costs or reduced revenues during the transition toward carbon reduction or eco-friendly practices, influenced by new regulations and changes in consumer demands (Page 28). The impact analysis identifies high-level material risks and opportunities, determining priority areas for response based on industry-specific characteristics (Page 29).",
+            "description_ko": "시나리오 분석에서의 비즈니스 전략 영향은 기후 변화가 재무 건전성과 운영 연속성에 대한 중요한 위험으로 인식되는 것을 포함하며, 정책 변화, 산업 동향 및 이해관계자의 기대를 회사 전체의 위험 전략에 통합하는 기후 위험 관리 시스템을 구축하는 것입니다 (Page 18). 시나리오 분석은 투자 부문과 비즈니스 부문 모두에서 수행되어 주요 지속 가능성 관련 문제를 식별하고 이를 전략적 의사 결정 및 위험 관리에 통합합니다 (Page 26). 전환 위험은 탄소 감소 또는 친환경 관행으로의 전환 과정에서 새로운 규제 및 소비자 수요 변화에 의해 영향을 받아 증가된 비용 또는 감소된 수익으로 인해 발생할 수 있습니다 (Page 28). 영향 분석은 고수준의 중요 위험 및 기회를 식별하고, 산업별 특성에 따라 대응의 우선 영역을 결정합니다 (Page 29)."
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 1.0,
+      "rationale_en": "The answer is appropriate as it highlights the recognition of climate change as a critical risk that influences the financial institution's business strategy, aligning with the CDP guideline on assessing environmental dependencies and risks. By establishing a climate risk management system that incorporates policy changes and stakeholder expectations, the response demonstrates a proactive approach to integrating sustainability into the company's overall risk strategy, as detailed on page 18. Additionally, conducting scenario analyses for both investment and business divisions, as referenced on pages 26 and 40, underscores the comprehensive nature of this strategic evaluation.",
+      "rationale_ko": "답변은 기후 변화가 금융 기관의 비즈니스 전략에 영향을 미치는 중요한 위험으로 인식되고 있음을 강조하므로 적절합니다. 이는 환경 의존성과 위험을 평가하는 CDP 가이드라인과 일치합니다. 정책 변화와 이해관계자의 기대를 반영한 기후 위험 관리 시스템을 구축함으로써, 이 응답은 회사의 전반적인 위험 전략에 지속 가능성을 통합하는 데 있어 능동적인 접근 방식을 보여줍니다(페이지 18 참조). 또한, 투자 및 비즈니스 부문 모두에 대한 시나리오 분석을 수행하는 것은(페이지 26 및 40 참조) 이 전략적 평가의 포괄적인 성격을 강조합니다.",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_52",
+          "page_num": 18,
+          "score": 0.894,
+          "rerank_score": 0.994
+        },
+        {
+          "chunk_id": "report_chunk_55",
+          "page_num": 18,
+          "score": 0.842,
+          "rerank_score": 0.991
+        },
+        {
+          "chunk_id": "report_chunk_96",
+          "page_num": 28,
+          "score": 0.906,
+          "rerank_score": 0.989
+        },
+        {
+          "chunk_id": "report_chunk_133",
+          "page_num": 40,
+          "score": 0.62,
+          "rerank_score": 0.987
+        },
+        {
+          "chunk_id": "report_chunk_91",
+          "page_num": 26,
+          "score": 0.623,
+          "rerank_score": 0.982
+        }
+      ]
+    },
+    {
+      "question_id": "2.2.9",
+      "question_title": "Financial planning impact from scenario analysis",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "financial_planning_impacted": "Yes",
+            "description_en": "This information was not found in the report.",
+            "description_ko": "이 정보는 보고서에서 발견되지 않았습니다."
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 1.0,
+      "rationale_en": "The answer is appropriate because it acknowledges that while the financial planning impact from scenario analysis is confirmed as \"Yes,\" specific details regarding this impact were not found in the report, as indicated by the description. The reference to pages 18, 28, 29, and 55 suggests that these sections may contain relevant information, but the absence of explicit details in the provided context highlights a gap in the report's coverage of this critical aspect of financial planning.",
+      "rationale_ko": "답변은 적절합니다. 시나리오 분석에서의 재무 계획 영향이 \"예\"로 확인되었지만, 이 영향에 대한 구체적인 세부사항이 보고서에서 발견되지 않았음을 인정하기 때문입니다. 페이지 18, 28, 29, 55에 대한 언급은 이 섹션들이 관련 정보를 포함할 수 있음을 시사하지만, 제공된 맥락에서 명시적인 세부사항이 결여되어 있다는 점은 재무 계획의 이 중요한 측면에 대한 보고서의 다루는 범위에 공백이 있음을 강조합니다.",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_96",
+          "page_num": 28,
+          "score": 0.892,
+          "rerank_score": 0.995
+        },
+        {
+          "chunk_id": "report_chunk_179",
+          "page_num": 55,
+          "score": 0.826,
+          "rerank_score": 0.993
+        },
+        {
+          "chunk_id": "report_chunk_52",
+          "page_num": 18,
+          "score": 0.877,
+          "rerank_score": 0.991
+        },
+        {
+          "chunk_id": "report_chunk_55",
+          "page_num": 18,
+          "score": 0.813,
+          "rerank_score": 0.986
+        },
+        {
+          "chunk_id": "table_29_98",
+          "page_num": 29,
+          "score": 0.948,
+          "rerank_score": 0.984
+        }
+      ]
+    },
+    {
+      "question_id": "2.3",
+      "question_title": "Identified environmental risks with substantive financial or strategic impact",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "environmental_issue": "Climate change",
+            "risk_type": "위험 유형을 식별하기 위해 SK Inc.는 연례 분석을 통해 내부 및 외부 환경 문제와 이해관계자의 요구를 평가합니다. 이 과정에서 다음과 같은 주요 위험 유형이 식별됩니다:\n\n1. **전환 위험 (Transition Risks)**: 탄소 감축이나 친환경 비즈니스 관행으로의 전환 과정에서 발생할 수 있는 비용 증가 또는 수익 감소의 위험입니다. 이는 새로운 규제 도입, 기술 투자, 소비자 수요 변화 등으로 인해 발생할 수 있습니다. (Page 28)\n\n2. **물리적 위험 (Physical Risks)**: 기후 변화로 인한 자연 재해(예: 폭우, 가뭄, 열파, 해수면 상승)로 인한 직접적인 피해와 경제적 손실의 위험입니다. (Page 28)\n\n3. **환경 안전 위험 (Environmental Safety Risks)**: ISO 45001 인증을 받은 안전 및 건강",
+            "primary_risk_driver_en": "Risks are identified through regular annual analyses of internal and external environmental issues as well as stakeholder needs (Page 55). Transition risks include increased costs or reduced revenues during the transition toward carbon reduction or eco-friendly practices (Page 28). Physical risks involve direct damage and economic loss from natural disasters due to climate change (Page 28). An integrated process links the Environmental Management System (ISO 14001) with the Enterprise Risk Management system (ISO 31000) to identify and assess climate risks (Page 43).",
+            "primary_risk_driver_ko": "위험은 내부 및 외부 환경 문제와 이해관계자의 요구에 대한 정기적인 연례 분석을 통해 식별됩니다 (Page 55). 전환 위험은 탄소 감소 또는 친환경 관행으로의 전환 과정에서 발생하는 비용 증가 또는 수익 감소를 포함합니다 (Page 28). 물리적 위험은 기후 변화로 인한 자연 재해로 인한 직접적인 피해와 경제적 손실을 포함합니다 (Page 28). 통합된 프로세스는 환경 관리 시스템(ISO 14001)과 기업 위험 관리 시스템(ISO 31000)을 연결하여 기후 위험을 식별하고 평가합니다 (Page 43).",
+            "description_en": "Risks are identified through regular annual analyses of internal and external environmental issues as well as stakeholder needs (Page 55). Transition risks include increased costs or reduced revenues during the transition toward carbon reduction or eco-friendly practices (Page 28). Physical risks involve direct damage and economic loss from natural disasters due to climate change (Page 28). The organization assesses physical and reputational risks for business sites with high risk levels through comprehensive analysis (Page 61). An integrated process links the Environmental Management System (ISO 14001) with the Enterprise Risk Management system (ISO 31000) to identify and assess climate risks (Page 43). Material environmental and climate risks are reported to the CEO and the Board of Directors for company-wide response (Page 43).",
+            "description_ko": "위험은 내부 및 외부 환경 문제와 이해관계자의 요구에 대한 정기적인 연간 분석을 통해 식별됩니다 (Page 55). 전환 위험은 탄소 감소 또는 친환경 관행으로의 전환 과정에서 발생하는 비용 증가 또는 수익 감소를 포함합니다 (Page 28). 물리적 위험은 기후 변화로 인한 자연 재해로 인한 직접적인 피해와 경제적 손실을 포함합니다 (Page 28). 조직은 고위험 비즈니스 사이트에 대한 물리적 및 평판 위험을 종합 분석을 통해 평가합니다 (Page 61). 통합된 프로세스는 환경 관리 시스템(ISO 14001)과 기업 위험 관리 시스템(ISO 31000)을 연결하여 기후 위험을 식별하고 평가합니다 (Page 43). 중요한 환경 및 기후 위험은 회사 전체의 대응을 위해 CEO와 이사회에 보고됩니다 (Page 43).",
+            "value_chain_stage": "Direct operations",
+            "time_horizon": "Medium-term",
+            "likelihood": "Very likely",
+            "magnitude": "High",
+            "financial_impact": 0.0,
+            "financial_impact_explanation_en": "SK Inc. identifies environmental risks through regular annual analyses of internal and external environmental issues and stakeholder needs, as stated on Page 55. The company evaluates response measures for identified risks and establishes mitigation plans for high-risk items. The report mentions that greenhouse gas emissions from data centers are a significant environmental impact, and Power Usage Effectiveness (PUE) is managed in connection with company-wide environmental targets. Additionally, the integrated process linking the Environmental Management System (ISO 14001) with the Enterprise Risk Management system (ISO 31000) is used to identify and assess climate risks, as detailed on Page 43. Material environmental and climate risks are reported to the CEO and the Board of Directors for company-wide integration into decision-making, as noted on Page 43.",
+            "financial_impact_explanation_ko": "SK Inc.는 내부 및 외부 환경 문제와 이해관계자의 요구에 대한 정기적인 연간 분석을 통해 환경 위험을 식별합니다(페이지 55 참조). 회사는 식별된 위험에 대한 대응 조치를 평가하고 고위험 항목에 대한 완화 계획을 수립합니다. 보고서에서는 데이터 센터에서 발생하는 온실가스 배출이 중요한 환경적 영향으로 언급되며, 전사적인 환경 목표와 연계하여 전력 사용 효율성(PUE)을 관리하고 있습니다. 또한, 환경 관리 시스템(ISO 14001)과 기업 위험 관리 시스템(ISO 31000)을 연결하는 통합 프로세스를 사용하여 기후 위험을 식별하고 평가합니다(페이지 43 참조). 중요한 환경 및 기후 위험은 CEO와 이사회에 보고되어 전사적인 의사 결정에 통합됩니다(페이지 43 참조).",
+            "management_method_en": "SK Inc. identifies environmental risks through annual analyses of internal and external environmental issues and stakeholder needs (Page 55). The company evaluates response measures for identified risks and establishes mitigation plans for high-risk items. Environmental impacts associated with business activities are assessed annually, and significant impacts, such as greenhouse gas emissions from data centers, are managed through metrics like Power Usage Effectiveness (PUE) (Page 55). The organization operates an integrated process linking its Environmental Management System (ISO 14001) with the Enterprise Risk Management system (ISO 31000) to identify and assess climate risks proactively (Page 43). Additionally, physical and reputational risks for high-risk business sites are assessed through comprehensive analysis (Page 61).",
+            "management_method_ko": "SK Inc.는 연간 내부 및 외부 환경 문제와 이해관계자의 요구를 분석하여 환경 위험을 식별합니다 (Page 55). 회사는 식별된 위험에 대한 대응 조치를 평가하고 고위험 항목에 대한 완화 계획을 수립합니다. 사업 활동과 관련된 환경 영향은 매년 평가되며, 데이터 센터에서 발생하는 온실가스 배출과 같은 중요한 영향은 전력 사용 효율성(PUE)과 같은 지표를 통해 관리됩니다 (Page 55). 조직은 기후 위험을 선제적으로 식별하고 평가하기 위해 환경 관리 시스템(ISO 14001)과 기업 위험 관리 시스템(ISO 31000)을 연결하는 통합 프로세스를 운영합니다 (Page 43). 또한, 고위험 사업 장소에 대한 물리적 및 평판 위험은 종합 분석을 통해 평가됩니다 (Page 61).",
+            "cost_of_management": 0.0
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 1.0,
+      "rationale_en": "This answer is appropriate as it comprehensively identifies key environmental risks that SK Inc. faces, specifically focusing on climate change and its associated transition and physical risks, as outlined on page 28 of the reference materials. By conducting annual analyses to evaluate both internal and external environmental issues and stakeholder needs, the company demonstrates a proactive approach to risk management. Additionally, the mention of ISO 45001 certification highlights the organization's commitment to environmental safety, further reinforcing the significance of these identified risks in terms of their potential financial and strategic impacts.",
+      "rationale_ko": "이 답변은 SK Inc.가 직면한 주요 환경 위험을 포괄적으로 식별하고 있으며, 특히 기후 변화와 관련된 전환 위험 및 물리적 위험에 초점을 맞추고 있어 적절합니다. 이는 참고 자료의 페이지 28에 명시되어 있습니다. 내부 및 외부 환경 문제와 이해관계자의 요구를 평가하기 위해 연간 분석을 수행함으로써, 회사는 위험 관리에 대한 능동적인 접근 방식을 보여줍니다. 또한 ISO 45001 인증 언급은 환경 안전에 대한 조직의 헌신을 강조하며, 이러한 식별된 위험이 잠재적인 재무적 및 전략적 영향 측면에서 중요함을 더욱 강화합니다.",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_179",
+          "page_num": 55,
+          "score": 0.828,
+          "rerank_score": 0.984
+        },
+        {
+          "chunk_id": "report_chunk_96",
+          "page_num": 28,
+          "score": 0.648,
+          "rerank_score": 0.972
+        },
+        {
+          "chunk_id": "report_chunk_178",
+          "page_num": 55,
+          "score": 0.634,
+          "rerank_score": 0.971
+        },
+        {
+          "chunk_id": "report_chunk_40",
+          "page_num": 15,
+          "score": 0.654,
+          "rerank_score": 0.961
+        },
+        {
+          "chunk_id": "table_148_508",
+          "page_num": 148,
+          "score": 0.667,
+          "rerank_score": 0.953
+        }
+      ]
+    },
+    {
+      "question_id": "2.4",
+      "question_title": "Identified environmental opportunities with substantive financial or strategic impact",
+      "response_type": "table",
+      "rows": [
+        {
+          "row_index": 0,
+          "columns": {
+            "environmental_issue": "Climate change",
+            "opportunity_type": "In defining a 'substantive effect' on our organization in the context of environmental risks and opportunities, we consider several key factors that align with our strategic decision-making processes. \n\n1. **Transition Risks**: We recognize that transition risks, such as increased costs or reduced revenues during our shift towards carbon reduction and eco-friendly practices, can have a substantive impact. This includes the financial implications of new regulations, investments in clean technologies, and shifts in consumer demand (Page 28).\n\n2. **Physical Risks**: We also account for physical risks that may arise from climate change, including direct damage and economic losses due to natural disasters like heavy rainfall, droughts, and rising sea levels. The severity of these risks can significantly affect our operational capabilities and financial stability (Page 28).\n\n3. **Impact Analysis**: Our assessment process involves a comprehensive analysis of both internal and external factors. Internally, we evaluate our business strategies, financial health, and key performance indicators to understand how environmental factors",
+            "primary_opportunity_driver_en": "This information was not found in the report.",
+            "primary_opportunity_driver_ko": "이 정보는 보고서에서 발견되지 않았습니다.",
+            "description_en": "This information was not found in the report.",
+            "description_ko": "이 정보는 보고서에서 발견되지 않았습니다.",
+            "value_chain_stage": "Direct operations",
+            "time_horizon": "Medium-term",
+            "likelihood": "Very likely",
+            "magnitude": "High",
+            "financial_impact": 0.0,
+            "financial_impact_explanation_en": "This information was not found in the report.",
+            "financial_impact_explanation_ko": "이 정보는 보고서에서 발견되지 않았습니다.",
+            "strategy_to_realize_en": "This information was not found in the report.",
+            "strategy_to_realize_ko": "이 정보는 보고서에서 발견되지 않았습니다.",
+            "cost_to_realize": 0.0
+          },
+          "confidence": 0.7
+        }
+      ],
+      "overall_confidence": 1.0,
+      "rationale_en": "This answer is appropriate as it clearly identifies climate change as a significant environmental issue and outlines how the organization defines \"substantive effects\" in relation to its strategic decision-making. By highlighting transition risks, the response aligns with the CDP guidelines that emphasize the importance of sector-specific factors in assessing substantive impacts (as referenced on pages 16 and 28). Additionally, it provides a framework for understanding the financial implications of environmental opportunities, which is crucial for effective risk management (pages 29 and 181).",
+      "rationale_ko": "이 답변은 기후 변화가 중요한 환경 문제로 명확히 식별되고, 조직이 전략적 의사 결정과 관련하여 \"실질적인 영향\"을 어떻게 정의하는지를 설명하므로 적절합니다. 전환 위험을 강조함으로써, 이 응답은 실질적인 영향을 평가하는 데 있어 산업별 요소의 중요성을 강조하는 CDP 지침과 일치합니다(페이지 16 및 28 참조). 또한, 효과적인 위험 관리를 위해 중요한 환경 기회의 재무적 함의를 이해하는 데 필요한 프레임워크를 제공합니다(페이지 29 및 181).",
+      "sources": [
+        {
+          "chunk_id": "report_chunk_96",
+          "page_num": 28,
+          "score": 0.632,
+          "rerank_score": 0.977
+        },
+        {
+          "chunk_id": "table_16_41",
+          "page_num": 16,
+          "score": 0.9,
+          "rerank_score": 0.956
+        },
+        {
+          "chunk_id": "table_29_98",
+          "page_num": 29,
+          "score": 0.918,
+          "rerank_score": 0.943
+        },
+        {
+          "chunk_id": "table_181_653",
+          "page_num": 181,
+          "score": 0.831,
+          "rerank_score": 0.938
+        },
+        {
+          "chunk_id": "table_193_687",
+          "page_num": 193,
+          "score": 0.816,
+          "rerank_score": 0.937
+        }
+      ]
+    }
+  ]
+}

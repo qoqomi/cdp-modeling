@@ -7,9 +7,7 @@ PyPDF2==3.0.1
 pdfplumber==0.10.3
 PyMuPDF==1.23.8
 
-# 벡터 임베딩 및 Reranking
-# BGE-M3, Cross-encoder 리랭커 지원을 위해 최신 버전 필요
-sentence-transformers>=2.6.0
+# 벡터 DB (임베딩은 외부 BGE Embedding 서비스 사용)
 qdrant-client==1.7.0
 
 # LLM API
